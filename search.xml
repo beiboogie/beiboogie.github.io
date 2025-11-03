@@ -1,43 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>基于Hexo的博客搭建Tips</title>
-    <url>/hexo-blog-setup-101/</url>
-    <content><![CDATA[<p>本文是搭建Hexo博客的一些Tips，如果你也想使用Hexo搭建博客，希望可以给你带来帮助。</p>
-<p>省略以下步骤，因为可以完全根据官方文档完成。</p>
-<ul>
-<li>配置环境<ul>
-<li>安装Git</li>
-<li>安装Node.js</li>
-</ul>
-</li>
-<li>开始使用Hexo<ul>
-<li>安装Hexo</li>
-<li>调用主题</li>
-<li>主题的设置</li>
-</ul>
-</li>
-</ul>
-<p>其中的一些无关紧要的小Tips：</p>
-<ul>
-<li>将archives页面的时间修改为了YYYY-MM-DD，更加符合中文阅读习惯。</li>
-<li>将post的网页导航修改为<code>permalink: :id/</code>，让文章网址简单些。</li>
-</ul>
-<p>接下来，本文会主要解决以下问题：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">hexo.extend.filter.register(<span class="string">&#x27;after_post_render&#x27;</span>, function(data) &#123;</span><br><span class="line">  <span class="type">var</span> <span class="variable">className</span> <span class="operator">=</span> <span class="string">&#x27;image-caption&#x27;</span>;</span><br><span class="line">  <span class="keyword">if</span> (data.layout == <span class="string">&#x27;post&#x27;</span> || data.layout == <span class="string">&#x27;page&#x27;</span> || data.layout == <span class="string">&#x27;about&#x27;</span>) &#123;</span><br><span class="line">    data.content = data.content.replace(/(&lt;img [^&gt;]*alt=<span class="string">&quot;([^&quot;</span>]+)<span class="string">&quot;[^&gt;]*&gt;)/g, &#x27;$1&#x27; + &#x27;&lt;span style=&quot;</span>text-align: center; display:block; color: grey;<span class="string">&quot; class=&quot;</span><span class="string">&#x27; + className + &#x27;</span><span class="string">&quot;&gt;$2&lt;/span&gt;&#x27;);</span></span><br><span class="line"><span class="string">  &#125;</span></span><br><span class="line"><span class="string">  return data;</span></span><br><span class="line"><span class="string">&#125;);</span></span><br></pre></td></tr></table></figure>
-
-
-
-
-<h2 id="基础github部署"><a href="#基础github部署" class="headerlink" title="基础github部署"></a>基础github部署</h2><p>AAA</p>
-<h2 id="自动github部署"><a href="#自动github部署" class="headerlink" title="自动github部署"></a>自动github部署</h2><p>AAA</p>
-<h2 id="基于obsidian的写作工作流"><a href="#基于obsidian的写作工作流" class="headerlink" title="基于obsidian的写作工作流"></a>基于obsidian的写作工作流</h2><p>AAA</p>
-]]></content>
-      <tags>
-        <tag>知识</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>北的监听耳机入门指南101</title>
     <url>/monitor-headphone-101/</url>
     <content><![CDATA[<h2 id="什么是监听耳机？"><a href="#什么是监听耳机？" class="headerlink" title="什么是监听耳机？"></a>什么是监听耳机？</h2><p>监听耳机指的是<code>在专业音频工作中使用的耳机</code>。它们的核心目标是<strong>尽可能真实、无染地还原声音的本来面貌</strong>，不添加任何美化或修饰。</p>
@@ -122,14 +85,51 @@
       </tags>
   </entry>
   <entry>
-    <title>&#39;tag&#39;</title>
-    <url>/tag/index.html</url>
-    <content><![CDATA[]]></content>
+    <title>基于Hexo的博客搭建Tips</title>
+    <url>/hexo-blog-setup-101/</url>
+    <content><![CDATA[<p>本文是搭建Hexo博客的一些Tips，如果你也想使用Hexo搭建博客，希望可以给你带来帮助。</p>
+<p>省略以下步骤，因为可以完全根据官方文档完成。</p>
+<ul>
+<li>配置环境<ul>
+<li>安装Git</li>
+<li>安装Node.js</li>
+</ul>
+</li>
+<li>开始使用Hexo<ul>
+<li>安装Hexo</li>
+<li>调用主题</li>
+<li>主题的设置</li>
+</ul>
+</li>
+</ul>
+<p>其中的一些无关紧要的小Tips：</p>
+<ul>
+<li>将archives页面的时间修改为了YYYY-MM-DD，更加符合中文阅读习惯。</li>
+<li>将post的网页导航修改为<code>permalink: :id/</code>，让文章网址简单些。</li>
+</ul>
+<p>接下来，本文会主要解决以下问题：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">hexo.extend.filter.register(<span class="string">&#x27;after_post_render&#x27;</span>, function(data) &#123;</span><br><span class="line">  <span class="type">var</span> <span class="variable">className</span> <span class="operator">=</span> <span class="string">&#x27;image-caption&#x27;</span>;</span><br><span class="line">  <span class="keyword">if</span> (data.layout == <span class="string">&#x27;post&#x27;</span> || data.layout == <span class="string">&#x27;page&#x27;</span> || data.layout == <span class="string">&#x27;about&#x27;</span>) &#123;</span><br><span class="line">    data.content = data.content.replace(/(&lt;img [^&gt;]*alt=<span class="string">&quot;([^&quot;</span>]+)<span class="string">&quot;[^&gt;]*&gt;)/g, &#x27;$1&#x27; + &#x27;&lt;span style=&quot;</span>text-align: center; display:block; color: grey;<span class="string">&quot; class=&quot;</span><span class="string">&#x27; + className + &#x27;</span><span class="string">&quot;&gt;$2&lt;/span&gt;&#x27;);</span></span><br><span class="line"><span class="string">  &#125;</span></span><br><span class="line"><span class="string">  return data;</span></span><br><span class="line"><span class="string">&#125;);</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+<h2 id="基础github部署"><a href="#基础github部署" class="headerlink" title="基础github部署"></a>基础github部署</h2><p>AAA</p>
+<h2 id="自动github部署"><a href="#自动github部署" class="headerlink" title="自动github部署"></a>自动github部署</h2><p>AAA</p>
+<h2 id="基于obsidian的写作工作流"><a href="#基于obsidian的写作工作流" class="headerlink" title="基于obsidian的写作工作流"></a>基于obsidian的写作工作流</h2><p>AAA</p>
+]]></content>
+      <tags>
+        <tag>知识</tag>
+      </tags>
   </entry>
   <entry>
     <title>关于这个网站</title>
     <url>/about/index.html</url>
     <content><![CDATA[<p>分享一些有关热爱的事情。</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>&#39;tag&#39;</title>
+    <url>/tag/index.html</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>
