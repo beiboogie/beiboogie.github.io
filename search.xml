@@ -122,14 +122,14 @@
       </tags>
   </entry>
   <entry>
+    <title>&#39;tag&#39;</title>
+    <url>/tag/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>关于这个网站</title>
     <url>/about/index.html</url>
     <content><![CDATA[<p>分享一些有关热爱的事情。</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>&#39;tag&#39;</title>
-    <url>/tag/index.html</url>
-    <content><![CDATA[]]></content>
   </entry>
 </search>
