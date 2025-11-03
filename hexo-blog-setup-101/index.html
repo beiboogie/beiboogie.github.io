@@ -163,15 +163,11 @@
 <ul>
 <li>将archives页面的时间修改为了YYYY-MM-DD，更加符合中文阅读习惯。</li>
 <li>将post的网页导航修改为<code>permalink: :id/</code>，让文章网址简单些。</li>
+<li>修改字体为正文oppo sans 4.0, 等宽XHei_Ubuntu-Mono，更加美观易读。</li>
+<li>如果使用的主题支持，使用hexo-generator-searchdb插件可以很方便实现搜索功能。</li>
 </ul>
-<p>接下来，本文会主要解决以下问题：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">hexo.extend.filter.register(<span class="string">&#x27;after_post_render&#x27;</span>, function(data) &#123;</span><br><span class="line">  <span class="type">var</span> <span class="variable">className</span> <span class="operator">=</span> <span class="string">&#x27;image-caption&#x27;</span>;</span><br><span class="line">  <span class="keyword">if</span> (data.layout == <span class="string">&#x27;post&#x27;</span> || data.layout == <span class="string">&#x27;page&#x27;</span> || data.layout == <span class="string">&#x27;about&#x27;</span>) &#123;</span><br><span class="line">    data.content = data.content.replace(/(&lt;img [^&gt;]*alt=<span class="string">&quot;([^&quot;</span>]+)<span class="string">&quot;[^&gt;]*&gt;)/g, &#x27;$1&#x27; + &#x27;&lt;span style=&quot;</span>text-align: center; display:block; color: grey;<span class="string">&quot; class=&quot;</span><span class="string">&#x27; + className + &#x27;</span><span class="string">&quot;&gt;$2&lt;/span&gt;&#x27;);</span></span><br><span class="line"><span class="string">  &#125;</span></span><br><span class="line"><span class="string">  return data;</span></span><br><span class="line"><span class="string">&#125;);</span></span><br></pre></td></tr></table></figure>
-
-
-
-
-<h2 id="基础github部署"><a href="#基础github部署" class="headerlink" title="基础github部署"></a>基础github部署</h2><p>AAA</p>
-<h2 id="自动github部署"><a href="#自动github部署" class="headerlink" title="自动github部署"></a>自动github部署</h2><p>AAA</p>
+<p>接下来，本文会主要介绍：</p>
+<h2 id="github部署"><a href="#github部署" class="headerlink" title="github部署"></a>github部署</h2><p>AAA</p>
 <h2 id="基于obsidian的写作工作流"><a href="#基于obsidian的写作工作流" class="headerlink" title="基于obsidian的写作工作流"></a>基于obsidian的写作工作流</h2><p>AAA</p>
 
 </div> 
