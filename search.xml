@@ -109,23 +109,23 @@
 <li>修改字体为正文oppo sans 4.0, 等宽XHei_Ubuntu-Mono，更加美观易读。</li>
 <li>如果使用的主题支持，使用hexo-generator-searchdb插件可以很方便实现搜索功能。</li>
 </ul>
-<p>接下来，本文会主要介绍：</p>
-<h2 id="github部署"><a href="#github部署" class="headerlink" title="github部署"></a>github部署</h2><p>AAA</p>
-<h2 id="基于obsidian的写作工作流"><a href="#基于obsidian的写作工作流" class="headerlink" title="基于obsidian的写作工作流"></a>基于obsidian的写作工作流</h2><p>AAA</p>
+<h2 id="github部署"><a href="#github部署" class="headerlink" title="github部署"></a>github部署</h2><p><a href="https://hexo.io/zh-cn/docs/one-command-deployment">Hexo提供的一键部署工具</a>，很好用。<br>需要注意的是，<code>2020年10月1日起，GitHub默认主分支从master更名为main</code><br>如果你想直接使用默认分支，请记得使用main而不是master。<br>另外，github pages的Build and deployment选项选为Deploy from a branch。</p>
+<h2 id="基于obsidian的写作工作流"><a href="#基于obsidian的写作工作流" class="headerlink" title="基于obsidian的写作工作流"></a>基于obsidian的写作工作流</h2><p>如你所见，我希望搭建一个&#x3D;&#x3D;尽可能简单&#x3D;&#x3D;的博客。</p>
+<p>—正在施工—</p>
 ]]></content>
       <tags>
         <tag>知识</tag>
       </tags>
   </entry>
   <entry>
+    <title>&#39;tag&#39;</title>
+    <url>/tag/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>关于这个网站</title>
     <url>/about/index.html</url>
     <content><![CDATA[<p>分享一些有关热爱的事情。</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>&#39;tag&#39;</title>
-    <url>/tag/index.html</url>
-    <content><![CDATA[]]></content>
   </entry>
 </search>
