@@ -1,12 +1,12 @@
 @font-face {
   font-family: 'OPPOSans';
-  src: url("../fonts/oppo/OPPO Sans 4.0.ttf") format('truetype');
+  src: url("../fonts/oppo/OppoSansE.woff2") format('woff2');
   font-weight: semibold;
   font-style: normal;
 }
 @font-face {
   font-family: 'JetBrainsMono';
-  src: url("../fonts/jetbrains/XHei_Ubuntu-Mono.ttc") format('truetype');
+  src: url("../fonts/jetbrains/SarasaFixedSCUH-Regular.woff2") format('woff2');
   font-weight: normal;
   font-style: normal;
 }
