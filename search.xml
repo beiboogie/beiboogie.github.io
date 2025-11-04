@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>基于Hexo的博客搭建Tips</title>
-    <url>/hexo-blog-setup-101/</url>
+    <url>/blog/2025/hexo-blog-setup-101/</url>
     <content><![CDATA[<p>本文是搭建Hexo博客的一些Tips。省略以下步骤，因为可以完全根据官方文档完成，应该不会碰到什么问题。</p>
 <ul>
 <li>配置环境<ul>
@@ -36,7 +36,7 @@
   </entry>
   <entry>
     <title>北的监听耳机入门指南101</title>
-    <url>/monitor-headphone-101/</url>
+    <url>/blog/2025/monitor-headphone-101/</url>
     <content><![CDATA[<div class="toe">
 
 <!-- toc -->
@@ -135,14 +135,14 @@
       </tags>
   </entry>
   <entry>
-    <title>&#39;tag&#39;</title>
-    <url>/tag/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>关于这个网站</title>
     <url>/about/index.html</url>
     <content><![CDATA[<p>分享一些有关热爱的事情。</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>&#39;tag&#39;</title>
+    <url>/tag/index.html</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>

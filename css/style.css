@@ -237,7 +237,7 @@ template {
 @font-face {
   font-family: 'OPPOSans';
   src: url("../fonts/CustomTextFont/OppoSansE.woff2") format('woff2');
-  font-weight: semibold;
+  font-weight: medium;
   font-style: normal;
 }
 @font-face {
@@ -661,7 +661,7 @@ input[type="search"]::-webkit-search-results-decoration {
   padding: 0.75rem 0.75rem;
 }
 .search-result-container .search-result-message {
-  font-family: 'WenkaiMono', menlo, monospace;
+  font-family: 'WenKaiMono', menlo, monospace;
   font-size: 0.875rem;
   line-height: 1rem;
   color: #e8e8e8;
@@ -971,13 +971,13 @@ dl dd {
   color: #373633 !important;
 }
 code {
-  font-family: 'WenkaiMono', menlo, monospace;
+  font-family: 'WenKaiMono', menlo, monospace;
   font-size: 0.875rem;
   line-height: 1rem;
   color: #0177aa;
 }
 .code pre span {
-  font-family: 'WenkaiMono', menlo, monospace;
+  font-family: 'WenKaiMono', menlo, monospace;
   font-size: 0.875rem;
   line-height: 1rem;
   color: #7d7c78;
@@ -995,7 +995,7 @@ td.gutter {
   left: 0;
 }
 td.gutter span {
-  font-family: 'WenkaiMono', menlo, monospace;
+  font-family: 'WenKaiMono', menlo, monospace;
   font-size: 0.875rem;
   line-height: 1rem;
   color: #bababa;
