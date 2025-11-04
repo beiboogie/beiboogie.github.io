@@ -293,7 +293,7 @@ input {
   border: none;
 }
 body {
-  font-family: 'OPPOSans', 'Noto Sans SC', helvetica, arial;
+  font-family: 'OPPOSans', 'Noto Sans SC', system-ui, -apple-system, helvetica, BlinkMacSystemFont, Segoe UI, Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", arial, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
@@ -443,7 +443,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 .post-list-item .post-title {
   flex-grow: 1;
-  font-family: 'OPPOSans', 'Noto Sans SC', helvetica, arial;
+  font-family: 'OPPOSans', 'Noto Sans SC', system-ui, -apple-system, helvetica, BlinkMacSystemFont, Segoe UI, Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", arial, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
@@ -592,7 +592,7 @@ input[type="search"]::-webkit-search-results-decoration {
   color: #373633;
 }
 .profile .profile-content .profile-body {
-  font-family: 'OPPOSans', 'Noto Sans SC', helvetica, arial;
+  font-family: 'OPPOSans', 'Noto Sans SC', system-ui, -apple-system, helvetica, BlinkMacSystemFont, Segoe UI, Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", arial, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
@@ -661,7 +661,7 @@ input[type="search"]::-webkit-search-results-decoration {
   padding: 0.75rem 0.75rem;
 }
 .search-result-container .search-result-message {
-  font-family: 'WenKaiMono', menlo, monospace;
+  font-family: 'WenKaiMono', ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 0.875rem;
   line-height: 1rem;
   color: #e8e8e8;
@@ -690,7 +690,7 @@ input[type="search"]::-webkit-search-results-decoration {
   padding-top: 1rem;
 }
 .search-result-container .search-result {
-  font-family: 'OPPOSans', 'Noto Sans SC', helvetica, arial;
+  font-family: 'OPPOSans', 'Noto Sans SC', system-ui, -apple-system, helvetica, BlinkMacSystemFont, Segoe UI, Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", arial, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
@@ -786,21 +786,21 @@ h6 {
   color: #373633;
 }
 p {
-  font-family: 'OPPOSans', 'Noto Sans SC', helvetica, arial;
+  font-family: 'OPPOSans', 'Noto Sans SC', system-ui, -apple-system, helvetica, BlinkMacSystemFont, Segoe UI, Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", arial, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
   color: #373633;
 }
 strong {
-  font-family: 'OPPOSans', 'Noto Sans SC', helvetica, arial;
+  font-family: 'OPPOSans', 'Noto Sans SC', system-ui, -apple-system, helvetica, BlinkMacSystemFont, Segoe UI, Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", arial, sans-serif;
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.5rem;
   color: #373633;
 }
 em {
-  font-family: 'OPPOSans', 'Noto Sans SC', helvetica, arial;
+  font-family: 'OPPOSans', 'Noto Sans SC', system-ui, -apple-system, helvetica, BlinkMacSystemFont, Segoe UI, Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", arial, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   font-style: italic;
@@ -808,7 +808,7 @@ em {
   color: #373633;
 }
 del {
-  font-family: 'OPPOSans', 'Noto Sans SC', helvetica, arial;
+  font-family: 'OPPOSans', 'Noto Sans SC', system-ui, -apple-system, helvetica, BlinkMacSystemFont, Segoe UI, Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", arial, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
@@ -846,7 +846,7 @@ blockquote blockquote {
   margin-bottom: 0;
 }
 .post-content li {
-  font-family: 'OPPOSans', 'Noto Sans SC', helvetica, arial;
+  font-family: 'OPPOSans', 'Noto Sans SC', system-ui, -apple-system, helvetica, BlinkMacSystemFont, Segoe UI, Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", arial, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
@@ -882,7 +882,7 @@ blockquote blockquote {
 }
 dl dt {
   padding: 0.5rem 0;
-  font-family: 'OPPOSans', 'Noto Sans SC', helvetica, arial;
+  font-family: 'OPPOSans', 'Noto Sans SC', system-ui, -apple-system, helvetica, BlinkMacSystemFont, Segoe UI, Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", arial, sans-serif;
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.5rem;
@@ -971,13 +971,13 @@ dl dd {
   color: #373633 !important;
 }
 code {
-  font-family: 'WenKaiMono', menlo, monospace;
+  font-family: 'WenKaiMono', ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 0.875rem;
   line-height: 1rem;
   color: #0177aa;
 }
 .code pre span {
-  font-family: 'WenKaiMono', menlo, monospace;
+  font-family: 'WenKaiMono', ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 0.875rem;
   line-height: 1rem;
   color: #7d7c78;
@@ -995,7 +995,7 @@ td.gutter {
   left: 0;
 }
 td.gutter span {
-  font-family: 'WenKaiMono', menlo, monospace;
+  font-family: 'WenKaiMono', ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 0.875rem;
   line-height: 1rem;
   color: #bababa;
