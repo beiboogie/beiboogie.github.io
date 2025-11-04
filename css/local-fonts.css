@@ -1,12 +1,12 @@
 @font-face {
-  font-family: 'CustomTextFont';
+  font-family: 'OPPOSans';
   src: url("../fonts/CustomTextFont/OppoSansE.woff2") format('woff2');
   font-weight: semibold;
   font-style: normal;
 }
 @font-face {
-  font-family: 'CustomCodeFont';
-  src: url("../fonts/CustomCodeFont/MsYHMono.woff2") format('woff2');
+  font-family: 'WenKaiMono';
+  src: url("../fonts/CustomCodeFont/WenKaiMono-Medium.woff2") format('woff2');
   font-weight: normal;
   font-style: normal;
 }
