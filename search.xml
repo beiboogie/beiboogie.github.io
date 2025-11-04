@@ -1,38 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>基于Hexo的博客搭建Tips</title>
-    <url>/hexo-blog-setup-101/</url>
-    <content><![CDATA[<p>本文是搭建Hexo博客的一些Tips。省略以下步骤，因为可以完全根据官方文档完成，应该不会碰到什么问题。</p>
-<ul>
-<li>配置环境<ul>
-<li>安装Git</li>
-<li>安装Node.js</li>
-</ul>
-</li>
-<li>开始使用Hexo<ul>
-<li>安装Hexo</li>
-<li>调用主题</li>
-<li>主题的设置</li>
-</ul>
-</li>
-</ul>
-<p>其中的一些无关紧要的小Tips：</p>
-<ul>
-<li>将archives页面的时间修改为了YYYY-MM-DD，更加符合中文阅读习惯。</li>
-<li>将post的网页导航修改为<code>permalink: :id/</code>，让文章网址简单些。</li>
-<li>如果使用的主题支持，使用hexo-generator-searchdb插件可以很方便实现搜索功能。</li>
-</ul>
-<h2 id="github部署"><a href="#github部署" class="headerlink" title="github部署"></a>github部署</h2><p><a href="https://hexo.io/zh-cn/docs/one-command-deployment">Hexo提供的一键部署工具</a>，很好用。<br>需要注意的是，<code>2020年10月1日起，GitHub默认主分支从master更名为main</code><br>如果你想直接使用默认分支，请记得使用main而不是master。</p>
-<h2 id="基于obsidian的写作工作流"><a href="#基于obsidian的写作工作流" class="headerlink" title="基于obsidian的写作工作流"></a>基于obsidian的写作工作流</h2><p>如你所见，我希望搭建一个尽可能简单的博客。</p>
-<p>—正在施工—</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="keyword">@font-face</span> &#123;</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">&#x27;CustomTextFont&#x27;</span>;</span><br><span class="line">  <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">&quot;../fonts/CustomTextFont/OppoSansE.woff2&quot;</span>) <span class="built_in">format</span>(<span class="string">&#x27;woff2&#x27;</span>);</span><br><span class="line">  <span class="attribute">font-weight</span>: semibold;</span><br><span class="line">  <span class="attribute">font-style</span>: normal;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@font-face</span> &#123;</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">&#x27;CustomCodeFont&#x27;</span>;</span><br><span class="line">  <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">&quot;../fonts/CustomCodeFont/MsYHMono.woff2&quot;</span>) <span class="built_in">format</span>(<span class="string">&#x27;woff2&#x27;</span>);</span><br><span class="line">  <span class="attribute">font-weight</span>: normal;</span><br><span class="line">  <span class="attribute">font-style</span>: normal;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <tags>
-        <tag>知识</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>北的监听耳机入门指南101</title>
     <url>/monitor-headphone-101/</url>
     <content><![CDATA[<h2 id="什么是监听耳机？"><a href="#什么是监听耳机？" class="headerlink" title="什么是监听耳机？"></a>什么是监听耳机？</h2><p>监听耳机指的是<code>在专业音频工作中使用的耳机</code>。它们的核心目标是<strong>尽可能真实、无染地还原声音的本来面貌</strong>，不添加任何美化或修饰。</p>
@@ -114,6 +82,38 @@
       <tags>
         <tag>知识</tag>
         <tag>设备</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于Hexo的博客搭建Tips</title>
+    <url>/hexo-blog-setup-101/</url>
+    <content><![CDATA[<p>本文是搭建Hexo博客的一些Tips。省略以下步骤，因为可以完全根据官方文档完成，应该不会碰到什么问题。</p>
+<ul>
+<li>配置环境<ul>
+<li>安装Git</li>
+<li>安装Node.js</li>
+</ul>
+</li>
+<li>开始使用Hexo<ul>
+<li>安装Hexo</li>
+<li>调用主题</li>
+<li>主题的设置</li>
+</ul>
+</li>
+</ul>
+<p>其中的一些无关紧要的小Tips：</p>
+<ul>
+<li>将archives页面的时间修改为了YYYY-MM-DD，更加符合中文阅读习惯。</li>
+<li>将post的网页导航修改为<code>permalink: :id/</code>，让文章网址简单些。</li>
+<li>如果使用的主题支持，使用hexo-generator-searchdb插件可以很方便实现搜索功能。</li>
+</ul>
+<h2 id="github部署"><a href="#github部署" class="headerlink" title="github部署"></a>github部署</h2><p><a href="https://hexo.io/zh-cn/docs/one-command-deployment">Hexo提供的一键部署工具</a>，很好用。<br>需要注意的是，<code>2020年10月1日起，GitHub默认主分支从master更名为main</code><br>如果你想直接使用默认分支，请记得使用main而不是master。</p>
+<h2 id="基于obsidian的写作工作流"><a href="#基于obsidian的写作工作流" class="headerlink" title="基于obsidian的写作工作流"></a>基于obsidian的写作工作流</h2><p>如你所见，我希望搭建一个尽可能简单的博客。</p>
+<p>—正在施工—</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="keyword">@font-face</span> &#123;</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">&#x27;CustomTextFont&#x27;</span>;</span><br><span class="line">  <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">&quot;../fonts/CustomTextFont/OppoSansE.woff2&quot;</span>) <span class="built_in">format</span>(<span class="string">&#x27;woff2&#x27;</span>);</span><br><span class="line">  <span class="attribute">font-weight</span>: semibold;</span><br><span class="line">  <span class="attribute">font-style</span>: normal;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@font-face</span> &#123;</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">&#x27;CustomCodeFont&#x27;</span>;</span><br><span class="line">  <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">&quot;../fonts/CustomCodeFont/MsYHMono.woff2&quot;</span>) <span class="built_in">format</span>(<span class="string">&#x27;woff2&#x27;</span>);</span><br><span class="line">  <span class="attribute">font-weight</span>: normal;</span><br><span class="line">  <span class="attribute">font-style</span>: normal;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>知识</tag>
       </tags>
   </entry>
   <entry>

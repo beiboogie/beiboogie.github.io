@@ -1090,7 +1090,7 @@ blockquote>footer a {
   background-image: none !important;
 }
 figcaption {
-  font-family: JetBrainsMono, menlo, monospace;
+  font-family: CustomCodeFont, menlo, monospace;
   font-size: 0.75rem;
   padding: 0.5rem 0;
   color: #afaea9;
