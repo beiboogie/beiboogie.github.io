@@ -1,6 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理</title>
+    <url>/blog/hexo-obsidian-blog/</url>
+    <content><![CDATA[<p>– 目录</p>
+<div class="toe">
+
+<!-- toc -->
+
+<ul>
+<li><a href="#%E5%BC%80%E5%A7%8B%E4%B9%8B%E5%89%8D">开始之前</a></li>
+<li><a href="#%E6%9C%80%E7%BB%88%E6%95%88%E6%9E%9C">最终效果</a></li>
+<li><a href="#%E6%80%BB%E4%BD%93%E6%80%9D%E8%B7%AF">总体思路</a></li>
+<li><a href="#%E5%9B%BE%E7%89%87%E9%99%84%E4%BB%B6%E7%AE%A1%E7%90%86">图片（附件）管理</a></li>
+<li><a href="#%E5%B1%9E%E6%80%A7%E7%AE%A1%E7%90%86">属性管理</a></li>
+<li><a href="#%E6%84%9F%E6%83%B3">感想</a></li>
+</ul>
+<!-- tocstop -->
+
+</div>
+
+<h2><span id="开始之前">开始之前</span></h2><p>本文介绍Hexo + Obsidian 博客写作工作流。在食用本文前，你应该已经完成了：</p>
+<ul>
+<li>配置环境<ul>
+<li>安装Git</li>
+<li>安装Node.js</li>
+</ul>
+</li>
+<li>开始使用Hexo<ul>
+<li>安装Hexo</li>
+<li>调用主题</li>
+<li>主题的设置</li>
+</ul>
+</li>
+</ul>
+<p>你可以不完成，但推荐你完成的： <a href="https://hexo.io/zh-cn/docs/one-command-deployment">Hexo提供的一键部署</a></p>
+<h2><span id="最终效果">最终效果</span></h2><p>按照下文的方法配置后，完整的写作工作流可以简化为：</p>
+<ol>
+<li>打开Obsidian</li>
+<li>进入_posts文件夹</li>
+<li>快捷键 - 新建文章并填写标题</li>
+<li>快捷键 - 应用模板并填写属性</li>
+<li>写作，利用<code>Attachment Management插件</code>实现 copy &amp; paste 图片嵌入</li>
+<li>执行<code>hexo clean &amp;&amp; hexo d</code> 部署</li>
+</ol>
+<h2><span id="总体思路">总体思路</span></h2><p>总体上要做的事情就是：<br>用Obsidian强大的自定义功能去“迎合”Hexo的博客框架，充分利用Hexo和Obsidian两者各自的方便之处。<code>这也是为什么没有使用Obsidian的git插件，因为Hexo的一键部署已经很好用。</code></p>
+<h2><span id="图片附件管理">图片（附件）管理</span></h2><h2><span id="属性管理">属性管理</span></h2><h2><span id="感想">感想</span></h2><p>如你所见，我希望搭建一个尽可能简单的博客。不光是看上去简单，我也希望它的功能足够简单。</p>
+]]></content>
+      <tags>
+        <tag>知识</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>耳机罩对频段的影响</title>
     <url>/blog/earpads-for-headphone/</url>
     <content><![CDATA[<div class="toe">
@@ -63,41 +114,7 @@
 ]]></content>
       <tags>
         <tag>知识</tag>
-        <tag>设备</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于Hexo的博客搭建Tips</title>
-    <url>/blog/hexo-blog-setup-101/</url>
-    <content><![CDATA[<p>本文是搭建Hexo博客的一些Tips。省略以下步骤，因为可以完全根据官方文档完成，应该不会碰到什么问题。</p>
-<ul>
-<li>配置环境<ul>
-<li>安装Git</li>
-<li>安装Node.js</li>
-</ul>
-</li>
-<li>开始使用Hexo<ul>
-<li>安装Hexo</li>
-<li>调用主题</li>
-<li>主题的设置</li>
-</ul>
-</li>
-</ul>
-<p>其中的一些无关紧要的小Tips：</p>
-<ul>
-<li>将archives页面的时间修改为了YYYY-MM-DD，更加符合中文阅读习惯。</li>
-<li>将post的网页导航修改为<code>permalink: :id/</code>，让文章网址简单些。</li>
-<li>如果使用的主题支持，使用hexo-generator-searchdb插件可以很方便实现搜索功能。</li>
-</ul>
-<h2><span id="github部署">github部署</span></h2><p><a href="https://hexo.io/zh-cn/docs/one-command-deployment">Hexo提供的一键部署工具</a>，很好用。<br>需要注意的是，<code>2020年10月1日起，GitHub默认主分支从master更名为main</code><br>如果你想直接使用默认分支，请记得使用main而不是master。</p>
-<h2><span id="基于obsidian的写作工作流">基于obsidian的写作工作流</span></h2><p>如你所见，我希望搭建一个尽可能简单的博客。</p>
-<p>—正在施工—</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="keyword">@font-face</span> &#123;</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">&#x27;CustomTextFont&#x27;</span>;</span><br><span class="line">  <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">&quot;../fonts/CustomTextFont/OppoSansE.woff2&quot;</span>) <span class="built_in">format</span>(<span class="string">&#x27;woff2&#x27;</span>);</span><br><span class="line">  <span class="attribute">font-weight</span>: semibold;</span><br><span class="line">  <span class="attribute">font-style</span>: normal;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@font-face</span> &#123;</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">&#x27;CustomCodeFont&#x27;</span>;</span><br><span class="line">  <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">&quot;../fonts/CustomCodeFont/MsYHMono.woff2&quot;</span>) <span class="built_in">format</span>(<span class="string">&#x27;woff2&#x27;</span>);</span><br><span class="line">  <span class="attribute">font-weight</span>: normal;</span><br><span class="line">  <span class="attribute">font-style</span>: normal;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong><code>对音头灵敏度的认知，是需要一副好耳机来帮助训练的。</code></strong></p>
-]]></content>
-      <tags>
-        <tag>知识</tag>
+        <tag>音乐设备</tag>
       </tags>
   </entry>
   <entry>
@@ -140,7 +157,7 @@
 </ul>
 <h3><span id="3-优秀的瞬态表现-transient-response">3. 优秀的瞬态表现 (Transient Response)</span></h3><p>瞬态响应指的是耳机对声音信号突然变化的反应能力，即还原声音“音头 (Attack)”的能力。</p>
 <ul>
-<li><strong>为什么重要？</strong> 许多乐器的 character 都体现在音头上。例如，经典的 Fender、Marshall、Vox 吉他音箱，它们的音头质感截然不同。音头是快是慢？音头的频率分布是更突出中频还是更“两头翘”？这些问题在一个瞬态表现糟糕的耳机上是完全无法分辨的。<strong><code>对音头灵敏度的认知，是需要一副好耳机来帮助训练的。</code></strong></li>
+<li><strong>为什么重要？</strong> 许多乐器的 character 都体现在音头上。例如，经典的 Fender、Marshall、Vox 吉他音箱，它们的音头质感截然不同。音头是快是慢？音头的频率分布是更突出中频还是更“两头翘”？这些问题在一个瞬态表现糟糕的耳机上是完全无法分辨的。<code>对音头灵敏度的认知，是需要一副好耳机来帮助训练的。</code></li>
 <li>瞬态好的耳机，你能清晰地听到鼓槌敲击鼓皮的那一瞬间、拨片触弦的那一刹那，声音结实、清晰，就像录音的时候听到的一样，<em><strong>但也不应该比录音的时候听上去更结实。</strong></em></li>
 </ul>
 <h3><span id="4-极低的偏音-channel-imbalance-与精准的立体声像-stereo-image">4. 极低的偏音 (Channel Imbalance) 与精准的立体声像 (Stereo Image)</span></h3><p>耳机在两个声道（左、右）的<code>所有频段</code>上都应保持高度一致，不能一个声道比另一个声道更响或音色不同。</p>
@@ -197,7 +214,7 @@
       </categories>
       <tags>
         <tag>知识</tag>
-        <tag>设备</tag>
+        <tag>音乐设备</tag>
       </tags>
   </entry>
   <entry>
