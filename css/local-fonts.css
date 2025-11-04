@@ -1,12 +1,12 @@
 @font-face {
-  font-family: 'OPPOSans';
-  src: url("../fonts/oppo/OppoSansE.woff2") format('woff2');
+  font-family: 'CustomTextFont';
+  src: url("../fonts/CustomTextFont/OppoSansE.woff2") format('woff2');
   font-weight: semibold;
   font-style: normal;
 }
 @font-face {
-  font-family: 'JetBrainsMono';
-  src: url("../fonts/jetbrains/SarasaFixedSCUH-Regular.woff2") format('woff2');
+  font-family: 'CustomCodeFont';
+  src: url("../fonts/CustomCodeFont/MsYHMono.woff2") format('woff2');
   font-weight: normal;
   font-style: normal;
 }
