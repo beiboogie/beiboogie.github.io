@@ -144,7 +144,7 @@
     </div>
 </div>
     <div class="post-content">
-    <p>– 目录</p>
+    <p>–目录–</p>
 <div class="toe">
 
 <!-- toc -->
@@ -155,57 +155,69 @@
 <li><a href="#%E5%87%86%E5%A4%87%E5%92%8C%E6%80%9D%E8%B7%AF">准备和思路</a></li>
 <li><a href="#%E5%9B%BE%E7%89%87%E9%99%84%E4%BB%B6%E7%AE%A1%E7%90%86">图片（附件）管理</a></li>
 <li><a href="#%E5%B1%9E%E6%80%A7%E7%AE%A1%E7%90%86">属性管理</a></li>
-<li><a href="#%E6%84%9F%E6%83%B3">感想</a></li>
+<li><a href="#%E7%BB%93%E5%B0%BE">结尾</a></li>
 </ul>
 <!-- tocstop -->
 
 </div>
 
-<h2><span id="开始之前">开始之前</span></h2><p>本文介绍Hexo + Obsidian 博客写作工作流。在食用本文前，你应该已经完成了：</p>
+<h2><span id="开始之前">开始之前</span></h2><p>本文介绍基于 Hexo + Obsidian 的博客写作工作流。在阅读本文前，建议您已完成以下准备：</p>
 <ul>
 <li>配置环境<ul>
-<li>安装Git</li>
-<li>安装Node.js</li>
+<li>安装 Git</li>
+<li>安装 Node.js</li>
 </ul>
 </li>
-<li>开始使用Hexo<ul>
-<li>安装Hexo</li>
-<li>调用主题</li>
-<li>主题的设置</li>
+<li>开始使用 Hexo<ul>
+<li>安装 Hexo</li>
+<li>应用主题</li>
+<li>配置主题设置</li>
 </ul>
 </li>
 </ul>
-<p>你可以不完成，但推荐你完成的： <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/one-command-deployment">Hexo提供的一键部署</a></p>
-<h2><span id="最终效果">最终效果</span></h2><p>按照下文的方法配置后，完整的写作工作流可以简化为：</p>
+<p>非必需但推荐完成的内容：<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/one-command-deployment">Hexo 提供的一键部署</a><br>同时，本文的逻辑<code>也许大概</code>会有些跳脱，但重点在于方法论的分享，希望理解。</p>
+<h2><span id="最终效果">最终效果</span></h2><p>按照下文方法配置后，完整的写作流程可简化为：</p>
 <ol>
-<li>打开Obsidian</li>
-<li>进入_posts文件夹</li>
-<li>快捷键 - 新建文章并填写标题</li>
-<li>快捷键 - 应用模板并填写属性</li>
-<li>写作，利用<code>Attachment Management插件</code>实现 copy &amp; paste 图片嵌入</li>
-<li>执行<code>hexo clean &amp;&amp; hexo d</code> 部署</li>
+<li>打开 Obsidian，进入 <code>_posts</code> 文件夹</li>
+<li>开始写作<ol>
+<li>使用快捷键新建文章</li>
+<li>填写标题</li>
+<li>使用快捷键应用模板</li>
+<li>填写文章属性</li>
+<li>撰写内容，利用 <code>Attachment Management</code> 插件实现“复制粘贴”式图片插入</li>
 </ol>
-<h2><span id="准备和思路">准备和思路</span></h2><p>将你的Hexo根目录添加为Obsidian仓库。如果你使用 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/one-command-deployment">Hexo提供的一键部署</a>，你将不需要做任何其他调整，不需要修改<code>.gitignore</code>。</p>
-<p>总体上要做的事情就是：<br>用Obsidian强大的自定义功能去“迎合”Hexo的博客框架，充分利用Hexo和Obsidian两者各自的方便之处。<code>这也是为什么没有使用Obsidian的git插件，因为Hexo的一键部署已经很好用。</code></p>
-<h2><span id="图片附件管理">图片（附件）管理</span></h2><p>首先，在Hexo的<code>_config.yml</code>中找到这一行：</p>
+</li>
+<li>执行 <code>hexo clean &amp;&amp; hexo d</code> 完成部署</li>
+</ol>
+<h2><span id="准备和思路">准备和思路</span></h2><p>将 Hexo 根目录添加为 Obsidian 仓库。如果你使用 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/one-command-deployment">Hexo 提供的一键部署</a>，则无需额外调整，也无需修改 <code>.gitignore</code> 文件。</p>
+<p>整体思路是：<strong>利用 Obsidian 强大的自定义功能去适配 Hexo 的框架</strong>，充分发挥 Hexo 与 Obsidian 各自的优势。<code>这也是为什么未采用许多其他经验分享中推荐的 Obsidian Git 插件——因为 Hexo 的一键部署已经足够便捷。</code></p>
+<h2><span id="图片附件管理">图片（附件）管理</span></h2><p>Hexo 支持统一附件管理，也支持为每篇文章单独设置附件文件夹。推荐后者，便于后续维护。</p>
+<p>首先，在 Hexo 的 <code>_config.yml</code> 中找到以下配置：</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
-<p>修改为：</p>
+
+<p>将其修改为：</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span>  </span><br><span class="line"><span class="attr">marked:</span>  </span><br><span class="line">    <span class="attr">prependRoot:</span> <span class="literal">true</span>  </span><br><span class="line">    <span class="attr">postAsset:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-<p>这样修改后，Hexo会在你每次执行<code>hexo new 你的文章名</code>指令的时候在<code>_posts</code>文件夹下创建新的文章和与文章同名的文件夹。（这个过程也可以你手动完成，是一样的。）</p>
-<p>标准的格式下，你应当在这个同名文件夹下防止你文章需要的图片，并在文章中用<code>![图片描述](图片名.png)</code>来插入图片。如果你使用过typora或者obsidian，你应该会知道这和这两个软件的图片插入逻辑有所区别。因此我们需要通过插件来迎合Hexo的框架。</p>
-<p>网络上很多人推荐的<code>Custom Attachment Location</code>插件在我的使用环境下会内存泄漏，原因未知。但机缘巧合，我发现了一个更好的插件：<code>Attachment Management</code>。安装后启用，它的默认配置就是刚好符合上面所说的Hexo的框架的。因此你可以在任意地方复制图片并Ctrl+V到文章对应的地方，插件会自动为图片重命名为<code>你可以设置的格式</code>并存储在同名文件夹下。引用的格式也是正确的。</p>
-<h2><span id="属性管理">属性管理</span></h2><p>这甚至不用安装插件，你只需要使用obsidian自带的模板功能就可以实现。在根目录建立一个Obsidian的模板文件夹<code>Template</code>，添加文件<code>BlogTemplate.md</code>，添加如下Header：</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">&quot;<span class="template-variable">&#123;&#123;title&#125;&#125;</span>&quot;</span></span><br><span class="line"><span class="attr">id:</span></span><br><span class="line"><span class="attr">date:</span> <span class="string">&quot;<span class="template-variable">&#123;&#123;date&#125;&#125;</span> <span class="template-variable">&#123;&#123;time&#125;&#125;</span>&quot;</span></span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line"><span class="attr">featured_image:</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
 
-<p>然后用Obsidian打开它，你会发现Obsidian刚好也是利用yaml Header作为属性管理的。</p>
-<p>同样的，你什么都不用设置，直接新建文章，填写标题，应用模板，title和date信息就会自动填写，其余信息也可以以比较优雅的交互在Obsidian里加入。</p>
-<p>当然，模板的功能远不止于此。例如，我的博客使用了<a target="_blank" rel="noopener" href="https://github.com/bubkoo/hexo-toc">hexo-toc</a>插件给每个文章开头添加目录，于是我的模板文件如下：</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">&quot;<span class="template-variable">&#123;&#123;title&#125;&#125;</span>&quot;</span></span><br><span class="line"><span class="attr">id:</span></span><br><span class="line"><span class="attr">date:</span> <span class="string">&quot;<span class="template-variable">&#123;&#123;date&#125;&#125;</span> <span class="template-variable">&#123;&#123;time&#125;&#125;</span>&quot;</span></span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line"><span class="attr">featured_image:</span></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="string">--目录--</span></span><br><span class="line"><span class="string">&lt;!--</span> <span class="string">toc</span> <span class="string">--&gt;</span></span><br></pre></td></tr></table></figure>
+<p>修改后，每次执行 <code>hexo new 文章名</code> 时，Hexo 会在 <code>_posts</code> 文件夹中创建文章文件及对应的同名文件夹。（你也可以手动完成此过程，效果是一样的。）</p>
+<p>Hexo 要求将文章所需图片放在该同名文件夹中，并在文章中通过 <code>![图片描述](图片名.png)</code> 格式插入图片。如果你曾使用 Typora 或 Obsidian，可能会注意到这与它们的图片插入逻辑有所不同。<strong>因此我们需要借助插件来适配 Hexo 的框架。</strong></p>
+<p>网络上很多人推荐的 <code>Custom Attachment Location</code> 插件在我的环境中会出现内存泄漏，原因未知。<br>但偶然间，我发现了一个更合适的插件：<code>Attachment Management</code>。安装并启用后，其默认配置恰好符合上述 Hexo 框架的要求。</p>
+<p><img src="/blog/hexo-obsidian-blog/IMG-20251105143232744.png"></p>
+<p>启用插件后，你可以在任意位置复制图片，并通过 Ctrl+V 粘贴到文章相应位置。插件会自动将图片重命名为<code>你可设置的格式</code>，并存储在同名文件夹中，同时弹出提示。引用格式也会自动调整为正确形式：</p>
+<p><img src="/blog/hexo-obsidian-blog/IMG-20251105143725251.png"></p>
+<h2><span id="属性管理">属性管理</span></h2><p>无需安装额外插件。由于 Obsidian 原生支持以 YAML 格式书写 Front-matter 作为属性管理，你只需使用 Obsidian 自带的模板功能即可实现。</p>
+<p>在根目录下创建一个 Obsidian 模板文件夹（如 <code>Template</code>），并添加文件 <code>BlogTemplate.md</code>。在该文件中编写 Front-matter 后，即可在 Obsidian 中通过属性栏管理文章属性。</p>
+<p>当然，模板的功能远不止于此。你还可以在正文中添加常用内容。例如，我的博客使用了 <a target="_blank" rel="noopener" href="https://github.com/bubkoo/hexo-toc">hexo-toc</a> 插件为每篇文章开头添加目录，因此我的模板文件如下：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">&quot;<span class="template-variable">&#123;&#123;title&#125;&#125;</span>&quot;</span></span><br><span class="line"><span class="attr">id:</span></span><br><span class="line"><span class="attr">date:</span> <span class="string">&quot;<span class="template-variable">&#123;&#123;date&#125;&#125;</span> <span class="template-variable">&#123;&#123;time&#125;&#125;</span>&quot;</span></span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line"><span class="attr">featured_image:</span></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="comment"># 以上为 YAML 属性部分</span></span><br><span class="line"></span><br><span class="line"><span class="string">--目录--</span></span><br><span class="line"><span class="string">&lt;!--</span> <span class="string">toc</span> <span class="string">--&gt;</span></span><br><span class="line"><span class="comment"># 以上为正文部分，每篇文章均会包含</span></span><br></pre></td></tr></table></figure>
 
-<p>用来在我每次新建文章的时候不用编写目录内容等等。</p>
-<h2><span id="感想">感想</span></h2><p>如你所见，我希望搭建一个尽可能简单的博客。<br>它要阅读起来简单，像报纸一样。<br>它要功能简单，毫无维护压力。<br>它也要写作起来简单，让我可以只专注于眼前的文本编辑器。</p>
+<p>效果如下：</p>
+<p><img src="/blog/hexo-obsidian-blog/IMG-20251105141325235.png"></p>
+<p>之后每次撰写新文章时，只需新建文件、填写标题、应用模板，<code>title</code> 和 <code>date</code> 信息将自动填充，其余属性也可通过 Obsidian 提供的友好界面进行编辑。</p>
+<p>以本文为例，在 Obsidian 中应用模板后的界面如下：</p>
+<p><img src="/blog/hexo-obsidian-blog/IMG-20251105143620715.png"></p>
+<p>至此，今后的博客写作体验，就与使用 Obsidian 记笔记一样自然。</p>
+<h2><span id="结尾">结尾</span></h2><p>如你所见，我希望打造一个极简的博客。<br>我希望它界面简洁，读起来像一份报纸；功能纯粹，没有花哨装饰。<br>现在，它写起来也很自在，让我能够全然专注于眼前的文字。</p>
 <blockquote>
-<p>希望本文能帮助你提升Hexo X Obsidian博客搭建体验。</p>
+<p>希望本文能帮助你提升 Hexo X Obsidian 博客搭建体验。</p>
 </blockquote>
 
 </div> 
@@ -223,7 +235,7 @@
             
                 <div class="icon arrow-right"></div>
                 <div class="post-link">
-                  <a href="/blog/earpads-for-headphone/">下一篇</a>
+                  <a href="/blog/monitor-headphone-101/">下一篇</a>
                 </div>  
             
         </div>
