@@ -836,6 +836,89 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理</title>
+    <url>/blog/hexo-obsidian-blog/</url>
+    <content><![CDATA[<p>–目录–</p>
+<div class="toe">
+
+<!-- toc -->
+
+<ul>
+<li><a href="#%E5%BC%80%E5%A7%8B%E4%B9%8B%E5%89%8D">开始之前</a></li>
+<li><a href="#%E6%9C%80%E7%BB%88%E6%95%88%E6%9E%9C">最终效果</a></li>
+<li><a href="#%E5%87%86%E5%A4%87%E5%92%8C%E6%80%9D%E8%B7%AF">准备和思路</a></li>
+<li><a href="#%E5%9B%BE%E7%89%87%E9%99%84%E4%BB%B6%E7%AE%A1%E7%90%86">图片（附件）管理</a></li>
+<li><a href="#%E5%B1%9E%E6%80%A7%E7%AE%A1%E7%90%86">属性管理</a></li>
+<li><a href="#%E7%BB%93%E5%B0%BE">结尾</a></li>
+</ul>
+<!-- tocstop -->
+
+</div>
+
+<h2><span id="开始之前">开始之前</span></h2><p>本文介绍基于 Hexo + Obsidian 的博客写作工作流。在阅读本文前，建议您已完成以下准备：</p>
+<ul>
+<li>配置环境<ul>
+<li>安装 Git</li>
+<li>安装 Node.js</li>
+</ul>
+</li>
+<li>开始使用 Hexo<ul>
+<li>安装 Hexo</li>
+<li>应用主题</li>
+<li>配置主题设置</li>
+</ul>
+</li>
+</ul>
+<p>非必需但推荐完成的内容：<a href="https://hexo.io/zh-cn/docs/one-command-deployment">Hexo 提供的一键部署</a><br>同时，本文的逻辑<code>也许大概</code>会有些跳脱，但重点在于方法论的分享，希望理解。</p>
+<h2><span id="最终效果">最终效果</span></h2><p>按照下文方法配置后，完整的写作流程可简化为：</p>
+<ol>
+<li>打开 Obsidian，进入 <code>_posts</code> 文件夹</li>
+<li>开始写作<ol>
+<li>使用快捷键新建文章</li>
+<li>填写标题</li>
+<li>使用快捷键应用模板</li>
+<li>填写文章属性</li>
+<li>撰写内容，利用 <code>Attachment Management</code> 插件实现“复制粘贴”式图片插入</li>
+</ol>
+</li>
+<li>执行 <code>hexo clean &amp;&amp; hexo d</code> 完成部署</li>
+</ol>
+<h2><span id="准备和思路">准备和思路</span></h2><p>将 Hexo 根目录添加为 Obsidian 仓库。如果你使用 <a href="https://hexo.io/zh-cn/docs/one-command-deployment">Hexo 提供的一键部署</a>，则无需额外调整，也无需修改 <code>.gitignore</code> 文件。</p>
+<p>整体思路是：<strong>利用 Obsidian 强大的自定义功能去适配 Hexo 的框架</strong>，充分发挥 Hexo 与 Obsidian 各自的优势。<code>这也是为什么未采用许多其他经验分享中推荐的 Obsidian Git 插件——因为 Hexo 的一键部署已经足够便捷。</code></p>
+<h2><span id="图片附件管理">图片（附件）管理</span></h2><p>Hexo 支持统一附件管理，也支持为每篇文章单独设置附件文件夹。推荐后者，便于后续维护。</p>
+<p>首先，在 Hexo 的 <code>_config.yml</code> 中找到以下配置：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+
+<p>将其修改为：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span>  </span><br><span class="line"><span class="attr">marked:</span>  </span><br><span class="line">    <span class="attr">prependRoot:</span> <span class="literal">true</span>  </span><br><span class="line">    <span class="attr">postAsset:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p>修改后，每次执行 <code>hexo new 文章名</code> 时，Hexo 会在 <code>_posts</code> 文件夹中创建文章文件及对应的同名文件夹。（你也可以手动完成此过程，效果是一样的。）</p>
+<p>Hexo 要求将文章所需图片放在该同名文件夹中，并在文章中通过 <code>![图片描述](图片名.png)</code> 格式插入图片。如果你曾使用 Typora 或 Obsidian，可能会注意到这与它们的图片插入逻辑有所不同。<strong>因此我们需要借助插件来适配 Hexo 的框架。</strong></p>
+<p>网络上很多人推荐的 <code>Custom Attachment Location</code> 插件在我的环境中会出现内存泄漏，原因未知。<br>但偶然间，我发现了一个更合适的插件：<code>Attachment Management</code>。安装并启用后，其默认配置恰好符合上述 Hexo 框架的要求。</p>
+<p><img src="/blog/hexo-obsidian-blog/IMG-20251105143232744.png"></p>
+<p>启用插件后，你可以在任意位置复制图片，并通过 Ctrl+V 粘贴到文章相应位置。插件会自动将图片重命名为<code>你可设置的格式</code>，并存储在同名文件夹中，同时弹出提示。引用格式也会自动调整为正确形式：</p>
+<p><img src="/blog/hexo-obsidian-blog/IMG-20251105143725251.png"></p>
+<h2><span id="属性管理">属性管理</span></h2><p>无需安装额外插件。由于 Obsidian 原生支持以 YAML 格式书写 Front-matter 作为属性管理，你只需使用 Obsidian 自带的模板功能即可实现。</p>
+<p>在根目录下创建一个 Obsidian 模板文件夹（如 <code>Template</code>），并添加文件 <code>BlogTemplate.md</code>。在该文件中编写 Front-matter 后，即可在 Obsidian 中通过属性栏管理文章属性。</p>
+<p>当然，模板的功能远不止于此。你还可以在正文中添加常用内容。例如，我的博客使用了 <a href="https://github.com/bubkoo/hexo-toc">hexo-toc</a> 插件为每篇文章开头添加目录，因此我的模板文件如下：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">&quot;<span class="template-variable">&#123;&#123;title&#125;&#125;</span>&quot;</span></span><br><span class="line"><span class="attr">id:</span></span><br><span class="line"><span class="attr">date:</span> <span class="string">&quot;<span class="template-variable">&#123;&#123;date&#125;&#125;</span> <span class="template-variable">&#123;&#123;time&#125;&#125;</span>&quot;</span></span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line"><span class="attr">featured_image:</span></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="comment"># 以上为 YAML 属性部分</span></span><br><span class="line"></span><br><span class="line"><span class="string">--目录--</span></span><br><span class="line"><span class="string">&lt;!--</span> <span class="string">toc</span> <span class="string">--&gt;</span></span><br><span class="line"><span class="comment"># 以上为正文部分，每篇文章均会包含</span></span><br></pre></td></tr></table></figure>
+
+<p>效果如下：</p>
+<p><img src="/blog/hexo-obsidian-blog/IMG-20251105141325235.png"></p>
+<p>之后每次撰写新文章时，只需新建文件、填写标题、应用模板，<code>title</code> 和 <code>date</code> 信息将自动填充，其余属性也可通过 Obsidian 提供的友好界面进行编辑。</p>
+<p>以本文为例，在 Obsidian 中应用模板后的界面如下：</p>
+<p><img src="/blog/hexo-obsidian-blog/IMG-20251105143620715.png"></p>
+<p>至此，今后的博客写作体验，就与使用 Obsidian 记笔记一样自然。</p>
+<h2><span id="结尾">结尾</span></h2><p>如你所见，我希望打造一个极简的博客。<br>我希望它界面简洁，读起来像一份报纸；功能纯粹，没有花哨装饰。<br>现在，它写起来也很自在，让我能够全然专注于眼前的文字。</p>
+<blockquote>
+<p>希望本文能帮助你提升 Hexo X Obsidian 博客搭建体验。</p>
+</blockquote>
+]]></content>
+      <tags>
+        <tag>知识</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Mooer产品与其对应原型</title>
     <url>/blog/mooe-and-ori/</url>
     <content><![CDATA[<p>–目录–</p>
@@ -1061,89 +1144,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理</title>
-    <url>/blog/hexo-obsidian-blog/</url>
-    <content><![CDATA[<p>–目录–</p>
-<div class="toe">
-
-<!-- toc -->
-
-<ul>
-<li><a href="#%E5%BC%80%E5%A7%8B%E4%B9%8B%E5%89%8D">开始之前</a></li>
-<li><a href="#%E6%9C%80%E7%BB%88%E6%95%88%E6%9E%9C">最终效果</a></li>
-<li><a href="#%E5%87%86%E5%A4%87%E5%92%8C%E6%80%9D%E8%B7%AF">准备和思路</a></li>
-<li><a href="#%E5%9B%BE%E7%89%87%E9%99%84%E4%BB%B6%E7%AE%A1%E7%90%86">图片（附件）管理</a></li>
-<li><a href="#%E5%B1%9E%E6%80%A7%E7%AE%A1%E7%90%86">属性管理</a></li>
-<li><a href="#%E7%BB%93%E5%B0%BE">结尾</a></li>
-</ul>
-<!-- tocstop -->
-
-</div>
-
-<h2><span id="开始之前">开始之前</span></h2><p>本文介绍基于 Hexo + Obsidian 的博客写作工作流。在阅读本文前，建议您已完成以下准备：</p>
-<ul>
-<li>配置环境<ul>
-<li>安装 Git</li>
-<li>安装 Node.js</li>
-</ul>
-</li>
-<li>开始使用 Hexo<ul>
-<li>安装 Hexo</li>
-<li>应用主题</li>
-<li>配置主题设置</li>
-</ul>
-</li>
-</ul>
-<p>非必需但推荐完成的内容：<a href="https://hexo.io/zh-cn/docs/one-command-deployment">Hexo 提供的一键部署</a><br>同时，本文的逻辑<code>也许大概</code>会有些跳脱，但重点在于方法论的分享，希望理解。</p>
-<h2><span id="最终效果">最终效果</span></h2><p>按照下文方法配置后，完整的写作流程可简化为：</p>
-<ol>
-<li>打开 Obsidian，进入 <code>_posts</code> 文件夹</li>
-<li>开始写作<ol>
-<li>使用快捷键新建文章</li>
-<li>填写标题</li>
-<li>使用快捷键应用模板</li>
-<li>填写文章属性</li>
-<li>撰写内容，利用 <code>Attachment Management</code> 插件实现“复制粘贴”式图片插入</li>
-</ol>
-</li>
-<li>执行 <code>hexo clean &amp;&amp; hexo d</code> 完成部署</li>
-</ol>
-<h2><span id="准备和思路">准备和思路</span></h2><p>将 Hexo 根目录添加为 Obsidian 仓库。如果你使用 <a href="https://hexo.io/zh-cn/docs/one-command-deployment">Hexo 提供的一键部署</a>，则无需额外调整，也无需修改 <code>.gitignore</code> 文件。</p>
-<p>整体思路是：<strong>利用 Obsidian 强大的自定义功能去适配 Hexo 的框架</strong>，充分发挥 Hexo 与 Obsidian 各自的优势。<code>这也是为什么未采用许多其他经验分享中推荐的 Obsidian Git 插件——因为 Hexo 的一键部署已经足够便捷。</code></p>
-<h2><span id="图片附件管理">图片（附件）管理</span></h2><p>Hexo 支持统一附件管理，也支持为每篇文章单独设置附件文件夹。推荐后者，便于后续维护。</p>
-<p>首先，在 Hexo 的 <code>_config.yml</code> 中找到以下配置：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
-
-<p>将其修改为：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span>  </span><br><span class="line"><span class="attr">marked:</span>  </span><br><span class="line">    <span class="attr">prependRoot:</span> <span class="literal">true</span>  </span><br><span class="line">    <span class="attr">postAsset:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-
-<p>修改后，每次执行 <code>hexo new 文章名</code> 时，Hexo 会在 <code>_posts</code> 文件夹中创建文章文件及对应的同名文件夹。（你也可以手动完成此过程，效果是一样的。）</p>
-<p>Hexo 要求将文章所需图片放在该同名文件夹中，并在文章中通过 <code>![图片描述](图片名.png)</code> 格式插入图片。如果你曾使用 Typora 或 Obsidian，可能会注意到这与它们的图片插入逻辑有所不同。<strong>因此我们需要借助插件来适配 Hexo 的框架。</strong></p>
-<p>网络上很多人推荐的 <code>Custom Attachment Location</code> 插件在我的环境中会出现内存泄漏，原因未知。<br>但偶然间，我发现了一个更合适的插件：<code>Attachment Management</code>。安装并启用后，其默认配置恰好符合上述 Hexo 框架的要求。</p>
-<p><img src="/blog/hexo-obsidian-blog/IMG-20251105143232744.png"></p>
-<p>启用插件后，你可以在任意位置复制图片，并通过 Ctrl+V 粘贴到文章相应位置。插件会自动将图片重命名为<code>你可设置的格式</code>，并存储在同名文件夹中，同时弹出提示。引用格式也会自动调整为正确形式：</p>
-<p><img src="/blog/hexo-obsidian-blog/IMG-20251105143725251.png"></p>
-<h2><span id="属性管理">属性管理</span></h2><p>无需安装额外插件。由于 Obsidian 原生支持以 YAML 格式书写 Front-matter 作为属性管理，你只需使用 Obsidian 自带的模板功能即可实现。</p>
-<p>在根目录下创建一个 Obsidian 模板文件夹（如 <code>Template</code>），并添加文件 <code>BlogTemplate.md</code>。在该文件中编写 Front-matter 后，即可在 Obsidian 中通过属性栏管理文章属性。</p>
-<p>当然，模板的功能远不止于此。你还可以在正文中添加常用内容。例如，我的博客使用了 <a href="https://github.com/bubkoo/hexo-toc">hexo-toc</a> 插件为每篇文章开头添加目录，因此我的模板文件如下：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">&quot;<span class="template-variable">&#123;&#123;title&#125;&#125;</span>&quot;</span></span><br><span class="line"><span class="attr">id:</span></span><br><span class="line"><span class="attr">date:</span> <span class="string">&quot;<span class="template-variable">&#123;&#123;date&#125;&#125;</span> <span class="template-variable">&#123;&#123;time&#125;&#125;</span>&quot;</span></span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line"><span class="attr">featured_image:</span></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="comment"># 以上为 YAML 属性部分</span></span><br><span class="line"></span><br><span class="line"><span class="string">--目录--</span></span><br><span class="line"><span class="string">&lt;!--</span> <span class="string">toc</span> <span class="string">--&gt;</span></span><br><span class="line"><span class="comment"># 以上为正文部分，每篇文章均会包含</span></span><br></pre></td></tr></table></figure>
-
-<p>效果如下：</p>
-<p><img src="/blog/hexo-obsidian-blog/IMG-20251105141325235.png"></p>
-<p>之后每次撰写新文章时，只需新建文件、填写标题、应用模板，<code>title</code> 和 <code>date</code> 信息将自动填充，其余属性也可通过 Obsidian 提供的友好界面进行编辑。</p>
-<p>以本文为例，在 Obsidian 中应用模板后的界面如下：</p>
-<p><img src="/blog/hexo-obsidian-blog/IMG-20251105143620715.png"></p>
-<p>至此，今后的博客写作体验，就与使用 Obsidian 记笔记一样自然。</p>
-<h2><span id="结尾">结尾</span></h2><p>如你所见，我希望打造一个极简的博客。<br>我希望它界面简洁，读起来像一份报纸；功能纯粹，没有花哨装饰。<br>现在，它写起来也很自在，让我能够全然专注于眼前的文字。</p>
-<blockquote>
-<p>希望本文能帮助你提升 Hexo X Obsidian 博客搭建体验。</p>
-</blockquote>
-]]></content>
-      <tags>
-        <tag>知识</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>北的监听耳机入门指南101</title>
     <url>/blog/monitor-headphone-101/</url>
     <content><![CDATA[<div class="toe">
@@ -1291,18 +1291,6 @@
       </tags>
   </entry>
   <entry>
-    <title>给吉他换弦的时候需要注意的问题</title>
-    <url>/blog/swap-guitar-string/</url>
-    <content><![CDATA[<ol>
-<li>在适当靠近琴头的位置剪断旧琴弦，而非在靠近琴桥的位置剪断。否则可能导致弦钉难以取出。</li>
-<li>有自锁旋钮的琴应当调完音再处理多余长度的琴弦，以防止自锁没锁上后琴弦无多余长度。</li>
-</ol>
-]]></content>
-      <tags>
-        <tag>知识</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>如何DIY一根音频线</title>
     <url>/blog/diy-audio-cable/</url>
     <content><![CDATA[<p>–目录–</p>
@@ -1372,6 +1360,58 @@
       <tags>
         <tag>音乐设备</tag>
         <tag>知识</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数摇 emo乐手效果器设备</title>
+    <url>/blog/math-emo-gear/</url>
+    <content><![CDATA[<p>–目录–</p>
+<div class="toe">
+
+<!-- toc -->
+
+
+
+<!-- tocstop -->
+
+</div>
+
+<p><code>素材来源网络，侵删</code></p>
+<ul>
+<li><p>toe</p>
+<ul>
+<li><p>Takaaki Mino</p>
+<p>  <img src="/blog/math-emo-gear/big_11357261_983451558352278_451636667_n.webp"></p>
+<p>  <img src="/blog/math-emo-gear/big_257501047_251559856960196_8785557836121382867_n.webp"></p>
+<p>  <img src="/blog/math-emo-gear/IMG-1762330701371.webp"></p>
+<p>  <img src="/blog/math-emo-gear/IMG-1762330757074.webp"></p>
+</li>
+<li><p>Yamazaki Hirokazu</p>
+<p>  <img src="/blog/math-emo-gear/IMG-1762330778163.webp"></p>
+</li>
+<li><p>Yamane Satoshi</p>
+<p>  J bass, Ampeg <strong>SVT-CL Classic, Steinberger L2</strong></p>
+</li>
+</ul>
+</li>
+<li><p>上海秋天</p>
+<p>  <img src="/blog/math-emo-gear/IMG-1762330783815.webp"></p>
+<p>  上海秋天 Enaut 2019</p>
+</li>
+<li><p>国足</p>
+<p>  <img src="/blog/math-emo-gear/IMG-1762330796572.webp"></p>
+<p>  国足 李立鑫 2019  P bass</p>
+<p>  <img src="/blog/math-emo-gear/IMG-1762330799668.webp"></p>
+<p>  国足 王博 2019 Telecaster</p>
+<p>  <img src="/blog/math-emo-gear/IMG-1762330803559.webp"></p>
+<p>  国足 徐波 2019 Telecaster</p>
+<p>  <img src="/blog/math-emo-gear/IMG-1762330811246.webp"></p>
+<p>  鼓手郑紫莉 用7A~5A鼓棒 知音K系列镲片</p>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>音乐设备</tag>
       </tags>
   </entry>
   <entry>
@@ -1674,6 +1714,18 @@
       </tags>
   </entry>
   <entry>
+    <title>给吉他换弦的时候需要注意的问题</title>
+    <url>/blog/swap-guitar-string/</url>
+    <content><![CDATA[<ol>
+<li>在适当靠近琴头的位置剪断旧琴弦，而非在靠近琴桥的位置剪断。否则可能导致弦钉难以取出。</li>
+<li>有自锁旋钮的琴应当调完音再处理多余长度的琴弦，以防止自锁没锁上后琴弦无多余长度。</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>知识</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>美少女们都爱用：RAT系失真效果器横评&amp;详解</title>
     <url>/blog/rat-pedal/</url>
     <content><![CDATA[<p>–目录–</p>
@@ -1721,13 +1773,12 @@
 <li>Fat电路：JOYO、Mosky</li>
 <li>Dirty电路：Mosky</li>
 </ul>
-<p>这些电路都是对Proco原版电路的“致敬”或复刻。而Valeton的电路是独特的mod，增加了高低频分开控制。</p>
+<p>这些电路都是对Proco原版电路的“致敬”或复刻。</p>
 <h2><span id="个人心得">个人心得：</span></h2><ul>
 <li><strong>原版电路</strong>：使用非常顺手，适合于具有高压缩感、要求手感反馈的演奏。但在非clean up状态下，难以获得较低增益的过载音色。</li>
 <li><strong>Turbo电路</strong>：采用LED削波，具有顶级动态、良好操控性，适合中低增益需求。</li>
 <li><strong>Fat电路</strong>：中低频量较大，适合二次元演奏和音墙效果，需与贝斯手协调使用。</li>
 <li><strong>Dirty电路</strong>：声软，带有FUZZ效果，我个人不太使用。</li>
-<li><strong>Valeton电路</strong>：低频更紧凑，音色调节显著，但压缩感稍强。</li>
 </ul>
 <h2><span id="总结">总结</span></h2><ul>
 <li>原版电路适合“一般失真单块演奏”场景，压缩感强且易于演奏。</li>
@@ -1741,124 +1792,6 @@
       <tags>
         <tag>音乐设备</tag>
         <tag>B站节目文字版</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>数摇 emo乐手效果器设备</title>
-    <url>/blog/math-emo-gear/</url>
-    <content><![CDATA[<p>–目录–</p>
-<div class="toe">
-
-<!-- toc -->
-
-
-
-<!-- tocstop -->
-
-</div>
-
-<p><code>素材来源网络，侵删</code></p>
-<ul>
-<li><p>toe</p>
-<ul>
-<li><p>Takaaki Mino</p>
-<p>  <img src="/blog/math-emo-gear/big_11357261_983451558352278_451636667_n.webp"></p>
-<p>  <img src="/blog/math-emo-gear/big_257501047_251559856960196_8785557836121382867_n.webp"></p>
-<p>  <img src="/blog/math-emo-gear/IMG-1762330701371.webp"></p>
-<p>  <img src="/blog/math-emo-gear/IMG-1762330757074.webp"></p>
-</li>
-<li><p>Yamazaki Hirokazu</p>
-<p>  <img src="/blog/math-emo-gear/IMG-1762330778163.webp"></p>
-</li>
-<li><p>Yamane Satoshi</p>
-<p>  J bass, Ampeg <strong>SVT-CL Classic, Steinberger L2</strong></p>
-</li>
-</ul>
-</li>
-<li><p>上海秋天</p>
-<p>  <img src="/blog/math-emo-gear/IMG-1762330783815.webp"></p>
-<p>  上海秋天 Enaut 2019</p>
-</li>
-<li><p>国足</p>
-<p>  <img src="/blog/math-emo-gear/IMG-1762330796572.webp"></p>
-<p>  国足 李立鑫 2019  P bass</p>
-<p>  <img src="/blog/math-emo-gear/IMG-1762330799668.webp"></p>
-<p>  国足 王博 2019 Telecaster</p>
-<p>  <img src="/blog/math-emo-gear/IMG-1762330803559.webp"></p>
-<p>  国足 徐波 2019 Telecaster</p>
-<p>  <img src="/blog/math-emo-gear/IMG-1762330811246.webp"></p>
-<p>  鼓手郑紫莉 用7A~5A鼓棒 知音K系列镲片</p>
-</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>音乐设备</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>耳机罩对频段的影响</title>
-    <url>/blog/earpads-for-headphone/</url>
-    <content><![CDATA[<div class="toe">
-
-<!-- toc -->
-
-<ul>
-<li><a href="#%E6%8A%98%E8%85%BE%E7%9A%84%E5%8E%9F%E5%9B%A0">折腾的原因：</a></li>
-<li><a href="#%E8%B4%AD%E4%B9%B0%E6%B8%A0%E9%81%93">购买渠道：</a></li>
-<li><a href="#%E8%B4%AD%E4%B9%B0%E7%A7%8D%E7%B1%BB">购买种类：</a></li>
-<li><a href="#%E6%9C%80%E5%90%8E%E6%88%91%E8%B4%AD%E4%B9%B0%E4%BA%86%E4%BB%A5%E4%B8%8B%E5%87%A0%E6%AC%BE">最后我购买了以下几款：</a></li>
-<li><a href="#%E7%BB%93%E8%AE%BA">结论</a></li>
-<li><a href="#%E6%94%B6%E5%88%B0%E5%90%8E%E4%BE%9D%E6%AC%A1%E5%B0%9D%E8%AF%95%E7%9A%84%E5%90%AC%E6%84%9F">收到后依次尝试的听感：</a></li>
-</ul>
-<!-- tocstop -->
-
-</div>
-
-
-<p><code>耳机：SennheiserHD380pro</code></p>
-<h2><span id="折腾的原因">折腾的原因：</span></h2><p>因为买了【<strong>长在雨点老师头上的耳机</strong>】却发现频段和印象中“这些东西应该发出的频段”好像不太一样（主要是低频缺），所以确认了卖家换过耳机罩（这是很正常的事情毕竟是停产的老耳机）。且当时通过“把耳机压得很紧可以获得熟悉的声音”得出了<code>“耳机单元的素质应该没问题”</code>的结论，遂决定试试不同的耳机罩看看影响，希望可以改善现在的问题。</p>
-<h2><span id="购买渠道">购买渠道：</span></h2><p>在PDD购买，原因是我【猜测】淘宝PDD什么的应该都是类似的代工厂出的，所以我随便挑了看上去便宜的一家。（具体是叫“<code>域深数码配件专营店</code>”，但基于前文我【猜测】的原因，我认为<em><strong>哪里便宜就去哪里买就行</strong></em>）</p>
-<h2><span id="购买种类">购买种类：</span></h2><p><code>商家的种类</code>有：</p>
-<ol>
-<li>绒布款</li>
-<li>纳米皮款（购买后的感觉是，是某种布料）【所以下文称之为布料款】</li>
-<li>热压蛋白皮款（很常见的人造革第三方耳罩材质的感觉啊！）</li>
-<li>拼接蛋白皮款</li>
-<li>热压皱皮款（我想应该是蛋白皮款的某种工艺吧，不太清楚）</li>
-<li>金丝绒款（总之应该是某种绒布）</li>
-<li>拼接冰感凝胶款（其实是一种布面贴耳朵，四周是人造革的款）</li>
-<li>热压小羊皮款（我想着肯定也是人造的）</li>
-<li>拼接小羊皮款</li>
-<li>拼接打孔小羊皮款</li>
-</ol>
-<p>具体的区别可以找对应的店铺看看图文就知道了。<br>根据一些大概是的简单的<code>物理学</code>，我排除了绒布类，我觉得它们应该会多少<strong>吸收一些低频</strong>。<br>因为<code>耳机的卖家</code>换的是“皱皮款”，并且基于我上文的代工厂的【猜测】，我认为这款我应该算是“已经测试过了”，就不购买了。</p>
-<h2><span id="最后我购买了以下几款">最后我购买了以下几款：</span></h2><blockquote>
-<p>👉🏻<br>热压蛋白皮，冰感，布料，热压小羊皮（但是。。）</p>
-</blockquote>
-<p><img src="/blog/earpads-for-headphone/IMG-20251105151233358.webp"></p>
-<p>在收到后，我发现商家似乎将热压小羊皮款发成了拼接小羊皮款。<br>但这带来了额外的结论所以很好嗯。</p>
-<h2><span id="结论">结论</span></h2><p>放在文章中间：</p>
-<blockquote>
-<p>推荐：冰感 ≈ 拼接小羊皮 &gt; 布料 &gt;&gt;&gt;&gt;&gt;&gt; 热压蛋白皮</p>
-</blockquote>
-<p>另外，这个结论中冰感和拼接小羊皮的区别我无法判断是否是<code>佩戴的体验</code>导致的，因为换这个“小羊皮”耳罩比别的要烦一些（卡口包着皮有点难扣），对比的时候会忘记另一个声音。</p>
-<blockquote>
-<p>总结：皮质的，厚的耳罩，低频大概会更好。而“拼接款”疑似往往比“热压款”更厚。</p>
-</blockquote>
-<h2><span id="收到后依次尝试的听感">收到后依次尝试的听感：</span></h2><blockquote>
-<p>低频量：拼接小羊皮 ≈ 冰感 &gt; e5xt（音箱作为主观对照）&gt; 布料 &gt; 热压蛋白皮<br>厚度：拼接小羊皮 ≈ 冰感 &gt; 布料 &gt; 热压蛋白皮</p>
-</blockquote>
-<p><img src="/blog/earpads-for-headphone/IMG-20251104234708581.webp"></p>
-<p>和直觉上很一致，耳罩的厚度和低频量有直观的联系。<br>另外，我认为低频量的本质原因还是和密封性有关的。原因是这些让我感觉到低频量足够的耳机戴上后都会有那种耳朵被吸进耳机里的感觉（飞机起飞的那种感觉吗）</p>
-<blockquote>
-<p>歌曲底鼓鼓皮感：拼接小羊皮 &gt; 冰感 ≈ e5xt &gt; 布料 &gt; 热压蛋白皮</p>
-</blockquote>
-<p>我觉得拼接小羊皮和冰感处于我的舒适范围内。相比之下，冰感的布面接触耳朵确实舒服很多。<br>对于喜欢低频少点的人来说我觉得布料款也许是可以接受的。<br>我主管认为热压蛋白皮耳罩会让<code>HD380pro</code>脱离“这些东西应该出的声音”。<br>结合皱皮款和我听过的耳机，我认为皱皮耳罩的听感已经接近<code>SONY MDR7506</code>，在我印象中这不是一个适合混音的声音。<br>蛋白皮款的声音也有贴近这种<code>“7506声”</code>的趋势，但要稍微好一些（也可能没有好一些只是佩戴感受导致的）。</p>
-<p>另外，商家对每个耳罩都附赠了一个可以隔在耳罩和单元中间的海绵片，据T老师说可能是用来防尘的。我裁剪为和单元一般的大小安装了。<br>又另，拼接小羊皮款安装真的有点难扣上我扣了蛮久。<br>又另，冰感款真的很舒服。<br>又另，拼接小羊皮（虽然应该是人造皮）质感确实和蛋白皮的质感不一样，不是文字游戏。</p>
-]]></content>
-      <tags>
-        <tag>音乐设备</tag>
-        <tag>知识</tag>
       </tags>
   </entry>
   <entry>
@@ -1977,6 +1910,72 @@
       <tags>
         <tag>音乐设备</tag>
         <tag>B站节目文字版</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>耳机罩对频段的影响</title>
+    <url>/blog/earpads-for-headphone/</url>
+    <content><![CDATA[<div class="toe">
+
+<!-- toc -->
+
+<ul>
+<li><a href="#%E6%8A%98%E8%85%BE%E7%9A%84%E5%8E%9F%E5%9B%A0">折腾的原因：</a></li>
+<li><a href="#%E8%B4%AD%E4%B9%B0%E6%B8%A0%E9%81%93">购买渠道：</a></li>
+<li><a href="#%E8%B4%AD%E4%B9%B0%E7%A7%8D%E7%B1%BB">购买种类：</a></li>
+<li><a href="#%E6%9C%80%E5%90%8E%E6%88%91%E8%B4%AD%E4%B9%B0%E4%BA%86%E4%BB%A5%E4%B8%8B%E5%87%A0%E6%AC%BE">最后我购买了以下几款：</a></li>
+<li><a href="#%E7%BB%93%E8%AE%BA">结论</a></li>
+<li><a href="#%E6%94%B6%E5%88%B0%E5%90%8E%E4%BE%9D%E6%AC%A1%E5%B0%9D%E8%AF%95%E7%9A%84%E5%90%AC%E6%84%9F">收到后依次尝试的听感：</a></li>
+</ul>
+<!-- tocstop -->
+
+</div>
+
+
+<p><code>耳机：SennheiserHD380pro</code></p>
+<h2><span id="折腾的原因">折腾的原因：</span></h2><p>因为买了【<strong>长在雨点老师头上的耳机</strong>】却发现频段和印象中“这些东西应该发出的频段”好像不太一样（主要是低频缺），所以确认了卖家换过耳机罩（这是很正常的事情毕竟是停产的老耳机）。且当时通过“把耳机压得很紧可以获得熟悉的声音”得出了<code>“耳机单元的素质应该没问题”</code>的结论，遂决定试试不同的耳机罩看看影响，希望可以改善现在的问题。</p>
+<h2><span id="购买渠道">购买渠道：</span></h2><p>在PDD购买，原因是我【猜测】淘宝PDD什么的应该都是类似的代工厂出的，所以我随便挑了看上去便宜的一家。（具体是叫“<code>域深数码配件专营店</code>”，但基于前文我【猜测】的原因，我认为<em><strong>哪里便宜就去哪里买就行</strong></em>）</p>
+<h2><span id="购买种类">购买种类：</span></h2><p><code>商家的种类</code>有：</p>
+<ol>
+<li>绒布款</li>
+<li>纳米皮款（购买后的感觉是，是某种布料）【所以下文称之为布料款】</li>
+<li>热压蛋白皮款（很常见的人造革第三方耳罩材质的感觉啊！）</li>
+<li>拼接蛋白皮款</li>
+<li>热压皱皮款（我想应该是蛋白皮款的某种工艺吧，不太清楚）</li>
+<li>金丝绒款（总之应该是某种绒布）</li>
+<li>拼接冰感凝胶款（其实是一种布面贴耳朵，四周是人造革的款）</li>
+<li>热压小羊皮款（我想着肯定也是人造的）</li>
+<li>拼接小羊皮款</li>
+<li>拼接打孔小羊皮款</li>
+</ol>
+<p>具体的区别可以找对应的店铺看看图文就知道了。<br>根据一些大概是的简单的<code>物理学</code>，我排除了绒布类，我觉得它们应该会多少<strong>吸收一些低频</strong>。<br>因为<code>耳机的卖家</code>换的是“皱皮款”，并且基于我上文的代工厂的【猜测】，我认为这款我应该算是“已经测试过了”，就不购买了。</p>
+<h2><span id="最后我购买了以下几款">最后我购买了以下几款：</span></h2><blockquote>
+<p>👉🏻<br>热压蛋白皮，冰感，布料，热压小羊皮（但是。。）</p>
+</blockquote>
+<p><img src="/blog/earpads-for-headphone/IMG-20251105151233358.webp"></p>
+<p>在收到后，我发现商家似乎将热压小羊皮款发成了拼接小羊皮款。<br>但这带来了额外的结论所以很好嗯。</p>
+<h2><span id="结论">结论</span></h2><p>放在文章中间：</p>
+<blockquote>
+<p>推荐：冰感 ≈ 拼接小羊皮 &gt; 布料 &gt;&gt;&gt;&gt;&gt;&gt; 热压蛋白皮</p>
+</blockquote>
+<p>另外，这个结论中冰感和拼接小羊皮的区别我无法判断是否是<code>佩戴的体验</code>导致的，因为换这个“小羊皮”耳罩比别的要烦一些（卡口包着皮有点难扣），对比的时候会忘记另一个声音。</p>
+<blockquote>
+<p>总结：皮质的，厚的耳罩，低频大概会更好。而“拼接款”疑似往往比“热压款”更厚。</p>
+</blockquote>
+<h2><span id="收到后依次尝试的听感">收到后依次尝试的听感：</span></h2><blockquote>
+<p>低频量：拼接小羊皮 ≈ 冰感 &gt; e5xt（音箱作为主观对照）&gt; 布料 &gt; 热压蛋白皮<br>厚度：拼接小羊皮 ≈ 冰感 &gt; 布料 &gt; 热压蛋白皮</p>
+</blockquote>
+<p><img src="/blog/earpads-for-headphone/IMG-20251104234708581.webp"></p>
+<p>和直觉上很一致，耳罩的厚度和低频量有直观的联系。<br>另外，我认为低频量的本质原因还是和密封性有关的。原因是这些让我感觉到低频量足够的耳机戴上后都会有那种耳朵被吸进耳机里的感觉（飞机起飞的那种感觉吗）</p>
+<blockquote>
+<p>歌曲底鼓鼓皮感：拼接小羊皮 &gt; 冰感 ≈ e5xt &gt; 布料 &gt; 热压蛋白皮</p>
+</blockquote>
+<p>我觉得拼接小羊皮和冰感处于我的舒适范围内。相比之下，冰感的布面接触耳朵确实舒服很多。<br>对于喜欢低频少点的人来说我觉得布料款也许是可以接受的。<br>我主管认为热压蛋白皮耳罩会让<code>HD380pro</code>脱离“这些东西应该出的声音”。<br>结合皱皮款和我听过的耳机，我认为皱皮耳罩的听感已经接近<code>SONY MDR7506</code>，在我印象中这不是一个适合混音的声音。<br>蛋白皮款的声音也有贴近这种<code>“7506声”</code>的趋势，但要稍微好一些（也可能没有好一些只是佩戴感受导致的）。</p>
+<p>另外，商家对每个耳罩都附赠了一个可以隔在耳罩和单元中间的海绵片，据T老师说可能是用来防尘的。我裁剪为和单元一般的大小安装了。<br>又另，拼接小羊皮款安装真的有点难扣上我扣了蛮久。<br>又另，冰感款真的很舒服。<br>又另，拼接小羊皮（虽然应该是人造皮）质感确实和蛋白皮的质感不一样，不是文字游戏。</p>
+]]></content>
+      <tags>
+        <tag>音乐设备</tag>
+        <tag>知识</tag>
       </tags>
   </entry>
   <entry>
