@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://beiboogie.github.io/blog/markdown-cheatsheet/</loc>
+    
+    <lastmod>2025-11-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://beiboogie.github.io/blog/hexo-picture-auto/</loc>
+    
+    <lastmod>2025-11-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://beiboogie.github.io/about/index.html</loc>
     
     <lastmod>2025-11-03</lastmod>
@@ -157,29 +175,36 @@
 
   <url>
     <loc>https://beiboogie.github.io/</loc>
-    <lastmod>2025-11-05</lastmod>
+    <lastmod>2025-11-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://beiboogie.github.io/tags/%E7%9F%A5%E8%AF%86/</loc>
-    <lastmod>2025-11-05</lastmod>
+    <loc>https://beiboogie.github.io/tags/%E9%9F%B3%E4%B9%90%E8%AE%BE%E5%A4%87/</loc>
+    <lastmod>2025-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://beiboogie.github.io/tags/%E9%9F%B3%E4%B9%90%E8%AE%BE%E5%A4%87/</loc>
-    <lastmod>2025-11-05</lastmod>
+    <loc>https://beiboogie.github.io/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://beiboogie.github.io/tags/%E7%9F%A5%E8%AF%86/</loc>
+    <lastmod>2025-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://beiboogie.github.io/tags/B%E7%AB%99%E8%8A%82%E7%9B%AE%E6%96%87%E5%AD%97%E7%89%88/</loc>
-    <lastmod>2025-11-05</lastmod>
+    <lastmod>2025-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -188,7 +213,7 @@
   
   <url>
     <loc>https://beiboogie.github.io/categories/gallery/</loc>
-    <lastmod>2025-11-05</lastmod>
+    <lastmod>2025-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
