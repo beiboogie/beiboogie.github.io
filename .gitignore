@@ -9,3 +9,7 @@ _multiconfig.yml
 .idea
 .trash
 .obsidian
+.github
+deploy-hexo.bat
+start-hexo.bat
+package-lock.json
