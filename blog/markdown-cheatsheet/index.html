@@ -48,6 +48,8 @@
 
 
 
+    <script src='https://unpkg.com/valine@1.4.16/dist/Valine.min.js'></script>
+
   <meta name="generator" content="Hexo 8.1.1"></head>
   <body>
     <div class="mask-border">
@@ -144,35 +146,7 @@
     </div>
 </div>
     <div class="post-content">
-    <p>–目录–</p>
-<div class="toe">
-
-<!-- toc -->
-
-<ul>
-<li><a href="#body">Body</a></li>
-<li><a href="#heading">Heading</a></li>
-</ul>
-<ul>
-<li><a href="#h1">H1</a><ul>
-<li><a href="#h2">H2</a></li>
-<li><a href="#block-quote">Block Quote</a></li>
-<li><a href="#ordered-list">Ordered List</a></li>
-<li><a href="#unordered-list">Unordered List</a></li>
-<li><a href="#task-list">Task List</a></li>
-<li><a href="#horizontal-rule">Horizontal Rule</a></li>
-<li><a href="#link">Link</a></li>
-<li><a href="#code">Code</a></li>
-<li><a href="#image">Image</a></li>
-<li><a href="#table">Table</a></li>
-</ul>
-</li>
-</ul>
-<!-- tocstop -->
-
-</div>
-
-<h2><span id="body">Body</span></h2><p>我可以吞下玻璃而不伤身体。我可以吞下玻璃而不伤身体。<br>The quick brown fox jumps over the lazy dog.The quick brown fox jumps over the lazy dog.</p>
+    <h2><span id="body">Body</span></h2><p>我可以吞下玻璃而不伤身体。我可以吞下玻璃而不伤身体。<br>The quick brown fox jumps over the lazy dog.The quick brown fox jumps over the lazy dog.</p>
 <h2><span id="heading">Heading</span></h2><h1><span id="h1">H1</span></h1><h2><span id="h2">H2</span></h2><h3><span id="h3">H3</span></h3><h4><span id="h4">H4</span></h4><h5><span id="h5">H5</span></h5><h6><span id="h6">H6</span></h6><p><strong>Bold Text</strong></p>
 <p><em>Italicized text</em></p>
 <p><del>deleted</del></p>
@@ -209,22 +183,42 @@
 <li>list item</li>
 </ul>
 <h2><span id="task-list">Task List</span></h2><ul>
-<li><input checked disabled type="checkbox">  list item</li>
-<li><input checked disabled type="checkbox">  list item</li>
-<li><input disabled type="checkbox">  list item<ul>
-<li><input disabled type="checkbox">  list item</li>
+<li><input checked disabled type="checkbox">   list item</li>
+<li><input checked disabled type="checkbox">   list item</li>
+<li><input disabled type="checkbox">   list item<ul>
+<li><input disabled type="checkbox">   list item</li>
 </ul>
 </li>
-<li><input disabled type="checkbox">  list item</li>
+<li><input disabled type="checkbox">   list item</li>
 </ul>
 <h2><span id="horizontal-rule">Horizontal Rule</span></h2><hr>
 <h2><span id="link">Link</span></h2><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1GJ411x7h7/">This is a link</a></p>
-<h2><span id="code">Code</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Code</span><br></pre></td></tr></table></figure>
-
-<p>This is a <code>code</code> inside a paragraph.</p>
-<p>Lorem ipsum dolor sit amet, <code>consectetur</code> adipiscing elit. Ut pulvinar faucibus <code>metus</code>, a blandit sapien ornare non. Pellentesque viverra, dui nec tincidunt <code>aliquam</code>, elit turpis luctus dui, eu accumsan felis risus feugiat mauris. Maecenas non venenatis lectus. Donec nec <code>turpis</code> id mi interdum tempor aliquam fermentum enim. Pellentesque placerat risus enim, vitae viverra enim sodales eu. Donec interdum bibendum ligula. Etiam condimentum maximus consequat. Morbi mattis convallis tempus.</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#Fenced Code Block</span><br><span class="line">&#123;</span><br><span class="line">  &quot;firstName&quot;: &quot;John&quot;,</span><br><span class="line">  &quot;lastName&quot;: &quot;Smith&quot;,</span><br><span class="line">  &quot;age&quot;: 25</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<h2><span id="code">Code</span></h2><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>Code</td>
+</tr>
+</tbody></table>
+<p>This is a <code>code</code> inside a paragraph.</p>
+<p>Lorem ipsum dolor sit amet, <code>consectetur</code> adipiscing elit. Ut pulvinar faucibus <code>metus</code>, a blandit sapien ornare non. Pellentesque viverra, dui nec tincidunt <code>aliquam</code>, elit turpis luctus dui, eu accumsan felis risus feugiat mauris. Maecenas non venenatis lectus. Donec nec <code>turpis</code> id mi interdum tempor aliquam fermentum enim. Pellentesque placerat risus enim, vitae viverra enim sodales eu. Donec interdum bibendum ligula. Etiam condimentum maximus consequat. Morbi mattis convallis tempus.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1  <br>2  <br>3  <br>4  <br>5  <br>6</td>
+<td>#Fenced Code Block  <br>{  <br>  “firstName”: “John”,  <br>  “lastName”: “Smith”,  <br>  “age”: 25  <br>}</td>
+</tr>
+</tbody></table>
 <h2><span id="image">Image</span></h2><p><img src="https://clio-space-1300725494.cos.ap-guangzhou.myqcloud.com/frame/test_img/cover1.jpeg" alt="alt text|700x680"></p>
 <h2><span id="table">Table</span></h2><table>
 <thead>
@@ -283,6 +277,11 @@
     <nav class="post-nav">
         <div class="prev-item">
            
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/blog/math-emo-gear/">上一篇</a>
+                </div>
+            
         </div>
         <div class="next-item">
             
@@ -298,6 +297,24 @@
     
       <div class="post-comment">
 
+    
+        <div id="vcomments"></div>
+        <script>
+            var META = ['nick', 'mail', 'link'];
+            var meta = 'nick,mail';
+            meta = meta.split(',').filter(item => {
+                return META.includes(item);
+            });
+            new Valine({
+                el: '#vcomments',
+                appId: 'eMxCUu5kuAJnpIIliLasRKML-gzGzoHsz',
+                appKey: 'upduy6n9SjaBm1w5Zh0xGSq7',
+                lang: 'zh-CN',
+                placeholder: '留下你的评论吧~',
+                avatar: 'mp',
+                meta: meta
+            })
+        </script>    
      
 
      
@@ -319,7 +336,7 @@
                 <br>
             
             
-                © BeiBoogie | 
+                © 2025 BeiBoogie |
             
             
                 Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & <a target="_blank" rel="noopener" href="https://github.com/zoeingwingkei/frame/">Frame</a>

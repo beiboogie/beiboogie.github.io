@@ -48,6 +48,8 @@
 
 
 
+    <script src='https://unpkg.com/valine@1.4.16/dist/Valine.min.js'></script>
+
   <meta name="generator" content="Hexo 8.1.1"></head>
   <body>
     <div class="mask-border">
@@ -150,8 +152,7 @@
     </div>
 </div>
     <div class="post-content">
-    <p>–目录–</p>
-<div class="toe">
+    <div class="toe">
 
 <!-- toc -->
 
@@ -185,7 +186,7 @@
 <li><p>枪头&#x2F;焊头</p>
 <ol>
 <li><p>通常默认的焊头（针形）适用于焊接PCB上的小物件（电容电阻），并不适合用来焊接乐器线</p>
-<p> <img src="/blog/diy-audio-cable/IMG-1762330954343.webp"></p>
+<p> <img src="/blog/diy-audio-cable/IMG-1762330954343.webp" alt="|629x277"></p>
 </li>
 <li><p>推荐C型头 C3&#x2F;C2焊头（图圈为C3）</p>
 <p> <img src="/blog/diy-audio-cable/IMG-1762330958918.webp"></p>
@@ -198,7 +199,7 @@
 </li>
 <li><p>焊锡丝的质量非常重要，不良的焊锡丝可能导致脱焊，寿命短等系列问题。</p>
 </li>
-<li><p>推荐：<code>QLG强力</code> 焊锡丝，在家里做手工推荐选择无铅款，对身体和环境好。但含铅款确实会更好焊一些，无铅的对于新手焊点容易开焊，焊点不光亮</p>
+<li><p>推荐：<code>QLG强力</code> 焊锡丝，在家里做手工推荐选择无铅款，对身体和环境好。但含铅款确实会更好焊一些，无铅的对于新手焊点容易开焊，焊点不光亮</p>
 <p> <img src="/blog/diy-audio-cable/IMG-1762330965123.webp"></p>
 </li>
 </ol>
@@ -208,7 +209,7 @@
 <li>台钳要适配自己桌子的尺寸，仔细选择</li>
 </ol>
 </li>
-<li><p>线材和接头<br>想必DIY音频线都是为了使用极好的线材和接头，<br>这一部分的推荐：<br>佳耐美品牌线选购指南：<br>吉他：<code>GS6</code><br>箱体：<code>2s7f+</code>，请不要做很长（两米以上）的箱体线<br>平衡音频线：<code>2t2s</code><br>接头：<code>纽崔克（好） 甬声（稍次一些）</code></p>
+<li><p>线材和接头<br> 想必DIY音频线都是为了使用极好的线材和接头，<br> 这一部分的推荐：<br> 佳耐美品牌线选购指南：<br> 吉他：<code>GS6</code><br> 箱体：<code>2s7f+</code>，请不要做很长（两米以上）的箱体线<br> 平衡音频线：<code>2t2s</code><br> 接头：<code>纽崔克（好） 甬声（稍次一些）</code></p>
 </li>
 </ol>
 <h1><span id="实操部分">实操部分</span></h1><p><code>7:15</code>开始</p>
@@ -244,6 +245,24 @@
     
       <div class="post-comment">
 
+    
+        <div id="vcomments"></div>
+        <script>
+            var META = ['nick', 'mail', 'link'];
+            var meta = 'nick,mail';
+            meta = meta.split(',').filter(item => {
+                return META.includes(item);
+            });
+            new Valine({
+                el: '#vcomments',
+                appId: 'eMxCUu5kuAJnpIIliLasRKML-gzGzoHsz',
+                appKey: 'upduy6n9SjaBm1w5Zh0xGSq7',
+                lang: 'zh-CN',
+                placeholder: '留下你的评论吧~',
+                avatar: 'mp',
+                meta: meta
+            })
+        </script>    
      
 
      
@@ -265,7 +284,7 @@
                 <br>
             
             
-                © BeiBoogie | 
+                © 2025 BeiBoogie |
             
             
                 Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & <a target="_blank" rel="noopener" href="https://github.com/zoeingwingkei/frame/">Frame</a>

@@ -48,6 +48,8 @@
 
 
 
+    <script src='https://unpkg.com/valine@1.4.16/dist/Valine.min.js'></script>
+
   <meta name="generator" content="Hexo 8.1.1"></head>
   <body>
     <div class="mask-border">
@@ -119,14 +121,14 @@
             
                 
                     <span class="post-tag">
-                        <a href="/tags/%E7%9F%A5%E8%AF%86/">
-                            知识
+                        <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
+                            博客搭建
                         </a>
                     </span>    
                 
                     <span class="post-tag">
-                        <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
-                            博客搭建
+                        <a href="/tags/%E7%9F%A5%E8%AF%86/">
+                            知识
                         </a>
                     </span>    
                            
@@ -174,11 +176,11 @@
 </ul>
 <p>基本上也就是写博客需要的所有图片操作步骤了。非常方便</p>
 <h2><span id="使用">使用</span></h2><p>因为本质上就是很简单方便，所以快速讲一下如何使用。<br>以适配我的Hexo工作流为例，其他使用需求的步骤应该也是类似的。</p>
-<h3><span id="在obsidian第三方插件库安装插件">在Obsidian第三方插件库安装插件</span></h3><p>插件上架了插件库，直接搜索即可，安装后启用。<br><img src="/blog/hexo-picture-auto/IMG-1762445753397.webp"></p>
+<h3><span id="在obsidian第三方插件库安装插件">在Obsidian第三方插件库安装插件</span></h3><p>插件上架了插件库，直接搜索即可，安装后启用。<br><img src="/blog/hexo-picture-auto/IMG-1762445753397.webp" alt="|700x443"></p>
 <h3><span id="插件设置">插件设置</span></h3><p>打开插件后，能看到这样的设置页面：</p>
 <p><img src="/blog/hexo-picture-auto/IMG-1762445430752.webp"></p>
 <p>界面很直观，基本上只用修改<code>Folder</code>，<code>Filename</code>，<code>Conversion</code>，<code>Link Format</code>这几个tab下的设置就可以了。我直接把我的设置贴在这里：</p>
-<h4><span id="folder">Folder</span></h4><p><img src="/blog/hexo-picture-auto/IMG-1762445593771.webp"></p>
+<h4><span id="folder">Folder</span></h4><p><img src="/blog/hexo-picture-auto/IMG-1762445593771.webp" alt="|700x589"></p>
 <h4><span id="filename">Filename</span></h4><p><img src="/blog/hexo-picture-auto/IMG-1762445654537.webp"></p>
 <h4><span id="conversion">Conversion</span></h4><p><img src="/blog/hexo-picture-auto/IMG-1762445678915.webp"></p>
 <h4><span id="link-format">Link Format</span></h4><p><img src="/blog/hexo-picture-auto/IMG-1762445699603.webp"></p>
@@ -186,13 +188,13 @@
 <p>这个插件非常强大，还有很多有用的功能，本文就不多介绍了。<br>以下详细的介绍来自<a target="_blank" rel="noopener" href="https://github.com/xRyul/obsidian-image-converter">此插件github页面</a></p>
 <h2><span id="功能">功能</span></h2><p>支持的图片格式：WEBP、JPG、PNG、HEIC、TIF</p>
 <ul>
-<li><p>🖼️ <strong>转换</strong>：自动将拖放&#x2F;粘贴的图片转换为 WEBP、JPG 或 PNG</p>
+<li><p>🖼️ <strong>转换</strong>：自动将拖放&#x2F;粘贴的图片转换为 WEBP、JPG 或 PNG</p>
 </li>
-<li><p>🗜️ <strong>压缩</strong>：通过指定 1-100 之间的质量值来减小文件大小</p>
+<li><p>🗜️ <strong>压缩</strong>：通过指定 1-100 之间的质量值来减小文件大小</p>
 </li>
-<li><p>📏 <strong>调整</strong>图片大小（有损和无损）</p>
+<li><p>📏 <strong>调整</strong>图片大小（有损和无损）</p>
 <ul>
-<li>自动读取图片尺寸并将其应用到图片链接，例如：将图片宽度应用到 <code>|width</code> 或指定任何自定义尺寸。</li>
+<li>自动读取图片尺寸并将其应用到图片链接，例如：将图片宽度应用到 <code>|width</code> 或指定任何自定义尺寸。</li>
 <li>通过拖动图片边缘或使用滚轮（例如，<strong>CMD+滚轮</strong>）来调整大小</li>
 <li>调整<strong>原始</strong>图片大小（宽度、高度、最长边、最短边、适应、填充）</li>
 </ul>
@@ -201,25 +203,25 @@
 </li>
 <li><p><strong>图片标注</strong>和<strong>标记工具</strong>。直接在 Obsidian 中在图片顶部绘制、书写、涂鸦、注释、标记。</p>
 </li>
-<li><p>✂️ <strong>裁剪、旋转和翻转图片</strong></p>
+<li><p>✂️ <strong>裁剪、旋转和翻转图片</strong></p>
 </li>
-<li><p>📁 <strong>自定义文件管理和重命名</strong>：</p>
+<li><p>📁 <strong>自定义文件管理和重命名</strong>：</p>
 <ul>
 <li><strong>重命名</strong>：使用变量（例如，<code>{noteName}</code>、<code>{fileName}</code>）自动重命名图片<a href="docs/Variables%20Reference%20Guide.md">支持的变量列表</a></li>
 <li><strong>输出</strong>：使用变量将图片组织到自定义输出文件夹中。<a href="docs/Variables%20Reference%20Guide.md">支持的变量列表</a></li>
 </ul>
 </li>
-<li><p>🌍 <strong>纯 JavaScript 实现</strong>，完全<strong>离线</strong>工作。无需外部 API 或二进制依赖（例如 ImageMagick、Cloudinary、FFmpeg、sharp 等）——保持轻量、便携和安全。</p>
+<li><p>🌍 <strong>纯 JavaScript 实现</strong>，完全<strong>离线</strong>工作。无需外部 API 或二进制依赖（例如 ImageMagick、Cloudinary、FFmpeg、sharp 等）——保持轻量、便携和安全。</p>
 </li>
 </ul>
 <h2><span id="其他">其他</span></h2><ul>
-<li>🔄 <strong>批量处理</strong>：转换、压缩笔记或整个仓库中的所有图片。</li>
-<li>🔗 <strong>与其他 Markdown 编辑器的兼容性</strong>：能够为图片使用 <strong>Markdown 链接</strong>，为所有其他链接使用 <strong>Wiki 链接</strong>。</li>
+<li>🔄 <strong>批量处理</strong>：转换、压缩笔记或整个仓库中的所有图片。</li>
+<li>🔗 <strong>与其他 Markdown 编辑器的兼容性</strong>：能够为图片使用 <strong>Markdown 链接</strong>，为所有其他链接使用 <strong>Wiki 链接</strong>。</li>
 <li>🖱️<strong>自定义右键上下文菜单：</strong><ul>
 <li>复制到剪贴板</li>
 <li>复制为 Base64 编码的图片</li>
 <li><strong>调整</strong>刚刚点击的原始图片大小</li>
-<li><strong>从仓库中删除图片</strong> - 从仓库中移除图片及其链接</li>
+<li><strong>从仓库中删除图片</strong> - 从仓库中移除图片及其链接</li>
 </ul>
 </li>
 </ul>
@@ -254,6 +256,24 @@
     
       <div class="post-comment">
 
+    
+        <div id="vcomments"></div>
+        <script>
+            var META = ['nick', 'mail', 'link'];
+            var meta = 'nick,mail';
+            meta = meta.split(',').filter(item => {
+                return META.includes(item);
+            });
+            new Valine({
+                el: '#vcomments',
+                appId: 'eMxCUu5kuAJnpIIliLasRKML-gzGzoHsz',
+                appKey: 'upduy6n9SjaBm1w5Zh0xGSq7',
+                lang: 'zh-CN',
+                placeholder: '留下你的评论吧~',
+                avatar: 'mp',
+                meta: meta
+            })
+        </script>    
      
 
      
@@ -275,7 +295,7 @@
                 <br>
             
             
-                © BeiBoogie | 
+                © 2025 BeiBoogie |
             
             
                 Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & <a target="_blank" rel="noopener" href="https://github.com/zoeingwingkei/frame/">Frame</a>

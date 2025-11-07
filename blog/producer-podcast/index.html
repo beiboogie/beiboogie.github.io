@@ -48,6 +48,8 @@
 
 
 
+    <script src='https://unpkg.com/valine@1.4.16/dist/Valine.min.js'></script>
+
   <meta name="generator" content="Hexo 8.1.1"></head>
   <body>
     <div class="mask-border">
@@ -165,11 +167,11 @@
 <li>The Recording Lounge Podcast 严肃类</li>
 <li>The Mastering Show with ian shepherd 母带</li>
 <li>The Six Figure Home Studio 实际业务，mindset，市场定位，不该买什么设备？</li>
-<li>Chasing Tone Podcast     Wampler办的tone节目</li>
+<li>Chasing Tone Podcast Wampler办的tone节目</li>
 <li>The MFCEO Project 个人发展，创业，简单明快，打脸事实</li>
 <li>Afford Anything 个人财政，理财</li>
-<li>Akimbo SETH GODIN   关于online marketing</li>
-<li>No guitar is save  NI主任办的节目，采访吉他手</li>
+<li>Akimbo SETH GODIN 关于online marketing</li>
+<li>No guitar is save NI主任办的节目，采访吉他手</li>
 <li>Marrige, Kids &amp; Money 当爹（家庭）</li>
 <li>The Dad Edge 当爹（个人）</li>
 <li>RIFF RAFF 复古，根源风格制作采访</li>
@@ -207,6 +209,24 @@
     
       <div class="post-comment">
 
+    
+        <div id="vcomments"></div>
+        <script>
+            var META = ['nick', 'mail', 'link'];
+            var meta = 'nick,mail';
+            meta = meta.split(',').filter(item => {
+                return META.includes(item);
+            });
+            new Valine({
+                el: '#vcomments',
+                appId: 'eMxCUu5kuAJnpIIliLasRKML-gzGzoHsz',
+                appKey: 'upduy6n9SjaBm1w5Zh0xGSq7',
+                lang: 'zh-CN',
+                placeholder: '留下你的评论吧~',
+                avatar: 'mp',
+                meta: meta
+            })
+        </script>    
      
 
      
@@ -228,7 +248,7 @@
                 <br>
             
             
-                © BeiBoogie | 
+                © 2025 BeiBoogie |
             
             
                 Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & <a target="_blank" rel="noopener" href="https://github.com/zoeingwingkei/frame/">Frame</a>

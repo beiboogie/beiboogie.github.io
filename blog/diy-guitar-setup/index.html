@@ -48,6 +48,8 @@
 
 
 
+    <script src='https://unpkg.com/valine@1.4.16/dist/Valine.min.js'></script>
+
   <meta name="generator" content="Hexo 8.1.1"></head>
   <body>
     <div class="mask-border">
@@ -117,6 +119,12 @@
     <div class="post-info">
         <div class="tag-list">
             
+                
+                    <span class="post-tag">
+                        <a href="/tags/%E9%9F%B3%E4%B9%90%E8%AE%BE%E5%A4%87/">
+                            音乐设备
+                        </a>
+                    </span>    
                 
                     <span class="post-tag">
                         <a href="/tags/%E7%9F%A5%E8%AF%86/">
@@ -191,7 +199,7 @@
 <h3><span id="调整方法">调整方法：</span></h3><ol>
 <li>测量：卡尺测12品弦距</li>
 <li>保留原Saddle弧度的情况下统一升高或降低相同高度</li>
-<li>参考的高度：低音弦1.6mm,  高音弦1.2mm</li>
+<li>参考的高度：低音弦1.6mm, 高音弦1.2mm</li>
 </ol>
 <h2><span id="第四部分八度">第四部分：八度</span></h2><p>Tips：调音时琴颈关TONE更准，选择精准的调音器</p>
 <h3><span id="调整意义">调整意义：</span></h3><ul>
@@ -240,6 +248,24 @@
     
       <div class="post-comment">
 
+    
+        <div id="vcomments"></div>
+        <script>
+            var META = ['nick', 'mail', 'link'];
+            var meta = 'nick,mail';
+            meta = meta.split(',').filter(item => {
+                return META.includes(item);
+            });
+            new Valine({
+                el: '#vcomments',
+                appId: 'eMxCUu5kuAJnpIIliLasRKML-gzGzoHsz',
+                appKey: 'upduy6n9SjaBm1w5Zh0xGSq7',
+                lang: 'zh-CN',
+                placeholder: '留下你的评论吧~',
+                avatar: 'mp',
+                meta: meta
+            })
+        </script>    
      
 
      
@@ -261,7 +287,7 @@
                 <br>
             
             
-                © BeiBoogie | 
+                © 2025 BeiBoogie |
             
             
                 Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & <a target="_blank" rel="noopener" href="https://github.com/zoeingwingkei/frame/">Frame</a>

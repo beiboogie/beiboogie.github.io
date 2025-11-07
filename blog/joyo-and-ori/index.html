@@ -48,6 +48,8 @@
 
 
 
+    <script src='https://unpkg.com/valine@1.4.16/dist/Valine.min.js'></script>
+
   <meta name="generator" content="Hexo 8.1.1"></head>
   <body>
     <div class="mask-border">
@@ -144,18 +146,7 @@
     </div>
 </div>
     <div class="post-content">
-    <p>–目录–</p>
-<div class="toe">
-
-<!-- toc -->
-
-
-
-<!-- tocstop -->
-
-</div>
-
-<p>数据来源于<a target="_blank" rel="noopener" href="https://guitarpickzone.com/joyo-clone-list/">https://guitarpickzone.com/joyo-clone-list/</a></p>
+    <p>数据来源于 <a target="_blank" rel="noopener" href="https://guitarpickzone.com/joyo-clone-list/">https://guitarpickzone.com/joyo-clone-list/</a></p>
 <p><code>点击可以跳转到源网页测评</code></p>
 <table>
 <thead>
@@ -334,7 +325,7 @@
            
                 <div class="icon arrow-left"></div>
                 <div class="post-link">
-                    <a href="/blog/behringer-clones-and-the-ori/">上一篇</a>
+                    <a href="/blog/mooe-and-ori/">上一篇</a>
                 </div>
             
         </div>
@@ -342,7 +333,7 @@
             
                 <div class="icon arrow-right"></div>
                 <div class="post-link">
-                  <a href="/blog/mooe-and-ori/">下一篇</a>
+                  <a href="/blog/rat-pedal/">下一篇</a>
                 </div>  
             
         </div>
@@ -352,6 +343,24 @@
     
       <div class="post-comment">
 
+    
+        <div id="vcomments"></div>
+        <script>
+            var META = ['nick', 'mail', 'link'];
+            var meta = 'nick,mail';
+            meta = meta.split(',').filter(item => {
+                return META.includes(item);
+            });
+            new Valine({
+                el: '#vcomments',
+                appId: 'eMxCUu5kuAJnpIIliLasRKML-gzGzoHsz',
+                appKey: 'upduy6n9SjaBm1w5Zh0xGSq7',
+                lang: 'zh-CN',
+                placeholder: '留下你的评论吧~',
+                avatar: 'mp',
+                meta: meta
+            })
+        </script>    
      
 
      
@@ -373,7 +382,7 @@
                 <br>
             
             
-                © BeiBoogie | 
+                © 2025 BeiBoogie |
             
             
                 Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & <a target="_blank" rel="noopener" href="https://github.com/zoeingwingkei/frame/">Frame</a>

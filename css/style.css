@@ -454,7 +454,6 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-left: 1.5rem;
   min-width: 8rem;
   text-align: right;
-  font-family: 'WenKaiMono', ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.25rem;
@@ -500,7 +499,6 @@ input[type="search"]::-webkit-search-results-decoration {
   color: #373633;
 }
 .post-gallery-item .post-info .post-date {
-  font-family: 'WenKaiMono', ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.25rem;
@@ -912,7 +910,6 @@ dl dd {
   color: #373633;
 }
 .post-head .post-info .post-date {
-  font-family: 'WenKaiMono', ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.25rem;
