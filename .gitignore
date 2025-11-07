@@ -13,3 +13,4 @@ _multiconfig.yml
 deploy-hexo.bat
 start-hexo.bat
 package-lock.json
+template
