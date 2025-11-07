@@ -11,134 +11,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Markdown Cheatsheet</title>
-    <url>/blog/markdown-cheatsheet/</url>
-    <content><![CDATA[<h2><span id="body">Body</span></h2><p>我可以吞下玻璃而不伤身体。我可以吞下玻璃而不伤身体。<br>The quick brown fox jumps over the lazy dog.The quick brown fox jumps over the lazy dog.</p>
-<h2><span id="heading">Heading</span></h2><h1><span id="h1">H1</span></h1><h2><span id="h2">H2</span></h2><h3><span id="h3">H3</span></h3><h4><span id="h4">H4</span></h4><h5><span id="h5">H5</span></h5><h6><span id="h6">H6</span></h6><p><strong>Bold Text</strong></p>
-<p><em>Italicized text</em></p>
-<p><del>deleted</del></p>
-<h2><span id="block-quote">Block Quote</span></h2><blockquote>
-<p>This is a short line.</p>
-</blockquote>
-<blockquote>
-<p>This is a very long line that will still be quoted properly when it wraps. Oh boy let’s keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can put Markdown into a blockquote.</p>
-</blockquote>
-<blockquote>
-<p>This is a nested block quote.</p>
-<blockquote>
-<p>This is a nested block quote.</p>
-<blockquote>
-<p>This is a nested block quote.</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<h2><span id="ordered-list">Ordered List</span></h2><ol>
-<li>list item<ol>
-<li>list item</li>
-<li>list item</li>
-</ol>
-</li>
-<li>list item</li>
-<li>list item</li>
-</ol>
-<h2><span id="unordered-list">Unordered List</span></h2><ul>
-<li>list item<ul>
-<li>list item</li>
-</ul>
-</li>
-<li>list item</li>
-<li>list item</li>
-</ul>
-<h2><span id="task-list">Task List</span></h2><ul>
-<li><input checked disabled type="checkbox">   list item</li>
-<li><input checked disabled type="checkbox">   list item</li>
-<li><input disabled type="checkbox">   list item<ul>
-<li><input disabled type="checkbox">   list item</li>
-</ul>
-</li>
-<li><input disabled type="checkbox">   list item</li>
-</ul>
-<h2><span id="horizontal-rule">Horizontal Rule</span></h2><hr>
-<h2><span id="link">Link</span></h2><p><a href="https://www.bilibili.com/video/BV1GJ411x7h7/">This is a link</a></p>
-<h2><span id="code">Code</span></h2><table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1</td>
-<td>Code</td>
-</tr>
-</tbody></table>
-<p>This is a <code>code</code> inside a paragraph.</p>
-<p>Lorem ipsum dolor sit amet, <code>consectetur</code> adipiscing elit. Ut pulvinar faucibus <code>metus</code>, a blandit sapien ornare non. Pellentesque viverra, dui nec tincidunt <code>aliquam</code>, elit turpis luctus dui, eu accumsan felis risus feugiat mauris. Maecenas non venenatis lectus. Donec nec <code>turpis</code> id mi interdum tempor aliquam fermentum enim. Pellentesque placerat risus enim, vitae viverra enim sodales eu. Donec interdum bibendum ligula. Etiam condimentum maximus consequat. Morbi mattis convallis tempus.</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1  <br>2  <br>3  <br>4  <br>5  <br>6</td>
-<td>#Fenced Code Block  <br>{  <br>  “firstName”: “John”,  <br>  “lastName”: “Smith”,  <br>  “age”: 25  <br>}</td>
-</tr>
-</tbody></table>
-<h2><span id="image">Image</span></h2><p><img src="https://clio-space-1300725494.cos.ap-guangzhou.myqcloud.com/frame/test_img/cover1.jpeg" alt="alt text|700x680"></p>
-<h2><span id="table">Table</span></h2><table>
-<thead>
-<tr>
-<th align="left">Header</th>
-<th align="left">Mime type</th>
-<th align="left">Extensions</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>89 50 4E 47 0D 0A 1A 0A</code></td>
-<td align="left">image&#x2F;png</td>
-<td align="left">png</td>
-<td align="left">PNG image</td>
-</tr>
-<tr>
-<td align="left"><code>47 49 46 38 39 61</code></td>
-<td align="left">image&#x2F;gif</td>
-<td align="left">gif</td>
-<td align="left">GIF image</td>
-</tr>
-<tr>
-<td align="left"><code>FF D8 FF</code></td>
-<td align="left">image&#x2F;jpeg</td>
-<td align="left">jpg jpeg</td>
-<td align="left">JPEG image</td>
-</tr>
-<tr>
-<td align="left"><code>4D 4D 00 2B</code></td>
-<td align="left">image&#x2F;tiff</td>
-<td align="left">tif tiff</td>
-<td align="left">TIFF image</td>
-</tr>
-<tr>
-<td align="left"><code>42 4D</code></td>
-<td align="left">image&#x2F;bmp</td>
-<td align="left">bmp</td>
-<td align="left">Bitmap image</td>
-</tr>
-<tr>
-<td align="left"><code>00 00 01 00</code></td>
-<td align="left">image&#x2F;x-icon</td>
-<td align="left">ico</td>
-<td align="left">Icon image</td>
-</tr>
-</tbody></table>
-]]></content>
-      <tags>
-        <tag>博客搭建</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理</title>
     <url>/blog/hexo-obsidian-blog/</url>
     <content><![CDATA[<p>–目录–</p>
@@ -222,182 +94,114 @@
 </blockquote>
 ]]></content>
       <tags>
-        <tag>博客搭建</tag>
         <tag>知识</tag>
+        <tag>博客搭建</tag>
       </tags>
   </entry>
   <entry>
-    <title>Mooer产品与其对应原型</title>
-    <url>/blog/mooe-and-ori/</url>
-    <content><![CDATA[<p>数据来源于<a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/">Mooer Pedals Clone List and Review | Guitar Pick Zone</a></p>
-<p><code>点击可以跳转到源网页测评</code></p>
-<table>
+    <title>Markdown Cheatsheet</title>
+    <url>/blog/markdown-cheatsheet/</url>
+    <content><![CDATA[<h2><span id="body">Body</span></h2><p>我可以吞下玻璃而不伤身体。我可以吞下玻璃而不伤身体。<br>The quick brown fox jumps over the lazy dog.The quick brown fox jumps over the lazy dog.</p>
+<h2><span id="heading">Heading</span></h2><h1><span id="h1">H1</span></h1><h2><span id="h2">H2</span></h2><h3><span id="h3">H3</span></h3><h4><span id="h4">H4</span></h4><h5><span id="h5">H5</span></h5><h6><span id="h6">H6</span></h6><p><strong>Bold Text</strong></p>
+<p><em>Italicized text</em></p>
+<p><del>deleted</del></p>
+<h2><span id="block-quote">Block Quote</span></h2><blockquote>
+<p>This is a short line.</p>
+</blockquote>
+<blockquote>
+<p>This is a very long line that will still be quoted properly when it wraps. Oh boy let’s keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can put Markdown into a blockquote.</p>
+</blockquote>
+<blockquote>
+<p>This is a nested block quote.</p>
+<blockquote>
+<p>This is a nested block quote.</p>
+<blockquote>
+<p>This is a nested block quote.</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2><span id="ordered-list">Ordered List</span></h2><ol>
+<li>list item<ol>
+<li>list item</li>
+<li>list item</li>
+</ol>
+</li>
+<li>list item</li>
+<li>list item</li>
+</ol>
+<h2><span id="unordered-list">Unordered List</span></h2><ul>
+<li>list item<ul>
+<li>list item</li>
+</ul>
+</li>
+<li>list item</li>
+<li>list item</li>
+</ul>
+<h2><span id="task-list">Task List</span></h2><ul>
+<li><input checked disabled type="checkbox">   list item</li>
+<li><input checked disabled type="checkbox">   list item</li>
+<li><input disabled type="checkbox">   list item<ul>
+<li><input disabled type="checkbox">   list item</li>
+</ul>
+</li>
+<li><input disabled type="checkbox">   list item</li>
+</ul>
+<h2><span id="horizontal-rule">Horizontal Rule</span></h2><hr>
+<h2><span id="link">Link</span></h2><p><a href="https://www.bilibili.com/video/BV1GJ411x7h7/">This is a link</a></p>
+<h2><span id="code">Code</span></h2><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="string">Code</span> <span class="string">Block</span>  </span><br><span class="line">&#123;  </span><br><span class="line">  <span class="attr">&quot;firstName&quot;:</span> <span class="string">&quot;John&quot;</span>,  </span><br><span class="line">  <span class="attr">&quot;lastName&quot;:</span> <span class="string">&quot;Smith&quot;</span>,  </span><br><span class="line">  <span class="attr">&quot;age&quot;:</span> <span class="number">25</span>  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>This is a <code>code</code> inside a paragraph.</p>
+<p>Lorem ipsum dolor sit amet, <code>consectetur</code> adipiscing elit. Ut pulvinar faucibus <code>metus</code>, a blandit sapien ornare non. Pellentesque viverra, dui nec tincidunt <code>aliquam</code>, elit turpis luctus dui, eu accumsan felis risus feugiat mauris. Maecenas non venenatis lectus. Donec nec <code>turpis</code> id mi interdum tempor aliquam fermentum enim. Pellentesque placerat risus enim, vitae viverra enim sodales eu. Donec interdum bibendum ligula. Etiam condimentum maximus consequat. Morbi mattis convallis tempus.</p>
+<h2><span id="image">Image</span></h2><p><img src="https://clio-space-1300725494.cos.ap-guangzhou.myqcloud.com/frame/test_img/cover1.jpeg" alt="alt text|700x680"></p>
+<h2><span id="table">Table</span></h2><table>
 <thead>
 <tr>
-<th><strong>Mooer Clone Pedal</strong></th>
-<th><strong>Original Pedal</strong></th>
+<th align="left">Header</th>
+<th align="left">Mime type</th>
+<th align="left">Extensions</th>
+<th align="left">Description</th>
 </tr>
 </thead>
 <tbody><tr>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#acoustikar1">Mooer Acoustikar</a></td>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#acoustikar1">Boss AC-2 &#x2F; AC-3</a></td>
+<td align="left"><code>89 50 4E 47 0D 0A 1A 0A</code></td>
+<td align="left">image&#x2F;png</td>
+<td align="left">png</td>
+<td align="left">PNG image</td>
 </tr>
 <tr>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#anaecho1">Mooer Ana Echo</a></td>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#anaecho1">Boss DM-2</a></td>
+<td align="left"><code>47 49 46 38 39 61</code></td>
+<td align="left">image&#x2F;gif</td>
+<td align="left">gif</td>
+<td align="left">GIF image</td>
 </tr>
 <tr>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#blacksecret1">Mooer Black Secret Distortion</a></td>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#blacksecret1">ProCo Rat</a></td>
+<td align="left"><code>FF D8 FF</code></td>
+<td align="left">image&#x2F;jpeg</td>
+<td align="left">jpg jpeg</td>
+<td align="left">JPEG image</td>
 </tr>
 <tr>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#blade1">Mooer Blade Metal Distortion</a></td>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#blade1">EHX Metal Muff</a></td>
+<td align="left"><code>4D 4D 00 2B</code></td>
+<td align="left">image&#x2F;tiff</td>
+<td align="left">tif tiff</td>
+<td align="left">TIFF image</td>
 </tr>
 <tr>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#bluecomp1">Mooer Blue Comp</a></td>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#bluecomp1">Boss CS-1 &#x2F; CS-2</a></td>
+<td align="left"><code>42 4D</code></td>
+<td align="left">image&#x2F;bmp</td>
+<td align="left">bmp</td>
+<td align="left">Bitmap image</td>
 </tr>
 <tr>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#bluefaze1">Mooer Blue Faze Fuzz</a></td>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#bluefaze1">Dunlop Silicon Fuzz Face</a></td>
-</tr>
-<tr>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#bluescrab1">Mooer Blues Crab</a></td>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#bluescrab1">Marshall Blues Breaker</a></td>
-</tr>
-<tr>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#bluesmood1">Mooer Blues Mood</a></td>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#bluesmood1">Boss BD-2 Keeley Mod</a></td>
-</tr>
-<tr>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#cruncher1">Mooer Cruncher Distortion</a></td>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#cruncher1">MI Audio Crunch Box</a></td>
-</tr>
-<tr>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#echolizer">Mooer Echolizer</a></td>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#echolizer">Maxon AD999</a></td>
-</tr>
-<tr>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#eleclady1">Mooer Eleclady Flanger</a></td>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#eleclady1">EHX Electric Mistress</a></td>
-</tr>
-<tr>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#ensembleking1">Mooer Ensemble King</a></td>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#ensembleking1">Boss CE-2</a></td>
-</tr>
-<tr>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#flexboost1">Mooer Flex Boost</a></td>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#flexboost1">Xotic AC Booster</a></td>
-</tr>
-<tr>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#fog1">Mooer Fog Bass Fuzz</a></td>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#fog1">Zvex Woolly Mammoth</a></td>
-</tr>
-<tr>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#funkymonkey1">Mooer Funky Monkey Auto-Wah</a></td>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#funkymonkey1">Boss AW-2</a></td>
-</tr>
-<tr>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#graphicb1">Mooer Graphic B</a></td>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#graphicb1">Boss GEB-7</a></td>
-</tr>
-<tr>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#graphicg1">Mooer Graphic G</a></td>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#graphicg1">Maxon GE-601</a></td>
-</tr>
-<tr>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#greenmile1">Mooer Green Mile</a></td>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#greenmile1">Ibanez Tubescreamer TS9</a></td>
-</tr>
-<tr>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#greyfaze1">Mooer Grey Faze</a></td>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#greyfaze1">Germanium Fuzz Face</a></td>
-</tr>
-<tr>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#hustledrive1">Mooer Hustle Drive</a></td>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#hustledrive1">Fulltone OCD</a></td>
-</tr>
-<tr>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#lofimachine1">Mooer Lofi Machine</a></td>
-<td>Not a clone</td>
-</tr>
-<tr>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#microaby">Mooer Micro ABY</a></td>
-<td>Not a clone</td>
-</tr>
-<tr>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#ninetyorange1">Mooer Ninety Orange</a></td>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#ninetyorange1">MXR Phase 90</a></td>
-</tr>
-<tr>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#pitchbox1">Mooer Pitchbox</a></td>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#pitchbox1">Boss PS-5</a></td>
-</tr>
-<tr>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#pureboost1">Mooer Pure Boost</a></td>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#pureboost1">Xotic RC Booster</a></td>
-</tr>
-<tr>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#pureoctave1">Mooer Pure Octave</a></td>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#pureoctave1">EHX POG</a></td>
-</tr>
-<tr>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#ragemachine1">Mooer Rage Machine</a></td>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#ragemachine1">Digitech Death Metal Distortion</a></td>
-</tr>
-<tr>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#reecho">Mooer Reecho</a></td>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#reecho">Boss DD-2</a></td>
-</tr>
-<tr>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#repeater1">Mooer Repeater</a></td>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#repeater1">Line 6 Echolizer</a></td>
-</tr>
-<tr>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#rumbledrive1">Mooer Rumble Drive</a></td>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#rumbledrive1">Zen Drive (Classic)</a></td>
-</tr>
-<tr>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#shimverbhttps://guitarpickzone.com/mooer-clone-list-and-pedals-review/#shimverb">Mooer Shimverb</a></td>
-<td>Not a clone</td>
-</tr>
-<tr>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#slowengine">Mooer Slow Engine</a></td>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#slowengine">Boss SG-1</a></td>
-</tr>
-<tr>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#solo1">Mooer Solo Distortion</a></td>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#solo1">Suhr Riot Distortion</a></td>
-</tr>
-<tr>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#sweeper1">Mooer Bass Sweeper</a></td>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#sweeper1">EHX Baseballs</a></td>
-</tr>
-<tr>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#thunderball">Mooer Thunderball</a></td>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#thunderball">EHX Bass Blogger</a></td>
-</tr>
-<tr>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#trelicopter1">Mooer Trelicopter</a></td>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#trelicopter1">Demeter Tremulator</a></td>
-</tr>
-<tr>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#trianglebuff1">Mooer Triangle Buff</a></td>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#trianglebuff1">EHX Big Muff</a></td>
-</tr>
-<tr>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#ultradrive">Mooer Ultra Drive</a></td>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#ultradrive">Boss DS-1 Keeley Mod</a></td>
-</tr>
-<tr>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#yellowcomp1">Mooer Yellow Comp</a></td>
-<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#yellowcomp1">Diamond Compressor</a></td>
+<td align="left"><code>00 00 01 00</code></td>
+<td align="left">image&#x2F;x-icon</td>
+<td align="left">ico</td>
+<td align="left">Icon image</td>
 </tr>
 </tbody></table>
 ]]></content>
       <tags>
-        <tag>音乐设备</tag>
+        <tag>博客搭建</tag>
       </tags>
   </entry>
   <entry>
@@ -575,6 +379,279 @@
       </tags>
   </entry>
   <entry>
+    <title>Mooer产品与其对应原型</title>
+    <url>/blog/mooe-and-ori/</url>
+    <content><![CDATA[<p>数据来源于<a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/">Mooer Pedals Clone List and Review | Guitar Pick Zone</a></p>
+<p><code>点击可以跳转到源网页测评</code></p>
+<table>
+<thead>
+<tr>
+<th><strong>Mooer Clone Pedal</strong></th>
+<th><strong>Original Pedal</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#acoustikar1">Mooer Acoustikar</a></td>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#acoustikar1">Boss AC-2 &#x2F; AC-3</a></td>
+</tr>
+<tr>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#anaecho1">Mooer Ana Echo</a></td>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#anaecho1">Boss DM-2</a></td>
+</tr>
+<tr>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#blacksecret1">Mooer Black Secret Distortion</a></td>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#blacksecret1">ProCo Rat</a></td>
+</tr>
+<tr>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#blade1">Mooer Blade Metal Distortion</a></td>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#blade1">EHX Metal Muff</a></td>
+</tr>
+<tr>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#bluecomp1">Mooer Blue Comp</a></td>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#bluecomp1">Boss CS-1 &#x2F; CS-2</a></td>
+</tr>
+<tr>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#bluefaze1">Mooer Blue Faze Fuzz</a></td>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#bluefaze1">Dunlop Silicon Fuzz Face</a></td>
+</tr>
+<tr>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#bluescrab1">Mooer Blues Crab</a></td>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#bluescrab1">Marshall Blues Breaker</a></td>
+</tr>
+<tr>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#bluesmood1">Mooer Blues Mood</a></td>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#bluesmood1">Boss BD-2 Keeley Mod</a></td>
+</tr>
+<tr>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#cruncher1">Mooer Cruncher Distortion</a></td>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#cruncher1">MI Audio Crunch Box</a></td>
+</tr>
+<tr>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#echolizer">Mooer Echolizer</a></td>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#echolizer">Maxon AD999</a></td>
+</tr>
+<tr>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#eleclady1">Mooer Eleclady Flanger</a></td>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#eleclady1">EHX Electric Mistress</a></td>
+</tr>
+<tr>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#ensembleking1">Mooer Ensemble King</a></td>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#ensembleking1">Boss CE-2</a></td>
+</tr>
+<tr>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#flexboost1">Mooer Flex Boost</a></td>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#flexboost1">Xotic AC Booster</a></td>
+</tr>
+<tr>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#fog1">Mooer Fog Bass Fuzz</a></td>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#fog1">Zvex Woolly Mammoth</a></td>
+</tr>
+<tr>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#funkymonkey1">Mooer Funky Monkey Auto-Wah</a></td>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#funkymonkey1">Boss AW-2</a></td>
+</tr>
+<tr>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#graphicb1">Mooer Graphic B</a></td>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#graphicb1">Boss GEB-7</a></td>
+</tr>
+<tr>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#graphicg1">Mooer Graphic G</a></td>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#graphicg1">Maxon GE-601</a></td>
+</tr>
+<tr>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#greenmile1">Mooer Green Mile</a></td>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#greenmile1">Ibanez Tubescreamer TS9</a></td>
+</tr>
+<tr>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#greyfaze1">Mooer Grey Faze</a></td>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#greyfaze1">Germanium Fuzz Face</a></td>
+</tr>
+<tr>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#hustledrive1">Mooer Hustle Drive</a></td>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#hustledrive1">Fulltone OCD</a></td>
+</tr>
+<tr>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#lofimachine1">Mooer Lofi Machine</a></td>
+<td>Not a clone</td>
+</tr>
+<tr>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#microaby">Mooer Micro ABY</a></td>
+<td>Not a clone</td>
+</tr>
+<tr>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#ninetyorange1">Mooer Ninety Orange</a></td>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#ninetyorange1">MXR Phase 90</a></td>
+</tr>
+<tr>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#pitchbox1">Mooer Pitchbox</a></td>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#pitchbox1">Boss PS-5</a></td>
+</tr>
+<tr>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#pureboost1">Mooer Pure Boost</a></td>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#pureboost1">Xotic RC Booster</a></td>
+</tr>
+<tr>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#pureoctave1">Mooer Pure Octave</a></td>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#pureoctave1">EHX POG</a></td>
+</tr>
+<tr>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#ragemachine1">Mooer Rage Machine</a></td>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#ragemachine1">Digitech Death Metal Distortion</a></td>
+</tr>
+<tr>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#reecho">Mooer Reecho</a></td>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#reecho">Boss DD-2</a></td>
+</tr>
+<tr>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#repeater1">Mooer Repeater</a></td>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#repeater1">Line 6 Echolizer</a></td>
+</tr>
+<tr>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#rumbledrive1">Mooer Rumble Drive</a></td>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#rumbledrive1">Zen Drive (Classic)</a></td>
+</tr>
+<tr>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#shimverbhttps://guitarpickzone.com/mooer-clone-list-and-pedals-review/#shimverb">Mooer Shimverb</a></td>
+<td>Not a clone</td>
+</tr>
+<tr>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#slowengine">Mooer Slow Engine</a></td>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#slowengine">Boss SG-1</a></td>
+</tr>
+<tr>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#solo1">Mooer Solo Distortion</a></td>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#solo1">Suhr Riot Distortion</a></td>
+</tr>
+<tr>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#sweeper1">Mooer Bass Sweeper</a></td>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#sweeper1">EHX Baseballs</a></td>
+</tr>
+<tr>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#thunderball">Mooer Thunderball</a></td>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#thunderball">EHX Bass Blogger</a></td>
+</tr>
+<tr>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#trelicopter1">Mooer Trelicopter</a></td>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#trelicopter1">Demeter Tremulator</a></td>
+</tr>
+<tr>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#trianglebuff1">Mooer Triangle Buff</a></td>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#trianglebuff1">EHX Big Muff</a></td>
+</tr>
+<tr>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#ultradrive">Mooer Ultra Drive</a></td>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#ultradrive">Boss DS-1 Keeley Mod</a></td>
+</tr>
+<tr>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#yellowcomp1">Mooer Yellow Comp</a></td>
+<td><a href="https://guitarpickzone.com/mooer-clone-list-and-pedals-review/#yellowcomp1">Diamond Compressor</a></td>
+</tr>
+</tbody></table>
+]]></content>
+      <tags>
+        <tag>音乐设备</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>北的监听耳机入门指南101</title>
+    <url>/blog/monitor-headphone-101/</url>
+    <content><![CDATA[<div class="toe">
+
+<!-- toc -->
+
+<ul>
+<li><a href="#%E4%BB%80%E4%B9%88%E6%98%AF%E7%9B%91%E5%90%AC%E8%80%B3%E6%9C%BA">什么是监听耳机？</a></li>
+<li><a href="#%E4%B8%80%E6%AC%BE%E5%90%88%E6%A0%BC%E7%9A%84%E7%9B%91%E5%90%AC%E8%80%B3%E6%9C%BA%E5%BA%94%E5%85%B7%E5%A4%87%E5%93%AA%E4%BA%9B%E7%89%B9%E8%B4%A8">一款合格的监听耳机应具备哪些特质？</a></li>
+<li><a href="#%E5%85%B3%E4%BA%8E%E7%9B%91%E5%90%AC%E8%80%B3%E6%9C%BA%E8%BF%99%E4%B8%AA%E8%AF%B4%E6%B3%95">关于“监听耳机”这个说法</a></li>
+<li><a href="#%E5%85%B6%E4%BB%96%E7%B1%BB%E5%9E%8B%E7%9A%84%E7%9B%91%E5%90%AC%E8%80%B3%E6%9C%BA">其他类型的监听耳机</a></li>
+<li><a href="#%E5%A6%82%E4%BD%95%E9%80%89%E8%B4%AD%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E5%89%AF%E7%9B%91%E5%90%AC%E8%80%B3%E6%9C%BA">如何选（购）你的第一副监听耳机？</a></li>
+<li><a href="#%E5%8F%A6%E5%8C%97%E5%85%B3%E4%BA%8E%E8%80%B3%E6%9C%BA%E7%9A%84%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%96%87%E7%AB%A0">另：北关于耳机的另一个文章</a></li>
+</ul>
+<!-- tocstop -->
+
+</div>
+
+<h2><span id="什么是监听耳机">什么是监听耳机？</span></h2><p>监听耳机指的是<code>在专业音频工作中使用的耳机</code>。它们的核心目标是<strong>尽可能真实、无染地还原声音的本来面貌</strong>，不添加任何美化或修饰。</p>
+<blockquote>
+<p>“录进去什么样，听上去就要是什么样”</p>
+</blockquote>
+<p>需要注意的是，这个“真实”是相对于在一个理想声学环境中聆听<strong>监听音箱 (Studio Monitor)</strong> 而言的。从纯粹的物理声学角度来看，由于耳机与扬声器的聆听方式存在根本差异（例如“头中效应”），耳机很难被做到物理上绝对的平直 (Flat)。</p>
+<p>本文主要讨论标准形态的（全尺寸头戴式）监听耳机，其他种类会在文末稍作补充。</p>
+<hr>
+<h2><span id="一款合格的监听耳机应具备哪些特质">一款合格的监听耳机应具备哪些特质？</span></h2><p>北认为，一款合格的监听耳机至少应满足以下几点：</p>
+<h3><span id="1-相对平直的频响曲线-frequency-response">1. 相对平直的频响曲线 (Frequency Response)</span></h3><p>监听耳机的频率响应曲线不应有过分突出的频段。它的理想状态是<code>模拟在一个经过良好声学处理的房间里，聆听高质量监听音箱的体验。</code></p>
+<ul>
+<li>行业内普遍接受的一个目标是 <strong><code>哈曼曲线</code> (Harman Curve)</strong> （如2018版本）。这是一个通过大量实验得出的、被认为最受听众喜爱的目标曲线。当然，不同厂家在遵循这一大方向的基础上，可能会保留自己的一些“风味”。</li>
+</ul>
+<blockquote>
+<p>补充：北认为哈曼曲线是结果而不是目标，不可以用哈曼曲线作为选购耳机的标准，但规律上确实呈现出<em><strong>优秀的监听耳机听上去总是彼此相似</strong></em>的特点。</p>
+</blockquote>
+<h3><span id="2-充足的频段表达-frequency-extension">2. 充足的频段表达 (Frequency Extension)</span></h3><p>耳机必须能够完整地再现<code>你所创作音乐风格</code>中的所有频率。</p>
+<ul>
+<li><strong>例：</strong> 演奏摇滚乐的贝斯 (Bass) 和电子乐中的超低频贝斯 (Sub Bass) 对耳机的低频下潜 (Low-frequency Extension) 要求是不同的。后者需要耳机能清晰地还原出极低频（例如30Hz-50Hz）的能量和质感，而前者可能更注重中低频的冲击力。<em><strong>如果你的耳机无法再现这些关键频段，你的混音决策就会出现偏差。</strong></em></li>
+</ul>
+<h3><span id="3-优秀的瞬态表现-transient-response">3. 优秀的瞬态表现 (Transient Response)</span></h3><p>瞬态响应指的是耳机对声音信号突然变化的反应能力，即还原声音“音头 (Attack)”的能力。</p>
+<ul>
+<li><strong>为什么重要？</strong> 许多乐器的 character 都体现在音头上。例如，经典的 Fender、Marshall、Vox 吉他音箱，它们的音头质感截然不同。音头是快是慢？音头的频率分布是更突出中频还是更“两头翘”？这些问题在一个瞬态表现糟糕的耳机上是完全无法分辨的。<code>对音头灵敏度的认知，是需要一副好耳机来帮助训练的。</code></li>
+<li>瞬态好的耳机，你能清晰地听到鼓槌敲击鼓皮的那一瞬间、拨片触弦的那一刹那，声音结实、清晰，就像录音的时候听到的一样，<em><strong>但也不应该比录音的时候听上去更结实。</strong></em></li>
+</ul>
+<h3><span id="4-极低的偏音-channel-imbalance-与精准的立体声像-stereo-image">4. 极低的偏音 (Channel Imbalance) 与精准的立体声像 (Stereo Image)</span></h3><p>耳机在两个声道（左、右）的<code>所有频段</code>上都应保持高度一致，不能一个声道比另一个声道更响或音色不同。</p>
+<ul>
+<li><strong>核心作用：</strong> 这样才能准确判断声音在立体声场 (Stereo Field) 中的位置，至少是清晰的左右关系。如果偏音，你会错误地判断某个乐器是偏左还是偏右，导致最终的混音立体声像失衡。</li>
+<li>PS：由于从耳机听到的声音不经过房间反射，都是直达声，因此优秀的监听耳机比绝大多数<code>缺少声学装修的房间里的</code>监听音箱<em><strong>反而</strong></em>有更好的立体声像。</li>
+</ul>
+<h3><span id="5-极低的失真-distortion">5. 极低的失真 (Distortion)</span></h3><p>失真意味着耳机在回放声音时产生了原信号中没有的额外成分。失真会掩盖掉声音的细节，让你无法分辨相邻频段之间的细微差别。</p>
+<ul>
+<li><strong>解释：</strong> 有的耳机只有低频的“量感”，却没有低频的“质量”（即清晰度和层次感，与失真有关）。也就是说，例如对于低频，你只能感觉到20Hz~200Hz这一大段频率范围大概有多响，至于其中细节的频段的区别，就听不出来了。</li>
+<li><strong>例（接上）</strong>：在这样的耳机上，如果你对底鼓 (Kick) 做了一个经典的均衡 (EQ) 处理：提升80Hz增加冲击力，同时降低180Hz来给贝斯让频段 —— 你可能几乎听不出明显区别。但在一副低失真的好耳机上，你能清晰地感觉到这个操作让底鼓潜得更深，同时为贝斯让出了更多空间，整体混音变得更清晰。</li>
+</ul>
+<h3><span id="6-舒适的佩戴体验">6. 舒适的佩戴体验</span></h3><p>耳罩需要<em><strong>足够舒适，不压耳、不夹头，透气性好。</strong></em> 音频工作常常需要连续佩戴数小时，不舒适的耳机会导致疲劳，分散你的注意力，<em><strong>影响你对声音的判断。</strong></em></p>
+<hr>
+<h2><span id="关于监听耳机这个说法">关于“监听耳机”这个说法</span></h2><p>市场上“监听耳机”的标签有时会被滥用。</p>
+<ul>
+<li>有一些耳机最初是为音乐欣赏设计的<code>（如经典的Beyerdynamic DT 770 Pro ）</code>，但因为其性能出色，被众多录音棚广泛采用，成为了“事实上的”监听标准。</li>
+<li>反之，也有一些耳机在发售时自称“监听耳机”，但并不能满足上述的严格条件，几乎不会被用于严肃的专业工作。<code>（反例我哪敢举呀）</code></li>
+</ul>
+<hr>
+<h2><span id="其他类型的监听耳机">其他类型的监听耳机</span></h2><p>除了上述追求全面还原的标准监听耳机外，还有一些在频响上具有特殊设计的类型：</p>
+<h3><span id="1-人声监听耳机">1. 人声监听耳机</span></h3><p>例如著名的 <strong>Sony MDR-7506</strong>。它的频响曲线并非追求全频段平直，而是经过特殊调整，通常在中高频有所强调。这种耳机追求的就不是“录进去什么样，听出来就什么样”，而是为了让歌手在录音时，透过耳机听到自己的声音更明亮、更清晰，<em><strong>感觉更像是成品中自己的人声</strong></em>，从而提升演唱信心和表现。它的重点是让人声和中高频乐器（如吉他）脱颖而出。</p>
+<h3><span id="2-舞台监听耳机">2. 舞台监听耳机</span></h3><p>这类耳机专为现场表演的乐手设计。注重隔音性能，并“可能”对特定频段（如乐手自己演奏乐器的核心频段）进行增强，以便在嘈杂的舞台环境中，能让乐手清晰地听到自己的演奏和其他关键信号。</p>
+<ul>
+<li><em><strong>北认为这完全是智商税（专门定制的耳机除外）</strong></em>。一个标准的、高质量的通用监听耳机配合正确的混音，已经能满足大多数舞台监听需求。</li>
+</ul>
+<h2><span id="如何选购你的第一副监听耳机">如何选（购）你的第一副监听耳机？</span></h2><p>北给出的笼统的答案是“<em><strong>多听，多对比</strong></em>”。但这确实缺乏实际指导意义。因此，北给出两条更具可行性的选购思路。</p>
+<h3><span id="思路一追随你欣赏的制作人">思路一：追随你欣赏的制作人</span></h3><p>这是一种非常直接的方法：去听听看你喜欢的制作人在制作专辑时佩戴的耳机。<em><strong>但需要注意：</strong></em></p>
+<ol>
+<li><p><strong>这位制作人的混音水平应在行业内获得广泛认可。</strong><br>事实上，有些制作人编曲才华出众，创作了脍炙人口的作品，但其混音水平在业内却被认为<code>“存在一些缺陷”</code>。虽然他们的水平大概率仍比你高，但除非你是其狂热粉丝，否则不建议盲目跟风购买同款设备。因为你无法确定作品中的听感疏漏，是否正源于其设备的缺陷。</p>
+<blockquote>
+<p>关于如何判断： 你喜欢的制作人在行业内的混音评价，通常可以在B站、YouTube、Reddit、知乎等平台搜到同行或资深爱好者的讨论。<code>（例如，《轻音少女》的大部分专辑混音被认为过度压限，“夜鹿”的很多混音被认为存在偏音……嗯，这是可以说的吗？）</code></p>
+</blockquote>
+</li>
+<li><p><strong>你希望自己未来作品的听感取向与之接近。</strong><br>如果你渴望自己的作品能达到和“TA的作品”类似的听感，那么使用同一副耳机，至少能让你站在同一个起跑线上去听见“他”的作品的声音。</p>
+</li>
+</ol>
+<h3><span id="思路二从行业标准入手">思路二：从“行业标准”入手</span></h3><p>如果上一条思路不适用（例如你喜欢的制作人主要使用监听音箱），或者他们使用的设备过于昂贵，那么更稳妥的方法是：</p>
+<ol>
+<li><strong>先去试听公认的“行业标准”设备</strong><code>（如 AKG K701, Sennheiser HD650等）。</code>你可以去线下的音箱店、耳机店进行体验。</li>
+<li><strong>认真记住这些标准设备的声音特点</strong>：它们的平衡感、清晰度如何。</li>
+<li><strong>带着这个“标准听感”去对比更符合你预算的耳机</strong>，找到那个你觉得声音最贴近标准、且佩戴舒适、你能负担得起的型号。</li>
+</ol>
+<h3><span id="最后直接询问">最后：直接询问</span></h3><p>如果感到迷茫，最直接的方法就是<strong>向身边的社群求助</strong>。</p>
+<p><em><strong>你身边总归会有一个存在混音爱好者或音乐人的群聊吧</strong></em>？告诉群友你的预算和需求，通常能得到许多经过实践检验的、有价值的推荐。毕竟，混音这类音频工作是一项相当成熟的工业技术，它不像选择乐器那样充满强烈的个人艺术偏好。</p>
+<blockquote><p>There is no art in a factory. Not even in an art factory.<br>工厂里是没有艺术的。即使是艺术工厂里也没有。</p>
+<footer><strong>Mixerman</strong><cite>Zen & The Art of MIXING</cite></footer></blockquote>
+
+<p>希望这份指南能帮助你理解监听耳机的核心概念。选择耳机时，最好的方法永远是亲自试听，用你熟悉的音乐去感受它们之间的差异。</p>
+<h2><span id="另北关于耳机的另一个文章">另：北关于耳机的另一个文章</span></h2><a href="/blog/earpads-for-headphone/" title="耳机罩对频段的影响">耳机罩对频段的影响</a>]]></content>
+      <categories>
+        <category>gallery</category>
+      </categories>
+      <tags>
+        <tag>音乐设备</tag>
+        <tag>知识</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Producer向Podcast整理</title>
     <url>/blog/producer-podcast/</url>
     <content><![CDATA[<p>–目录–</p>
@@ -692,107 +769,8 @@
 </ul>
 ]]></content>
       <tags>
+        <tag>知识</tag>
         <tag>博客搭建</tag>
-        <tag>知识</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>北的监听耳机入门指南101</title>
-    <url>/blog/monitor-headphone-101/</url>
-    <content><![CDATA[<div class="toe">
-
-<!-- toc -->
-
-<ul>
-<li><a href="#%E4%BB%80%E4%B9%88%E6%98%AF%E7%9B%91%E5%90%AC%E8%80%B3%E6%9C%BA">什么是监听耳机？</a></li>
-<li><a href="#%E4%B8%80%E6%AC%BE%E5%90%88%E6%A0%BC%E7%9A%84%E7%9B%91%E5%90%AC%E8%80%B3%E6%9C%BA%E5%BA%94%E5%85%B7%E5%A4%87%E5%93%AA%E4%BA%9B%E7%89%B9%E8%B4%A8">一款合格的监听耳机应具备哪些特质？</a></li>
-<li><a href="#%E5%85%B3%E4%BA%8E%E7%9B%91%E5%90%AC%E8%80%B3%E6%9C%BA%E8%BF%99%E4%B8%AA%E8%AF%B4%E6%B3%95">关于“监听耳机”这个说法</a></li>
-<li><a href="#%E5%85%B6%E4%BB%96%E7%B1%BB%E5%9E%8B%E7%9A%84%E7%9B%91%E5%90%AC%E8%80%B3%E6%9C%BA">其他类型的监听耳机</a></li>
-<li><a href="#%E5%A6%82%E4%BD%95%E9%80%89%E8%B4%AD%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E5%89%AF%E7%9B%91%E5%90%AC%E8%80%B3%E6%9C%BA">如何选（购）你的第一副监听耳机？</a></li>
-<li><a href="#%E5%8F%A6%E5%8C%97%E5%85%B3%E4%BA%8E%E8%80%B3%E6%9C%BA%E7%9A%84%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%96%87%E7%AB%A0">另：北关于耳机的另一个文章</a></li>
-</ul>
-<!-- tocstop -->
-
-</div>
-
-<h2><span id="什么是监听耳机">什么是监听耳机？</span></h2><p>监听耳机指的是<code>在专业音频工作中使用的耳机</code>。它们的核心目标是<strong>尽可能真实、无染地还原声音的本来面貌</strong>，不添加任何美化或修饰。</p>
-<blockquote>
-<p>“录进去什么样，听上去就要是什么样”</p>
-</blockquote>
-<p>需要注意的是，这个“真实”是相对于在一个理想声学环境中聆听<strong>监听音箱 (Studio Monitor)</strong> 而言的。从纯粹的物理声学角度来看，由于耳机与扬声器的聆听方式存在根本差异（例如“头中效应”），耳机很难被做到物理上绝对的平直 (Flat)。</p>
-<p>本文主要讨论标准形态的（全尺寸头戴式）监听耳机，其他种类会在文末稍作补充。</p>
-<hr>
-<h2><span id="一款合格的监听耳机应具备哪些特质">一款合格的监听耳机应具备哪些特质？</span></h2><p>北认为，一款合格的监听耳机至少应满足以下几点：</p>
-<h3><span id="1-相对平直的频响曲线-frequency-response">1. 相对平直的频响曲线 (Frequency Response)</span></h3><p>监听耳机的频率响应曲线不应有过分突出的频段。它的理想状态是<code>模拟在一个经过良好声学处理的房间里，聆听高质量监听音箱的体验。</code></p>
-<ul>
-<li>行业内普遍接受的一个目标是 <strong><code>哈曼曲线</code> (Harman Curve)</strong> （如2018版本）。这是一个通过大量实验得出的、被认为最受听众喜爱的目标曲线。当然，不同厂家在遵循这一大方向的基础上，可能会保留自己的一些“风味”。</li>
-</ul>
-<blockquote>
-<p>补充：北认为哈曼曲线是结果而不是目标，不可以用哈曼曲线作为选购耳机的标准，但规律上确实呈现出<em><strong>优秀的监听耳机听上去总是彼此相似</strong></em>的特点。</p>
-</blockquote>
-<h3><span id="2-充足的频段表达-frequency-extension">2. 充足的频段表达 (Frequency Extension)</span></h3><p>耳机必须能够完整地再现<code>你所创作音乐风格</code>中的所有频率。</p>
-<ul>
-<li><strong>例：</strong> 演奏摇滚乐的贝斯 (Bass) 和电子乐中的超低频贝斯 (Sub Bass) 对耳机的低频下潜 (Low-frequency Extension) 要求是不同的。后者需要耳机能清晰地还原出极低频（例如30Hz-50Hz）的能量和质感，而前者可能更注重中低频的冲击力。<em><strong>如果你的耳机无法再现这些关键频段，你的混音决策就会出现偏差。</strong></em></li>
-</ul>
-<h3><span id="3-优秀的瞬态表现-transient-response">3. 优秀的瞬态表现 (Transient Response)</span></h3><p>瞬态响应指的是耳机对声音信号突然变化的反应能力，即还原声音“音头 (Attack)”的能力。</p>
-<ul>
-<li><strong>为什么重要？</strong> 许多乐器的 character 都体现在音头上。例如，经典的 Fender、Marshall、Vox 吉他音箱，它们的音头质感截然不同。音头是快是慢？音头的频率分布是更突出中频还是更“两头翘”？这些问题在一个瞬态表现糟糕的耳机上是完全无法分辨的。<code>对音头灵敏度的认知，是需要一副好耳机来帮助训练的。</code></li>
-<li>瞬态好的耳机，你能清晰地听到鼓槌敲击鼓皮的那一瞬间、拨片触弦的那一刹那，声音结实、清晰，就像录音的时候听到的一样，<em><strong>但也不应该比录音的时候听上去更结实。</strong></em></li>
-</ul>
-<h3><span id="4-极低的偏音-channel-imbalance-与精准的立体声像-stereo-image">4. 极低的偏音 (Channel Imbalance) 与精准的立体声像 (Stereo Image)</span></h3><p>耳机在两个声道（左、右）的<code>所有频段</code>上都应保持高度一致，不能一个声道比另一个声道更响或音色不同。</p>
-<ul>
-<li><strong>核心作用：</strong> 这样才能准确判断声音在立体声场 (Stereo Field) 中的位置，至少是清晰的左右关系。如果偏音，你会错误地判断某个乐器是偏左还是偏右，导致最终的混音立体声像失衡。</li>
-<li>PS：由于从耳机听到的声音不经过房间反射，都是直达声，因此优秀的监听耳机比绝大多数<code>缺少声学装修的房间里的</code>监听音箱<em><strong>反而</strong></em>有更好的立体声像。</li>
-</ul>
-<h3><span id="5-极低的失真-distortion">5. 极低的失真 (Distortion)</span></h3><p>失真意味着耳机在回放声音时产生了原信号中没有的额外成分。失真会掩盖掉声音的细节，让你无法分辨相邻频段之间的细微差别。</p>
-<ul>
-<li><strong>解释：</strong> 有的耳机只有低频的“量感”，却没有低频的“质量”（即清晰度和层次感，与失真有关）。也就是说，例如对于低频，你只能感觉到20Hz~200Hz这一大段频率范围大概有多响，至于其中细节的频段的区别，就听不出来了。</li>
-<li><strong>例（接上）</strong>：在这样的耳机上，如果你对底鼓 (Kick) 做了一个经典的均衡 (EQ) 处理：提升80Hz增加冲击力，同时降低180Hz来给贝斯让频段 —— 你可能几乎听不出明显区别。但在一副低失真的好耳机上，你能清晰地感觉到这个操作让底鼓潜得更深，同时为贝斯让出了更多空间，整体混音变得更清晰。</li>
-</ul>
-<h3><span id="6-舒适的佩戴体验">6. 舒适的佩戴体验</span></h3><p>耳罩需要<em><strong>足够舒适，不压耳、不夹头，透气性好。</strong></em> 音频工作常常需要连续佩戴数小时，不舒适的耳机会导致疲劳，分散你的注意力，<em><strong>影响你对声音的判断。</strong></em></p>
-<hr>
-<h2><span id="关于监听耳机这个说法">关于“监听耳机”这个说法</span></h2><p>市场上“监听耳机”的标签有时会被滥用。</p>
-<ul>
-<li>有一些耳机最初是为音乐欣赏设计的<code>（如经典的Beyerdynamic DT 770 Pro ）</code>，但因为其性能出色，被众多录音棚广泛采用，成为了“事实上的”监听标准。</li>
-<li>反之，也有一些耳机在发售时自称“监听耳机”，但并不能满足上述的严格条件，几乎不会被用于严肃的专业工作。<code>（反例我哪敢举呀）</code></li>
-</ul>
-<hr>
-<h2><span id="其他类型的监听耳机">其他类型的监听耳机</span></h2><p>除了上述追求全面还原的标准监听耳机外，还有一些在频响上具有特殊设计的类型：</p>
-<h3><span id="1-人声监听耳机">1. 人声监听耳机</span></h3><p>例如著名的 <strong>Sony MDR-7506</strong>。它的频响曲线并非追求全频段平直，而是经过特殊调整，通常在中高频有所强调。这种耳机追求的就不是“录进去什么样，听出来就什么样”，而是为了让歌手在录音时，透过耳机听到自己的声音更明亮、更清晰，<em><strong>感觉更像是成品中自己的人声</strong></em>，从而提升演唱信心和表现。它的重点是让人声和中高频乐器（如吉他）脱颖而出。</p>
-<h3><span id="2-舞台监听耳机">2. 舞台监听耳机</span></h3><p>这类耳机专为现场表演的乐手设计。注重隔音性能，并“可能”对特定频段（如乐手自己演奏乐器的核心频段）进行增强，以便在嘈杂的舞台环境中，能让乐手清晰地听到自己的演奏和其他关键信号。</p>
-<ul>
-<li><em><strong>北认为这完全是智商税（专门定制的耳机除外）</strong></em>。一个标准的、高质量的通用监听耳机配合正确的混音，已经能满足大多数舞台监听需求。</li>
-</ul>
-<h2><span id="如何选购你的第一副监听耳机">如何选（购）你的第一副监听耳机？</span></h2><p>北给出的笼统的答案是“<em><strong>多听，多对比</strong></em>”。但这确实缺乏实际指导意义。因此，北给出两条更具可行性的选购思路。</p>
-<h3><span id="思路一追随你欣赏的制作人">思路一：追随你欣赏的制作人</span></h3><p>这是一种非常直接的方法：去听听看你喜欢的制作人在制作专辑时佩戴的耳机。<em><strong>但需要注意：</strong></em></p>
-<ol>
-<li><p><strong>这位制作人的混音水平应在行业内获得广泛认可。</strong><br>事实上，有些制作人编曲才华出众，创作了脍炙人口的作品，但其混音水平在业内却被认为<code>“存在一些缺陷”</code>。虽然他们的水平大概率仍比你高，但除非你是其狂热粉丝，否则不建议盲目跟风购买同款设备。因为你无法确定作品中的听感疏漏，是否正源于其设备的缺陷。</p>
-<blockquote>
-<p>关于如何判断： 你喜欢的制作人在行业内的混音评价，通常可以在B站、YouTube、Reddit、知乎等平台搜到同行或资深爱好者的讨论。<code>（例如，《轻音少女》的大部分专辑混音被认为过度压限，“夜鹿”的很多混音被认为存在偏音……嗯，这是可以说的吗？）</code></p>
-</blockquote>
-</li>
-<li><p><strong>你希望自己未来作品的听感取向与之接近。</strong><br>如果你渴望自己的作品能达到和“TA的作品”类似的听感，那么使用同一副耳机，至少能让你站在同一个起跑线上去听见“他”的作品的声音。</p>
-</li>
-</ol>
-<h3><span id="思路二从行业标准入手">思路二：从“行业标准”入手</span></h3><p>如果上一条思路不适用（例如你喜欢的制作人主要使用监听音箱），或者他们使用的设备过于昂贵，那么更稳妥的方法是：</p>
-<ol>
-<li><strong>先去试听公认的“行业标准”设备</strong><code>（如 AKG K701, Sennheiser HD650等）。</code>你可以去线下的音箱店、耳机店进行体验。</li>
-<li><strong>认真记住这些标准设备的声音特点</strong>：它们的平衡感、清晰度如何。</li>
-<li><strong>带着这个“标准听感”去对比更符合你预算的耳机</strong>，找到那个你觉得声音最贴近标准、且佩戴舒适、你能负担得起的型号。</li>
-</ol>
-<h3><span id="最后直接询问">最后：直接询问</span></h3><p>如果感到迷茫，最直接的方法就是<strong>向身边的社群求助</strong>。</p>
-<p><em><strong>你身边总归会有一个存在混音爱好者或音乐人的群聊吧</strong></em>？告诉群友你的预算和需求，通常能得到许多经过实践检验的、有价值的推荐。毕竟，混音这类音频工作是一项相当成熟的工业技术，它不像选择乐器那样充满强烈的个人艺术偏好。</p>
-<blockquote><p>There is no art in a factory. Not even in an art factory.<br>工厂里是没有艺术的。即使是艺术工厂里也没有。</p>
-<footer><strong>Mixerman</strong><cite>Zen & The Art of MIXING</cite></footer></blockquote>
-
-<p>希望这份指南能帮助你理解监听耳机的核心概念。选择耳机时，最好的方法永远是亲自试听，用你熟悉的音乐去感受它们之间的差异。</p>
-<h2><span id="另北关于耳机的另一个文章">另：北关于耳机的另一个文章</span></h2><a href="/blog/earpads-for-headphone/" title="耳机罩对频段的影响">耳机罩对频段的影响</a>]]></content>
-      <categories>
-        <category>gallery</category>
-      </categories>
-      <tags>
-        <tag>音乐设备</tag>
-        <tag>知识</tag>
       </tags>
   </entry>
   <entry>
@@ -841,47 +819,6 @@
       <tags>
         <tag>音乐设备</tag>
         <tag>知识</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>数摇 emo乐手效果器设备</title>
-    <url>/blog/math-emo-gear/</url>
-    <content><![CDATA[<p><code>素材来源网络，侵删</code></p>
-<ul>
-<li><p>toe</p>
-<ul>
-<li><p>Takaaki Mino</p>
-<p>  <img src="/blog/math-emo-gear/big_11357261_983451558352278_451636667_n.webp" alt="|600x600"></p>
-<p>  <img src="/blog/math-emo-gear/big_257501047_251559856960196_8785557836121382867_n.webp"></p>
-<p>  <img src="/blog/math-emo-gear/IMG-1762330701371.webp"></p>
-<p>  <img src="/blog/math-emo-gear/IMG-1762330757074.webp"></p>
-</li>
-<li><p>Yamazaki Hirokazu</p>
-<p>  <img src="/blog/math-emo-gear/IMG-1762330778163.webp"></p>
-</li>
-<li><p>Yamane Satoshi</p>
-<p>  J bass, Ampeg <strong>SVT-CL Classic, Steinberger L2</strong></p>
-</li>
-</ul>
-</li>
-<li><p>上海秋天</p>
-<p>  <img src="/blog/math-emo-gear/IMG-1762330783815.webp"></p>
-<p>  上海秋天 Enaut 2019</p>
-</li>
-<li><p>国足</p>
-<p>  <img src="/blog/math-emo-gear/IMG-1762330796572.webp"></p>
-<p>  国足 李立鑫 2019 P bass</p>
-<p>  <img src="/blog/math-emo-gear/IMG-1762330799668.webp"></p>
-<p>  国足 王博 2019 Telecaster</p>
-<p>  <img src="/blog/math-emo-gear/IMG-1762330803559.webp"></p>
-<p>  国足 徐波 2019 Telecaster</p>
-<p>  <img src="/blog/math-emo-gear/IMG-1762330811246.webp"></p>
-<p>  鼓手郑紫莉 用7A~5A鼓棒 知音K系列镲片</p>
-</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>音乐设备</tag>
       </tags>
   </entry>
   <entry>
@@ -952,6 +889,59 @@
 ]]></content>
       <tags>
         <tag>音乐设备</tag>
+        <tag>知识</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数摇 emo乐手效果器设备</title>
+    <url>/blog/math-emo-gear/</url>
+    <content><![CDATA[<p><code>素材来源网络，侵删</code></p>
+<ul>
+<li><p>toe</p>
+<ul>
+<li><p>Takaaki Mino</p>
+<p>  <img src="/blog/math-emo-gear/big_11357261_983451558352278_451636667_n.webp" alt="|600x600"></p>
+<p>  <img src="/blog/math-emo-gear/big_257501047_251559856960196_8785557836121382867_n.webp"></p>
+<p>  <img src="/blog/math-emo-gear/IMG-1762330701371.webp"></p>
+<p>  <img src="/blog/math-emo-gear/IMG-1762330757074.webp"></p>
+</li>
+<li><p>Yamazaki Hirokazu</p>
+<p>  <img src="/blog/math-emo-gear/IMG-1762330778163.webp"></p>
+</li>
+<li><p>Yamane Satoshi</p>
+<p>  J bass, Ampeg <strong>SVT-CL Classic, Steinberger L2</strong></p>
+</li>
+</ul>
+</li>
+<li><p>上海秋天</p>
+<p>  <img src="/blog/math-emo-gear/IMG-1762330783815.webp"></p>
+<p>  上海秋天 Enaut 2019</p>
+</li>
+<li><p>国足</p>
+<p>  <img src="/blog/math-emo-gear/IMG-1762330796572.webp"></p>
+<p>  国足 李立鑫 2019 P bass</p>
+<p>  <img src="/blog/math-emo-gear/IMG-1762330799668.webp"></p>
+<p>  国足 王博 2019 Telecaster</p>
+<p>  <img src="/blog/math-emo-gear/IMG-1762330803559.webp"></p>
+<p>  国足 徐波 2019 Telecaster</p>
+<p>  <img src="/blog/math-emo-gear/IMG-1762330811246.webp"></p>
+<p>  鼓手郑紫莉 用7A~5A鼓棒 知音K系列镲片</p>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>音乐设备</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>给吉他换弦的时候需要注意的问题</title>
+    <url>/blog/swap-guitar-string/</url>
+    <content><![CDATA[<ol>
+<li>在适当靠近琴头的位置剪断旧琴弦，而非在靠近琴桥的位置剪断。否则可能导致弦钉难以取出。</li>
+<li>有自锁旋钮的琴应当调完音再处理多余长度的琴弦，以防止自锁没锁上后琴弦无多余长度。</li>
+</ol>
+]]></content>
+      <tags>
         <tag>知识</tag>
       </tags>
   </entry>
@@ -1325,15 +1315,47 @@
       </tags>
   </entry>
   <entry>
-    <title>给吉他换弦的时候需要注意的问题</title>
-    <url>/blog/swap-guitar-string/</url>
-    <content><![CDATA[<ol>
-<li>在适当靠近琴头的位置剪断旧琴弦，而非在靠近琴桥的位置剪断。否则可能导致弦钉难以取出。</li>
-<li>有自锁旋钮的琴应当调完音再处理多余长度的琴弦，以防止自锁没锁上后琴弦无多余长度。</li>
+    <title>高性价比Fender音箱模拟：Mosky Classic F-der</title>
+    <url>/blog/mosky-classic-f-der/</url>
+    <content><![CDATA[<div class="toe">
+
+<!-- toc -->
+
+<ul>
+<li><a href="#%E5%88%87%E6%8D%A2%E8%AE%BE%E5%A4%87%E7%9A%84%E5%A5%91%E6%9C%BA">切换设备的契机</a></li>
+<li><a href="#%E7%BB%8F%E5%85%B8%E7%94%B5%E8%B7%AF%E7%9A%84%E8%87%B4%E6%95%AC">经典电路的“致敬”</a></li>
+<li><a href="#mosky-classic-f-der%E7%9A%84%E4%BC%98%E5%8A%BF">Mosky Classic F-der的优势</a></li>
+<li><a href="#%E6%93%8D%E4%BD%9C%E4%B8%8E%E5%A3%B0%E9%9F%B3%E4%BD%93%E9%AA%8C">操作与声音体验</a></li>
+<li><a href="#overdrive%E4%B8%8Ehigain%E8%A1%A8%E7%8E%B0">OverDrive与HiGain表现</a></li>
+<li><a href="#%E6%80%BB%E7%BB%93">总结</a></li>
+</ul>
+<!-- tocstop -->
+
+</div>
+
+<p>大家好，我是北。在发布了一些二次元视频、游戏视频和乐队演出视频之后，我终于趁着暑假，花了一周时间好好整理了一下房间，决定尝试为大家制作一些“轻松且硬核”的设备介绍视频。</p>
+<h2><span id="切换设备的契机">切换设备的契机</span></h2><p>前段时间，我与一款三千元档的白色触屏综合效果器“分手”了。因为两年过去，切换音色时断音的问题在最新固件中仍未解决。这意味着我失去了原有的箱模功能。然而，有时我会参加一些二次元的演奏活动（例如南京大学CAC动漫社），而活动现场通常不提供乐器手箱。因此，我需要一个能够完整模拟箱头和箱体的效果器来连接我的单块使用。</p>
+<p>经过仔细调查，我选择了Mosky在2023年年中推出的Classic F-der。这款设备在标准单块体积下集合了箱头箱体的全部模拟功能，可以直接连接声卡进行录音。</p>
+<h2><span id="经典电路的致敬">经典电路的“致敬”</span></h2><p>Mosky Classic F-der的电路“致敬”了经典的<strong>Tech21 SansAmp Character Series Blonde</strong>。早在之前，JOYO就曾推出过这个电路的致敬产品——JOYO American Sound。JOYO与原版的不同之处在于将Character旋钮改为Voice，并更改了旋钮位置（仅仅是改了名字）。在欧洲销售的Harley Benton American TrueTone则是JOYO的贴牌产品。Mosky完全沿用了JOYO的旋钮布局和命名。</p>
+<h2><span id="mosky-classic-f-der的优势">Mosky Classic F-der的优势</span></h2><ol>
+<li><strong>小巧设计</strong>：将经典电路做到了更小的外壳内，是完整箱模方案中体积最小的。</li>
+<li><strong>供电需求低</strong>：9V &lt;100mA，任何效果器线都可以为其供电，且为analog设计，展现了态度。</li>
+<li><strong>音质优越</strong>：声音明显好于某些白色旋钮拨档的analog 0瓦箱头单块。</li>
+<li><strong>美观设计</strong>：葡萄紫涂装，赏心悦目。</li>
+<li><strong>价格实惠</strong>：价格明显低于主流digital箱模产品。</li>
 </ol>
+<p>我在今年618期间在淘宝上仅花了124元就购入了这款效果器，成为我买过的最便宜的效果器之一。在这一个多月中，我一直用它与各种设备进行对比，结果比我预期的要好很多。</p>
+<h2><span id="操作与声音体验">操作与声音体验</span></h2><p>接下来，我们来仔细看看它的操作和声音表现。首先是Clean声的试听：</p>
+<p>Clean声能够展现出它的音头质感，voice旋钮低于12点时，CF的频响曲线大致呈现银黑脸Fender声。voice旋钮是这个系列效果器的音色核心，能够改变增益度、中频量和中频凹陷点。总体来说，voice变大时，增益度增加，中频量增加，凹陷点向右移动。在12点左右可以得到tweed声，大于十二点后则偏向棕脸声。</p>
+<h2><span id="overdrive与higain表现">OverDrive与HiGain表现</span></h2><p>尚可。需要注意的是，低频较多的时候，中低频配合起来的质感较为奇怪，可能是由于调节范围过大导致的。</p>
+<p>在HiGain模式下，clean up表现中规中矩，clean up能力不高。但考虑到Fender系箱子本身clean up能力有限，且一般情况下大solo的gain多由pedal提供，所以我并不觉得这是很大的问题。</p>
+<h2><span id="总结">总结</span></h2><p>对于Mosky CF的介绍到此结束。可能有人会疑惑：“这么便宜的效果器有必要做这样一期视频来介绍吗？”我认为，_<strong>物美价廉</strong><em>的产品比</em><strong>物有所值</strong>_的产品更值得推荐给大众。设备的价格与使用体验并没有绝对联系，这对于模拟电路使用者来说，可能意味着更多对效果器产品逻辑的理解。</p>
+<p>许多优秀且有名气的效果器常被KOL介绍，这是KOL的生活方式决定的。而这种便宜的单块有很多被KOL忽视了，实际上它们是好东西。因此，它们更值得被我介绍。</p>
+<p>综合考虑之前提到的五大优势，对于许多人来说，这可能是最适合你购买的音箱模拟效果器之一。</p>
 ]]></content>
       <tags>
-        <tag>知识</tag>
+        <tag>音乐设备</tag>
+        <tag>B站节目文字版</tag>
       </tags>
   </entry>
   <entry>
@@ -1473,50 +1495,6 @@
       <tags>
         <tag>音乐设备</tag>
         <tag>知识</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>高性价比Fender音箱模拟：Mosky Classic F-der</title>
-    <url>/blog/mosky-classic-f-der/</url>
-    <content><![CDATA[<div class="toe">
-
-<!-- toc -->
-
-<ul>
-<li><a href="#%E5%88%87%E6%8D%A2%E8%AE%BE%E5%A4%87%E7%9A%84%E5%A5%91%E6%9C%BA">切换设备的契机</a></li>
-<li><a href="#%E7%BB%8F%E5%85%B8%E7%94%B5%E8%B7%AF%E7%9A%84%E8%87%B4%E6%95%AC">经典电路的“致敬”</a></li>
-<li><a href="#mosky-classic-f-der%E7%9A%84%E4%BC%98%E5%8A%BF">Mosky Classic F-der的优势</a></li>
-<li><a href="#%E6%93%8D%E4%BD%9C%E4%B8%8E%E5%A3%B0%E9%9F%B3%E4%BD%93%E9%AA%8C">操作与声音体验</a></li>
-<li><a href="#overdrive%E4%B8%8Ehigain%E8%A1%A8%E7%8E%B0">OverDrive与HiGain表现</a></li>
-<li><a href="#%E6%80%BB%E7%BB%93">总结</a></li>
-</ul>
-<!-- tocstop -->
-
-</div>
-
-<p>大家好，我是北。在发布了一些二次元视频、游戏视频和乐队演出视频之后，我终于趁着暑假，花了一周时间好好整理了一下房间，决定尝试为大家制作一些“轻松且硬核”的设备介绍视频。</p>
-<h2><span id="切换设备的契机">切换设备的契机</span></h2><p>前段时间，我与一款三千元档的白色触屏综合效果器“分手”了。因为两年过去，切换音色时断音的问题在最新固件中仍未解决。这意味着我失去了原有的箱模功能。然而，有时我会参加一些二次元的演奏活动（例如南京大学CAC动漫社），而活动现场通常不提供乐器手箱。因此，我需要一个能够完整模拟箱头和箱体的效果器来连接我的单块使用。</p>
-<p>经过仔细调查，我选择了Mosky在2023年年中推出的Classic F-der。这款设备在标准单块体积下集合了箱头箱体的全部模拟功能，可以直接连接声卡进行录音。</p>
-<h2><span id="经典电路的致敬">经典电路的“致敬”</span></h2><p>Mosky Classic F-der的电路“致敬”了经典的<strong>Tech21 SansAmp Character Series Blonde</strong>。早在之前，JOYO就曾推出过这个电路的致敬产品——JOYO American Sound。JOYO与原版的不同之处在于将Character旋钮改为Voice，并更改了旋钮位置（仅仅是改了名字）。在欧洲销售的Harley Benton American TrueTone则是JOYO的贴牌产品。Mosky完全沿用了JOYO的旋钮布局和命名。</p>
-<h2><span id="mosky-classic-f-der的优势">Mosky Classic F-der的优势</span></h2><ol>
-<li><strong>小巧设计</strong>：将经典电路做到了更小的外壳内，是完整箱模方案中体积最小的。</li>
-<li><strong>供电需求低</strong>：9V &lt;100mA，任何效果器线都可以为其供电，且为analog设计，展现了态度。</li>
-<li><strong>音质优越</strong>：声音明显好于某些白色旋钮拨档的analog 0瓦箱头单块。</li>
-<li><strong>美观设计</strong>：葡萄紫涂装，赏心悦目。</li>
-<li><strong>价格实惠</strong>：价格明显低于主流digital箱模产品。</li>
-</ol>
-<p>我在今年618期间在淘宝上仅花了124元就购入了这款效果器，成为我买过的最便宜的效果器之一。在这一个多月中，我一直用它与各种设备进行对比，结果比我预期的要好很多。</p>
-<h2><span id="操作与声音体验">操作与声音体验</span></h2><p>接下来，我们来仔细看看它的操作和声音表现。首先是Clean声的试听：</p>
-<p>Clean声能够展现出它的音头质感，voice旋钮低于12点时，CF的频响曲线大致呈现银黑脸Fender声。voice旋钮是这个系列效果器的音色核心，能够改变增益度、中频量和中频凹陷点。总体来说，voice变大时，增益度增加，中频量增加，凹陷点向右移动。在12点左右可以得到tweed声，大于十二点后则偏向棕脸声。</p>
-<h2><span id="overdrive与higain表现">OverDrive与HiGain表现</span></h2><p>尚可。需要注意的是，低频较多的时候，中低频配合起来的质感较为奇怪，可能是由于调节范围过大导致的。</p>
-<p>在HiGain模式下，clean up表现中规中矩，clean up能力不高。但考虑到Fender系箱子本身clean up能力有限，且一般情况下大solo的gain多由pedal提供，所以我并不觉得这是很大的问题。</p>
-<h2><span id="总结">总结</span></h2><p>对于Mosky CF的介绍到此结束。可能有人会疑惑：“这么便宜的效果器有必要做这样一期视频来介绍吗？”我认为，_<strong>物美价廉</strong><em>的产品比</em><strong>物有所值</strong>_的产品更值得推荐给大众。设备的价格与使用体验并没有绝对联系，这对于模拟电路使用者来说，可能意味着更多对效果器产品逻辑的理解。</p>
-<p>许多优秀且有名气的效果器常被KOL介绍，这是KOL的生活方式决定的。而这种便宜的单块有很多被KOL忽视了，实际上它们是好东西。因此，它们更值得被我介绍。</p>
-<p>综合考虑之前提到的五大优势，对于许多人来说，这可能是最适合你购买的音箱模拟效果器之一。</p>
-]]></content>
-      <tags>
-        <tag>音乐设备</tag>
-        <tag>B站节目文字版</tag>
       </tags>
   </entry>
   <entry>
