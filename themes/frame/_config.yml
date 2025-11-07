@@ -1,0 +1,95 @@
+
+# html lang
+language: zh-CN
+
+# header
+site_brand_name: BeiBoogie's Blog.
+
+logo_image:
+  enable: false
+  image_path: /logo.png # path to your logo image
+
+menu:
+  主页: /
+  文章: /archives/
+  标签: /tag/
+  关于: /about/
+#  展示: /categories/gallery/
+
+# stylesheets loaded in the <head>
+stylesheets:
+- /css/style.css
+
+# scripts loaded in the end of the body
+scripts:
+- /js/menu.js
+
+# favicon
+favicon: /favicon.ico
+
+date_format: YYYY-MM-DD
+
+# profile
+profile:
+  title: "北方"
+  body: |+
+    This was a triumph. 
+    `取得巨大的成功`
+    I'm making a note here:
+    `我记下一笔：`
+    "HUGE SUCCESS".
+    `大获全胜`
+    
+    [bilibili](https://space.bilibili.com/37599416)
+
+  image: /profile_cover.jpg
+
+  links:
+    关于: /about/
+    文章: /archives/
+
+# footer
+footer:
+  copyright_info:
+    enable: true
+    author: © 2025 BeiBoogie
+
+  powered_by: # Powered by Hexo & Frame
+    enable: true
+
+  other_info:
+    enable: true
+    content: "HUGE SUCCESS."
+
+# color mode: default / classic / dark
+color_mode: default
+
+# mathjax setting
+# note: need to install the hexo plugin for math: https://github.com/hexojs/hexo-math
+mathjax_enable: false
+
+# comments: support disqus and valine
+valine: # valine setup guide: https://valine.js.org/quickstart.html
+  enable: true
+  appId: eMxCUu5kuAJnpIIliLasRKML-gzGzoHsz
+  appKey: upduy6n9SjaBm1w5Zh0xGSq7
+  recordIP: true
+  visitor: true
+  lang: 'zh-CN'
+  placeholder: '留下你的评论吧~'
+  avatar: 'mp'
+  meta: ['nick', 'mail']
+
+disqus: # disqus setup guide: https://help.disqus.com/en/articles/1717056-publisher-quick-start-guide
+  enable: false
+  disqus_url: # your diqsuq url or shortname
+  language: 'en'
+
+# local search
+local_search:
+  enable: true
+  place_holder: 全局搜索
+  trigger: auto # auto: trigger search whenever input changes
+  top_n_per_article: 1 # show top n results per article, show all results by setting to -1
+  unescape: false # unescape html strings to the readable one
+  preload: false # reload the search data when the page loads, this will accelerate the search process
