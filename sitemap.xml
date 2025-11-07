@@ -2,24 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://beiboogie.github.io/blog/behringer-clones-and-the-ori/</loc>
-    
-    <lastmod>2025-11-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://beiboogie.github.io/blog/math-emo-gear/</loc>
-    
-    <lastmod>2025-11-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://beiboogie.github.io/blog/markdown-cheatsheet/</loc>
     
     <lastmod>2025-11-06</lastmod>
@@ -95,6 +77,24 @@
     <loc>https://beiboogie.github.io/blog/inexpensive-pedal-clones-a-list/</loc>
     
     <lastmod>2024-12-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://beiboogie.github.io/blog/behringer-clones-and-the-ori/</loc>
+    
+    <lastmod>2024-11-18</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://beiboogie.github.io/blog/math-emo-gear/</loc>
+    
+    <lastmod>2024-11-07</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
