@@ -17,8 +17,10 @@
 
 
 
-
-<title>Markdown Cheatsheet | BeiBoogie&#39;s Blog</title>
+<title>
+    Markdown Cheatsheet |
+    
+    BeiBoogie&#39;s Blog</title>
 
 
 
@@ -26,23 +28,38 @@
 
 
 
-
-
-
     <!-- stylesheets list from _config.yml -->
     
-    <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/style.css">
     
-
 
 
 
     <!-- scripts list from _config.yml -->
     
-    <script src="/js/menu.js"></script>
+        <script src="/js/menu.js"></script>
     
 
 
+
+    
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@8.13.8/dist/mermaid.esm.min.mjs';
+
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'base',
+            themeVariables: {
+                "primaryColor": "#ffffff",
+                "primaryTextColor": "#333333",
+                "primaryBorderColor": "#888888",
+                "edgeLabelBackground": "#f4f4f4",
+                "tertiaryColor": "#f0f0f0",
+                "lineColor": "#999999",
+                "background": "#fdf6e3"
+            }
+        });
+    </script>
 
 
 
@@ -196,7 +213,19 @@
 <h2><span id="code">Code</span></h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">Code</span> <span class="string">Block</span>  </span><br><span class="line">&#123;  </span><br><span class="line">  <span class="attr">&quot;firstName&quot;:</span> <span class="string">&quot;John&quot;</span>,  </span><br><span class="line">  <span class="attr">&quot;lastName&quot;:</span> <span class="string">&quot;Smith&quot;</span>,  </span><br><span class="line">  <span class="attr">&quot;age&quot;:</span> <span class="number">25</span>  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>This is a <code>code</code> inside a paragraph.</p>
-<h2><span id="mermaid">Mermaid</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">gantt</span><br><span class="line">    title 音箱模拟适用性对比</span><br><span class="line">    dateFormat X</span><br><span class="line">    axisFormat %s</span><br><span class="line"></span><br><span class="line">    section Iridium</span><br><span class="line">    A : 40, 80</span><br><span class="line"></span><br><span class="line">    section Mosky F-Der</span><br><span class="line">    B : 40, 70</span><br><span class="line"></span><br><span class="line">    section UA Lion</span><br><span class="line">    C : 30, 80</span><br><span class="line">    </span><br><span class="line">    section DSM</span><br><span class="line">    D : 0,45</span><br></pre></td></tr></table></figure>
+<h2><span id="mermaid">Mermaid</span></h2><pre class="mermaid">gantt
+    title 音箱模拟适用性对比
+    dateFormat X
+    axisFormat %s
+
+    section 音箱模拟
+    
+    UA Lion :30, 75
+    Iridium :40, 75
+    TC JIM45 :50, 80
+    THR10C :40, 90
+    Mosky F-Der :40, 70
+    DSM :10, 45</pre>
 
 <h2><span id="image">Image</span></h2><p><img src="https://clio-space-1300725494.cos.ap-guangzhou.myqcloud.com/frame/test_img/cover1.jpeg" alt="alt text|700x680"></p>
 <h2><span id="table">Table</span></h2><table>

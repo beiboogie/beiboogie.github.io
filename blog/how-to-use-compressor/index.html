@@ -17,8 +17,10 @@
 
 
 
-
-<title>压缩器的使用 | BeiBoogie&#39;s Blog</title>
+<title>
+    压缩器的使用 |
+    
+    BeiBoogie&#39;s Blog</title>
 
 
 
@@ -26,23 +28,38 @@
 
 
 
-
-
-
     <!-- stylesheets list from _config.yml -->
     
-    <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/style.css">
     
-
 
 
 
     <!-- scripts list from _config.yml -->
     
-    <script src="/js/menu.js"></script>
+        <script src="/js/menu.js"></script>
     
 
 
+
+    
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@8.13.8/dist/mermaid.esm.min.mjs';
+
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'base',
+            themeVariables: {
+                "primaryColor": "#ffffff",
+                "primaryTextColor": "#333333",
+                "primaryBorderColor": "#888888",
+                "edgeLabelBackground": "#f4f4f4",
+                "tertiaryColor": "#f0f0f0",
+                "lineColor": "#999999",
+                "background": "#fdf6e3"
+            }
+        });
+    </script>
 
 
 
