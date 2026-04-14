@@ -39,3 +39,8 @@ ignore.*
 bunfig.toml
 /src/content/blog/test.*
 /test/
+
+# Vault CMS / Obsidian
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.ref/

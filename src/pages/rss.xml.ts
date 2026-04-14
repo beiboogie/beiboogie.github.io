@@ -9,8 +9,8 @@ import remarkRehype from 'remark-rehype'
 import { unified } from 'unified'
 import { visit } from 'unist-util-visit'
 
-import { getBlogCollection, sortMDByDate } from 'astro-pure/server'
 import config from 'virtual:config'
+import { getVisibleBlogPosts, sortBlogPostsByDate } from '@/utils/blog'
 
 // Get dynamic import of images as a map collection
 const imagesGlob = import.meta.glob<{ default: ImageMetadata }>(
@@ -54,7 +54,7 @@ const renderContent = async (post: CollectionEntry<'blog'>, site: URL) => {
 }
 
 const GET = async (context: AstroGlobal) => {
-  const allPostsByDate = sortMDByDate(await getBlogCollection()) as CollectionEntry<'blog'>[]
+  const allPostsByDate = sortBlogPostsByDate(await getVisibleBlogPosts()) as CollectionEntry<'blog'>[]
   const siteUrl = context.site ?? new URL(import.meta.env.SITE)
 
   return rss({

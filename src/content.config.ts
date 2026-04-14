@@ -35,25 +35,26 @@ const blog = defineCollection({
       tags: z.array(z.string()).default([]).transform(removeDupsAndLowerCase),
       language: z.string().optional(),
       draft: z.boolean().default(false),
+      hidden: z.boolean().default(false),
       // Special fields
       comment: z.boolean().default(true)
     })
 })
 
 // Define docs collection
-const docs = defineCollection({
-  loader: glob({ base: './src/content/docs', pattern: '**/*.{md,mdx}' }),
-  schema: () =>
-    z.object({
-      title: z.string().max(60),
-      description: z.string().max(160),
-      publishDate: z.coerce.date().optional(),
-      updatedDate: z.coerce.date().optional(),
-      tags: z.array(z.string()).default([]).transform(removeDupsAndLowerCase),
-      draft: z.boolean().default(false),
-      // Special fields
-      order: z.number().default(999)
-    })
-})
+// const docs = defineCollection({
+//   loader: glob({ base: './src/content/docs', pattern: '**/*.{md,mdx}' }),
+//   schema: () =>
+//     z.object({
+//       title: z.string().max(60),
+//       description: z.string().max(160),
+//       publishDate: z.coerce.date().optional(),
+//       updatedDate: z.coerce.date().optional(),
+//       tags: z.array(z.string()).default([]).transform(removeDupsAndLowerCase),
+//       draft: z.boolean().default(false),
+//       // Special fields
+//       order: z.number().default(999)
+//     })
+// })
 
-export const collections = { blog, docs }
+export const collections = { blog }

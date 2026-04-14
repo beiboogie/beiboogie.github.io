@@ -1,7 +1,7 @@
 ---
 import config from '@/site-config'
 
-import '@waline/client/style'
+import '@waline/client/waline.css'
 
 import { cn } from 'astro-pure/utils'
 
@@ -55,13 +55,13 @@ const { class: className } = Astro.props
   if (walineConfig.enable) customElements.define('comment-component', Comment)
 </script>
 
-{
-  config.integ.waline.showMeta &&(
-    <style> #waline :global(.wl-meta) { display: none; } </style>
-  )
-}
-
 <style>
+  #waline :global(.wl-meta-foot),
+  #waline :global(.wl-rss),
+  #waline :global(.wl-power) {
+    display: none !important;
+  }
+
   /* Basic theme */
   #waline {
     /* Font size */

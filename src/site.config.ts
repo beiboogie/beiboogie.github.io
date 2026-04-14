@@ -3,19 +3,19 @@ import type { CardListData, Config, IntegrationUserConfig, ThemeUserConfig } fro
 export const theme: ThemeUserConfig = {
   // [Basic]
   /** Title for your website. Will be used in metadata and as browser tab title. */
-  title: 'Astro Theme Pure',
+  title: 'BeiBoogie的博客',
   /** Will be used in index page & copyright declaration */
-  author: 'Pure Lab',
+  author: '阿北BeiBoogie',
   /** Description metadata for your website. Can be used in page metadata. */
-  description: 'Stay hungry, stay foolish',
+  description: '找到最热爱的事，然后一直做下去。',
   /** The default favicon for your site which should be a path to an image in the `public/` directory. */
   favicon: '/favicon/favicon.ico',
   /** The default social card image for your site which should be a path to an image in the `public/` directory. */
   socialCard: '/images/social-card.png',
   /** Specify the default language for this site. */
   locale: {
-    lang: 'en-US',
-    attrs: 'en_US',
+    lang: 'zh-CN',
+    attrs: 'zh_CN',
     // Date locale
     dateLocale: 'en-US',
     dateOptions: {
@@ -26,7 +26,7 @@ export const theme: ThemeUserConfig = {
   },
   /** Set a logo image to show in the homepage. */
   logo: {
-    src: '/src/assets/avatar.png',
+    src: '/src/assets/avatar.jpg',
     alt: 'Avatar'
   },
 
@@ -48,11 +48,10 @@ export const theme: ThemeUserConfig = {
   /** Configure the header of your site. */
   header: {
     menu: [
-      { title: 'Blog', link: '/blog' },
-      { title: 'Docs', link: '/docs' },
-      { title: 'Projects', link: '/projects' },
-      { title: 'Links', link: '/links' },
-      { title: 'About', link: '/about' }
+      { title: '博客Blog', link: '/blog' },
+      { title: '项目Projects', link: '/projects' },
+      // { title: 'Links', link: '/links' },
+      { title: '关于About', link: '/about' }
     ]
   },
 
@@ -76,9 +75,9 @@ export const theme: ThemeUserConfig = {
       }
     ],
     /** Enable displaying a “Astro & Pure theme powered” link in your site’s footer. */
-    credits: true,
+    credits: false,
     /** Optional details about the social media accounts for this site. */
-    social: { github: 'https://github.com/cworld1/astro-theme-pure' }
+    social: { github: 'https://github.com/beiboogie' }
   },
 
   // [Content]
@@ -115,7 +114,7 @@ export const integ: IntegrationUserConfig = {
     applyTip: [
       { name: 'Name', val: theme.title },
       { name: 'Desc', val: theme.description || 'Null' },
-      { name: 'Link', val: 'https://astro-pure.js.org/' },
+      { name: 'Link', val: 'https://space.bilibili.com/37599416' },
       { name: 'Avatar', val: 'https://astro-pure.js.org/favicon/favicon.ico' }
     ],
     // Cache avatars in `public/avatars/` to improve user experience.
@@ -162,9 +161,9 @@ export const integ: IntegrationUserConfig = {
   waline: {
     enable: true,
     // Server service link
-    server: 'https://astro-theme-pure-waline.arthals.ink/',
+    server: 'https://waline-astro-blog.vercel.app/',
     // Show meta info for comments
-    showMeta: false,
+    showMeta: true,
     // Refer https://waline.js.org/en/guide/features/emoji.html
     emoji: ['bmoji', 'weibo'],
     // Refer https://waline.js.org/en/reference/client/props.html
@@ -176,7 +175,8 @@ export const integ: IntegrationUserConfig = {
         reaction0: 'Like',
         placeholder: 'Welcome to comment. (Email to receive replies. Login is unnecessary)'
       },
-      imageUploader: false
+      imageUploader: false,
+      subscribe: false
     }
   }
 }
@@ -185,20 +185,8 @@ export const terms: CardListData = {
   title: 'Terms content',
   list: [
     {
-      title: 'Privacy Policy',
-      link: '/terms/privacy-policy'
-    },
-    {
-      title: 'Terms and Conditions',
-      link: '/terms/terms-and-conditions'
-    },
-    {
-      title: 'Copyright',
-      link: '/terms/copyright'
-    },
-    {
-      title: 'Disclaimer',
-      link: '/terms/disclaimer'
+      title: 'Site Policy',
+      link: '/terms'
     }
   ]
 }

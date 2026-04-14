@@ -1,27 +1,53 @@
 ---
-import { Button, CardList } from 'astro-pure/user'
+import { Button } from 'astro-pure/user'
 import { cn } from 'astro-pure/utils'
 import PageLayout from '@/layouts/BaseLayout.astro'
-import { integ, terms } from '@/site-config'
+import { integ } from '@/site-config'
 
 const meta = {
-  title: 'Site policy',
-  description: 'Site policy documentation'
+  title: 'Site Policy',
+  description: '本站的相关声明与政策'
 }
 ---
 
 <PageLayout {meta}>
-  <Button title='Back' href='/' variant='back' />
+  <Button title='返回 Back' href='/' variant='back' />
   <main class='mt-6 lg:mt-10'>
     <div id='content-header' class='animate'>
       <h1 class='mb-6 text-3xl font-medium'>Site Policy</h1>
     </div>
 
     <div id='content' class={cn('animate mt-8 max-w-none md:min-w-[45ch]', integ.typography.class)}>
-      <h2 class='text-xl font-medium'>Site policy documentation</h2>
-      <CardList {...terms} />
-      <h2 class='text-xl font-medium'>Help Information</h2>
-      <p>You need to add md files in this directory.</p>
+      <h2 class='text-xl font-medium'>版权声明</h2>
+      <p>
+        除特别说明外，本站所有文章均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans" target="_blank" rel="noopener noreferrer">CC BY-NC-SA 4.0</a>（署名-非商业性使用-相同方式共享）协议进行许可。
+      </p>
+      <ul>
+        <li>你可以自由地转载、修改本站内容。</li>
+        <li>但必须保留署名，且不可用于商业目的。</li>
+        <li>如果基于本站内容进行二次创作，必须采用相同的许可协议。</li>
+      </ul>
+
+      <h2 class='text-xl font-medium'>隐私说明</h2>
+      <p>
+        本站为一个静态博客，本身不会主动收集读者的任何个人隐私信息。
+      </p>
+      <ul>
+        <li><strong>评论系统：</strong> 评论功能由第三方服务提供（如 Waline/Giscus），你发布的评论、头像等信息将遵循该服务方的隐私政策。</li>
+        <li><strong>访问统计：</strong> 为了了解流量情况，本站可能会使用轻量级的统计工具，这些数据仅用于改善内容体验。</li>
+      </ul>
+
+      <h2 class='text-xl font-medium'>免责声明</h2>
+      <ul>
+        <li>本站文章仅代表作者个人观点，不代表任何雇主或机构。</li>
+        <li>文章内容仅供参考，由于技术更新迭代较快，作者无法保证所有信息的实时准确性，请在参考时自行甄别。</li>
+        <li>本站可能包含指向外部网站的链接，对于这些外部网站的内容及隐私政策，本站概不负责。</li>
+      </ul>
+
+      <h2 class='text-xl font-medium'>联系我</h2>
+      <p>
+        如果你对本站内容有任何疑问、发现错误或者侵权行为，欢迎通过 <a href="mailto:a_bei_bei@foxmail.com">邮件</a> 或者社交媒体与我联系。
+      </p>
     </div>
   </main>
 </PageLayout>

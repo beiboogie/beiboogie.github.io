@@ -1,0 +1,187 @@
+{
+  "main": {
+    "id": "5324373015726ba8",
+    "type": "split",
+    "children": [
+      {
+        "id": "4509724f8bf84da7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e7a7b303c61786dc",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "_bases/Home.base",
+                "viewName": "Blog"
+              },
+              "pinned": true,
+              "icon": "lucide-home",
+              "title": "Home"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "da9347853c1e671e",
+    "type": "split",
+    "children": [
+      {
+        "id": "138949e02988640b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e8c242375ff303d9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "3b6b23e7e7343502",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "6dd9ce0b0982d6ad",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "fbfe0eb5d2d96302",
+    "type": "split",
+    "children": [
+      {
+        "id": "2d2ec41300bc4846",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "33b199bac7a549b1",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "a23831606d5ba1f1",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          },
+          {
+            "id": "d6222cb298833ed0",
+            "type": "leaf",
+            "state": {
+              "type": "seo-global-panel",
+              "state": {},
+              "icon": "search-check",
+              "title": "SEO audit: vault"
+            }
+          },
+          {
+            "id": "ced9678fba71c20b",
+            "type": "leaf",
+            "state": {
+              "type": "seo-current-panel",
+              "state": {},
+              "icon": "search-check",
+              "title": "SEO audit: current note"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "astro-composer:Edit astro config": false,
+      "switcher:打开快速切换": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false,
+      "seo:Open SEO audit panel": false,
+      "astro-composer:Open project terminal": false,
+      "home-base:Open home base": false,
+      "obsidian-git:Open Git source control": false,
+      "zenmode:Toggle zen mode": false,
+      "obsidian42-brat:BRAT": false,
+      "omnisearch:Omnisearch": false
+    }
+  },
+  "active": "e7a7b303c61786dc",
+  "lastOpenFiles": [
+    "blog/《轻音少女》相关乐谱.md",
+    "blog/新吉他！Gretsch G2215-P90.md",
+    "_bases/Home.base",
+    "blog/耳机罩对频段的影响.md",
+    "blog/新吉他！Gretsch G2215-P90.mdx",
+    "blog/using-mdx.mdx",
+    "blog/北的监听耳机入门指南101.md",
+    "blog/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter.md",
+    "blog/assests/g2215.avif",
+    "blog/北的监听耳机入门指南101.MDX",
+    "blog/北的监听耳机入门指南101.mdx",
+    "blog/【FLAC】Rosary & Bible Intro.md",
+    "blog/【FLAC】原创EP 《世界向前走了》.md",
+    "blog/《世界向前走了》制作记录.md",
+    "_GUIDE.md",
+    "blog/assests/g2215-1.avif",
+    "blog/assests/guitar.jpg",
+    "blog/偶次谐波.md",
+    "blog/经典效果器和他们经济实惠的克隆.md",
+    "blog/hidden/MarkdownCheatsheet.md"
+  ]
+}

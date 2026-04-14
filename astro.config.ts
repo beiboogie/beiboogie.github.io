@@ -1,5 +1,8 @@
+import { readdirSync, readFileSync, statSync } from 'node:fs'
+import { extname, join, relative, sep } from 'node:path'
+
 import { rehypeHeadingIds } from '@astrojs/markdown-remark'
-import vercel from '@astrojs/vercel'
+import sitemap from '@astrojs/sitemap'
 import AstroPureIntegration from 'astro-pure'
 import { defineConfig, fontProviders } from 'astro/config'
 import rehypeKatex from 'rehype-katex'
@@ -22,24 +25,75 @@ import {
 } from './src/plugins/shiki-official/transformers.ts'
 import config from './src/site.config.ts'
 
+const blogContentDir = join(process.cwd(), 'src', 'content', 'blog')
+
+function normalizePathname(pathname: string) {
+  return pathname !== '/' ? pathname.replace(/\/+$/, '') : pathname
+}
+
+function getMarkdownFiles(dir: string): string[] {
+  return readdirSync(dir).flatMap((entry) => {
+    const fullPath = join(dir, entry)
+    const stats = statSync(fullPath)
+
+    if (stats.isDirectory()) return getMarkdownFiles(fullPath)
+
+    return ['.md', '.mdx'].includes(extname(fullPath)) ? [fullPath] : []
+  })
+}
+
+function getBlogRouteFromFile(filePath: string, frontmatter: string) {
+  const slugMatch = frontmatter.match(/^slug:\s*(.+)\s*$/m)
+  const slug = slugMatch?.[1]?.trim()
+
+  if (slug) return `/blog/${slug}`
+
+  const relativePath = relative(blogContentDir, filePath)
+  const pathWithoutExt = relativePath.replace(/\.(md|mdx)$/i, '')
+  const segments = pathWithoutExt.split(sep)
+
+  if (segments.at(-1) === 'index') segments.pop()
+
+  return `/blog/${segments.join('/')}`
+}
+
+function getHiddenBlogPathnames() {
+  return new Set(
+    getMarkdownFiles(blogContentDir).flatMap((filePath) => {
+      const fileContent = readFileSync(filePath, 'utf-8')
+      const frontmatterMatch = fileContent.match(/^---\r?\n([\s\S]*?)\r?\n---/)
+      const frontmatter = frontmatterMatch?.[1]
+
+      if (!frontmatter) return []
+
+      const hiddenMatch = frontmatter.match(/^hidden:\s*(true|false)\s*$/m)
+      if (hiddenMatch?.[1] !== 'true') return []
+
+      return [normalizePathname(getBlogRouteFromFile(filePath, frontmatter))]
+    })
+  )
+}
+
+const hiddenBlogPathnames = getHiddenBlogPathnames()
+
 // https://astro.build/config
 export default defineConfig({
+  vite: {
+    assetsInclude: ['**/*.base', '**/.obsidian/**', '**/_bases/**'],
+    server: {
+      watch: {
+        ignored: ['**/.obsidian/**', '**/_bases/**', '**/bases/**', '**/_home/**', '**/home/**', '**/_base/**', '**/base/**']
+      }
+    }
+  },
   // [Basic]
-  site: 'https://astro-pure.js.org',
+  site: 'https://beiboogie.github.io',
   // Deploy to a sub path
   // https://astro-pure.js.org/docs/setup/deployment#platform-with-base-path
   // base: '/astro-pure/',
-  trailingSlash: 'never',
+  trailingSlash: 'ignore',
   // root: './my-project-directory',
   server: { host: true },
-
-  // [Adapter]
-  // https://docs.astro.build/en/guides/deploy/
-  adapter: vercel({ imageService: true }),
-  output: 'server',
-  // Local (standalone)
-  // adapter: node({ mode: 'standalone' }),
-  // output: 'server',
 
   // [Assets]
   image: {
@@ -102,8 +156,11 @@ export default defineConfig({
 
   // [Integrations]
   integrations: [
-    // astro-pure will automatically add sitemap, mdx & unocss
-    // sitemap(),
+    sitemap({
+      filter(page) {
+        return !hiddenBlogPathnames.has(normalizePathname(new URL(page).pathname))
+      }
+    }),
     // mdx(),
     AstroPureIntegration(config)
   ],

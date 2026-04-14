@@ -3,17 +3,21 @@ import type { GetStaticPaths, Page } from 'astro'
 import type { CollectionEntry } from 'astro:content'
 
 import { Paginator, PostPreview } from 'astro-pure/components/pages'
-import { getBlogCollection, getUniqueTags, sortMDByDate } from 'astro-pure/server'
 import { Button } from 'astro-pure/user'
 import PageLayout from '@/layouts/BaseLayout.astro'
 import config from '@/site-config'
+import {
+  getUniqueBlogTags,
+  getVisibleBlogPosts,
+  sortBlogPostsByDate
+} from '@/utils/blog'
 
 export const prerender = true
 
 export const getStaticPaths: GetStaticPaths = async ({ paginate }) => {
-  const allPosts = await getBlogCollection()
-  const allPostsByDate = sortMDByDate(allPosts)
-  const uniqueTags = getUniqueTags(allPostsByDate)
+  const allPosts = await getVisibleBlogPosts()
+  const allPostsByDate = sortBlogPostsByDate(allPosts)
+  const uniqueTags = getUniqueBlogTags(allPostsByDate)
 
   return uniqueTags.flatMap((tag) => {
     const filterPosts = allPostsByDate.filter((post) => post.data.tags.includes(tag))
@@ -53,7 +57,7 @@ const paginationProps = {
 ---
 
 <PageLayout {meta}>
-  <Button title='Back' href='/blog' variant='back' />
+  <Button title='返回 Back' href='/blog' variant='back' />
   <main class='mt-6 lg:mt-10'>
     <div id='content-header' class='animate'>
       <h1 class='mb-6 flex items-end gap-x-2 text-3xl font-medium'>
