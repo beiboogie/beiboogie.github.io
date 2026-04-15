@@ -5,13 +5,13 @@
   "keywordProperty": "",
   "descriptionProperty": "description",
   "titleProperty": "title",
-  "useFilenameAsTitle": false,
-  "slugProperty": "",
-  "useFilenameAsSlug": true,
+  "useFilenameAsTitle": true,
+  "slugProperty": "slug",
+  "useFilenameAsSlug": false,
   "parentFolderSlugFilename": "index",
-  "titlePrefixSuffix": "",
-  "checkTitleLength": true,
-  "checkHeadingOrder": true,
+  "titlePrefixSuffix": "beiboogie",
+  "checkTitleLength": false,
+  "checkHeadingOrder": false,
   "checkAltText": true,
   "checkImageNaming": true,
   "checkBrokenLinks": true,
@@ -19,7 +19,7 @@
   "enableExternalLinkButton": true,
   "enableExternalLinkVaultCheck": false,
   "checkNakedLinks": true,
-  "checkContentLength": true,
+  "checkContentLength": false,
   "checkDuplicateContent": false,
   "checkReadingLevel": true,
   "checkPotentiallyBrokenLinks": true,
@@ -30,36 +30,28 @@
   "defaultSort": "issues-desc",
   "showRibbonIcon": true,
   "exportFormat": "csv",
-  "minContentLength": 300,
+  "minContentLength": 150,
   "keywordDensityMin": 1,
   "keywordDensityMax": 2,
   "duplicateThreshold": 80,
   "cachedGlobalResults": [
     {
-      "file": "blog/高性价比Fender音箱模拟：Mosky Classic F-der.md",
-      "displayName": "高性价比Fender音箱模拟：Mosky Classic F-der",
+      "file": "blog/耳机罩对频段的影响.md",
+      "displayName": "耳机罩/耳罩对频段的影响",
       "checks": {
-        "titleLength": [
-          {
-            "passed": true,
-            "message": "Good title length: 34 characters",
-            "severity": "info"
-          }
-        ],
+        "titleLength": [],
         "metaDescription": [
           {
-            "passed": false,
-            "message": "Description too short: 4 characters",
-            "suggestion": "Aim for 120-160 characters",
-            "severity": "warning"
+            "passed": true,
+            "message": "Good description length: 67 characters",
+            "severity": "info"
           }
         ],
         "titleH1Uniqueness": [
           {
-            "passed": false,
-            "message": "Meta title and H1 are identical",
-            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
-            "severity": "warning"
+            "passed": true,
+            "message": "Meta title and H1 are unique (prefix/suffix configured)",
+            "severity": "info"
           }
         ],
         "keywordInTitle": [],
@@ -68,21 +60,94 @@
         "keywordInSlug": [],
         "slugFormat": [],
         "keywordDensity": [],
-        "headingOrder": [
+        "headingOrder": [],
+        "contentLength": [],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
           {
             "passed": true,
-            "message": "Heading structure is correct",
+            "message": "All media elements have alt text",
             "severity": "info"
           }
         ],
-        "contentLength": [
+        "imageFileNames": [
           {
-            "passed": false,
-            "message": "Content too short: 57 words",
-            "suggestion": "Aim for at least 300 words",
-            "severity": "warning"
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
           }
         ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No external links found",
+            "severity": "info"
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": true,
+            "message": "Good reading level: -11.9 (Very easy to read)",
+            "severity": "info"
+          }
+        ]
+      },
+      "overallScore": 100,
+      "issuesCount": 0,
+      "warningsCount": 0,
+      "noticesCount": 0
+    },
+    {
+      "file": "blog/高性价比Fender音箱模拟：Mosky Classic F-der.md",
+      "displayName": "高性价比Fender音箱模拟：Mosky Classic F-der",
+      "checks": {
+        "titleLength": [],
+        "metaDescription": [
+          {
+            "passed": true,
+            "message": "Good description length: 75 characters",
+            "severity": "info"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": true,
+            "message": "Meta title and H1 are unique (prefix/suffix configured)",
+            "severity": "info"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [],
+        "contentLength": [],
         "duplicateTitles": [],
         "duplicateDescriptions": [],
         "duplicateContent": [],
@@ -137,37 +202,28 @@
           }
         ]
       },
-      "overallScore": 68,
+      "overallScore": 100,
       "issuesCount": 0,
-      "warningsCount": 3,
+      "warningsCount": 0,
       "noticesCount": 0
     },
     {
       "file": "blog/自己给吉他做Setup.md",
       "displayName": "自己给吉他做Setup",
       "checks": {
-        "titleLength": [
-          {
-            "passed": false,
-            "message": "Title too short: 11 characters",
-            "suggestion": "Aim for 30-60 characters",
-            "severity": "warning"
-          }
-        ],
+        "titleLength": [],
         "metaDescription": [
           {
-            "passed": false,
-            "message": "Description too short: 4 characters",
-            "suggestion": "Aim for 120-160 characters",
-            "severity": "warning"
+            "passed": true,
+            "message": "Good description length: 53 characters",
+            "severity": "info"
           }
         ],
         "titleH1Uniqueness": [
           {
-            "passed": false,
-            "message": "Meta title and H1 are identical",
-            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
-            "severity": "warning"
+            "passed": true,
+            "message": "Meta title and H1 are unique (prefix/suffix configured)",
+            "severity": "info"
           }
         ],
         "keywordInTitle": [],
@@ -176,21 +232,8 @@
         "keywordInSlug": [],
         "slugFormat": [],
         "keywordDensity": [],
-        "headingOrder": [
-          {
-            "passed": true,
-            "message": "Heading structure is correct",
-            "severity": "info"
-          }
-        ],
-        "contentLength": [
-          {
-            "passed": false,
-            "message": "Content too short: 90 words",
-            "suggestion": "Aim for at least 300 words",
-            "severity": "warning"
-          }
-        ],
+        "headingOrder": [],
+        "contentLength": [],
         "duplicateTitles": [],
         "duplicateDescriptions": [],
         "duplicateContent": [],
@@ -245,378 +288,28 @@
           }
         ]
       },
-      "overallScore": 60,
+      "overallScore": 100,
       "issuesCount": 0,
-      "warningsCount": 4,
-      "noticesCount": 0
-    },
-    {
-      "file": "blog/耳机罩对频段的影响.md",
-      "displayName": "耳机罩对频段的影响",
-      "checks": {
-        "titleLength": [
-          {
-            "passed": false,
-            "message": "Title too short: 9 characters",
-            "suggestion": "Aim for 30-60 characters",
-            "severity": "warning"
-          }
-        ],
-        "metaDescription": [
-          {
-            "passed": false,
-            "message": "Description too short: 4 characters",
-            "suggestion": "Aim for 120-160 characters",
-            "severity": "warning"
-          }
-        ],
-        "titleH1Uniqueness": [
-          {
-            "passed": false,
-            "message": "Meta title and H1 are identical",
-            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
-            "severity": "warning"
-          }
-        ],
-        "keywordInTitle": [],
-        "keywordInDescription": [],
-        "keywordInHeadings": [],
-        "keywordInSlug": [],
-        "slugFormat": [],
-        "keywordDensity": [],
-        "headingOrder": [
-          {
-            "passed": true,
-            "message": "Heading structure is correct",
-            "severity": "info"
-          }
-        ],
-        "contentLength": [
-          {
-            "passed": false,
-            "message": "Content too short: 101 words",
-            "suggestion": "Aim for at least 300 words",
-            "severity": "warning"
-          }
-        ],
-        "duplicateTitles": [],
-        "duplicateDescriptions": [],
-        "duplicateContent": [],
-        "altText": [
-          {
-            "passed": false,
-            "message": "Media missing alt text: ./assests/耳机罩对频段的影响/IMG-20251105151233358.webp",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 49,
-              "searchText": "![](./assests/耳机罩对频段的影响/IMG-20251105151233358.webp)",
-              "context": "> 热压蛋白皮，冰感，布料，热压小羊皮（但是。。）\n\n![](./assests/耳机罩对频段的影响/IMG-20251105151233358.webp)\n\n在收到后，我发现商家似乎将热压小羊皮款发成了拼接小羊皮款。  "
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: ./assests/耳机罩对频段的影响/IMG-20251104234708581.webp",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 69,
-              "searchText": "![](./assests/耳机罩对频段的影响/IMG-20251104234708581.webp)",
-              "context": "> 厚度：拼接小羊皮 ≈ 冰感 > 布料 > 热压蛋白皮\n\n![](./assests/耳机罩对频段的影响/IMG-20251104234708581.webp)\n\n和直觉上很一致，耳罩的厚度和低频量有直观的联系。  "
-            }
-          }
-        ],
-        "imageFileNames": [
-          {
-            "passed": true,
-            "message": "All images have good file names",
-            "severity": "info"
-          }
-        ],
-        "nakedLinks": [
-          {
-            "passed": true,
-            "message": "No naked links found",
-            "severity": "info"
-          }
-        ],
-        "brokenLinks": [
-          {
-            "passed": true,
-            "message": "No broken internal links found",
-            "severity": "info"
-          }
-        ],
-        "potentiallyBrokenLinks": [
-          {
-            "passed": true,
-            "message": "No potentially broken links found",
-            "severity": "info"
-          }
-        ],
-        "potentiallyBrokenEmbeds": [],
-        "externalBrokenLinks": [
-          {
-            "passed": true,
-            "message": "No external links found",
-            "severity": "info"
-          }
-        ],
-        "readingLevel": [
-          {
-            "passed": true,
-            "message": "Good reading level: -11.9 (Very easy to read)",
-            "severity": "info"
-          }
-        ]
-      },
-      "overallScore": 50,
-      "issuesCount": 2,
-      "warningsCount": 4,
-      "noticesCount": 0
-    },
-    {
-      "file": "blog/美少女们都爱用：RAT系失真效果器横评&详解.md",
-      "displayName": "美少女们都爱用：RAT系失真效果器横评&详解",
-      "checks": {
-        "titleLength": [
-          {
-            "passed": false,
-            "message": "Title too short: 22 characters",
-            "suggestion": "Aim for 30-60 characters",
-            "severity": "warning"
-          }
-        ],
-        "metaDescription": [
-          {
-            "passed": false,
-            "message": "Description too short: 4 characters",
-            "suggestion": "Aim for 120-160 characters",
-            "severity": "warning"
-          }
-        ],
-        "titleH1Uniqueness": [
-          {
-            "passed": false,
-            "message": "Meta title and H1 are identical",
-            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
-            "severity": "warning"
-          }
-        ],
-        "keywordInTitle": [],
-        "keywordInDescription": [],
-        "keywordInHeadings": [],
-        "keywordInSlug": [],
-        "slugFormat": [],
-        "keywordDensity": [],
-        "headingOrder": [
-          {
-            "passed": true,
-            "message": "Heading structure is correct",
-            "severity": "info"
-          }
-        ],
-        "contentLength": [
-          {
-            "passed": false,
-            "message": "Content too short: 71 words",
-            "suggestion": "Aim for at least 300 words",
-            "severity": "warning"
-          }
-        ],
-        "duplicateTitles": [],
-        "duplicateDescriptions": [],
-        "duplicateContent": [],
-        "altText": [
-          {
-            "passed": true,
-            "message": "No media elements in this post",
-            "severity": "info"
-          }
-        ],
-        "imageFileNames": [
-          {
-            "passed": true,
-            "message": "All images have good file names",
-            "severity": "info"
-          }
-        ],
-        "nakedLinks": [
-          {
-            "passed": true,
-            "message": "No naked links found",
-            "severity": "info"
-          }
-        ],
-        "brokenLinks": [
-          {
-            "passed": true,
-            "message": "No broken internal links found",
-            "severity": "info"
-          }
-        ],
-        "potentiallyBrokenLinks": [
-          {
-            "passed": true,
-            "message": "No potentially broken links found",
-            "severity": "info"
-          }
-        ],
-        "potentiallyBrokenEmbeds": [],
-        "externalBrokenLinks": [
-          {
-            "passed": true,
-            "message": "No external links found",
-            "severity": "info"
-          }
-        ],
-        "readingLevel": [
-          {
-            "passed": true,
-            "message": "Good reading level: -0.0 (Very easy to read)",
-            "severity": "info"
-          }
-        ]
-      },
-      "overallScore": 60,
-      "issuesCount": 0,
-      "warningsCount": 4,
-      "noticesCount": 0
-    },
-    {
-      "file": "blog/给吉他换弦的时候需要注意的问题.md",
-      "displayName": "给吉他换弦的时候需要注意的问题",
-      "checks": {
-        "titleLength": [
-          {
-            "passed": false,
-            "message": "Title too short: 15 characters",
-            "suggestion": "Aim for 30-60 characters",
-            "severity": "warning"
-          }
-        ],
-        "metaDescription": [
-          {
-            "passed": false,
-            "message": "Description too short: 4 characters",
-            "suggestion": "Aim for 120-160 characters",
-            "severity": "warning"
-          }
-        ],
-        "titleH1Uniqueness": [
-          {
-            "passed": false,
-            "message": "Meta title and H1 are identical",
-            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
-            "severity": "warning"
-          }
-        ],
-        "keywordInTitle": [],
-        "keywordInDescription": [],
-        "keywordInHeadings": [],
-        "keywordInSlug": [],
-        "slugFormat": [],
-        "keywordDensity": [],
-        "headingOrder": [
-          {
-            "passed": true,
-            "message": "No heading structure issues found",
-            "severity": "info"
-          }
-        ],
-        "contentLength": [
-          {
-            "passed": false,
-            "message": "Content too short: 4 words",
-            "suggestion": "Aim for at least 300 words",
-            "severity": "warning"
-          }
-        ],
-        "duplicateTitles": [],
-        "duplicateDescriptions": [],
-        "duplicateContent": [],
-        "altText": [
-          {
-            "passed": true,
-            "message": "No media elements in this post",
-            "severity": "info"
-          }
-        ],
-        "imageFileNames": [
-          {
-            "passed": true,
-            "message": "All images have good file names",
-            "severity": "info"
-          }
-        ],
-        "nakedLinks": [
-          {
-            "passed": true,
-            "message": "No naked links found",
-            "severity": "info"
-          }
-        ],
-        "brokenLinks": [
-          {
-            "passed": true,
-            "message": "No broken internal links found",
-            "severity": "info"
-          }
-        ],
-        "potentiallyBrokenLinks": [
-          {
-            "passed": true,
-            "message": "No potentially broken links found",
-            "severity": "info"
-          }
-        ],
-        "potentiallyBrokenEmbeds": [],
-        "externalBrokenLinks": [
-          {
-            "passed": true,
-            "message": "No external links found",
-            "severity": "info"
-          }
-        ],
-        "readingLevel": [
-          {
-            "passed": true,
-            "message": "Good reading level: -15.1 (Very easy to read)",
-            "severity": "info"
-          }
-        ]
-      },
-      "overallScore": 60,
-      "issuesCount": 0,
-      "warningsCount": 4,
+      "warningsCount": 0,
       "noticesCount": 0
     },
     {
       "file": "blog/经典效果器和他们经济实惠的克隆.md",
       "displayName": "经典效果器和他们经济实惠的克隆",
       "checks": {
-        "titleLength": [
-          {
-            "passed": false,
-            "message": "Title too short: 15 characters",
-            "suggestion": "Aim for 30-60 characters",
-            "severity": "warning"
-          }
-        ],
+        "titleLength": [],
         "metaDescription": [
           {
-            "passed": false,
-            "message": "Description too short: 4 characters",
-            "suggestion": "Aim for 120-160 characters",
-            "severity": "warning"
+            "passed": true,
+            "message": "Good description length: 65 characters",
+            "severity": "info"
           }
         ],
         "titleH1Uniqueness": [
           {
-            "passed": false,
-            "message": "Meta title and H1 are identical",
-            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
-            "severity": "warning"
+            "passed": true,
+            "message": "Meta title and H1 are unique (prefix/suffix configured)",
+            "severity": "info"
           }
         ],
         "keywordInTitle": [],
@@ -625,474 +318,16 @@
         "keywordInSlug": [],
         "slugFormat": [],
         "keywordDensity": [],
-        "headingOrder": [
-          {
-            "passed": true,
-            "message": "Heading structure is correct",
-            "severity": "info"
-          }
-        ],
-        "contentLength": [
-          {
-            "passed": true,
-            "message": "Good content length: 830 words",
-            "severity": "info"
-          }
-        ],
+        "headingOrder": [],
+        "contentLength": [],
         "duplicateTitles": [],
         "duplicateDescriptions": [],
         "duplicateContent": [],
         "altText": [
           {
-            "passed": false,
-            "message": "Media missing alt text: https://cdn.shopify.com/s/files/1/0361/2681/files/TS_small.jpg?2790",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 36,
-              "searchText": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/TS_small.jpg?2790)",
-              "context": "### Ibanez Tube Screamer\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/TS_small.jpg?2790)\n\n- [Biyang OD8 X Drive](https://spartanmusic.co.uk/collections/biyang-guitar-pedals/products/biyang-od-8-x-drive)"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: https://cdn.shopify.com/s/files/1/0361/2681/files/bigmuff_small.jpg?2790",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 50,
-              "searchText": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/bigmuff_small.jpg?2790)",
-              "context": "- Mosky Mini Screamer\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/bigmuff_small.jpg?2790)\n\n- [Biyang FZ-10 Fuzz Star](https://spartanmusic.co.uk/collections/biyang-guitar-pedals/products/biyang-fz-10-fuzz)"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: https://cdn.shopify.com/s/files/1/0361/2681/files/191810_small.jpg?2791",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 56,
-              "searchText": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/191810_small.jpg?2791)",
-              "context": "- Behringer Vintage Distortion\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/191810_small.jpg?2791)\n\n- Joyo JF17 Extreme Metal"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: https://cdn.shopify.com/s/files/1/0361/2681/files/electric_mistress_small.jpg?2792",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 65,
-              "searchText": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/electric_mistress_small.jpg?2792)",
-              "context": "### EHX Electric Mistress\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/electric_mistress_small.jpg?2792)\n\n- Mooer Eleclady"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: https://cdn.shopify.com/s/files/1/0361/2681/files/bigmuff_triangle_small.jpg?2793",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 69,
-              "searchText": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/bigmuff_triangle_small.jpg?2793)",
-              "context": "- Mooer Eleclady\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/bigmuff_triangle_small.jpg?2793)\n\n- Mooer Triangle Buff"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: https://cdn.shopify.com/s/files/1/0361/2681/files/bigmuff_ramshead_small.jpg?2794",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 75,
-              "searchText": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/bigmuff_ramshead_small.jpg?2794)",
-              "context": "### EHX Rams Head\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/bigmuff_ramshead_small.jpg?2794)\n\n- Moen Fuzz Moo"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: https://cdn.shopify.com/s/files/1/0361/2681/files/475656000000000-00-750x750_small.jpg?2795",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 81,
-              "searchText": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/475656000000000-00-750x750_small.jpg?2795)",
-              "context": "### Fulltone OCD\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/475656000000000-00-750x750_small.jpg?2795)\n\n- ENO Trouble"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: https://cdn.shopify.com/s/files/1/0361/2681/files/images_small.jpeg?2796",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 94,
-              "searchText": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/images_small.jpeg?2796)",
-              "context": "### Fulltone Ultimate Octave\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/images_small.jpeg?2796)\n\n- [Joyo JF12 Octave](https://spartanmusic.co.uk/products/joyo-voodoo-octave-fuzz-jf-12)"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: https://cdn.shopify.com/s/files/1/0361/2681/files/history_rat2_new_small.jpg?2797",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 102,
-              "searchText": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/history_rat2_new_small.jpg?2797)",
-              "context": "### Pro Co RAT\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/history_rat2_new_small.jpg?2797)\n\n- ENO Myomorpha"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: https://cdn.shopify.com/s/files/1/0361/2681/files/mi_effects_super_crunch_box1_small.jpg?2798",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 113,
-              "searchText": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/mi_effects_super_crunch_box1_small.jpg?2798)",
-              "context": "### MI Audio Crunch Box\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/mi_effects_super_crunch_box1_small.jpg?2798)\n\n- ENO Classic"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: https://cdn.shopify.com/s/files/1/0361/2681/files/dynacomp_small.jpg?2798",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 124,
-              "searchText": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/dynacomp_small.jpg?2798)",
-              "context": "### MXR Dyna Comp\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/dynacomp_small.jpg?2798)\n\n- [Biyang CO10](https://spartanmusic.co.uk/collections/biyang-guitar-pedals/products/biyang-co-10-compress-x)"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: https://cdn.shopify.com/s/files/1/0361/2681/files/mxrphase_small.jpg?2798",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 133,
-              "searchText": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/mxrphase_small.jpg?2798)",
-              "context": "### MXR Phase 90\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/mxrphase_small.jpg?2798)\n\n- [Biyang PH10 Phaser](https://vortasound.myshopify.com/collections/biyang-guitar-pedals/products/biyang-ph-10-phase-pro)"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: https://cdn.shopify.com/s/files/1/0361/2681/files/download_small.jpeg?2799",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 142,
-              "searchText": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_small.jpeg?2799)",
-              "context": "### Boss BF-2 Flanger\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_small.jpeg?2799)\n\n- ENO BF-2 Flanger"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: https://cdn.shopify.com/s/files/1/0361/2681/files/tn2_241262_small.jpg?2801",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 151,
-              "searchText": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/tn2_241262_small.jpg?2801)",
-              "context": "### Boss BD2 Blues Driver\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/tn2_241262_small.jpg?2801)\n\n- Digitech Screaming Blues"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: https://cdn.shopify.com/s/files/1/0361/2681/files/boss-chorus-ensemble-ce-2_small.jpg?2802",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 160,
-              "searchText": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/boss-chorus-ensemble-ce-2_small.jpg?2802)",
-              "context": "### Boss CE2 Chorus\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/boss-chorus-ensemble-ce-2_small.jpg?2802)\n\n- ENO Chorus"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: https://cdn.shopify.com/s/files/1/0361/2681/files/ds1_small.jpg?2802",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 173,
-              "searchText": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/ds1_small.jpg?2802)",
-              "context": "### Boss DS1 Distortion\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/ds1_small.jpg?2802)\n\n- ENO Trinity"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: https://cdn.shopify.com/s/files/1/0361/2681/files/download_1_small.jpeg?2803",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 183,
-              "searchText": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_1_small.jpeg?2803)",
-              "context": "### Boss OC3 Octave\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_1_small.jpeg?2803)\n\n- ENO Octaver OCT-1"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: https://cdn.shopify.com/s/files/1/0361/2681/files/DD-2_4_small.jpg?2805",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 191,
-              "searchText": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/DD-2_4_small.jpg?2805)",
-              "context": "### Boss DD2 Delay\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/DD-2_4_small.jpg?2805)\n\n- [Joyo JF08 Delay](https://spartanmusic.co.uk/products/joyo-digital-delay-jf-08)"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: https://cdn.shopify.com/s/files/1/0361/2681/files/images_1_small.jpeg?2806",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 200,
-              "searchText": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/images_1_small.jpeg?2806)",
-              "context": "### Boss DM3 Analogue Delay\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/images_1_small.jpeg?2806)\n\n- ENO AD6 Delay"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: https://cdn.shopify.com/s/files/1/0361/2681/files/download_2_small.jpeg?2807",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 209,
-              "searchText": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_2_small.jpeg?2807)",
-              "context": "### Boss EQ7\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_2_small.jpeg?2807)\n\n- [Biyang EQ7](https://vortasound.myshopify.com/collections/biyang-guitar-pedals/products/biyang-eq-7-equalizer)"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: https://cdn.shopify.com/s/files/1/0361/2681/files/images_2_small.jpeg?2808",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 218,
-              "searchText": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/images_2_small.jpeg?2808)",
-              "context": "### Boss DM2 Delay\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/images_2_small.jpeg?2808)\n\n- ENO AE-1 Ambient Echo"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: https://cdn.shopify.com/s/files/1/0361/2681/files/download_3_small.jpeg?2809",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 224,
-              "searchText": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_3_small.jpeg?2809)",
-              "context": "### Mad Professor Deep Blue\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_3_small.jpeg?2809)\n\n- [Caline Blue Ocean](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-19-ocean-delay)"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: https://cdn.shopify.com/s/files/1/0361/2681/files/download_4_small.jpeg?2810",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 231,
-              "searchText": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_4_small.jpeg?2810)",
-              "context": "### Mad Professor Sweet Honey\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_4_small.jpeg?2810)\n\n- [Joyo JF36 Sweet Baby](https://spartanmusic.co.uk/products/joyo-sweet-baby-overdrive-jf-36)"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: https://cdn.shopify.com/s/files/1/0361/2681/files/download_5_small.jpeg?2811",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 238,
-              "searchText": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_5_small.jpeg?2811)",
-              "context": "### Xotic BB Preamp\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_5_small.jpeg?2811)\n\n- [Caline Orange Burst](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-18-orange-burst)"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: https://cdn.shopify.com/s/files/1/0361/2681/files/download_6_small.jpeg?2812",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 247,
-              "searchText": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_6_small.jpeg?2812)",
-              "context": "### Xotic RC Booster\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_6_small.jpeg?2812)\n\n- Mooer Pure Boost"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: https://cdn.shopify.com/s/files/1/0361/2681/files/download_7_small.jpeg?2813",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 254,
-              "searchText": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_7_small.jpeg?2813)",
-              "context": "### Tech21 Blonde\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_7_small.jpeg?2813)\n\n- [Joyo JF14 American Sound](https://spartanmusic.co.uk/products/joyo-american-sound-jf-14)"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: https://cdn.shopify.com/s/files/1/0361/2681/files/download_8_small.jpeg?2814",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 261,
-              "searchText": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_8_small.jpeg?2814)",
-              "context": "### Tech21 British\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_8_small.jpeg?2814)\n\n- [Caline CP-58](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-58-british-sound-summit-amp-sim)"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: https://cdn.shopify.com/s/files/1/0361/2681/files/download_9_small.jpeg?2815",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 268,
-              "searchText": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_9_small.jpeg?2815)",
-              "context": "### Tech21 Liverpool\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_9_small.jpeg?2815)\n\n- [Joyo JF13 AC Tone](https://spartanmusic.co.uk/products/joyo-ac-tone-jf-13)"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: https://cdn.shopify.com/s/files/1/0361/2681/files/download_10_small.jpeg?2816",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 276,
-              "searchText": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_10_small.jpeg?2816)",
-              "context": "### Tech21 California\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_10_small.jpeg?2816)\n\n- [Joyo JF15 California](https://spartanmusic.co.uk/products/joyo-california-sound-jf-16)"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: https://cdn.shopify.com/s/files/1/0361/2681/files/download_11_small.jpeg?2817",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 283,
-              "searchText": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_11_small.jpeg?2817)",
-              "context": "### Dunlop Uni-Vibe\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_11_small.jpeg?2817)\n\n- Moen Shaky Jimi"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: https://cdn.shopify.com/s/files/1/0361/2681/files/images_3_small.jpeg?2818",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 287,
-              "searchText": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/images_3_small.jpeg?2818)",
-              "context": "- Moen Shaky Jimi\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/images_3_small.jpeg?2818)\n\n- [Joyo JF34 US Dream](https://spartanmusic.co.uk/products/joyo-us-dream-jf-34)"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: https://cdn.shopify.com/s/files/1/0361/2681/files/download_12_small.jpeg?2819",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 297,
-              "searchText": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_12_small.jpeg?2819)",
-              "context": "### Demeter Tremulator\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_12_small.jpeg?2819)\n\n- [Joyo JF-09 Tremolo](https://spartanmusic.co.uk/products/joyo-tremolo-jf-09)"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: https://cdn.shopify.com/s/files/1/0361/2681/files/download_13_small.jpeg?2820",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 305,
-              "searchText": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_13_small.jpeg?2820)",
-              "context": "### Carl Martin Plexitone\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_13_small.jpeg?2820)\n\n- Joyo JF-32 Hot Plexi Drive"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: https://cdn.shopify.com/s/files/1/0361/2681/files/download_14_small.jpeg?2821",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 314,
-              "searchText": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_14_small.jpeg?2821)",
-              "context": "### Marshall Guv’nor\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_14_small.jpeg?2821)\n\n- Danelectro Daddy-O Overdrive"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: https://cdn.shopify.com/s/files/1/0361/2681/files/download_15_small.jpeg?2826",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 320,
-              "searchText": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_15_small.jpeg?2826)",
-              "context": "### Klon Centaur\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_15_small.jpeg?2826)\n\n- [EHX Soul Food](https://spartanmusic.co.uk/products/electro-harmonix-soul-food)"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: https://cdn.shopify.com/s/files/1/0361/2681/files/DOD_250_TOP_original_compact.jpg?v=1495216299",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 332,
-              "searchText": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/DOD_250_TOP_original_compact.jpg?v=1495216299)",
-              "context": "### DOD Overdrive Preamp 250\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/DOD_250_TOP_original_compact.jpg?v=1495216299)\n\n- [Caline White Heat](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-29-white-heat) - Discontinued"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: https://cdn.shopify.com/s/files/1/0361/2681/files/download-1_compact.jpg?v=1495216344",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 338,
-              "searchText": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/download-1_compact.jpg?v=1495216344)",
-              "context": "### Fulltone Fulldrive 2\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/download-1_compact.jpg?v=1495216344)\n\n- [Caline Crazy Cacti](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-20-crazy-cacti)"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: https://cdn.shopify.com/s/files/1/0361/2681/files/H96152000000000-00-500x500_compact.jpg?v=1495216306",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 344,
-              "searchText": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/H96152000000000-00-500x500_compact.jpg?v=1495216306)",
-              "context": "### Wampler Plexidrive\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/H96152000000000-00-500x500_compact.jpg?v=1495216306)\n\n- [Caline Rockface](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-21-rock-face) - Discontinued"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: https://cdn.shopify.com/s/files/1/0361/2681/files/download-1_24d25827-35fc-4cf6-821a-69fefffc328e_small.jpg?v=1536419125",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 350,
-              "searchText": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/download-1_24d25827-35fc-4cf6-821a-69fefffc328e_small.jpg?v=1536419125)",
-              "context": "### Diamond Compressor\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/download-1_24d25827-35fc-4cf6-821a-69fefffc328e_small.jpg?v=1536419125)\n\n- [Caline Pressure Tank](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-47-pressure-tank)"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: https://cdn.shopify.com/s/files/1/0361/2681/files/gcgculrewethjbdbd0hb_100x100.jpg?v=1626712501",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 369,
-              "searchText": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/gcgculrewethjbdbd0hb_100x100.jpg?v=1626712501)",
-              "context": "### Lovepedal ZenDrive\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/gcgculrewethjbdbd0hb_100x100.jpg?v=1626712501)\n\n- [Caline CP-502 Mellow Drive](https://spartanmusic.co.uk/products/caline-cp-502-mellow-drive-overdrive)"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: https://cdn.shopify.com/s/files/1/0361/2681/files/s-l640-6_100x100.jpg?v=1626713485",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 376,
-              "searchText": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/s-l640-6_100x100.jpg?v=1626713485)",
-              "context": "### Paul Cochrane Timmy\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/s-l640-6_100x100.jpg?v=1626713485)\n\n- [Caline CP-12](https://spartanmusic.co.uk/products/caline-cp-12-pure-sky)"
-            }
+            "passed": true,
+            "message": "All media elements have alt text",
+            "severity": "info"
           }
         ],
         "imageFileNames": [
@@ -1104,15 +339,9 @@
         ],
         "nakedLinks": [
           {
-            "passed": false,
-            "message": "Naked link found: https://spartanmusic.co.uk/blogs/smblog/15841084-inexpensive-pedal-clones-a-list](https://spartanmusic.co.uk/blogs/smblog/15841084-inexpensive-pedal-clones-a-list",
-            "suggestion": "Convert to markdown link format: [link text](url)",
-            "severity": "warning",
-            "position": {
-              "line": 12,
-              "searchText": "https://spartanmusic.co.uk/blogs/smblog/15841084-inexpensive-pedal-clones-a-list](https://spartanmusic.co.uk/blogs/smblog/15841084-inexpensive-pedal-clones-a-list",
-              "context": "---\n\n原贴：[https://spartanmusic.co.uk/blogs/smblog/15841084-inexpensive-pedal-clones-a-list](https://spartanmusic.co.uk/blogs/smblog/15841084-inexpensive-pedal-clones-a-list)  \n\n机翻+少量人工修改，侵删"
-            }
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
           }
         ],
         "brokenLinks": [
@@ -1139,7 +368,7 @@
             "position": {
               "line": 12,
               "searchText": "https://spartanmusic.co.uk/blogs/smblog/15841084-inexpensive-pedal-clones-a-list",
-              "context": "---\n\n原贴：[https://spartanmusic.co.uk/blogs/smblog/15841084-inexpensive-pedal-clones-a-list](https://spartanmusic.co.uk/blogs/smblog/15841084-inexpensive-pedal-clones-a-list)  \n\n机翻+少量人工修改，侵删"
+              "context": "---\n\n原贴：[inexpensive-pedal-clones-a-list](https://spartanmusic.co.uk/blogs/smblog/15841084-inexpensive-pedal-clones-a-list)  \n\n机翻+少量人工修改，侵删"
             }
           },
           {
@@ -1150,7 +379,7 @@
             "position": {
               "line": 36,
               "searchText": "https://cdn.shopify.com/s/files/1/0361/2681/files/TS_small.jpg?2790",
-              "context": "### Ibanez Tube Screamer\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/TS_small.jpg?2790)\n\n- [Biyang OD8 X Drive](https://spartanmusic.co.uk/collections/biyang-guitar-pedals/products/biyang-od-8-x-drive)"
+              "context": "### Ibanez Tube Screamer\n\n![Biyang OD8 X Drive](https://cdn.shopify.com/s/files/1/0361/2681/files/TS_small.jpg?2790)\n\n- [Biyang OD8 X Drive](https://spartanmusic.co.uk/collections/biyang-guitar-pedals/products/biyang-od-8-x-drive)"
             }
           },
           {
@@ -1161,7 +390,7 @@
             "position": {
               "line": 38,
               "searchText": "https://spartanmusic.co.uk/collections/biyang-guitar-pedals/products/biyang-od-8-x-drive",
-              "context": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/TS_small.jpg?2790)\n\n- [Biyang OD8 X Drive](https://spartanmusic.co.uk/collections/biyang-guitar-pedals/products/biyang-od-8-x-drive)\n- [Biyang OD10 Mad Driver](https://spartanmusic.co.uk/collections/biyang-guitar-pedals/products/biyang-od-10-mad-driver)\n- [Caline CP-49 Midlander](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-49-midlander-overdrive)"
+              "context": "![Biyang OD8 X Drive](https://cdn.shopify.com/s/files/1/0361/2681/files/TS_small.jpg?2790)\n\n- [Biyang OD8 X Drive](https://spartanmusic.co.uk/collections/biyang-guitar-pedals/products/biyang-od-8-x-drive)\n- [Biyang OD10 Mad Driver](https://spartanmusic.co.uk/collections/biyang-guitar-pedals/products/biyang-od-10-mad-driver)\n- [Caline CP-49 Midlander](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-49-midlander-overdrive)"
             }
           },
           {
@@ -1216,7 +445,7 @@
             "position": {
               "line": 50,
               "searchText": "https://cdn.shopify.com/s/files/1/0361/2681/files/bigmuff_small.jpg?2790",
-              "context": "- Mosky Mini Screamer\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/bigmuff_small.jpg?2790)\n\n- [Biyang FZ-10 Fuzz Star](https://spartanmusic.co.uk/collections/biyang-guitar-pedals/products/biyang-fz-10-fuzz)"
+              "context": "- Mosky Mini Screamer\n\n![Biyang FZ-10 Fuzz Star](https://cdn.shopify.com/s/files/1/0361/2681/files/bigmuff_small.jpg?2790)\n\n- [Biyang FZ-10 Fuzz Star](https://spartanmusic.co.uk/collections/biyang-guitar-pedals/products/biyang-fz-10-fuzz)"
             }
           },
           {
@@ -1227,7 +456,7 @@
             "position": {
               "line": 52,
               "searchText": "https://spartanmusic.co.uk/collections/biyang-guitar-pedals/products/biyang-fz-10-fuzz",
-              "context": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/bigmuff_small.jpg?2790)\n\n- [Biyang FZ-10 Fuzz Star](https://spartanmusic.co.uk/collections/biyang-guitar-pedals/products/biyang-fz-10-fuzz)\n- ENO BMF\n- Behringer Vintage Distortion"
+              "context": "![Biyang FZ-10 Fuzz Star](https://cdn.shopify.com/s/files/1/0361/2681/files/bigmuff_small.jpg?2790)\n\n- [Biyang FZ-10 Fuzz Star](https://spartanmusic.co.uk/collections/biyang-guitar-pedals/products/biyang-fz-10-fuzz)\n- ENO BMF\n- Behringer Vintage Distortion"
             }
           },
           {
@@ -1238,7 +467,7 @@
             "position": {
               "line": 56,
               "searchText": "https://cdn.shopify.com/s/files/1/0361/2681/files/191810_small.jpg?2791",
-              "context": "- Behringer Vintage Distortion\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/191810_small.jpg?2791)\n\n- Joyo JF17 Extreme Metal"
+              "context": "- Behringer Vintage Distortion\n\n![Joyo JF17 Extreme Metal](https://cdn.shopify.com/s/files/1/0361/2681/files/191810_small.jpg?2791)\n\n- Joyo JF17 Extreme Metal"
             }
           },
           {
@@ -1260,7 +489,7 @@
             "position": {
               "line": 65,
               "searchText": "https://cdn.shopify.com/s/files/1/0361/2681/files/electric_mistress_small.jpg?2792",
-              "context": "### EHX Electric Mistress\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/electric_mistress_small.jpg?2792)\n\n- Mooer Eleclady"
+              "context": "### EHX Electric Mistress\n\n![Mooer Eleclady](https://cdn.shopify.com/s/files/1/0361/2681/files/electric_mistress_small.jpg?2792)\n\n- Mooer Eleclady"
             }
           },
           {
@@ -1271,7 +500,7 @@
             "position": {
               "line": 69,
               "searchText": "https://cdn.shopify.com/s/files/1/0361/2681/files/bigmuff_triangle_small.jpg?2793",
-              "context": "- Mooer Eleclady\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/bigmuff_triangle_small.jpg?2793)\n\n- Mooer Triangle Buff"
+              "context": "- Mooer Eleclady\n\n![Mooer Triangle Buff](https://cdn.shopify.com/s/files/1/0361/2681/files/bigmuff_triangle_small.jpg?2793)\n\n- Mooer Triangle Buff"
             }
           },
           {
@@ -1282,7 +511,7 @@
             "position": {
               "line": 75,
               "searchText": "https://cdn.shopify.com/s/files/1/0361/2681/files/bigmuff_ramshead_small.jpg?2794",
-              "context": "### EHX Rams Head\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/bigmuff_ramshead_small.jpg?2794)\n\n- Moen Fuzz Moo"
+              "context": "### EHX Rams Head\n\n![Moen Fuzz Moo](https://cdn.shopify.com/s/files/1/0361/2681/files/bigmuff_ramshead_small.jpg?2794)\n\n- Moen Fuzz Moo"
             }
           },
           {
@@ -1293,7 +522,7 @@
             "position": {
               "line": 81,
               "searchText": "https://cdn.shopify.com/s/files/1/0361/2681/files/475656000000000-00-750x750_small.jpg?2795",
-              "context": "### Fulltone OCD\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/475656000000000-00-750x750_small.jpg?2795)\n\n- ENO Trouble"
+              "context": "### Fulltone OCD\n\n![ENO Trouble](https://cdn.shopify.com/s/files/1/0361/2681/files/475656000000000-00-750x750_small.jpg?2795)\n\n- ENO Trouble"
             }
           },
           {
@@ -1326,7 +555,7 @@
             "position": {
               "line": 94,
               "searchText": "https://cdn.shopify.com/s/files/1/0361/2681/files/images_small.jpeg?2796",
-              "context": "### Fulltone Ultimate Octave\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/images_small.jpeg?2796)\n\n- [Joyo JF12 Octave](https://spartanmusic.co.uk/products/joyo-voodoo-octave-fuzz-jf-12)"
+              "context": "### Fulltone Ultimate Octave\n\n![Joyo JF12 Octave](https://cdn.shopify.com/s/files/1/0361/2681/files/images_small.jpeg?2796)\n\n- [Joyo JF12 Octave](https://spartanmusic.co.uk/products/joyo-voodoo-octave-fuzz-jf-12)"
             }
           },
           {
@@ -1337,7 +566,7 @@
             "position": {
               "line": 96,
               "searchText": "https://spartanmusic.co.uk/products/joyo-voodoo-octave-fuzz-jf-12",
-              "context": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/images_small.jpeg?2796)\n\n- [Joyo JF12 Octave](https://spartanmusic.co.uk/products/joyo-voodoo-octave-fuzz-jf-12)\n- [Caline CP-53](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-52-voodoo-octave-fuzzy-faace)\n- Tone City Fuxx Fuzz"
+              "context": "![Joyo JF12 Octave](https://cdn.shopify.com/s/files/1/0361/2681/files/images_small.jpeg?2796)\n\n- [Joyo JF12 Octave](https://spartanmusic.co.uk/products/joyo-voodoo-octave-fuzz-jf-12)\n- [Caline CP-53](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-52-voodoo-octave-fuzzy-faace)\n- Tone City Fuxx Fuzz"
             }
           },
           {
@@ -1359,7 +588,7 @@
             "position": {
               "line": 102,
               "searchText": "https://cdn.shopify.com/s/files/1/0361/2681/files/history_rat2_new_small.jpg?2797",
-              "context": "### Pro Co RAT\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/history_rat2_new_small.jpg?2797)\n\n- ENO Myomorpha"
+              "context": "### Pro Co RAT\n\n![ENO Myomorpha](https://cdn.shopify.com/s/files/1/0361/2681/files/history_rat2_new_small.jpg?2797)\n\n- ENO Myomorpha"
             }
           },
           {
@@ -1381,7 +610,7 @@
             "position": {
               "line": 113,
               "searchText": "https://cdn.shopify.com/s/files/1/0361/2681/files/mi_effects_super_crunch_box1_small.jpg?2798",
-              "context": "### MI Audio Crunch Box\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/mi_effects_super_crunch_box1_small.jpg?2798)\n\n- ENO Classic"
+              "context": "### MI Audio Crunch Box\n\n![ENO Classic](https://cdn.shopify.com/s/files/1/0361/2681/files/mi_effects_super_crunch_box1_small.jpg?2798)\n\n- ENO Classic"
             }
           },
           {
@@ -1425,7 +654,7 @@
             "position": {
               "line": 124,
               "searchText": "https://cdn.shopify.com/s/files/1/0361/2681/files/dynacomp_small.jpg?2798",
-              "context": "### MXR Dyna Comp\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/dynacomp_small.jpg?2798)\n\n- [Biyang CO10](https://spartanmusic.co.uk/collections/biyang-guitar-pedals/products/biyang-co-10-compress-x)"
+              "context": "### MXR Dyna Comp\n\n![Biyang CO10](https://cdn.shopify.com/s/files/1/0361/2681/files/dynacomp_small.jpg?2798)\n\n- [Biyang CO10](https://spartanmusic.co.uk/collections/biyang-guitar-pedals/products/biyang-co-10-compress-x)"
             }
           },
           {
@@ -1436,7 +665,7 @@
             "position": {
               "line": 126,
               "searchText": "https://spartanmusic.co.uk/collections/biyang-guitar-pedals/products/biyang-co-10-compress-x",
-              "context": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/dynacomp_small.jpg?2798)\n\n- [Biyang CO10](https://spartanmusic.co.uk/collections/biyang-guitar-pedals/products/biyang-co-10-compress-x)\n- [Joyo JF10](https://spartanmusic.co.uk/products/joyo-dynamic-compressor-jf-10) (/ Ross Compressor)\n- [Caline Hot Mushroom](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-10-hot-mushroom-compressor) - discontinued"
+              "context": "![Biyang CO10](https://cdn.shopify.com/s/files/1/0361/2681/files/dynacomp_small.jpg?2798)\n\n- [Biyang CO10](https://spartanmusic.co.uk/collections/biyang-guitar-pedals/products/biyang-co-10-compress-x)\n- [Joyo JF10](https://spartanmusic.co.uk/products/joyo-dynamic-compressor-jf-10) (/ Ross Compressor)\n- [Caline Hot Mushroom](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-10-hot-mushroom-compressor) - discontinued"
             }
           },
           {
@@ -1480,7 +709,7 @@
             "position": {
               "line": 133,
               "searchText": "https://cdn.shopify.com/s/files/1/0361/2681/files/mxrphase_small.jpg?2798",
-              "context": "### MXR Phase 90\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/mxrphase_small.jpg?2798)\n\n- [Biyang PH10 Phaser](https://vortasound.myshopify.com/collections/biyang-guitar-pedals/products/biyang-ph-10-phase-pro)"
+              "context": "### MXR Phase 90\n\n![Biyang PH10 Phaser](https://cdn.shopify.com/s/files/1/0361/2681/files/mxrphase_small.jpg?2798)\n\n- [Biyang PH10 Phaser](https://vortasound.myshopify.com/collections/biyang-guitar-pedals/products/biyang-ph-10-phase-pro)"
             }
           },
           {
@@ -1491,7 +720,7 @@
             "position": {
               "line": 135,
               "searchText": "https://vortasound.myshopify.com/collections/biyang-guitar-pedals/products/biyang-ph-10-phase-pro",
-              "context": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/mxrphase_small.jpg?2798)\n\n- [Biyang PH10 Phaser](https://vortasound.myshopify.com/collections/biyang-guitar-pedals/products/biyang-ph-10-phase-pro)\n- [Joyo JF-06 Vintage Phase](https://spartanmusic.co.uk/products/joyo-vintage-phase-jf-06)\n- Mooer Ninety Orange"
+              "context": "![Biyang PH10 Phaser](https://cdn.shopify.com/s/files/1/0361/2681/files/mxrphase_small.jpg?2798)\n\n- [Biyang PH10 Phaser](https://vortasound.myshopify.com/collections/biyang-guitar-pedals/products/biyang-ph-10-phase-pro)\n- [Joyo JF-06 Vintage Phase](https://spartanmusic.co.uk/products/joyo-vintage-phase-jf-06)\n- Mooer Ninety Orange"
             }
           },
           {
@@ -1513,7 +742,7 @@
             "position": {
               "line": 142,
               "searchText": "https://cdn.shopify.com/s/files/1/0361/2681/files/download_small.jpeg?2799",
-              "context": "### Boss BF-2 Flanger\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_small.jpeg?2799)\n\n- ENO BF-2 Flanger"
+              "context": "### Boss BF-2 Flanger\n\n![ENO BF-2 Flanger](https://cdn.shopify.com/s/files/1/0361/2681/files/download_small.jpeg?2799)\n\n- ENO BF-2 Flanger"
             }
           },
           {
@@ -1524,7 +753,7 @@
             "position": {
               "line": 151,
               "searchText": "https://cdn.shopify.com/s/files/1/0361/2681/files/tn2_241262_small.jpg?2801",
-              "context": "### Boss BD2 Blues Driver\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/tn2_241262_small.jpg?2801)\n\n- Digitech Screaming Blues"
+              "context": "### Boss BD2 Blues Driver\n\n![Digitech Screaming Blues](https://cdn.shopify.com/s/files/1/0361/2681/files/tn2_241262_small.jpg?2801)\n\n- Digitech Screaming Blues"
             }
           },
           {
@@ -1546,7 +775,7 @@
             "position": {
               "line": 160,
               "searchText": "https://cdn.shopify.com/s/files/1/0361/2681/files/boss-chorus-ensemble-ce-2_small.jpg?2802",
-              "context": "### Boss CE2 Chorus\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/boss-chorus-ensemble-ce-2_small.jpg?2802)\n\n- ENO Chorus"
+              "context": "### Boss CE2 Chorus\n\n![ENO Chorus](https://cdn.shopify.com/s/files/1/0361/2681/files/boss-chorus-ensemble-ce-2_small.jpg?2802)\n\n- ENO Chorus"
             }
           },
           {
@@ -1579,7 +808,7 @@
             "position": {
               "line": 173,
               "searchText": "https://cdn.shopify.com/s/files/1/0361/2681/files/ds1_small.jpg?2802",
-              "context": "### Boss DS1 Distortion\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/ds1_small.jpg?2802)\n\n- ENO Trinity"
+              "context": "### Boss DS1 Distortion\n\n![ENO Trinity](https://cdn.shopify.com/s/files/1/0361/2681/files/ds1_small.jpg?2802)\n\n- ENO Trinity"
             }
           },
           {
@@ -1590,7 +819,7 @@
             "position": {
               "line": 183,
               "searchText": "https://cdn.shopify.com/s/files/1/0361/2681/files/download_1_small.jpeg?2803",
-              "context": "### Boss OC3 Octave\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_1_small.jpeg?2803)\n\n- ENO Octaver OCT-1"
+              "context": "### Boss OC3 Octave\n\n![ENO Octaver OCT-1](https://cdn.shopify.com/s/files/1/0361/2681/files/download_1_small.jpeg?2803)\n\n- ENO Octaver OCT-1"
             }
           },
           {
@@ -1601,7 +830,7 @@
             "position": {
               "line": 191,
               "searchText": "https://cdn.shopify.com/s/files/1/0361/2681/files/DD-2_4_small.jpg?2805",
-              "context": "### Boss DD2 Delay\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/DD-2_4_small.jpg?2805)\n\n- [Joyo JF08 Delay](https://spartanmusic.co.uk/products/joyo-digital-delay-jf-08)"
+              "context": "### Boss DD2 Delay\n\n![Joyo JF08 Delay](https://cdn.shopify.com/s/files/1/0361/2681/files/DD-2_4_small.jpg?2805)\n\n- [Joyo JF08 Delay](https://spartanmusic.co.uk/products/joyo-digital-delay-jf-08)"
             }
           },
           {
@@ -1612,7 +841,7 @@
             "position": {
               "line": 193,
               "searchText": "https://spartanmusic.co.uk/products/joyo-digital-delay-jf-08",
-              "context": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/DD-2_4_small.jpg?2805)\n\n- [Joyo JF08 Delay](https://spartanmusic.co.uk/products/joyo-digital-delay-jf-08)\n- Mooer Reecho\n- [Caline CP-17](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-17-time-space)"
+              "context": "![Joyo JF08 Delay](https://cdn.shopify.com/s/files/1/0361/2681/files/DD-2_4_small.jpg?2805)\n\n- [Joyo JF08 Delay](https://spartanmusic.co.uk/products/joyo-digital-delay-jf-08)\n- Mooer Reecho\n- [Caline CP-17](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-17-time-space)"
             }
           },
           {
@@ -1634,7 +863,7 @@
             "position": {
               "line": 200,
               "searchText": "https://cdn.shopify.com/s/files/1/0361/2681/files/images_1_small.jpeg?2806",
-              "context": "### Boss DM3 Analogue Delay\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/images_1_small.jpeg?2806)\n\n- ENO AD6 Delay"
+              "context": "### Boss DM3 Analogue Delay\n\n![ENO AD6 Delay](https://cdn.shopify.com/s/files/1/0361/2681/files/images_1_small.jpeg?2806)\n\n- ENO AD6 Delay"
             }
           },
           {
@@ -1656,7 +885,7 @@
             "position": {
               "line": 209,
               "searchText": "https://cdn.shopify.com/s/files/1/0361/2681/files/download_2_small.jpeg?2807",
-              "context": "### Boss EQ7\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_2_small.jpeg?2807)\n\n- [Biyang EQ7](https://vortasound.myshopify.com/collections/biyang-guitar-pedals/products/biyang-eq-7-equalizer)"
+              "context": "### Boss EQ7\n\n![Biyang EQ7](https://cdn.shopify.com/s/files/1/0361/2681/files/download_2_small.jpeg?2807)\n\n- [Biyang EQ7](https://vortasound.myshopify.com/collections/biyang-guitar-pedals/products/biyang-eq-7-equalizer)"
             }
           },
           {
@@ -1667,7 +896,7 @@
             "position": {
               "line": 211,
               "searchText": "https://vortasound.myshopify.com/collections/biyang-guitar-pedals/products/biyang-eq-7-equalizer",
-              "context": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_2_small.jpeg?2807)\n\n- [Biyang EQ7](https://vortasound.myshopify.com/collections/biyang-guitar-pedals/products/biyang-eq-7-equalizer)\n- Behringer EQ700\n- Danelectro Fish ‘n’ Chips"
+              "context": "![Biyang EQ7](https://cdn.shopify.com/s/files/1/0361/2681/files/download_2_small.jpeg?2807)\n\n- [Biyang EQ7](https://vortasound.myshopify.com/collections/biyang-guitar-pedals/products/biyang-eq-7-equalizer)\n- Behringer EQ700\n- Danelectro Fish ‘n’ Chips"
             }
           },
           {
@@ -1678,7 +907,7 @@
             "position": {
               "line": 218,
               "searchText": "https://cdn.shopify.com/s/files/1/0361/2681/files/images_2_small.jpeg?2808",
-              "context": "### Boss DM2 Delay\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/images_2_small.jpeg?2808)\n\n- ENO AE-1 Ambient Echo"
+              "context": "### Boss DM2 Delay\n\n![ENO AE-1 Ambient Echo](https://cdn.shopify.com/s/files/1/0361/2681/files/images_2_small.jpeg?2808)\n\n- ENO AE-1 Ambient Echo"
             }
           },
           {
@@ -1689,7 +918,7 @@
             "position": {
               "line": 224,
               "searchText": "https://cdn.shopify.com/s/files/1/0361/2681/files/download_3_small.jpeg?2809",
-              "context": "### Mad Professor Deep Blue\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_3_small.jpeg?2809)\n\n- [Caline Blue Ocean](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-19-ocean-delay)"
+              "context": "### Mad Professor Deep Blue\n\n![Caline Blue Ocean](https://cdn.shopify.com/s/files/1/0361/2681/files/download_3_small.jpeg?2809)\n\n- [Caline Blue Ocean](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-19-ocean-delay)"
             }
           },
           {
@@ -1700,7 +929,7 @@
             "position": {
               "line": 226,
               "searchText": "https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-19-ocean-delay",
-              "context": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_3_small.jpeg?2809)\n\n- [Caline Blue Ocean](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-19-ocean-delay)\n- Tone City Tape Machine\n"
+              "context": "![Caline Blue Ocean](https://cdn.shopify.com/s/files/1/0361/2681/files/download_3_small.jpeg?2809)\n\n- [Caline Blue Ocean](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-19-ocean-delay)\n- Tone City Tape Machine\n"
             }
           },
           {
@@ -1711,7 +940,7 @@
             "position": {
               "line": 231,
               "searchText": "https://cdn.shopify.com/s/files/1/0361/2681/files/download_4_small.jpeg?2810",
-              "context": "### Mad Professor Sweet Honey\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_4_small.jpeg?2810)\n\n- [Joyo JF36 Sweet Baby](https://spartanmusic.co.uk/products/joyo-sweet-baby-overdrive-jf-36)"
+              "context": "### Mad Professor Sweet Honey\n\n![Joyo JF36 Sweet Baby](https://cdn.shopify.com/s/files/1/0361/2681/files/download_4_small.jpeg?2810)\n\n- [Joyo JF36 Sweet Baby](https://spartanmusic.co.uk/products/joyo-sweet-baby-overdrive-jf-36)"
             }
           },
           {
@@ -1722,7 +951,7 @@
             "position": {
               "line": 233,
               "searchText": "https://spartanmusic.co.uk/products/joyo-sweet-baby-overdrive-jf-36",
-              "context": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_4_small.jpeg?2810)\n\n- [Joyo JF36 Sweet Baby](https://spartanmusic.co.uk/products/joyo-sweet-baby-overdrive-jf-36)\n- Tone City Sweet Cream\n"
+              "context": "![Joyo JF36 Sweet Baby](https://cdn.shopify.com/s/files/1/0361/2681/files/download_4_small.jpeg?2810)\n\n- [Joyo JF36 Sweet Baby](https://spartanmusic.co.uk/products/joyo-sweet-baby-overdrive-jf-36)\n- Tone City Sweet Cream\n"
             }
           },
           {
@@ -1733,7 +962,7 @@
             "position": {
               "line": 238,
               "searchText": "https://cdn.shopify.com/s/files/1/0361/2681/files/download_5_small.jpeg?2811",
-              "context": "### Xotic BB Preamp\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_5_small.jpeg?2811)\n\n- [Caline Orange Burst](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-18-orange-burst)"
+              "context": "### Xotic BB Preamp\n\n![Caline Orange Burst](https://cdn.shopify.com/s/files/1/0361/2681/files/download_5_small.jpeg?2811)\n\n- [Caline Orange Burst](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-18-orange-burst)"
             }
           },
           {
@@ -1744,7 +973,7 @@
             "position": {
               "line": 240,
               "searchText": "https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-18-orange-burst",
-              "context": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_5_small.jpeg?2811)\n\n- [Caline Orange Burst](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-18-orange-burst)\n- Tone City Kaffir Lime\n- [Caline Big Orange](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-54-the-big-orange)"
+              "context": "![Caline Orange Burst](https://cdn.shopify.com/s/files/1/0361/2681/files/download_5_small.jpeg?2811)\n\n- [Caline Orange Burst](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-18-orange-burst)\n- Tone City Kaffir Lime\n- [Caline Big Orange](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-54-the-big-orange)"
             }
           },
           {
@@ -1766,7 +995,7 @@
             "position": {
               "line": 247,
               "searchText": "https://cdn.shopify.com/s/files/1/0361/2681/files/download_6_small.jpeg?2812",
-              "context": "### Xotic RC Booster\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_6_small.jpeg?2812)\n\n- Mooer Pure Boost"
+              "context": "### Xotic RC Booster\n\n![Mooer Pure Boost](https://cdn.shopify.com/s/files/1/0361/2681/files/download_6_small.jpeg?2812)\n\n- Mooer Pure Boost"
             }
           },
           {
@@ -1777,7 +1006,7 @@
             "position": {
               "line": 254,
               "searchText": "https://cdn.shopify.com/s/files/1/0361/2681/files/download_7_small.jpeg?2813",
-              "context": "### Tech21 Blonde\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_7_small.jpeg?2813)\n\n- [Joyo JF14 American Sound](https://spartanmusic.co.uk/products/joyo-american-sound-jf-14)"
+              "context": "### Tech21 Blonde\n\n![Joyo JF14 American Sound](https://cdn.shopify.com/s/files/1/0361/2681/files/download_7_small.jpeg?2813)\n\n- [Joyo JF14 American Sound](https://spartanmusic.co.uk/products/joyo-american-sound-jf-14)"
             }
           },
           {
@@ -1788,7 +1017,7 @@
             "position": {
               "line": 256,
               "searchText": "https://spartanmusic.co.uk/products/joyo-american-sound-jf-14",
-              "context": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_7_small.jpeg?2813)\n\n- [Joyo JF14 American Sound](https://spartanmusic.co.uk/products/joyo-american-sound-jf-14)\n- [Caline CP-55](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-55-central-station-american-stand-amp-sim)\n"
+              "context": "![Joyo JF14 American Sound](https://cdn.shopify.com/s/files/1/0361/2681/files/download_7_small.jpeg?2813)\n\n- [Joyo JF14 American Sound](https://spartanmusic.co.uk/products/joyo-american-sound-jf-14)\n- [Caline CP-55](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-55-central-station-american-stand-amp-sim)\n"
             }
           },
           {
@@ -1810,7 +1039,7 @@
             "position": {
               "line": 261,
               "searchText": "https://cdn.shopify.com/s/files/1/0361/2681/files/download_8_small.jpeg?2814",
-              "context": "### Tech21 British\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_8_small.jpeg?2814)\n\n- [Caline CP-58](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-58-british-sound-summit-amp-sim)"
+              "context": "### Tech21 British\n\n![Caline CP-58](https://cdn.shopify.com/s/files/1/0361/2681/files/download_8_small.jpeg?2814)\n\n- [Caline CP-58](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-58-british-sound-summit-amp-sim)"
             }
           },
           {
@@ -1821,7 +1050,7 @@
             "position": {
               "line": 263,
               "searchText": "https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-58-british-sound-summit-amp-sim",
-              "context": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_8_small.jpeg?2814)\n\n- [Caline CP-58](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-58-british-sound-summit-amp-sim)\n- [Joyo JF16 British](https://spartanmusic.co.uk/products/joyo-british-sound-jf-16)\n"
+              "context": "![Caline CP-58](https://cdn.shopify.com/s/files/1/0361/2681/files/download_8_small.jpeg?2814)\n\n- [Caline CP-58](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-58-british-sound-summit-amp-sim)\n- [Joyo JF16 British](https://spartanmusic.co.uk/products/joyo-british-sound-jf-16)\n"
             }
           },
           {
@@ -1843,7 +1072,7 @@
             "position": {
               "line": 268,
               "searchText": "https://cdn.shopify.com/s/files/1/0361/2681/files/download_9_small.jpeg?2815",
-              "context": "### Tech21 Liverpool\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_9_small.jpeg?2815)\n\n- [Joyo JF13 AC Tone](https://spartanmusic.co.uk/products/joyo-ac-tone-jf-13)"
+              "context": "### Tech21 Liverpool\n\n![Joyo JF13 AC Tone](https://cdn.shopify.com/s/files/1/0361/2681/files/download_9_small.jpeg?2815)\n\n- [Joyo JF13 AC Tone](https://spartanmusic.co.uk/products/joyo-ac-tone-jf-13)"
             }
           },
           {
@@ -1854,7 +1083,7 @@
             "position": {
               "line": 270,
               "searchText": "https://spartanmusic.co.uk/products/joyo-ac-tone-jf-13",
-              "context": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_9_small.jpeg?2815)\n\n- [Joyo JF13 AC Tone](https://spartanmusic.co.uk/products/joyo-ac-tone-jf-13)\n- Tone City Black Tea\n- [Caline CP-56](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-56-ac-tone-midlander-amp-sim)"
+              "context": "![Joyo JF13 AC Tone](https://cdn.shopify.com/s/files/1/0361/2681/files/download_9_small.jpeg?2815)\n\n- [Joyo JF13 AC Tone](https://spartanmusic.co.uk/products/joyo-ac-tone-jf-13)\n- Tone City Black Tea\n- [Caline CP-56](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-56-ac-tone-midlander-amp-sim)"
             }
           },
           {
@@ -1876,7 +1105,7 @@
             "position": {
               "line": 276,
               "searchText": "https://cdn.shopify.com/s/files/1/0361/2681/files/download_10_small.jpeg?2816",
-              "context": "### Tech21 California\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_10_small.jpeg?2816)\n\n- [Joyo JF15 California](https://spartanmusic.co.uk/products/joyo-california-sound-jf-16)"
+              "context": "### Tech21 California\n\n![Joyo JF15 California](https://cdn.shopify.com/s/files/1/0361/2681/files/download_10_small.jpeg?2816)\n\n- [Joyo JF15 California](https://spartanmusic.co.uk/products/joyo-california-sound-jf-16)"
             }
           },
           {
@@ -1887,7 +1116,7 @@
             "position": {
               "line": 278,
               "searchText": "https://spartanmusic.co.uk/products/joyo-california-sound-jf-16",
-              "context": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_10_small.jpeg?2816)\n\n- [Joyo JF15 California](https://spartanmusic.co.uk/products/joyo-california-sound-jf-16)\n- [Caline CP-57](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-57-california-sound-center-line-amp-sim)\n"
+              "context": "![Joyo JF15 California](https://cdn.shopify.com/s/files/1/0361/2681/files/download_10_small.jpeg?2816)\n\n- [Joyo JF15 California](https://spartanmusic.co.uk/products/joyo-california-sound-jf-16)\n- [Caline CP-57](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-57-california-sound-center-line-amp-sim)\n"
             }
           },
           {
@@ -1909,7 +1138,7 @@
             "position": {
               "line": 283,
               "searchText": "https://cdn.shopify.com/s/files/1/0361/2681/files/download_11_small.jpeg?2817",
-              "context": "### Dunlop Uni-Vibe\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_11_small.jpeg?2817)\n\n- Moen Shaky Jimi"
+              "context": "### Dunlop Uni-Vibe\n\n![Moen Shaky Jimi](https://cdn.shopify.com/s/files/1/0361/2681/files/download_11_small.jpeg?2817)\n\n- Moen Shaky Jimi"
             }
           },
           {
@@ -1920,7 +1149,7 @@
             "position": {
               "line": 287,
               "searchText": "https://cdn.shopify.com/s/files/1/0361/2681/files/images_3_small.jpeg?2818",
-              "context": "- Moen Shaky Jimi\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/images_3_small.jpeg?2818)\n\n- [Joyo JF34 US Dream](https://spartanmusic.co.uk/products/joyo-us-dream-jf-34)"
+              "context": "- Moen Shaky Jimi\n\n![Joyo JF34 US Dream](https://cdn.shopify.com/s/files/1/0361/2681/files/images_3_small.jpeg?2818)\n\n- [Joyo JF34 US Dream](https://spartanmusic.co.uk/products/joyo-us-dream-jf-34)"
             }
           },
           {
@@ -1931,7 +1160,7 @@
             "position": {
               "line": 289,
               "searchText": "https://spartanmusic.co.uk/products/joyo-us-dream-jf-34",
-              "context": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/images_3_small.jpeg?2818)\n\n- [Joyo JF34 US Dream](https://spartanmusic.co.uk/products/joyo-us-dream-jf-34)\n- Mooer Solo\n- Tone City Wildfire"
+              "context": "![Joyo JF34 US Dream](https://cdn.shopify.com/s/files/1/0361/2681/files/images_3_small.jpeg?2818)\n\n- [Joyo JF34 US Dream](https://spartanmusic.co.uk/products/joyo-us-dream-jf-34)\n- Mooer Solo\n- Tone City Wildfire"
             }
           },
           {
@@ -1953,7 +1182,7 @@
             "position": {
               "line": 297,
               "searchText": "https://cdn.shopify.com/s/files/1/0361/2681/files/download_12_small.jpeg?2819",
-              "context": "### Demeter Tremulator\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_12_small.jpeg?2819)\n\n- [Joyo JF-09 Tremolo](https://spartanmusic.co.uk/products/joyo-tremolo-jf-09)"
+              "context": "### Demeter Tremulator\n\n![Joyo JF-09 Tremolo](https://cdn.shopify.com/s/files/1/0361/2681/files/download_12_small.jpeg?2819)\n\n- [Joyo JF-09 Tremolo](https://spartanmusic.co.uk/products/joyo-tremolo-jf-09)"
             }
           },
           {
@@ -1964,7 +1193,7 @@
             "position": {
               "line": 299,
               "searchText": "https://spartanmusic.co.uk/products/joyo-tremolo-jf-09",
-              "context": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_12_small.jpeg?2819)\n\n- [Joyo JF-09 Tremolo](https://spartanmusic.co.uk/products/joyo-tremolo-jf-09)\n- Mooer Trelicopter\n- Danelectro Cool Cat Tremolo"
+              "context": "![Joyo JF-09 Tremolo](https://cdn.shopify.com/s/files/1/0361/2681/files/download_12_small.jpeg?2819)\n\n- [Joyo JF-09 Tremolo](https://spartanmusic.co.uk/products/joyo-tremolo-jf-09)\n- Mooer Trelicopter\n- Danelectro Cool Cat Tremolo"
             }
           },
           {
@@ -1975,7 +1204,7 @@
             "position": {
               "line": 305,
               "searchText": "https://cdn.shopify.com/s/files/1/0361/2681/files/download_13_small.jpeg?2820",
-              "context": "### Carl Martin Plexitone\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_13_small.jpeg?2820)\n\n- Joyo JF-32 Hot Plexi Drive"
+              "context": "### Carl Martin Plexitone\n\n![Joyo JF-32 Hot Plexi Drive](https://cdn.shopify.com/s/files/1/0361/2681/files/download_13_small.jpeg?2820)\n\n- Joyo JF-32 Hot Plexi Drive"
             }
           },
           {
@@ -1997,7 +1226,7 @@
             "position": {
               "line": 314,
               "searchText": "https://cdn.shopify.com/s/files/1/0361/2681/files/download_14_small.jpeg?2821",
-              "context": "### Marshall Guv’nor\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_14_small.jpeg?2821)\n\n- Danelectro Daddy-O Overdrive"
+              "context": "### Marshall Guv’nor\n\n![Danelectro Daddy-O Overdrive](https://cdn.shopify.com/s/files/1/0361/2681/files/download_14_small.jpeg?2821)\n\n- Danelectro Daddy-O Overdrive"
             }
           },
           {
@@ -2008,7 +1237,7 @@
             "position": {
               "line": 320,
               "searchText": "https://cdn.shopify.com/s/files/1/0361/2681/files/download_15_small.jpeg?2826",
-              "context": "### Klon Centaur\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_15_small.jpeg?2826)\n\n- [EHX Soul Food](https://spartanmusic.co.uk/products/electro-harmonix-soul-food)"
+              "context": "### Klon Centaur\n\n![EHX Soul Food](https://cdn.shopify.com/s/files/1/0361/2681/files/download_15_small.jpeg?2826)\n\n- [EHX Soul Food](https://spartanmusic.co.uk/products/electro-harmonix-soul-food)"
             }
           },
           {
@@ -2019,7 +1248,7 @@
             "position": {
               "line": 322,
               "searchText": "https://spartanmusic.co.uk/products/electro-harmonix-soul-food",
-              "context": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/download_15_small.jpeg?2826)\n\n- [EHX Soul Food](https://spartanmusic.co.uk/products/electro-harmonix-soul-food)\n- [Caline CP-43 Pegasus](https://spartanmusic.co.uk/products/caline-cp-43-pegasus-overdrive)\n- [Caline CP-99 Medusa](https://spartanmusic.co.uk/products/caline-cp-99-medusa-overdrive)"
+              "context": "![EHX Soul Food](https://cdn.shopify.com/s/files/1/0361/2681/files/download_15_small.jpeg?2826)\n\n- [EHX Soul Food](https://spartanmusic.co.uk/products/electro-harmonix-soul-food)\n- [Caline CP-43 Pegasus](https://spartanmusic.co.uk/products/caline-cp-43-pegasus-overdrive)\n- [Caline CP-99 Medusa](https://spartanmusic.co.uk/products/caline-cp-99-medusa-overdrive)"
             }
           },
           {
@@ -2074,7 +1303,7 @@
             "position": {
               "line": 332,
               "searchText": "https://cdn.shopify.com/s/files/1/0361/2681/files/DOD_250_TOP_original_compact.jpg?v=1495216299",
-              "context": "### DOD Overdrive Preamp 250\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/DOD_250_TOP_original_compact.jpg?v=1495216299)\n\n- [Caline White Heat](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-29-white-heat) - Discontinued"
+              "context": "### DOD Overdrive Preamp 250\n\n![Caline White Heat](https://cdn.shopify.com/s/files/1/0361/2681/files/DOD_250_TOP_original_compact.jpg?v=1495216299)\n\n- [Caline White Heat](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-29-white-heat) - Discontinued"
             }
           },
           {
@@ -2085,7 +1314,7 @@
             "position": {
               "line": 334,
               "searchText": "https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-29-white-heat",
-              "context": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/DOD_250_TOP_original_compact.jpg?v=1495216299)\n\n- [Caline White Heat](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-29-white-heat) - Discontinued\n\n### Fulltone Fulldrive 2"
+              "context": "![Caline White Heat](https://cdn.shopify.com/s/files/1/0361/2681/files/DOD_250_TOP_original_compact.jpg?v=1495216299)\n\n- [Caline White Heat](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-29-white-heat) - Discontinued\n\n### Fulltone Fulldrive 2"
             }
           },
           {
@@ -2096,7 +1325,7 @@
             "position": {
               "line": 338,
               "searchText": "https://cdn.shopify.com/s/files/1/0361/2681/files/download-1_compact.jpg?v=1495216344",
-              "context": "### Fulltone Fulldrive 2\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/download-1_compact.jpg?v=1495216344)\n\n- [Caline Crazy Cacti](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-20-crazy-cacti)"
+              "context": "### Fulltone Fulldrive 2\n\n![Caline Crazy Cacti](https://cdn.shopify.com/s/files/1/0361/2681/files/download-1_compact.jpg?v=1495216344)\n\n- [Caline Crazy Cacti](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-20-crazy-cacti)"
             }
           },
           {
@@ -2107,7 +1336,7 @@
             "position": {
               "line": 340,
               "searchText": "https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-20-crazy-cacti",
-              "context": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/download-1_compact.jpg?v=1495216344)\n\n- [Caline Crazy Cacti](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-20-crazy-cacti)\n\n### Wampler Plexidrive"
+              "context": "![Caline Crazy Cacti](https://cdn.shopify.com/s/files/1/0361/2681/files/download-1_compact.jpg?v=1495216344)\n\n- [Caline Crazy Cacti](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-20-crazy-cacti)\n\n### Wampler Plexidrive"
             }
           },
           {
@@ -2118,7 +1347,7 @@
             "position": {
               "line": 344,
               "searchText": "https://cdn.shopify.com/s/files/1/0361/2681/files/H96152000000000-00-500x500_compact.jpg?v=1495216306",
-              "context": "### Wampler Plexidrive\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/H96152000000000-00-500x500_compact.jpg?v=1495216306)\n\n- [Caline Rockface](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-21-rock-face) - Discontinued"
+              "context": "### Wampler Plexidrive\n\n![Caline Rockface](https://cdn.shopify.com/s/files/1/0361/2681/files/H96152000000000-00-500x500_compact.jpg?v=1495216306)\n\n- [Caline Rockface](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-21-rock-face) - Discontinued"
             }
           },
           {
@@ -2129,7 +1358,7 @@
             "position": {
               "line": 346,
               "searchText": "https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-21-rock-face",
-              "context": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/H96152000000000-00-500x500_compact.jpg?v=1495216306)\n\n- [Caline Rockface](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-21-rock-face) - Discontinued\n\n### Diamond Compressor"
+              "context": "![Caline Rockface](https://cdn.shopify.com/s/files/1/0361/2681/files/H96152000000000-00-500x500_compact.jpg?v=1495216306)\n\n- [Caline Rockface](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-21-rock-face) - Discontinued\n\n### Diamond Compressor"
             }
           },
           {
@@ -2140,7 +1369,7 @@
             "position": {
               "line": 350,
               "searchText": "https://cdn.shopify.com/s/files/1/0361/2681/files/download-1_24d25827-35fc-4cf6-821a-69fefffc328e_small.jpg?v=1536419125",
-              "context": "### Diamond Compressor\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/download-1_24d25827-35fc-4cf6-821a-69fefffc328e_small.jpg?v=1536419125)\n\n- [Caline Pressure Tank](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-47-pressure-tank)"
+              "context": "### Diamond Compressor\n\n![Caline Pressure Tank](https://cdn.shopify.com/s/files/1/0361/2681/files/download-1_24d25827-35fc-4cf6-821a-69fefffc328e_small.jpg?v=1536419125)\n\n- [Caline Pressure Tank](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-47-pressure-tank)"
             }
           },
           {
@@ -2151,7 +1380,7 @@
             "position": {
               "line": 352,
               "searchText": "https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-47-pressure-tank",
-              "context": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/download-1_24d25827-35fc-4cf6-821a-69fefffc328e_small.jpg?v=1536419125)\n\n- [Caline Pressure Tank](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-47-pressure-tank)\n- Mooer Yellow Comp\n"
+              "context": "![Caline Pressure Tank](https://cdn.shopify.com/s/files/1/0361/2681/files/download-1_24d25827-35fc-4cf6-821a-69fefffc328e_small.jpg?v=1536419125)\n\n- [Caline Pressure Tank](https://spartanmusic.co.uk/collections/caline-pedals/products/caline-cp-47-pressure-tank)\n- Mooer Yellow Comp\n"
             }
           },
           {
@@ -2162,7 +1391,7 @@
             "position": {
               "line": 369,
               "searchText": "https://cdn.shopify.com/s/files/1/0361/2681/files/gcgculrewethjbdbd0hb_100x100.jpg?v=1626712501",
-              "context": "### Lovepedal ZenDrive\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/gcgculrewethjbdbd0hb_100x100.jpg?v=1626712501)\n\n- [Caline CP-502 Mellow Drive](https://spartanmusic.co.uk/products/caline-cp-502-mellow-drive-overdrive)"
+              "context": "### Lovepedal ZenDrive\n\n![Caline CP-502 Mellow Drive](https://cdn.shopify.com/s/files/1/0361/2681/files/gcgculrewethjbdbd0hb_100x100.jpg?v=1626712501)\n\n- [Caline CP-502 Mellow Drive](https://spartanmusic.co.uk/products/caline-cp-502-mellow-drive-overdrive)"
             }
           },
           {
@@ -2173,7 +1402,7 @@
             "position": {
               "line": 371,
               "searchText": "https://spartanmusic.co.uk/products/caline-cp-502-mellow-drive-overdrive",
-              "context": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/gcgculrewethjbdbd0hb_100x100.jpg?v=1626712501)\n\n- [Caline CP-502 Mellow Drive](https://spartanmusic.co.uk/products/caline-cp-502-mellow-drive-overdrive)\n- Mooer Rumble Drive\n"
+              "context": "![Caline CP-502 Mellow Drive](https://cdn.shopify.com/s/files/1/0361/2681/files/gcgculrewethjbdbd0hb_100x100.jpg?v=1626712501)\n\n- [Caline CP-502 Mellow Drive](https://spartanmusic.co.uk/products/caline-cp-502-mellow-drive-overdrive)\n- Mooer Rumble Drive\n"
             }
           },
           {
@@ -2184,7 +1413,7 @@
             "position": {
               "line": 376,
               "searchText": "https://cdn.shopify.com/s/files/1/0361/2681/files/s-l640-6_100x100.jpg?v=1626713485",
-              "context": "### Paul Cochrane Timmy\n\n![](https://cdn.shopify.com/s/files/1/0361/2681/files/s-l640-6_100x100.jpg?v=1626713485)\n\n- [Caline CP-12](https://spartanmusic.co.uk/products/caline-cp-12-pure-sky)"
+              "context": "### Paul Cochrane Timmy\n\n![Caline CP-12](https://cdn.shopify.com/s/files/1/0361/2681/files/s-l640-6_100x100.jpg?v=1626713485)\n\n- [Caline CP-12](https://spartanmusic.co.uk/products/caline-cp-12-pure-sky)"
             }
           },
           {
@@ -2195,50 +1424,41 @@
             "position": {
               "line": 378,
               "searchText": "https://spartanmusic.co.uk/products/caline-cp-12-pure-sky",
-              "context": "![](https://cdn.shopify.com/s/files/1/0361/2681/files/s-l640-6_100x100.jpg?v=1626713485)\n\n- [Caline CP-12](https://spartanmusic.co.uk/products/caline-cp-12-pure-sky)\n\n### Boss RC3"
+              "context": "![Caline CP-12](https://cdn.shopify.com/s/files/1/0361/2681/files/s-l640-6_100x100.jpg?v=1626713485)\n\n- [Caline CP-12](https://spartanmusic.co.uk/products/caline-cp-12-pure-sky)\n\n### Boss RC3"
             }
           }
         ],
         "readingLevel": [
           {
             "passed": false,
-            "message": "Reading level too high: 21.3 (Very difficult to read)",
+            "message": "Reading level too high: 20.6 (Very difficult to read)",
             "suggestion": "Consider simplifying sentence structure and using shorter words",
             "severity": "warning"
           }
         ]
       },
-      "overallScore": 43,
-      "issuesCount": 41,
-      "warningsCount": 5,
+      "overallScore": 80,
+      "issuesCount": 0,
+      "warningsCount": 1,
       "noticesCount": 97
     },
     {
-      "file": "blog/新吉他！Gretsch G2215-P90.md",
-      "displayName": "新吉他！Gretsch G2215-P90",
+      "file": "blog/给吉他换弦的时候需要注意的问题.md",
+      "displayName": "给吉他换弦的时候需要注意的问题",
       "checks": {
-        "titleLength": [
-          {
-            "passed": false,
-            "message": "Title too short: 21 characters",
-            "suggestion": "Aim for 30-60 characters",
-            "severity": "warning"
-          }
-        ],
+        "titleLength": [],
         "metaDescription": [
           {
-            "passed": false,
-            "message": "Description too short: 25 characters",
-            "suggestion": "Aim for 120-160 characters",
-            "severity": "warning"
+            "passed": true,
+            "message": "Good description length: 52 characters",
+            "severity": "info"
           }
         ],
         "titleH1Uniqueness": [
           {
-            "passed": false,
-            "message": "Meta title and H1 are identical",
-            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
-            "severity": "warning"
+            "passed": true,
+            "message": "Meta title and H1 are unique (prefix/suffix configured)",
+            "severity": "info"
           }
         ],
         "keywordInTitle": [],
@@ -2247,70 +1467,180 @@
         "keywordInSlug": [],
         "slugFormat": [],
         "keywordDensity": [],
-        "headingOrder": [
-          {
-            "passed": false,
-            "message": "\"好听（在正确setup之后）\" (H3) skips heading level(s) after H1",
-            "suggestion": "Use heading levels in order (H1 → H2 → H3, etc.)",
-            "severity": "warning",
-            "position": {
-              "line": 18,
-              "searchText": "### 好听（在正确setup之后）",
-              "context": "\n# 优点\n### 好听（在正确setup之后）\n   整体上的风味非常类似[g2210](https://www.bilibili.com/video/BV1ch411M7NV)。T老师弹[g2210](https://www.bilibili.com/video/BV1ch411M7NV)的视频我少说看了10多遍，这是我听过最indie的声音之一了。但我很喜欢p90琴颈拾音器的声音，所以选择g2215。\n### 好看"
-            }
-          },
-          {
-            "passed": false,
-            "message": "\"缺点以及解决方案\" (H1) appears after H3",
-            "suggestion": "H1 should be the first heading or not used at all",
-            "severity": "warning",
-            "position": {
-              "line": 23,
-              "searchText": "# 缺点以及解决方案",
-              "context": "   我购买的是Mint Metallic薄荷金属色，非常清新的颜色，和fender的音速蓝以及冲浪绿相比要更加低调，但细看有闪粉。指板虽然不是玫瑰木，也不是很深色的月桂木，但是相比epiphone的逗小孩颜色指板还是好不少。况且它琴头是棕色的，对指板颜色深度的要求会低一些。品记又好观察又好看，我很喜欢。五金离远看还是很好看，近看会有些廉价（廉价琴当然廉价啊）。\n\n# 缺点以及解决方案\n### P90极性反了（可能是前任琴主调错的）\n重新焊电路"
-            }
-          },
-          {
-            "passed": false,
-            "message": "\"P90极性反了（可能是前任琴主调错的）\" (H3) skips heading level(s) after H1",
-            "suggestion": "Use heading levels in order (H1 → H2 → H3, etc.)",
-            "severity": "warning",
-            "position": {
-              "line": 24,
-              "searchText": "### P90极性反了（可能是前任琴主调错的）",
-              "context": "\n# 缺点以及解决方案\n### P90极性反了（可能是前任琴主调错的）\n重新焊电路\n### 拾音器高度问题"
-            }
-          },
-          {
-            "passed": false,
-            "message": "\"成品\" (H1) appears after H3",
-            "suggestion": "H1 should be the first heading or not used at all",
-            "severity": "warning",
-            "position": {
-              "line": 42,
-              "searchText": "# 成品",
-              "context": "Nato木的声音就是没有桃花心有音乐性，中频始终感觉差口气。但是无所谓，因为声音取向很完美，比声音质量更重要。\n\n# 成品\n我听过的琴里最喜欢的声音之一。\n外观非常好看且不常见。"
-            }
-          },
-          {
-            "passed": false,
-            "message": "\"General\" (H3) skips heading level(s) after H1",
-            "suggestion": "Use heading levels in order (H1 → H2 → H3, etc.)",
-            "severity": "warning",
-            "position": {
-              "line": 48,
-              "searchText": "### General",
-              "context": "\n# Original Spec\n### General\n| Model Number      | 2806700549                                                                                |\n| ----------------- | ----------------------------------------------------------------------------------------- |"
-            }
-          }
-        ],
-        "contentLength": [
+        "headingOrder": [],
+        "contentLength": [],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
           {
             "passed": true,
-            "message": "Good content length: 422 words",
+            "message": "No media elements in this post",
             "severity": "info"
           }
         ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No external links found",
+            "severity": "info"
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": true,
+            "message": "Good reading level: -15.1 (Very easy to read)",
+            "severity": "info"
+          }
+        ]
+      },
+      "overallScore": 100,
+      "issuesCount": 0,
+      "warningsCount": 0,
+      "noticesCount": 0
+    },
+    {
+      "file": "blog/美少女们都爱用：RAT系失真效果器横评&详解.md",
+      "displayName": "美少女们都爱用：RAT系失真效果器横评&详解",
+      "checks": {
+        "titleLength": [],
+        "metaDescription": [
+          {
+            "passed": true,
+            "message": "Good description length: 60 characters",
+            "severity": "info"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": true,
+            "message": "Meta title and H1 are unique (prefix/suffix configured)",
+            "severity": "info"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [],
+        "contentLength": [],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "No media elements in this post",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No external links found",
+            "severity": "info"
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": true,
+            "message": "Good reading level: 0.1 (Very easy to read)",
+            "severity": "info"
+          }
+        ]
+      },
+      "overallScore": 100,
+      "issuesCount": 0,
+      "warningsCount": 0,
+      "noticesCount": 0
+    },
+    {
+      "file": "blog/新吉他！Gretsch G2215-P90.md",
+      "displayName": "新吉他！Gretsch G2215-P90",
+      "checks": {
+        "titleLength": [],
+        "metaDescription": [
+          {
+            "passed": true,
+            "message": "Good description length: 67 characters",
+            "severity": "info"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": true,
+            "message": "Meta title and H1 are unique (prefix/suffix configured)",
+            "severity": "info"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [],
+        "contentLength": [],
         "duplicateTitles": [],
         "duplicateDescriptions": [],
         "duplicateContent": [],
@@ -2359,7 +1689,7 @@
             "position": {
               "line": 19,
               "searchText": "https://www.bilibili.com/video/BV1ch411M7NV",
-              "context": "# 优点\n### 好听（在正确setup之后）\n   整体上的风味非常类似[g2210](https://www.bilibili.com/video/BV1ch411M7NV)。T老师弹[g2210](https://www.bilibili.com/video/BV1ch411M7NV)的视频我少说看了10多遍，这是我听过最indie的声音之一了。但我很喜欢p90琴颈拾音器的声音，所以选择g2215。\n### 好看\n   我购买的是Mint Metallic薄荷金属色，非常清新的颜色，和fender的音速蓝以及冲浪绿相比要更加低调，但细看有闪粉。指板虽然不是玫瑰木，也不是很深色的月桂木，但是相比epiphone的逗小孩颜色指板还是好不少。况且它琴头是棕色的，对指板颜色深度的要求会低一些。品记又好观察又好看，我很喜欢。五金离远看还是很好看，近看会有些廉价（廉价琴当然廉价啊）。"
+              "context": "## 优点\n### 好听（在正确setup之后）\n   整体上的风味非常类似[g2210](https://www.bilibili.com/video/BV1ch411M7NV)。T老师弹[g2210](https://www.bilibili.com/video/BV1ch411M7NV)的视频我少说看了10多遍，这是我听过最indie的声音之一了。但我很喜欢p90琴颈拾音器的声音，所以选择g2215。\n### 好看\n   我购买的是Mint Metallic薄荷金属色，非常清新的颜色，和fender的音速蓝以及冲浪绿相比要更加低调，但细看有闪粉。指板虽然不是玫瑰木，也不是很深色的月桂木，但是相比epiphone的逗小孩颜色指板还是好不少。况且它琴头是棕色的，对指板颜色深度的要求会低一些。品记又好观察又好看，我很喜欢。五金离远看还是很好看，近看会有些廉价（廉价琴当然廉价啊）。"
             }
           },
           {
@@ -2448,37 +1778,28 @@
           }
         ]
       },
-      "overallScore": 55,
+      "overallScore": 100,
       "issuesCount": 0,
-      "warningsCount": 8,
+      "warningsCount": 0,
       "noticesCount": 8
     },
     {
       "file": "blog/数摇emo乐手效果器设备.md",
-      "displayName": "数摇emo乐手效果器设备",
+      "displayName": "数摇/emo乐手效果器设备整理与参考",
       "checks": {
-        "titleLength": [
-          {
-            "passed": false,
-            "message": "Title too short: 12 characters",
-            "suggestion": "Aim for 30-60 characters",
-            "severity": "warning"
-          }
-        ],
+        "titleLength": [],
         "metaDescription": [
           {
-            "passed": false,
-            "message": "Description too short: 4 characters",
-            "suggestion": "Aim for 120-160 characters",
-            "severity": "warning"
+            "passed": true,
+            "message": "Good description length: 58 characters",
+            "severity": "info"
           }
         ],
         "titleH1Uniqueness": [
           {
-            "passed": false,
-            "message": "Meta title and H1 are identical",
-            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
-            "severity": "warning"
+            "passed": true,
+            "message": "Meta title and H1 are unique (prefix/suffix configured)",
+            "severity": "info"
           }
         ],
         "keywordInTitle": [],
@@ -2487,21 +1808,8 @@
         "keywordInSlug": [],
         "slugFormat": [],
         "keywordDensity": [],
-        "headingOrder": [
-          {
-            "passed": true,
-            "message": "No heading structure issues found",
-            "severity": "info"
-          }
-        ],
-        "contentLength": [
-          {
-            "passed": false,
-            "message": "Content too short: 52 words",
-            "suggestion": "Aim for at least 300 words",
-            "severity": "warning"
-          }
-        ],
+        "headingOrder": [],
+        "contentLength": [],
         "duplicateTitles": [],
         "duplicateDescriptions": [],
         "duplicateContent": [],
@@ -2667,37 +1975,28 @@
           }
         ]
       },
-      "overallScore": 50,
+      "overallScore": 90,
       "issuesCount": 10,
-      "warningsCount": 5,
+      "warningsCount": 1,
       "noticesCount": 0
     },
     {
       "file": "blog/如何DIY一根音频线.md",
       "displayName": "如何DIY一根音频线",
       "checks": {
-        "titleLength": [
-          {
-            "passed": false,
-            "message": "Title too short: 10 characters",
-            "suggestion": "Aim for 30-60 characters",
-            "severity": "warning"
-          }
-        ],
+        "titleLength": [],
         "metaDescription": [
           {
-            "passed": false,
-            "message": "Description too short: 4 characters",
-            "suggestion": "Aim for 120-160 characters",
-            "severity": "warning"
+            "passed": true,
+            "message": "Good description length: 53 characters",
+            "severity": "info"
           }
         ],
         "titleH1Uniqueness": [
           {
-            "passed": false,
-            "message": "Meta title and H1 are identical",
-            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
-            "severity": "warning"
+            "passed": true,
+            "message": "Meta title and H1 are unique (prefix/suffix configured)",
+            "severity": "info"
           }
         ],
         "keywordInTitle": [],
@@ -2706,21 +2005,8 @@
         "keywordInSlug": [],
         "slugFormat": [],
         "keywordDensity": [],
-        "headingOrder": [
-          {
-            "passed": true,
-            "message": "Heading structure is correct",
-            "severity": "info"
-          }
-        ],
-        "contentLength": [
-          {
-            "passed": false,
-            "message": "Content too short: 66 words",
-            "suggestion": "Aim for at least 300 words",
-            "severity": "warning"
-          }
-        ],
+        "headingOrder": [],
+        "contentLength": [],
         "duplicateTitles": [],
         "duplicateDescriptions": [],
         "duplicateContent": [],
@@ -2804,37 +2090,28 @@
           }
         ]
       },
-      "overallScore": 43,
+      "overallScore": 83,
       "issuesCount": 2,
-      "warningsCount": 5,
+      "warningsCount": 1,
       "noticesCount": 1
     },
     {
       "file": "blog/后巷琴声.md",
       "displayName": "后巷琴声",
       "checks": {
-        "titleLength": [
-          {
-            "passed": false,
-            "message": "Title too short: 4 characters",
-            "suggestion": "Aim for 30-60 characters",
-            "severity": "warning"
-          }
-        ],
+        "titleLength": [],
         "metaDescription": [
           {
-            "passed": false,
-            "message": "Description too short: 4 characters",
-            "suggestion": "Aim for 120-160 characters",
-            "severity": "warning"
+            "passed": true,
+            "message": "Good description length: 53 characters",
+            "severity": "info"
           }
         ],
         "titleH1Uniqueness": [
           {
-            "passed": false,
-            "message": "Meta title and H1 are identical",
-            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
-            "severity": "warning"
+            "passed": true,
+            "message": "Meta title and H1 are unique (prefix/suffix configured)",
+            "severity": "info"
           }
         ],
         "keywordInTitle": [],
@@ -2843,21 +2120,8 @@
         "keywordInSlug": [],
         "slugFormat": [],
         "keywordDensity": [],
-        "headingOrder": [
-          {
-            "passed": true,
-            "message": "No heading structure issues found",
-            "severity": "info"
-          }
-        ],
-        "contentLength": [
-          {
-            "passed": false,
-            "message": "Content too short: 182 words",
-            "suggestion": "Aim for at least 300 words",
-            "severity": "warning"
-          }
-        ],
+        "headingOrder": [],
+        "contentLength": [],
         "duplicateTitles": [],
         "duplicateDescriptions": [],
         "duplicateContent": [],
@@ -2912,37 +2176,28 @@
           }
         ]
       },
-      "overallScore": 60,
+      "overallScore": 100,
       "issuesCount": 0,
-      "warningsCount": 4,
+      "warningsCount": 0,
       "noticesCount": 0
     },
     {
       "file": "blog/压缩器的使用.md",
       "displayName": "压缩器的使用",
       "checks": {
-        "titleLength": [
-          {
-            "passed": false,
-            "message": "Title too short: 6 characters",
-            "suggestion": "Aim for 30-60 characters",
-            "severity": "warning"
-          }
-        ],
+        "titleLength": [],
         "metaDescription": [
           {
-            "passed": false,
-            "message": "Description too short: 4 characters",
-            "suggestion": "Aim for 120-160 characters",
-            "severity": "warning"
+            "passed": true,
+            "message": "Good description length: 62 characters",
+            "severity": "info"
           }
         ],
         "titleH1Uniqueness": [
           {
-            "passed": false,
-            "message": "Meta title and H1 are identical",
-            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
-            "severity": "warning"
+            "passed": true,
+            "message": "Meta title and H1 are unique (prefix/suffix configured)",
+            "severity": "info"
           }
         ],
         "keywordInTitle": [],
@@ -2951,21 +2206,8 @@
         "keywordInSlug": [],
         "slugFormat": [],
         "keywordDensity": [],
-        "headingOrder": [
-          {
-            "passed": true,
-            "message": "Heading structure is correct",
-            "severity": "info"
-          }
-        ],
-        "contentLength": [
-          {
-            "passed": false,
-            "message": "Content too short: 88 words",
-            "suggestion": "Aim for at least 300 words",
-            "severity": "warning"
-          }
-        ],
+        "headingOrder": [],
+        "contentLength": [],
         "duplicateTitles": [],
         "duplicateDescriptions": [],
         "duplicateContent": [],
@@ -3020,36 +2262,28 @@
           }
         ]
       },
-      "overallScore": 60,
+      "overallScore": 100,
       "issuesCount": 0,
-      "warningsCount": 4,
+      "warningsCount": 0,
       "noticesCount": 0
     },
     {
       "file": "blog/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter.md",
       "displayName": "博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter",
       "checks": {
-        "titleLength": [
-          {
-            "passed": true,
-            "message": "Good title length: 39 characters",
-            "severity": "info"
-          }
-        ],
+        "titleLength": [],
         "metaDescription": [
           {
-            "passed": false,
-            "message": "Description too short: 4 characters",
-            "suggestion": "Aim for 120-160 characters",
-            "severity": "warning"
+            "passed": true,
+            "message": "Good description length: 64 characters",
+            "severity": "info"
           }
         ],
         "titleH1Uniqueness": [
           {
-            "passed": false,
-            "message": "Meta title and H1 are identical",
-            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
-            "severity": "warning"
+            "passed": true,
+            "message": "Meta title and H1 are unique (prefix/suffix configured)",
+            "severity": "info"
           }
         ],
         "keywordInTitle": [],
@@ -3058,79 +2292,16 @@
         "keywordInSlug": [],
         "slugFormat": [],
         "keywordDensity": [],
-        "headingOrder": [
-          {
-            "passed": true,
-            "message": "Heading structure is correct",
-            "severity": "info"
-          }
-        ],
-        "contentLength": [
-          {
-            "passed": false,
-            "message": "Content too short: 127 words",
-            "suggestion": "Aim for at least 300 words",
-            "severity": "warning"
-          }
-        ],
+        "headingOrder": [],
+        "contentLength": [],
         "duplicateTitles": [],
         "duplicateDescriptions": [],
         "duplicateContent": [],
         "altText": [
           {
-            "passed": false,
-            "message": "Media missing alt text: ./assests/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter/IMG-1765185345013.avif",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 33,
-              "searchText": "![](./assests/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter/IMG-1765185345013.avif)",
-              "context": "\n插件上架了插件库，直接搜索即可，安装后启用。  \n![](./assests/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter/IMG-1765185345013.avif)\n### 插件设置\n"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: ./assests/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter/IMG-1765185461033.avif",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 38,
-              "searchText": "![](./assests/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter/IMG-1765185461033.avif)",
-              "context": "打开插件后，能看到这样的设置页面：\n\n![](./assests/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter/IMG-1765185461033.avif)\n\n界面很直观，基本上只用修改`Folder`，`Filename`，`Conversion`，`Link Format`这几个tab下的设置就可以了。我直接把我的设置贴在这里："
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: ./assests/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter/IMG-1762445654537.avif",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 48,
-              "searchText": "![](./assests/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter/IMG-1762445654537.avif)",
-              "context": "#### Filename\n\n![](./assests/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter/IMG-1762445654537.avif)\n\n#### Conversion"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: ./assests/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter/IMG-1762445678915.avif",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 52,
-              "searchText": "![](./assests/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter/IMG-1762445678915.avif)",
-              "context": "#### Conversion\n\n![](./assests/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter/IMG-1762445678915.avif)\n\n#### Link Format"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Media missing alt text: ./assests/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter/IMG-1762445699603.avif",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 56,
-              "searchText": "![](./assests/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter/IMG-1762445699603.avif)",
-              "context": "#### Link Format\n\n![](./assests/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter/IMG-1762445699603.avif)\n\n---"
-            }
+            "passed": true,
+            "message": "All media elements have alt text",
+            "severity": "info"
           }
         ],
         "imageFileNames": [
@@ -3149,26 +2320,9 @@
         ],
         "brokenLinks": [
           {
-            "passed": false,
-            "message": "Broken internal link: 支持的变量列表",
-            "suggestion": "Check if the file \"docs/Variables%20Reference%20Guide.md\" exists or update the link",
-            "severity": "error",
-            "position": {
-              "line": 84,
-              "searchText": "[支持的变量列表](docs/Variables%20Reference%20Guide.md)",
-              "context": "- 📁 **自定义文件管理和重命名**：\n    \n    - **重命名**：使用变量（例如，`{noteName}`、`{fileName}`）自动重命名图片[支持的变量列表](docs/Variables%20Reference%20Guide.md)\n    - **输出**：使用变量将图片组织到自定义输出文件夹中。[支持的变量列表](docs/Variables%20Reference%20Guide.md)\n- 🌍 **纯 JavaScript 实现**，完全**离线**工作。无需外部 API 或二进制依赖（例如 ImageMagick、Cloudinary、FFmpeg、sharp 等）——保持轻量、便携和安全。"
-            }
-          },
-          {
-            "passed": false,
-            "message": "Broken internal link: 支持的变量列表",
-            "suggestion": "Check if the file \"docs/Variables%20Reference%20Guide.md\" exists or update the link",
-            "severity": "error",
-            "position": {
-              "line": 84,
-              "searchText": "[支持的变量列表](docs/Variables%20Reference%20Guide.md)",
-              "context": "- 📁 **自定义文件管理和重命名**：\n    \n    - **重命名**：使用变量（例如，`{noteName}`、`{fileName}`）自动重命名图片[支持的变量列表](docs/Variables%20Reference%20Guide.md)\n    - **输出**：使用变量将图片组织到自定义输出文件夹中。[支持的变量列表](docs/Variables%20Reference%20Guide.md)\n- 🌍 **纯 JavaScript 实现**，完全**离线**工作。无需外部 API 或二进制依赖（例如 ImageMagick、Cloudinary、FFmpeg、sharp 等）——保持轻量、便携和安全。"
-            }
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
           }
         ],
         "potentiallyBrokenLinks": [
@@ -3186,7 +2340,7 @@
             "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
             "severity": "notice",
             "position": {
-              "line": 61,
+              "line": 60,
               "searchText": "https://github.com/xRyul/obsidian-image-converter",
               "context": "\n这个插件非常强大，还有很多有用的功能，本文就不多介绍了。  \n以下详细的介绍来自[此插件github页面](https://github.com/xRyul/obsidian-image-converter)\n\n## 功能"
             }
@@ -3195,264 +2349,33 @@
         "readingLevel": [
           {
             "passed": true,
-            "message": "Good reading level: 1.5 (Very easy to read)",
+            "message": "Good reading level: 0.8 (Very easy to read)",
             "severity": "info"
           }
         ]
       },
-      "overallScore": 48,
-      "issuesCount": 7,
-      "warningsCount": 3,
-      "noticesCount": 1
-    },
-    {
-      "file": "blog/北的监听耳机入门指南101.md",
-      "displayName": "北的监听耳机入门指南101",
-      "checks": {
-        "titleLength": [
-          {
-            "passed": false,
-            "message": "Title too short: 13 characters",
-            "suggestion": "Aim for 30-60 characters",
-            "severity": "warning"
-          }
-        ],
-        "metaDescription": [
-          {
-            "passed": false,
-            "message": "Description too short: 4 characters",
-            "suggestion": "Aim for 120-160 characters",
-            "severity": "warning"
-          }
-        ],
-        "titleH1Uniqueness": [
-          {
-            "passed": false,
-            "message": "Meta title and H1 are identical",
-            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
-            "severity": "warning"
-          }
-        ],
-        "keywordInTitle": [],
-        "keywordInDescription": [],
-        "keywordInHeadings": [],
-        "keywordInSlug": [],
-        "slugFormat": [],
-        "keywordDensity": [],
-        "headingOrder": [
-          {
-            "passed": true,
-            "message": "Heading structure is correct",
-            "severity": "info"
-          }
-        ],
-        "contentLength": [
-          {
-            "passed": false,
-            "message": "Content too short: 201 words",
-            "suggestion": "Aim for at least 300 words",
-            "severity": "warning"
-          }
-        ],
-        "duplicateTitles": [],
-        "duplicateDescriptions": [],
-        "duplicateContent": [],
-        "altText": [
-          {
-            "passed": false,
-            "message": "Media missing alt text: ./assests/北的监听耳机入门指南101/IMG-1765026344445.webp",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 12,
-              "searchText": "![](./assests/北的监听耳机入门指南101/IMG-1765026344445.webp)",
-              "context": "language: 中文\n---\n![](./assests/北的监听耳机入门指南101/IMG-1765026344445.webp)\n\n<!-- toc -->"
-            }
-          }
-        ],
-        "imageFileNames": [
-          {
-            "passed": true,
-            "message": "All images have good file names",
-            "severity": "info"
-          }
-        ],
-        "nakedLinks": [
-          {
-            "passed": true,
-            "message": "No naked links found",
-            "severity": "info"
-          }
-        ],
-        "brokenLinks": [
-          {
-            "passed": true,
-            "message": "No broken internal links found",
-            "severity": "info"
-          }
-        ],
-        "potentiallyBrokenLinks": [
-          {
-            "passed": true,
-            "message": "No potentially broken links found",
-            "severity": "info"
-          }
-        ],
-        "potentiallyBrokenEmbeds": [],
-        "externalBrokenLinks": [
-          {
-            "passed": true,
-            "message": "No external links found",
-            "severity": "info"
-          }
-        ],
-        "readingLevel": [
-          {
-            "passed": true,
-            "message": "Good reading level: -4.5 (Very easy to read)",
-            "severity": "info"
-          }
-        ]
-      },
-      "overallScore": 50,
-      "issuesCount": 1,
-      "warningsCount": 4,
-      "noticesCount": 0
-    },
-    {
-      "file": "blog/偶次谐波.md",
-      "displayName": "偶次谐波",
-      "checks": {
-        "titleLength": [
-          {
-            "passed": false,
-            "message": "Title too short: 4 characters",
-            "suggestion": "Aim for 30-60 characters",
-            "severity": "warning"
-          }
-        ],
-        "metaDescription": [
-          {
-            "passed": false,
-            "message": "Description too short: 4 characters",
-            "suggestion": "Aim for 120-160 characters",
-            "severity": "warning"
-          }
-        ],
-        "titleH1Uniqueness": [
-          {
-            "passed": false,
-            "message": "Meta title and H1 are identical",
-            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
-            "severity": "warning"
-          }
-        ],
-        "keywordInTitle": [],
-        "keywordInDescription": [],
-        "keywordInHeadings": [],
-        "keywordInSlug": [],
-        "slugFormat": [],
-        "keywordDensity": [],
-        "headingOrder": [
-          {
-            "passed": true,
-            "message": "Heading structure is correct",
-            "severity": "info"
-          }
-        ],
-        "contentLength": [
-          {
-            "passed": false,
-            "message": "Content too short: 175 words",
-            "suggestion": "Aim for at least 300 words",
-            "severity": "warning"
-          }
-        ],
-        "duplicateTitles": [],
-        "duplicateDescriptions": [],
-        "duplicateContent": [],
-        "altText": [
-          {
-            "passed": true,
-            "message": "No media elements in this post",
-            "severity": "info"
-          }
-        ],
-        "imageFileNames": [
-          {
-            "passed": true,
-            "message": "All images have good file names",
-            "severity": "info"
-          }
-        ],
-        "nakedLinks": [
-          {
-            "passed": true,
-            "message": "No naked links found",
-            "severity": "info"
-          }
-        ],
-        "brokenLinks": [
-          {
-            "passed": true,
-            "message": "No broken internal links found",
-            "severity": "info"
-          }
-        ],
-        "potentiallyBrokenLinks": [
-          {
-            "passed": true,
-            "message": "No potentially broken links found",
-            "severity": "info"
-          }
-        ],
-        "potentiallyBrokenEmbeds": [],
-        "externalBrokenLinks": [
-          {
-            "passed": true,
-            "message": "No external links found",
-            "severity": "info"
-          }
-        ],
-        "readingLevel": [
-          {
-            "passed": true,
-            "message": "Good reading level: 3.2 (Very easy to read)",
-            "severity": "info"
-          }
-        ]
-      },
-      "overallScore": 60,
+      "overallScore": 100,
       "issuesCount": 0,
-      "warningsCount": 4,
-      "noticesCount": 0
+      "warningsCount": 0,
+      "noticesCount": 1
     },
     {
       "file": "blog/【FLAC】原创EP 《世界向前走了》.md",
       "displayName": "【FLAC】原创EP 《世界向前走了》",
       "checks": {
-        "titleLength": [
-          {
-            "passed": false,
-            "message": "Title too short: 19 characters",
-            "suggestion": "Aim for 30-60 characters",
-            "severity": "warning"
-          }
-        ],
+        "titleLength": [],
         "metaDescription": [
           {
-            "passed": false,
-            "message": "Description too short: 4 characters",
-            "suggestion": "Aim for 120-160 characters",
-            "severity": "warning"
+            "passed": true,
+            "message": "Good description length: 65 characters",
+            "severity": "info"
           }
         ],
         "titleH1Uniqueness": [
           {
-            "passed": false,
-            "message": "Meta title and H1 are identical",
-            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
-            "severity": "warning"
+            "passed": true,
+            "message": "Meta title and H1 are unique (prefix/suffix configured)",
+            "severity": "info"
           }
         ],
         "keywordInTitle": [],
@@ -3461,21 +2384,8 @@
         "keywordInSlug": [],
         "slugFormat": [],
         "keywordDensity": [],
-        "headingOrder": [
-          {
-            "passed": true,
-            "message": "Heading structure is correct",
-            "severity": "info"
-          }
-        ],
-        "contentLength": [
-          {
-            "passed": false,
-            "message": "Content too short: 45 words",
-            "suggestion": "Aim for at least 300 words",
-            "severity": "warning"
-          }
-        ],
+        "headingOrder": [],
+        "contentLength": [],
         "duplicateTitles": [],
         "duplicateDescriptions": [],
         "duplicateContent": [],
@@ -3530,37 +2440,28 @@
           }
         ]
       },
-      "overallScore": 60,
+      "overallScore": 100,
       "issuesCount": 0,
-      "warningsCount": 4,
+      "warningsCount": 0,
       "noticesCount": 0
     },
     {
-      "file": "blog/【FLAC】Rosary & Bible Intro.md",
-      "displayName": "【FLAC】Rosary & Bible Intro",
+      "file": "blog/偶次谐波.md",
+      "displayName": "偶次谐波",
       "checks": {
-        "titleLength": [
-          {
-            "passed": false,
-            "message": "Title too short: 26 characters",
-            "suggestion": "Aim for 30-60 characters",
-            "severity": "warning"
-          }
-        ],
+        "titleLength": [],
         "metaDescription": [
           {
-            "passed": false,
-            "message": "Description too short: 4 characters",
-            "suggestion": "Aim for 120-160 characters",
-            "severity": "warning"
+            "passed": true,
+            "message": "Good description length: 56 characters",
+            "severity": "info"
           }
         ],
         "titleH1Uniqueness": [
           {
-            "passed": false,
-            "message": "Meta title and H1 are identical",
-            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
-            "severity": "warning"
+            "passed": true,
+            "message": "Meta title and H1 are unique (prefix/suffix configured)",
+            "severity": "info"
           }
         ],
         "keywordInTitle": [],
@@ -3569,21 +2470,186 @@
         "keywordInSlug": [],
         "slugFormat": [],
         "keywordDensity": [],
-        "headingOrder": [
+        "headingOrder": [],
+        "contentLength": [],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
           {
             "passed": true,
-            "message": "Heading structure is correct",
+            "message": "No media elements in this post",
             "severity": "info"
           }
         ],
-        "contentLength": [
+        "imageFileNames": [
           {
-            "passed": false,
-            "message": "Content too short: 17 words",
-            "suggestion": "Aim for at least 300 words",
-            "severity": "warning"
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
           }
         ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No external links found",
+            "severity": "info"
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": true,
+            "message": "Good reading level: 3.2 (Very easy to read)",
+            "severity": "info"
+          }
+        ]
+      },
+      "overallScore": 100,
+      "issuesCount": 0,
+      "warningsCount": 0,
+      "noticesCount": 0
+    },
+    {
+      "file": "blog/北的监听耳机入门指南101.md",
+      "displayName": "北的监听耳机入门指南101",
+      "checks": {
+        "titleLength": [],
+        "metaDescription": [
+          {
+            "passed": true,
+            "message": "Good description length: 52 characters",
+            "severity": "info"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": true,
+            "message": "Meta title and H1 are unique (prefix/suffix configured)",
+            "severity": "info"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [],
+        "contentLength": [],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "No media elements in this post",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "Relative path link: 耳机罩对频段的影响",
+            "suggestion": "This link may be valid for static site generators but may not work in Obsidian",
+            "severity": "notice",
+            "position": {
+              "line": 136,
+              "searchText": "[耳机罩对频段的影响](/blog/earpads-for-headphone)",
+              "context": "## 另：北关于耳机的另一个文章\n\n[耳机罩对频段的影响](/blog/earpads-for-headphone)"
+            }
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No external links found",
+            "severity": "info"
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": true,
+            "message": "Good reading level: -4.3 (Very easy to read)",
+            "severity": "info"
+          }
+        ]
+      },
+      "overallScore": 100,
+      "issuesCount": 0,
+      "warningsCount": 0,
+      "noticesCount": 1
+    },
+    {
+      "file": "blog/【FLAC】Rosary & Bible Intro.md",
+      "displayName": "【FLAC】Rosary & Bible Intro",
+      "checks": {
+        "titleLength": [],
+        "metaDescription": [
+          {
+            "passed": true,
+            "message": "Good description length: 75 characters",
+            "severity": "info"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": true,
+            "message": "Meta title and H1 are unique (prefix/suffix configured)",
+            "severity": "info"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [],
+        "contentLength": [],
         "duplicateTitles": [],
         "duplicateDescriptions": [],
         "duplicateContent": [],
@@ -3644,37 +2710,28 @@
           }
         ]
       },
-      "overallScore": 60,
+      "overallScore": 100,
       "issuesCount": 0,
-      "warningsCount": 4,
+      "warningsCount": 0,
       "noticesCount": 1
     },
     {
       "file": "blog/《轻音少女》相关乐谱.md",
       "displayName": "《轻音少女》相关乐谱",
       "checks": {
-        "titleLength": [
-          {
-            "passed": false,
-            "message": "Title too short: 10 characters",
-            "suggestion": "Aim for 30-60 characters",
-            "severity": "warning"
-          }
-        ],
+        "titleLength": [],
         "metaDescription": [
           {
-            "passed": false,
-            "message": "Description too short: 4 characters",
-            "suggestion": "Aim for 120-160 characters",
-            "severity": "warning"
+            "passed": true,
+            "message": "Good description length: 53 characters",
+            "severity": "info"
           }
         ],
         "titleH1Uniqueness": [
           {
-            "passed": false,
-            "message": "Meta title and H1 are identical",
-            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
-            "severity": "warning"
+            "passed": true,
+            "message": "Meta title and H1 are unique (prefix/suffix configured)",
+            "severity": "info"
           }
         ],
         "keywordInTitle": [],
@@ -3683,35 +2740,16 @@
         "keywordInSlug": [],
         "slugFormat": [],
         "keywordDensity": [],
-        "headingOrder": [
-          {
-            "passed": true,
-            "message": "Heading structure is correct",
-            "severity": "info"
-          }
-        ],
-        "contentLength": [
-          {
-            "passed": false,
-            "message": "Content too short: 30 words",
-            "suggestion": "Aim for at least 300 words",
-            "severity": "warning"
-          }
-        ],
+        "headingOrder": [],
+        "contentLength": [],
         "duplicateTitles": [],
         "duplicateDescriptions": [],
         "duplicateContent": [],
         "altText": [
           {
-            "passed": false,
-            "message": "Media missing alt text: ./assests/《轻音少女》相关乐谱/IMG-1765194110710.avif",
-            "suggestion": "Add descriptive alt text for accessibility",
-            "severity": "error",
-            "position": {
-              "line": 12,
-              "searchText": "![](./assests/《轻音少女》相关乐谱/IMG-1765194110710.avif)",
-              "context": "heroImage: { src: './assests/《轻音少女》相关乐谱/IMG-1765194110710.avif', color: '#9698C1' }\n---\n![](./assests/《轻音少女》相关乐谱/IMG-1765194110710.avif)\n**侵删。**\n**声明：所有的谱子都是网络搜集所得，我曾经利用这些谱子练习，所以我也分享给网友，完全出于互联网精神和对相关艺术作品的欣赏，无任何盈利，无任何不良引导。**"
-            }
+            "passed": true,
+            "message": "No media elements in this post",
+            "severity": "info"
           }
         ],
         "imageFileNames": [
@@ -3750,7 +2788,7 @@
             "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
             "severity": "notice",
             "position": {
-              "line": 26,
+              "line": 27,
               "searchText": "https://tieba.baidu.com/p/5495012510",
               "context": "\n`这个是扫描乐谱并传到网上的真正大善人QAQ`\n[【图片】似乎很多人想要乐谱【轻音吧】_百度贴吧](https://tieba.baidu.com/p/5495012510)\n⬆⬆⬆⬆⬆\n原po主有发`百度网盘链接`所以大家直接去他那里找链接下载就可以了"
             }
@@ -3761,7 +2799,7 @@
             "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
             "severity": "notice",
             "position": {
-              "line": 30,
+              "line": 31,
               "searchText": "https://pan.baidu.com/s/1PaYKXg4oWqi4fPCHWapxUQ",
               "context": "原po主有发`百度网盘链接`所以大家直接去他那里找链接下载就可以了\n\n不愿意找的话我也贴一下[百度网盘链接](https://pan.baidu.com/s/1PaYKXg4oWqi4fPCHWapxUQ)\n\n"
             }
@@ -3770,150 +2808,33 @@
         "readingLevel": [
           {
             "passed": true,
-            "message": "Good reading level: -2.3 (Very easy to read)",
+            "message": "Good reading level: -3.7 (Very easy to read)",
             "severity": "info"
           }
         ]
       },
-      "overallScore": 50,
-      "issuesCount": 1,
-      "warningsCount": 4,
-      "noticesCount": 2
-    },
-    {
-      "file": "blog/《世界向前走了》制作记录.md",
-      "displayName": "《世界向前走了》制作记录",
-      "checks": {
-        "titleLength": [
-          {
-            "passed": false,
-            "message": "Title too short: 12 characters",
-            "suggestion": "Aim for 30-60 characters",
-            "severity": "warning"
-          }
-        ],
-        "metaDescription": [
-          {
-            "passed": false,
-            "message": "Description too short: 4 characters",
-            "suggestion": "Aim for 120-160 characters",
-            "severity": "warning"
-          }
-        ],
-        "titleH1Uniqueness": [
-          {
-            "passed": false,
-            "message": "Meta title and H1 are identical",
-            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
-            "severity": "warning"
-          }
-        ],
-        "keywordInTitle": [],
-        "keywordInDescription": [],
-        "keywordInHeadings": [],
-        "keywordInSlug": [],
-        "slugFormat": [],
-        "keywordDensity": [],
-        "headingOrder": [
-          {
-            "passed": true,
-            "message": "Heading structure is correct",
-            "severity": "info"
-          }
-        ],
-        "contentLength": [
-          {
-            "passed": true,
-            "message": "Good content length: 716 words",
-            "severity": "info"
-          }
-        ],
-        "duplicateTitles": [],
-        "duplicateDescriptions": [],
-        "duplicateContent": [],
-        "altText": [
-          {
-            "passed": true,
-            "message": "No media elements in this post",
-            "severity": "info"
-          }
-        ],
-        "imageFileNames": [
-          {
-            "passed": true,
-            "message": "All images have good file names",
-            "severity": "info"
-          }
-        ],
-        "nakedLinks": [
-          {
-            "passed": true,
-            "message": "No naked links found",
-            "severity": "info"
-          }
-        ],
-        "brokenLinks": [
-          {
-            "passed": true,
-            "message": "No broken internal links found",
-            "severity": "info"
-          }
-        ],
-        "potentiallyBrokenLinks": [
-          {
-            "passed": true,
-            "message": "No potentially broken links found",
-            "severity": "info"
-          }
-        ],
-        "potentiallyBrokenEmbeds": [],
-        "externalBrokenLinks": [
-          {
-            "passed": true,
-            "message": "No external links found",
-            "severity": "info"
-          }
-        ],
-        "readingLevel": [
-          {
-            "passed": false,
-            "message": "Reading level too high: 63.4 (Very difficult to read)",
-            "suggestion": "Consider simplifying sentence structure and using shorter words",
-            "severity": "warning"
-          }
-        ]
-      },
-      "overallScore": 60,
+      "overallScore": 100,
       "issuesCount": 0,
-      "warningsCount": 4,
-      "noticesCount": 0
+      "warningsCount": 0,
+      "noticesCount": 2
     },
     {
       "file": "blog/Producer向Podcast整理.md",
       "displayName": "Producer向Podcast整理",
       "checks": {
-        "titleLength": [
-          {
-            "passed": false,
-            "message": "Title too short: 18 characters",
-            "suggestion": "Aim for 30-60 characters",
-            "severity": "warning"
-          }
-        ],
+        "titleLength": [],
         "metaDescription": [
           {
-            "passed": false,
-            "message": "Description too short: 4 characters",
-            "suggestion": "Aim for 120-160 characters",
-            "severity": "warning"
+            "passed": true,
+            "message": "Good description length: 56 characters",
+            "severity": "info"
           }
         ],
         "titleH1Uniqueness": [
           {
-            "passed": false,
-            "message": "Meta title and H1 are identical",
-            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
-            "severity": "warning"
+            "passed": true,
+            "message": "Meta title and H1 are unique (prefix/suffix configured)",
+            "severity": "info"
           }
         ],
         "keywordInTitle": [],
@@ -3922,21 +2843,8 @@
         "keywordInSlug": [],
         "slugFormat": [],
         "keywordDensity": [],
-        "headingOrder": [
-          {
-            "passed": true,
-            "message": "No heading structure issues found",
-            "severity": "info"
-          }
-        ],
-        "contentLength": [
-          {
-            "passed": false,
-            "message": "Content too short: 93 words",
-            "suggestion": "Aim for at least 300 words",
-            "severity": "warning"
-          }
-        ],
+        "headingOrder": [],
+        "contentLength": [],
         "duplicateTitles": [],
         "duplicateDescriptions": [],
         "duplicateContent": [],
@@ -3986,43 +2894,121 @@
         "readingLevel": [
           {
             "passed": false,
-            "message": "Reading level too high: 32.1 (Very difficult to read)",
+            "message": "Reading level too high: 31.9 (Very difficult to read)",
             "suggestion": "Consider simplifying sentence structure and using shorter words",
             "severity": "warning"
           }
         ]
       },
-      "overallScore": 50,
+      "overallScore": 80,
       "issuesCount": 0,
-      "warningsCount": 5,
+      "warningsCount": 1,
+      "noticesCount": 0
+    },
+    {
+      "file": "blog/《世界向前走了》制作记录.md",
+      "displayName": "《世界向前走了》制作记录",
+      "checks": {
+        "titleLength": [],
+        "metaDescription": [
+          {
+            "passed": true,
+            "message": "Good description length: 61 characters",
+            "severity": "info"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": true,
+            "message": "Meta title and H1 are unique (prefix/suffix configured)",
+            "severity": "info"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [],
+        "contentLength": [],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "No media elements in this post",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No external links found",
+            "severity": "info"
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": false,
+            "message": "Reading level too high: 63.3 (Very difficult to read)",
+            "suggestion": "Consider simplifying sentence structure and using shorter words",
+            "severity": "warning"
+          }
+        ]
+      },
+      "overallScore": 80,
+      "issuesCount": 0,
+      "warningsCount": 1,
       "noticesCount": 0
     },
     {
       "file": "blog/Mooer产品与其对应原型.md",
       "displayName": "Mooer产品与其对应原型",
       "checks": {
-        "titleLength": [
-          {
-            "passed": false,
-            "message": "Title too short: 13 characters",
-            "suggestion": "Aim for 30-60 characters",
-            "severity": "warning"
-          }
-        ],
+        "titleLength": [],
         "metaDescription": [
           {
-            "passed": false,
-            "message": "Description too short: 4 characters",
-            "suggestion": "Aim for 120-160 characters",
-            "severity": "warning"
+            "passed": true,
+            "message": "Good description length: 58 characters",
+            "severity": "info"
           }
         ],
         "titleH1Uniqueness": [
           {
-            "passed": false,
-            "message": "Meta title and H1 are identical",
-            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
-            "severity": "warning"
+            "passed": true,
+            "message": "Meta title and H1 are unique (prefix/suffix configured)",
+            "severity": "info"
           }
         ],
         "keywordInTitle": [],
@@ -4031,20 +3017,8 @@
         "keywordInSlug": [],
         "slugFormat": [],
         "keywordDensity": [],
-        "headingOrder": [
-          {
-            "passed": true,
-            "message": "No heading structure issues found",
-            "severity": "info"
-          }
-        ],
-        "contentLength": [
-          {
-            "passed": true,
-            "message": "Good content length: 364 words",
-            "severity": "info"
-          }
-        ],
+        "headingOrder": [],
+        "contentLength": [],
         "duplicateTitles": [],
         "duplicateDescriptions": [],
         "duplicateContent": [],
@@ -4541,23 +3515,16 @@
           }
         ]
       },
-      "overallScore": 53,
+      "overallScore": 73,
       "issuesCount": 0,
-      "warningsCount": 5,
+      "warningsCount": 2,
       "noticesCount": 40
     },
     {
       "file": "blog/markdown-zh/index.md",
       "displayName": "Markdown 语法支持",
       "checks": {
-        "titleLength": [
-          {
-            "passed": false,
-            "message": "Title too short: 4 characters",
-            "suggestion": "Aim for 30-60 characters",
-            "severity": "warning"
-          }
-        ],
+        "titleLength": [],
         "metaDescription": [
           {
             "passed": false,
@@ -4573,21 +3540,8 @@
         "keywordInSlug": [],
         "slugFormat": [],
         "keywordDensity": [],
-        "headingOrder": [
-          {
-            "passed": true,
-            "message": "Heading structure is correct",
-            "severity": "info"
-          }
-        ],
-        "contentLength": [
-          {
-            "passed": false,
-            "message": "Content too short: 269 words",
-            "suggestion": "Aim for at least 300 words",
-            "severity": "warning"
-          }
-        ],
+        "headingOrder": [],
+        "contentLength": [],
         "duplicateTitles": [],
         "duplicateDescriptions": [],
         "duplicateContent": [],
@@ -4649,23 +3603,16 @@
           }
         ]
       },
-      "overallScore": 50,
+      "overallScore": 65,
       "issuesCount": 0,
-      "warningsCount": 4,
+      "warningsCount": 2,
       "noticesCount": 1
     },
     {
       "file": "blog/markdown/index.md",
       "displayName": "Markdown Syntax Support",
       "checks": {
-        "titleLength": [
-          {
-            "passed": false,
-            "message": "Title too short: 8 characters",
-            "suggestion": "Aim for 30-60 characters",
-            "severity": "warning"
-          }
-        ],
+        "titleLength": [],
         "metaDescription": [
           {
             "passed": false,
@@ -4681,20 +3628,8 @@
         "keywordInSlug": [],
         "slugFormat": [],
         "keywordDensity": [],
-        "headingOrder": [
-          {
-            "passed": true,
-            "message": "Heading structure is correct",
-            "severity": "info"
-          }
-        ],
-        "contentLength": [
-          {
-            "passed": true,
-            "message": "Good content length: 549 words",
-            "severity": "info"
-          }
-        ],
+        "headingOrder": [],
+        "contentLength": [],
         "duplicateTitles": [],
         "duplicateDescriptions": [],
         "duplicateContent": [],
@@ -4756,37 +3691,28 @@
           }
         ]
       },
-      "overallScore": 60,
+      "overallScore": 65,
       "issuesCount": 0,
-      "warningsCount": 3,
+      "warningsCount": 2,
       "noticesCount": 1
     },
     {
       "file": "blog/JOYO产品及其对应原型.md",
       "displayName": "JOYO产品及其对应原型",
       "checks": {
-        "titleLength": [
-          {
-            "passed": false,
-            "message": "Title too short: 12 characters",
-            "suggestion": "Aim for 30-60 characters",
-            "severity": "warning"
-          }
-        ],
+        "titleLength": [],
         "metaDescription": [
           {
-            "passed": false,
-            "message": "Description too short: 4 characters",
-            "suggestion": "Aim for 120-160 characters",
-            "severity": "warning"
+            "passed": true,
+            "message": "Good description length: 61 characters",
+            "severity": "info"
           }
         ],
         "titleH1Uniqueness": [
           {
-            "passed": false,
-            "message": "Meta title and H1 are identical",
-            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
-            "severity": "warning"
+            "passed": true,
+            "message": "Meta title and H1 are unique (prefix/suffix configured)",
+            "severity": "info"
           }
         ],
         "keywordInTitle": [],
@@ -4795,20 +3721,8 @@
         "keywordInSlug": [],
         "slugFormat": [],
         "keywordDensity": [],
-        "headingOrder": [
-          {
-            "passed": true,
-            "message": "No heading structure issues found",
-            "severity": "info"
-          }
-        ],
-        "contentLength": [
-          {
-            "passed": true,
-            "message": "Good content length: 415 words",
-            "severity": "info"
-          }
-        ],
+        "headingOrder": [],
+        "contentLength": [],
         "duplicateTitles": [],
         "duplicateDescriptions": [],
         "duplicateContent": [],
@@ -5305,37 +4219,29 @@
           }
         ]
       },
-      "overallScore": 53,
+      "overallScore": 73,
       "issuesCount": 0,
-      "warningsCount": 5,
+      "warningsCount": 2,
       "noticesCount": 40
     },
     {
       "file": "blog/hidden/游戏3.md",
       "displayName": "游戏3",
       "checks": {
-        "titleLength": [
-          {
-            "passed": false,
-            "message": "Title too short: 3 characters",
-            "suggestion": "Aim for 30-60 characters",
-            "severity": "warning"
-          }
-        ],
+        "titleLength": [],
         "metaDescription": [
           {
             "passed": false,
             "message": "Description too short: 4 characters",
-            "suggestion": "Aim for 120-160 characters",
+            "suggestion": "Aim for 30-60 characters",
             "severity": "warning"
           }
         ],
         "titleH1Uniqueness": [
           {
-            "passed": false,
-            "message": "Meta title and H1 are identical",
-            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
-            "severity": "warning"
+            "passed": true,
+            "message": "Meta title and H1 are unique (prefix/suffix configured)",
+            "severity": "info"
           }
         ],
         "keywordInTitle": [],
@@ -5344,20 +4250,8 @@
         "keywordInSlug": [],
         "slugFormat": [],
         "keywordDensity": [],
-        "headingOrder": [
-          {
-            "passed": true,
-            "message": "No heading structure issues found",
-            "severity": "info"
-          }
-        ],
-        "contentLength": [
-          {
-            "passed": true,
-            "message": "Good content length: 336 words",
-            "severity": "info"
-          }
-        ],
+        "headingOrder": [],
+        "contentLength": [],
         "duplicateTitles": [],
         "duplicateDescriptions": [],
         "duplicateContent": [],
@@ -5412,145 +4306,29 @@
           }
         ]
       },
-      "overallScore": 70,
+      "overallScore": 85,
       "issuesCount": 0,
-      "warningsCount": 3,
-      "noticesCount": 0
-    },
-    {
-      "file": "blog/hidden/游戏.md",
-      "displayName": "✺❖༺✦ 游戏 ✦༻❖✺",
-      "checks": {
-        "titleLength": [
-          {
-            "passed": false,
-            "message": "Title too short: 12 characters",
-            "suggestion": "Aim for 30-60 characters",
-            "severity": "warning"
-          }
-        ],
-        "metaDescription": [
-          {
-            "passed": false,
-            "message": "Description too short: 4 characters",
-            "suggestion": "Aim for 120-160 characters",
-            "severity": "warning"
-          }
-        ],
-        "titleH1Uniqueness": [
-          {
-            "passed": false,
-            "message": "Meta title and H1 are identical",
-            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
-            "severity": "warning"
-          }
-        ],
-        "keywordInTitle": [],
-        "keywordInDescription": [],
-        "keywordInHeadings": [],
-        "keywordInSlug": [],
-        "slugFormat": [],
-        "keywordDensity": [],
-        "headingOrder": [
-          {
-            "passed": true,
-            "message": "Heading structure is correct",
-            "severity": "info"
-          }
-        ],
-        "contentLength": [
-          {
-            "passed": false,
-            "message": "Content too short: 15 words",
-            "suggestion": "Aim for at least 300 words",
-            "severity": "warning"
-          }
-        ],
-        "duplicateTitles": [],
-        "duplicateDescriptions": [],
-        "duplicateContent": [],
-        "altText": [
-          {
-            "passed": true,
-            "message": "No media elements in this post",
-            "severity": "info"
-          }
-        ],
-        "imageFileNames": [
-          {
-            "passed": true,
-            "message": "All images have good file names",
-            "severity": "info"
-          }
-        ],
-        "nakedLinks": [
-          {
-            "passed": true,
-            "message": "No naked links found",
-            "severity": "info"
-          }
-        ],
-        "brokenLinks": [
-          {
-            "passed": true,
-            "message": "No broken internal links found",
-            "severity": "info"
-          }
-        ],
-        "potentiallyBrokenLinks": [
-          {
-            "passed": true,
-            "message": "No potentially broken links found",
-            "severity": "info"
-          }
-        ],
-        "potentiallyBrokenEmbeds": [],
-        "externalBrokenLinks": [
-          {
-            "passed": true,
-            "message": "No external links found",
-            "severity": "info"
-          }
-        ],
-        "readingLevel": [
-          {
-            "passed": true,
-            "message": "Good reading level: 1.6 (Very easy to read)",
-            "severity": "info"
-          }
-        ]
-      },
-      "overallScore": 60,
-      "issuesCount": 0,
-      "warningsCount": 4,
+      "warningsCount": 1,
       "noticesCount": 0
     },
     {
       "file": "blog/hidden/游戏2.md",
       "displayName": "✦༺⚜༻✦ 游戏2 ✦༺⚜༻✦",
       "checks": {
-        "titleLength": [
-          {
-            "passed": false,
-            "message": "Title too short: 15 characters",
-            "suggestion": "Aim for 30-60 characters",
-            "severity": "warning"
-          }
-        ],
+        "titleLength": [],
         "metaDescription": [
           {
             "passed": false,
             "message": "Description too short: 4 characters",
-            "suggestion": "Aim for 120-160 characters",
+            "suggestion": "Aim for 30-60 characters",
             "severity": "warning"
           }
         ],
         "titleH1Uniqueness": [
           {
-            "passed": false,
-            "message": "Meta title and H1 are identical",
-            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
-            "severity": "warning"
+            "passed": true,
+            "message": "Meta title and H1 are unique (prefix/suffix configured)",
+            "severity": "info"
           }
         ],
         "keywordInTitle": [],
@@ -5559,27 +4337,8 @@
         "keywordInSlug": [],
         "slugFormat": [],
         "keywordDensity": [],
-        "headingOrder": [
-          {
-            "passed": false,
-            "message": "\"还会有别的游戏吗？\" (H3) skips heading level(s) after H1",
-            "suggestion": "Use heading levels in order (H1 → H2 → H3, etc.)",
-            "severity": "warning",
-            "position": {
-              "line": 13,
-              "searchText": "###  还会有别的游戏吗？",
-              "context": "\n# whaaaaaa被你发现了，厉害！\n###  还会有别的游戏吗？\n\n你应该从网址就可以看出，所有的hidden posts都是blog。"
-            }
-          }
-        ],
-        "contentLength": [
-          {
-            "passed": false,
-            "message": "Content too short: 9 words",
-            "suggestion": "Aim for at least 300 words",
-            "severity": "warning"
-          }
-        ],
+        "headingOrder": [],
+        "contentLength": [],
         "duplicateTitles": [],
         "duplicateDescriptions": [],
         "duplicateContent": [],
@@ -5640,37 +4399,29 @@
           }
         ]
       },
-      "overallScore": 45,
+      "overallScore": 85,
       "issuesCount": 0,
-      "warningsCount": 5,
+      "warningsCount": 1,
       "noticesCount": 1
     },
     {
-      "file": "blog/hidden/北的音乐设备主观评分.md",
-      "displayName": "北的音乐设备主观评分",
+      "file": "blog/hidden/游戏.md",
+      "displayName": "✺❖༺✦ 游戏 ✦༻❖✺",
       "checks": {
-        "titleLength": [
-          {
-            "passed": false,
-            "message": "Title too short: 10 characters",
-            "suggestion": "Aim for 30-60 characters",
-            "severity": "warning"
-          }
-        ],
+        "titleLength": [],
         "metaDescription": [
           {
             "passed": false,
             "message": "Description too short: 4 characters",
-            "suggestion": "Aim for 120-160 characters",
+            "suggestion": "Aim for 30-60 characters",
             "severity": "warning"
           }
         ],
         "titleH1Uniqueness": [
           {
-            "passed": false,
-            "message": "Meta title and H1 are identical",
-            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
-            "severity": "warning"
+            "passed": true,
+            "message": "Meta title and H1 are unique (prefix/suffix configured)",
+            "severity": "info"
           }
         ],
         "keywordInTitle": [],
@@ -5679,21 +4430,8 @@
         "keywordInSlug": [],
         "slugFormat": [],
         "keywordDensity": [],
-        "headingOrder": [
-          {
-            "passed": true,
-            "message": "Heading structure is correct",
-            "severity": "info"
-          }
-        ],
-        "contentLength": [
-          {
-            "passed": false,
-            "message": "Content too short: 38 words",
-            "suggestion": "Aim for at least 300 words",
-            "severity": "warning"
-          }
-        ],
+        "headingOrder": [],
+        "contentLength": [],
         "duplicateTitles": [],
         "duplicateDescriptions": [],
         "duplicateContent": [],
@@ -5743,42 +4481,34 @@
         "readingLevel": [
           {
             "passed": true,
-            "message": "Good reading level: -6.1 (Very easy to read)",
+            "message": "Good reading level: 1.6 (Very easy to read)",
             "severity": "info"
           }
         ]
       },
-      "overallScore": 60,
+      "overallScore": 85,
       "issuesCount": 0,
-      "warningsCount": 4,
+      "warningsCount": 1,
       "noticesCount": 0
     },
     {
       "file": "blog/hidden/MarkdownCheatsheet.md",
       "displayName": "MarkdownCheatsheet",
       "checks": {
-        "titleLength": [
-          {
-            "passed": false,
-            "message": "Title too short: 18 characters",
-            "suggestion": "Aim for 30-60 characters",
-            "severity": "warning"
-          }
-        ],
+        "titleLength": [],
         "metaDescription": [
           {
             "passed": false,
             "message": "Description too short: 4 characters",
-            "suggestion": "Aim for 120-160 characters",
+            "suggestion": "Aim for 30-60 characters",
             "severity": "warning"
           }
         ],
         "titleH1Uniqueness": [
           {
-            "passed": false,
-            "message": "Meta title and H1 are identical",
-            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
-            "severity": "warning"
+            "passed": true,
+            "message": "Meta title and H1 are unique (prefix/suffix configured)",
+            "severity": "info"
           }
         ],
         "keywordInTitle": [],
@@ -5787,26 +4517,8 @@
         "keywordInSlug": [],
         "slugFormat": [],
         "keywordDensity": [],
-        "headingOrder": [
-          {
-            "passed": false,
-            "message": "\"H1\" (H1) appears after H2",
-            "suggestion": "H1 should be the first heading or not used at all",
-            "severity": "warning",
-            "position": {
-              "line": 20,
-              "searchText": "# H1",
-              "context": "## Heading\n\n# H1\n\n## H2"
-            }
-          }
-        ],
-        "contentLength": [
-          {
-            "passed": true,
-            "message": "Good content length: 316 words",
-            "severity": "info"
-          }
-        ],
+        "headingOrder": [],
+        "contentLength": [],
         "duplicateTitles": [],
         "duplicateDescriptions": [],
         "duplicateContent": [],
@@ -5878,37 +4590,29 @@
           }
         ]
       },
-      "overallScore": 55,
+      "overallScore": 85,
       "issuesCount": 0,
-      "warningsCount": 4,
+      "warningsCount": 1,
       "noticesCount": 2
     },
     {
-      "file": "blog/hidden/HiddenBlogs.md",
-      "displayName": "░▒▓█ HIDDEN BLOGS █▓▒░",
+      "file": "blog/hidden/北的音乐设备主观评分.md",
+      "displayName": "北的音乐设备主观评分",
       "checks": {
-        "titleLength": [
-          {
-            "passed": false,
-            "message": "Title too short: 22 characters",
-            "suggestion": "Aim for 30-60 characters",
-            "severity": "warning"
-          }
-        ],
+        "titleLength": [],
         "metaDescription": [
           {
             "passed": false,
             "message": "Description too short: 4 characters",
-            "suggestion": "Aim for 120-160 characters",
+            "suggestion": "Aim for 30-60 characters",
             "severity": "warning"
           }
         ],
         "titleH1Uniqueness": [
           {
-            "passed": false,
-            "message": "Meta title and H1 are identical",
-            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
-            "severity": "warning"
+            "passed": true,
+            "message": "Meta title and H1 are unique (prefix/suffix configured)",
+            "severity": "info"
           }
         ],
         "keywordInTitle": [],
@@ -5917,21 +4621,95 @@
         "keywordInSlug": [],
         "slugFormat": [],
         "keywordDensity": [],
-        "headingOrder": [
+        "headingOrder": [],
+        "contentLength": [],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
           {
             "passed": true,
-            "message": "No heading structure issues found",
+            "message": "No media elements in this post",
             "severity": "info"
           }
         ],
-        "contentLength": [
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No external links found",
+            "severity": "info"
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": true,
+            "message": "Good reading level: -6.2 (Very easy to read)",
+            "severity": "info"
+          }
+        ]
+      },
+      "overallScore": 85,
+      "issuesCount": 0,
+      "warningsCount": 1,
+      "noticesCount": 0
+    },
+    {
+      "file": "blog/hidden/HiddenBlogs.md",
+      "displayName": "░▒▓█ HIDDEN BLOGS █▓▒░",
+      "checks": {
+        "titleLength": [],
+        "metaDescription": [
           {
             "passed": false,
-            "message": "Content too short: 23 words",
-            "suggestion": "Aim for at least 300 words",
+            "message": "Description too short: 4 characters",
+            "suggestion": "Aim for 30-60 characters",
             "severity": "warning"
           }
         ],
+        "titleH1Uniqueness": [
+          {
+            "passed": true,
+            "message": "Meta title and H1 are unique (prefix/suffix configured)",
+            "severity": "info"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [],
+        "contentLength": [],
         "duplicateTitles": [],
         "duplicateDescriptions": [],
         "duplicateContent": [],
@@ -5986,37 +4764,29 @@
           }
         ]
       },
-      "overallScore": 60,
+      "overallScore": 85,
       "issuesCount": 0,
-      "warningsCount": 4,
+      "warningsCount": 1,
       "noticesCount": 0
     },
     {
       "file": "blog/hidden/AssetCheatsheet.md",
       "displayName": "AssetCheatsheet",
       "checks": {
-        "titleLength": [
-          {
-            "passed": false,
-            "message": "Title too short: 15 characters",
-            "suggestion": "Aim for 30-60 characters",
-            "severity": "warning"
-          }
-        ],
+        "titleLength": [],
         "metaDescription": [
           {
             "passed": false,
             "message": "Description too short: 4 characters",
-            "suggestion": "Aim for 120-160 characters",
+            "suggestion": "Aim for 30-60 characters",
             "severity": "warning"
           }
         ],
         "titleH1Uniqueness": [
           {
-            "passed": false,
-            "message": "Meta title and H1 are identical",
-            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
-            "severity": "warning"
+            "passed": true,
+            "message": "Meta title and H1 are unique (prefix/suffix configured)",
+            "severity": "info"
           }
         ],
         "keywordInTitle": [],
@@ -6025,21 +4795,8 @@
         "keywordInSlug": [],
         "slugFormat": [],
         "keywordDensity": [],
-        "headingOrder": [
-          {
-            "passed": true,
-            "message": "No heading structure issues found",
-            "severity": "info"
-          }
-        ],
-        "contentLength": [
-          {
-            "passed": false,
-            "message": "Content too short: 9 words",
-            "suggestion": "Aim for at least 300 words",
-            "severity": "warning"
-          }
-        ],
+        "headingOrder": [],
+        "contentLength": [],
         "duplicateTitles": [],
         "duplicateDescriptions": [],
         "duplicateContent": [],
@@ -6140,37 +4897,29 @@
           }
         ]
       },
-      "overallScore": 40,
+      "overallScore": 55,
       "issuesCount": 1,
-      "warningsCount": 5,
+      "warningsCount": 2,
       "noticesCount": 4
     },
     {
       "file": "blog/hidden/abeiboogiepop.md",
       "displayName": "abeiboogiepop",
       "checks": {
-        "titleLength": [
-          {
-            "passed": false,
-            "message": "Title too short: 13 characters",
-            "suggestion": "Aim for 30-60 characters",
-            "severity": "warning"
-          }
-        ],
+        "titleLength": [],
         "metaDescription": [
           {
             "passed": false,
             "message": "Description too short: 4 characters",
-            "suggestion": "Aim for 120-160 characters",
+            "suggestion": "Aim for 30-60 characters",
             "severity": "warning"
           }
         ],
         "titleH1Uniqueness": [
           {
-            "passed": false,
-            "message": "Meta title and H1 are identical",
-            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
-            "severity": "warning"
+            "passed": true,
+            "message": "Meta title and H1 are unique (prefix/suffix configured)",
+            "severity": "info"
           }
         ],
         "keywordInTitle": [],
@@ -6179,21 +4928,8 @@
         "keywordInSlug": [],
         "slugFormat": [],
         "keywordDensity": [],
-        "headingOrder": [
-          {
-            "passed": true,
-            "message": "No heading structure issues found",
-            "severity": "info"
-          }
-        ],
-        "contentLength": [
-          {
-            "passed": false,
-            "message": "Content too short: 1 words",
-            "suggestion": "Aim for at least 300 words",
-            "severity": "warning"
-          }
-        ],
+        "headingOrder": [],
+        "contentLength": [],
         "duplicateTitles": [],
         "duplicateDescriptions": [],
         "duplicateContent": [],
@@ -6248,36 +4984,28 @@
           }
         ]
       },
-      "overallScore": 60,
+      "overallScore": 85,
       "issuesCount": 0,
-      "warningsCount": 4,
+      "warningsCount": 1,
       "noticesCount": 0
     },
     {
       "file": "blog/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理.md",
       "displayName": "Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理",
       "checks": {
-        "titleLength": [
-          {
-            "passed": true,
-            "message": "Good title length: 34 characters",
-            "severity": "info"
-          }
-        ],
+        "titleLength": [],
         "metaDescription": [
           {
-            "passed": false,
-            "message": "Description too short: 4 characters",
-            "suggestion": "Aim for 120-160 characters",
-            "severity": "warning"
+            "passed": true,
+            "message": "Good description length: 64 characters",
+            "severity": "info"
           }
         ],
         "titleH1Uniqueness": [
           {
-            "passed": false,
-            "message": "Meta title and H1 are identical",
-            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
-            "severity": "warning"
+            "passed": true,
+            "message": "Meta title and H1 are unique (prefix/suffix configured)",
+            "severity": "info"
           }
         ],
         "keywordInTitle": [],
@@ -6286,21 +5014,8 @@
         "keywordInSlug": [],
         "slugFormat": [],
         "keywordDensity": [],
-        "headingOrder": [
-          {
-            "passed": true,
-            "message": "Heading structure is correct",
-            "severity": "info"
-          }
-        ],
-        "contentLength": [
-          {
-            "passed": false,
-            "message": "Content too short: 185 words",
-            "suggestion": "Aim for at least 300 words",
-            "severity": "warning"
-          }
-        ],
+        "headingOrder": [],
+        "contentLength": [],
         "duplicateTitles": [],
         "duplicateDescriptions": [],
         "duplicateContent": [],
@@ -6311,7 +5026,7 @@
             "suggestion": "Add descriptive alt text for accessibility",
             "severity": "error",
             "position": {
-              "line": 79,
+              "line": 77,
               "searchText": "![](./assests/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理/IMG-20251105143232744.webp)",
               "context": "但偶然间，我发现了一个更合适的插件：`Attachment Management`。安装并启用后，其默认配置恰好符合上述 Hexo 框架的要求。\n\n![](./assests/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理/IMG-20251105143232744.webp)\n\n启用插件后，你可以在任意位置复制图片，并通过 Ctrl+V 粘贴到文章相应位置。插件会自动将图片重命名为`你可设置的格式`，并存储在同名文件夹中，同时弹出提示。引用格式也会自动调整为正确形式："
             }
@@ -6322,7 +5037,7 @@
             "suggestion": "Add descriptive alt text for accessibility",
             "severity": "error",
             "position": {
-              "line": 83,
+              "line": 81,
               "searchText": "![](./assests/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理/IMG-20251105143725251.webp)",
               "context": "启用插件后，你可以在任意位置复制图片，并通过 Ctrl+V 粘贴到文章相应位置。插件会自动将图片重命名为`你可设置的格式`，并存储在同名文件夹中，同时弹出提示。引用格式也会自动调整为正确形式：\n\n![](./assests/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理/IMG-20251105143725251.webp)\n\n## 属性管理"
             }
@@ -6333,7 +5048,7 @@
             "suggestion": "Add descriptive alt text for accessibility",
             "severity": "error",
             "position": {
-              "line": 110,
+              "line": 108,
               "searchText": "![](./assests/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理/IMG-20251105141325235.webp)",
               "context": "效果如下：\n\n![](./assests/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理/IMG-20251105141325235.webp)\n\n之后每次撰写新文章时，只需新建文件、填写标题、应用模板，`title` 和 `date` 信息将自动填充，其余属性也可通过 Obsidian 提供的友好界面进行编辑。"
             }
@@ -6344,7 +5059,7 @@
             "suggestion": "Add descriptive alt text for accessibility",
             "severity": "error",
             "position": {
-              "line": 116,
+              "line": 114,
               "searchText": "![](./assests/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理/IMG-20251105143620715.webp)",
               "context": "以本文为例，在 Obsidian 中应用模板后的界面如下：\n\n![](./assests/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理/IMG-20251105143620715.webp)\n\n至此，今后的博客写作体验，就与使用 Obsidian 记笔记一样自然。"
             }
@@ -6386,7 +5101,7 @@
             "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
             "severity": "notice",
             "position": {
-              "line": 31,
+              "line": 29,
               "searchText": "https://hexo.io/zh-cn/docs/one-command-deployment",
               "context": "    - 配置主题设置\n\n非必需但推荐完成的内容：[Hexo 提供的一键部署](https://hexo.io/zh-cn/docs/one-command-deployment)  \n同时，本文的逻辑`也许大概`会有些跳脱，但重点在于方法论的分享，希望理解。\n"
             }
@@ -6397,7 +5112,7 @@
             "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
             "severity": "notice",
             "position": {
-              "line": 91,
+              "line": 89,
               "searchText": "https://github.com/bubkoo/hexo-toc",
               "context": "在根目录下创建一个 Obsidian 模板文件夹（如 `Template`），并添加文件 `BlogTemplate.md`。在该文件中编写 Front-matter 后，即可在 Obsidian 中通过属性栏管理文章属性。\n\n当然，模板的功能远不止于此。你还可以在正文中添加常用内容。例如，我的博客使用了 [hexo-toc](https://github.com/bubkoo/hexo-toc) 插件为每篇文章开头添加目录，因此我的模板文件如下：\n\n``` yml"
             }
@@ -6406,42 +5121,33 @@
         "readingLevel": [
           {
             "passed": true,
-            "message": "Good reading level: -0.6 (Very easy to read)",
+            "message": "Good reading level: -0.5 (Very easy to read)",
             "severity": "info"
           }
         ]
       },
-      "overallScore": 58,
+      "overallScore": 90,
       "issuesCount": 4,
-      "warningsCount": 3,
+      "warningsCount": 0,
       "noticesCount": 2
     },
     {
       "file": "blog/Behringer产品与其对应原型.md",
       "displayName": "Behringer产品与其对应原型",
       "checks": {
-        "titleLength": [
-          {
-            "passed": false,
-            "message": "Title too short: 17 characters",
-            "suggestion": "Aim for 30-60 characters",
-            "severity": "warning"
-          }
-        ],
+        "titleLength": [],
         "metaDescription": [
           {
-            "passed": false,
-            "message": "Description too short: 4 characters",
-            "suggestion": "Aim for 120-160 characters",
-            "severity": "warning"
+            "passed": true,
+            "message": "Good description length: 63 characters",
+            "severity": "info"
           }
         ],
         "titleH1Uniqueness": [
           {
-            "passed": false,
-            "message": "Meta title and H1 are identical",
-            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
-            "severity": "warning"
+            "passed": true,
+            "message": "Meta title and H1 are unique (prefix/suffix configured)",
+            "severity": "info"
           }
         ],
         "keywordInTitle": [],
@@ -6450,21 +5156,8 @@
         "keywordInSlug": [],
         "slugFormat": [],
         "keywordDensity": [],
-        "headingOrder": [
-          {
-            "passed": true,
-            "message": "No heading structure issues found",
-            "severity": "info"
-          }
-        ],
-        "contentLength": [
-          {
-            "passed": false,
-            "message": "Content too short: 11 words",
-            "suggestion": "Aim for at least 300 words",
-            "severity": "warning"
-          }
-        ],
+        "headingOrder": [],
+        "contentLength": [],
         "duplicateTitles": [],
         "duplicateDescriptions": [],
         "duplicateContent": [],
@@ -6526,12 +5219,12 @@
           }
         ]
       },
-      "overallScore": 50,
+      "overallScore": 80,
       "issuesCount": 0,
-      "warningsCount": 5,
+      "warningsCount": 1,
       "noticesCount": 1
     }
   ],
-  "lastScanTimestamp": 1776098367639,
+  "lastScanTimestamp": 1776241893705,
   "showNotices": true
 }

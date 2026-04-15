@@ -1,9 +1,9 @@
 ---
-title: 数摇emo乐手效果器设备
+title: 数摇/emo乐手效果器设备整理与参考
 slug: math-emo-gear
 publishDate: 2024-11-07 12:41
 tags:
-- 音频设备
+  - 音频设备
 hide_comment: false
 description: 收集toe、上海秋天、国足等知名数学摇滚和Emo乐队乐手的设备配置，包括吉他、贝斯、效果器组合，为乐手提供音色参考。
 language: 中文

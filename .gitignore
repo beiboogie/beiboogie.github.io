@@ -39,6 +39,7 @@ ignore.*
 bunfig.toml
 /src/content/blog/test.*
 /test/
+AImemory.md
 
 # Vault CMS / Obsidian
 .obsidian/workspace.json

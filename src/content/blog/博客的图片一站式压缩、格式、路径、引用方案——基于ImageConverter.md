@@ -7,6 +7,10 @@ tags:
 hide_comment: false
 description: 使用ImageConverter插件实现博客图片自动压缩、格式转换、路径管理和引用优化，提升Hexo博客写作效率的完整解决方案。
 language: 中文
+heroImage:
+  src: https://images.unsplash.com/photo-1556244573-c3686c0f0e78?auto=format&q=80&w=1200
+  inferSize: true
+  color: "#6dfeac"
 ---
 
 
@@ -29,30 +33,30 @@ language: 中文
 ### 在Obsidian第三方插件库安装插件
 
 插件上架了插件库，直接搜索即可，安装后启用。  
-![](./assests/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter/IMG-1765185345013.avif)
+![插件搜索页面](./assests/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter/IMG-1765185345013.avif)
 ### 插件设置
 
 打开插件后，能看到这样的设置页面：
 
-![](./assests/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter/IMG-1765185461033.avif)
+![设置页面](./assests/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter/IMG-1765185461033.avif)
 
 界面很直观，基本上只用修改`Folder`，`Filename`，`Conversion`，`Link Format`这几个tab下的设置就可以了。我直接把我的设置贴在这里：
 
 #### Folder
 
-![|700x589](./assests/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter/IMG-1762445593771.avif)
+![|Folder](./assests/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter/IMG-1762445593771.avif)
 
 #### Filename
 
-![](./assests/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter/IMG-1762445654537.avif)
+![Filename](./assests/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter/IMG-1762445654537.avif)
 
 #### Conversion
 
-![](./assests/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter/IMG-1762445678915.avif)
+![Conversion](./assests/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter/IMG-1762445678915.avif)
 
 #### Link Format
 
-![](./assests/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter/IMG-1762445699603.avif)
+![Link Format](./assests/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter/IMG-1762445699603.avif)
 
 ---
 
@@ -80,8 +84,8 @@ language: 中文
     
 - 📁 **自定义文件管理和重命名**：
     
-    - **重命名**：使用变量（例如，`{noteName}`、`{fileName}`）自动重命名图片[支持的变量列表](docs/Variables%20Reference%20Guide.md)
-    - **输出**：使用变量将图片组织到自定义输出文件夹中。[支持的变量列表](docs/Variables%20Reference%20Guide.md)
+    - **重命名**：使用变量（例如，`{noteName}`、`{fileName}`）自动重命名图片
+    - **输出**：使用变量将图片组织到自定义输出文件夹中。
 - 🌍 **纯 JavaScript 实现**，完全**离线**工作。无需外部 API 或二进制依赖（例如 ImageMagick、Cloudinary、FFmpeg、sharp 等）——保持轻量、便携和安全。
     
 

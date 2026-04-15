@@ -110,12 +110,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "_bases/Home.base",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "Home 的大纲"
             }
           },
           {
@@ -139,12 +140,11 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -161,27 +161,41 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "a23831606d5ba1f1",
   "lastOpenFiles": [
-    "blog/《轻音少女》相关乐谱.md",
+    "blog/assests/PWAA.avif",
+    "blog/【FLAC】Rosary & Bible Intro.md",
+    "blog/assests/ender-lilies.avif",
+    "blog/assets/{{fileName}}",
+    "blog/assets",
+    "blog/【FLAC】原创EP 《世界向前走了》.mdx",
     "blog/新吉他！Gretsch G2215-P90.md",
+    "blog/hidden/AssetCheatsheet.md",
+    "blog/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter.md",
+    "docs/integrations/components.mdx",
+    "docs/integrations",
+    "docs",
+    "blog/【FLAC】原创EP 《世界向前走了》.md",
+    "blog/自己给吉他做Setup.md",
+    "blog/《世界向前走了》制作记录.md",
     "_bases/Home.base",
+    "blog/《轻音少女》相关乐谱.md",
+    "blog/北的监听耳机入门指南101.md",
+    "blog/Behringer产品与其对应原型.md",
+    "blog/美少女们都爱用：RAT系失真效果器横评&详解.md",
+    "blog/经典效果器和他们经济实惠的克隆.md",
+    "blog/后巷琴声.md",
+    "blog/数摇emo乐手效果器设备.md",
+    "blog/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理.md",
     "blog/耳机罩对频段的影响.md",
     "blog/新吉他！Gretsch G2215-P90.mdx",
     "blog/using-mdx.mdx",
-    "blog/北的监听耳机入门指南101.md",
-    "blog/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter.md",
     "blog/assests/g2215.avif",
     "blog/北的监听耳机入门指南101.MDX",
-    "blog/北的监听耳机入门指南101.mdx",
-    "blog/【FLAC】Rosary & Bible Intro.md",
-    "blog/【FLAC】原创EP 《世界向前走了》.md",
-    "blog/《世界向前走了》制作记录.md",
     "_GUIDE.md",
     "blog/assests/g2215-1.avif",
     "blog/assests/guitar.jpg",
     "blog/偶次谐波.md",
-    "blog/经典效果器和他们经济实惠的克隆.md",
     "blog/hidden/MarkdownCheatsheet.md"
   ]
 }

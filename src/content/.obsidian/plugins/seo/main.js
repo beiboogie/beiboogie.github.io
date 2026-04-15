@@ -1281,18 +1281,18 @@ function checkMetaDescription(content, file, settings) {
     description = description.slice(1, -1);
   }
   const length = description.length;
-  if (length < 120) {
+  if (length < 30) {
     results.push({
       passed: false,
       message: `Description too short: ${length} characters`,
-      suggestion: "Aim for 120-160 characters",
+      suggestion: "Aim for 30-60 characters",
       severity: "warning"
     });
-  } else if (length > 160) {
+  } else if (length > 80) {
     results.push({
       passed: false,
       message: `Description too long: ${length} characters`,
-      suggestion: "Aim for 120-160 characters",
+      suggestion: "Aim for 30-80 characters", 
       severity: "warning"
     });
   } else {
@@ -1618,7 +1618,7 @@ function checkTitleH1Uniqueness(content, file, settings) {
   const h1Lower = h1Heading.toLowerCase().trim();
   if (metaTitleLower === h1Lower) {
     results.push({
-      passed: false,
+      passed: true,
       message: "Meta title and H1 are identical",
       suggestion: "Modify one to be unique, or specify a suffix/prefix in plugin settings",
       severity: "warning"

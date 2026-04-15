@@ -104,6 +104,15 @@ export default defineConfig({
       {
         protocol: 'https',
         hostname: '**.rshah.org'
+      },
+      // Allow remote hero images from Unsplash
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com'
+      },
+            {
+        protocol: 'https',
+        hostname: 'i0.hdslb.com'
       }
     ]
   },

@@ -8,6 +8,10 @@ tags:
 hide_comment: false
 description: 详细教程教你如何自己给吉他做Setup，包含弦枕调整、琴颈弯曲度调节、琴桥高度设置和拾音器调整的完整步骤。
 language: 中文
+heroImage:
+  src: https://images.unsplash.com/photo-1508854710579-5cecc3a9ff17?auto=format&q=80&w=1200
+  inferSize: true
+  color: "#72f5ff"
 ---
 
 

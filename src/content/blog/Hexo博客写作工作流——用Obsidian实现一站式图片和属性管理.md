@@ -7,6 +7,10 @@ tags:
 hide_comment: false
 description: 详细介绍基于Hexo和Obsidian的博客写作工作流，实现图片压缩、格式转换、路径管理和自动引用的完整解决方案，提升写作效率。
 language: 中文
+heroImage:
+  src: https://images.unsplash.com/photo-1556244573-c3686c0f0e78?auto=format&q=80&w=1200
+  inferSize: true
+  color: "#6dfeac"
 ---
 
 
@@ -100,7 +104,7 @@ featured_image:
 # 以上为 YAML 属性部分  
   
 --目录--  
-<!-- toc -->  
+  
 # 以上为正文部分，每篇文章均会包含
 ```
 效果如下：
