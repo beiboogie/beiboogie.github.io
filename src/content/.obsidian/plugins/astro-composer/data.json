@@ -19,7 +19,7 @@
       "name": "Blog",
       "folder": "blog",
       "linkBasePath": "/blog/",
-      "template": "---\ntitle: {{title}}\npublishDate: {{date}}\nslug: \ntags: []\nhide_comment: false\nhidden: false\ndescription: \"\"\nlanguage: 中文\nheroImage:\n  src: ./assests/《轻音少女》相关乐谱/IMG-1765194110710.avif\n  color: \"#9698C1\"\n---\n",
+      "template": "---\ntitle: {{title}}\npublishDate: {{date}}\nslug: \ntags: []\nhide_comment: false\nhidden: false\ndescription: \"\"\nlanguage: 中文\nheroImage:\n  src: ./assets/《轻音少女》相关乐谱/IMG-1765194110710.avif\n  color: \"#9698C1\"\n---\n",
       "enabled": true,
       "creationMode": "file",
       "indexFileName": "index",

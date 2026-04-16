@@ -9,11 +9,12 @@ hidden: false
 description: 详细评测Gretsch G2215-P90吉他，分享经济实惠的IndieRock吉他选购经验，包含Setup调整、音色特点和使用体验。
 language: 中文
 heroImage:
-  src: ./assests/g2215.avif
+  src: ./assets/g2215.avif
   color: "#bed8cf"
 ---
 
 在咸鱼上好价1500元淘了一把Gretsch G2215-P90。这么便宜要什么自行车？
+
 ## 优点
 ### 好听（在正确setup之后）
    整体上的风味非常类似[g2210](https://www.bilibili.com/video/BV1ch411M7NV)。T老师弹[g2210](https://www.bilibili.com/video/BV1ch411M7NV)的视频我少说看了10多遍，这是我听过最indie的声音之一了。但我很喜欢p90琴颈拾音器的声音，所以选择g2215。

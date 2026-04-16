@@ -8,6 +8,10 @@ tags:
 hide_comment: false
 description: 详细教程教你如何DIY制作高质量的音频线，包含焊台选择、焊头类型、焊锡丝推荐以及完整的焊接步骤和注意事项。
 language: 中文
+heroImage:
+  src: https://images.unsplash.com/photo-1658769737016-7edc27cb0bac?q=80&h=800
+  inferSize: true
+  color: "#6dfeac"
 ---
 
 
@@ -34,11 +38,11 @@ language: 中文
     
     1. 通常默认的焊头（针形）适用于焊接PCB上的小物件（电容电阻），并不适合用来焊接乐器线
         
-        ![|629x277](./assests/如何DIY一根音频线/IMG-1762330954343.webp)
+        ![|629x277](./assets/如何DIY一根音频线/IMG-1762330954343.webp)
         
     2. 推荐C型头 C3/C2焊头（图圈为C3）
         
-        ![](./assests/如何DIY一根音频线/IMG-1762330958918.webp)
+        ![](./assets/如何DIY一根音频线/IMG-1762330958918.webp)
         
 3. 焊锡丝
     
@@ -48,7 +52,7 @@ language: 中文
         
     3. 推荐：`QLG强力` 焊锡丝，在家里做手工推荐选择无铅款，对身体和环境好。但含铅款确实会更好焊一些，无铅的对于新手焊点容易开焊，焊点不光亮
         
-        ![](./assests/如何DIY一根音频线/IMG-1762330965123.webp)
+        ![](./assets/如何DIY一根音频线/IMG-1762330965123.webp)
         
 4. 镊子剪子焊台等：随便买，用坏了就换
     

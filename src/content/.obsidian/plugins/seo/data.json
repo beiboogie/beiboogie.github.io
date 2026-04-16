@@ -1816,112 +1816,112 @@
         "altText": [
           {
             "passed": false,
-            "message": "Media missing alt text: ./assests/数摇emo乐手效果器设备/big_11357261_983451558352278_451636667_n.webp",
+            "message": "Media missing alt text: ./assets/数摇emo乐手效果器设备/big_11357261_983451558352278_451636667_n.webp",
             "suggestion": "Add descriptive alt text for accessibility",
             "severity": "error",
             "position": {
               "line": 18,
-              "searchText": "![](./assests/数摇emo乐手效果器设备/big_11357261_983451558352278_451636667_n.webp)",
-              "context": "    - Takaaki Mino\n        \n        ![](./assests/数摇emo乐手效果器设备/big_11357261_983451558352278_451636667_n.webp)\n        \n        ![](./assests/数摇emo乐手效果器设备/big_257501047_251559856960196_8785557836121382867_n.webp)"
+              "searchText": "![](./assets/数摇emo乐手效果器设备/big_11357261_983451558352278_451636667_n.webp)",
+              "context": "    - Takaaki Mino\n        \n        ![](./assets/数摇emo乐手效果器设备/big_11357261_983451558352278_451636667_n.webp)\n        \n        ![](./assets/数摇emo乐手效果器设备/big_257501047_251559856960196_8785557836121382867_n.webp)"
             }
           },
           {
             "passed": false,
-            "message": "Media missing alt text: ./assests/数摇emo乐手效果器设备/big_257501047_251559856960196_8785557836121382867_n.webp",
+            "message": "Media missing alt text: ./assets/数摇emo乐手效果器设备/big_257501047_251559856960196_8785557836121382867_n.webp",
             "suggestion": "Add descriptive alt text for accessibility",
             "severity": "error",
             "position": {
               "line": 20,
-              "searchText": "![](./assests/数摇emo乐手效果器设备/big_257501047_251559856960196_8785557836121382867_n.webp)",
-              "context": "        ![](./assests/数摇emo乐手效果器设备/big_11357261_983451558352278_451636667_n.webp)\n        \n        ![](./assests/数摇emo乐手效果器设备/big_257501047_251559856960196_8785557836121382867_n.webp)\n        \n        ![](./assests/数摇emo乐手效果器设备/IMG-1762330701371.webp)"
+              "searchText": "![](./assets/数摇emo乐手效果器设备/big_257501047_251559856960196_8785557836121382867_n.webp)",
+              "context": "        ![](./assets/数摇emo乐手效果器设备/big_11357261_983451558352278_451636667_n.webp)\n        \n        ![](./assets/数摇emo乐手效果器设备/big_257501047_251559856960196_8785557836121382867_n.webp)\n        \n        ![](./assets/数摇emo乐手效果器设备/IMG-1762330701371.webp)"
             }
           },
           {
             "passed": false,
-            "message": "Media missing alt text: ./assests/数摇emo乐手效果器设备/IMG-1762330701371.webp",
+            "message": "Media missing alt text: ./assets/数摇emo乐手效果器设备/IMG-1762330701371.webp",
             "suggestion": "Add descriptive alt text for accessibility",
             "severity": "error",
             "position": {
               "line": 22,
-              "searchText": "![](./assests/数摇emo乐手效果器设备/IMG-1762330701371.webp)",
-              "context": "        ![](./assests/数摇emo乐手效果器设备/big_257501047_251559856960196_8785557836121382867_n.webp)\n        \n        ![](./assests/数摇emo乐手效果器设备/IMG-1762330701371.webp)\n        \n        ![](./assests/数摇emo乐手效果器设备/IMG-1762330757074.webp)"
+              "searchText": "![](./assets/数摇emo乐手效果器设备/IMG-1762330701371.webp)",
+              "context": "        ![](./assets/数摇emo乐手效果器设备/big_257501047_251559856960196_8785557836121382867_n.webp)\n        \n        ![](./assets/数摇emo乐手效果器设备/IMG-1762330701371.webp)\n        \n        ![](./assets/数摇emo乐手效果器设备/IMG-1762330757074.webp)"
             }
           },
           {
             "passed": false,
-            "message": "Media missing alt text: ./assests/数摇emo乐手效果器设备/IMG-1762330757074.webp",
+            "message": "Media missing alt text: ./assets/数摇emo乐手效果器设备/IMG-1762330757074.webp",
             "suggestion": "Add descriptive alt text for accessibility",
             "severity": "error",
             "position": {
               "line": 24,
-              "searchText": "![](./assests/数摇emo乐手效果器设备/IMG-1762330757074.webp)",
-              "context": "        ![](./assests/数摇emo乐手效果器设备/IMG-1762330701371.webp)\n        \n        ![](./assests/数摇emo乐手效果器设备/IMG-1762330757074.webp)\n        \n    - Yamazaki Hirokazu"
+              "searchText": "![](./assets/数摇emo乐手效果器设备/IMG-1762330757074.webp)",
+              "context": "        ![](./assets/数摇emo乐手效果器设备/IMG-1762330701371.webp)\n        \n        ![](./assets/数摇emo乐手效果器设备/IMG-1762330757074.webp)\n        \n    - Yamazaki Hirokazu"
             }
           },
           {
             "passed": false,
-            "message": "Media missing alt text: ./assests/数摇emo乐手效果器设备/IMG-1762330778163.webp",
+            "message": "Media missing alt text: ./assets/数摇emo乐手效果器设备/IMG-1762330778163.webp",
             "suggestion": "Add descriptive alt text for accessibility",
             "severity": "error",
             "position": {
               "line": 28,
-              "searchText": "![](./assests/数摇emo乐手效果器设备/IMG-1762330778163.webp)",
-              "context": "    - Yamazaki Hirokazu\n        \n        ![](./assests/数摇emo乐手效果器设备/IMG-1762330778163.webp)\n        \n    - Yamane Satoshi"
+              "searchText": "![](./assets/数摇emo乐手效果器设备/IMG-1762330778163.webp)",
+              "context": "    - Yamazaki Hirokazu\n        \n        ![](./assets/数摇emo乐手效果器设备/IMG-1762330778163.webp)\n        \n    - Yamane Satoshi"
             }
           },
           {
             "passed": false,
-            "message": "Media missing alt text: ./assests/数摇emo乐手效果器设备/IMG-1762330783815.webp",
+            "message": "Media missing alt text: ./assets/数摇emo乐手效果器设备/IMG-1762330783815.webp",
             "suggestion": "Add descriptive alt text for accessibility",
             "severity": "error",
             "position": {
               "line": 36,
-              "searchText": "![](./assests/数摇emo乐手效果器设备/IMG-1762330783815.webp)",
-              "context": "- 上海秋天\n    \n    ![](./assests/数摇emo乐手效果器设备/IMG-1762330783815.webp)\n    \n    上海秋天 Enaut 2019"
+              "searchText": "![](./assets/数摇emo乐手效果器设备/IMG-1762330783815.webp)",
+              "context": "- 上海秋天\n    \n    ![](./assets/数摇emo乐手效果器设备/IMG-1762330783815.webp)\n    \n    上海秋天 Enaut 2019"
             }
           },
           {
             "passed": false,
-            "message": "Media missing alt text: ./assests/数摇emo乐手效果器设备/IMG-1762330796572.webp",
+            "message": "Media missing alt text: ./assets/数摇emo乐手效果器设备/IMG-1762330796572.webp",
             "suggestion": "Add descriptive alt text for accessibility",
             "severity": "error",
             "position": {
               "line": 42,
-              "searchText": "![](./assests/数摇emo乐手效果器设备/IMG-1762330796572.webp)",
-              "context": "- 国足\n    \n    ![](./assests/数摇emo乐手效果器设备/IMG-1762330796572.webp)\n    \n    国足 李立鑫 2019 P bass"
+              "searchText": "![](./assets/数摇emo乐手效果器设备/IMG-1762330796572.webp)",
+              "context": "- 国足\n    \n    ![](./assets/数摇emo乐手效果器设备/IMG-1762330796572.webp)\n    \n    国足 李立鑫 2019 P bass"
             }
           },
           {
             "passed": false,
-            "message": "Media missing alt text: ./assests/数摇emo乐手效果器设备/IMG-1762330799668.webp",
+            "message": "Media missing alt text: ./assets/数摇emo乐手效果器设备/IMG-1762330799668.webp",
             "suggestion": "Add descriptive alt text for accessibility",
             "severity": "error",
             "position": {
               "line": 46,
-              "searchText": "![](./assests/数摇emo乐手效果器设备/IMG-1762330799668.webp)",
-              "context": "    国足 李立鑫 2019 P bass\n    \n    ![](./assests/数摇emo乐手效果器设备/IMG-1762330799668.webp)\n    \n    国足 王博 2019 Telecaster"
+              "searchText": "![](./assets/数摇emo乐手效果器设备/IMG-1762330799668.webp)",
+              "context": "    国足 李立鑫 2019 P bass\n    \n    ![](./assets/数摇emo乐手效果器设备/IMG-1762330799668.webp)\n    \n    国足 王博 2019 Telecaster"
             }
           },
           {
             "passed": false,
-            "message": "Media missing alt text: ./assests/数摇emo乐手效果器设备/IMG-1762330803559.webp",
+            "message": "Media missing alt text: ./assets/数摇emo乐手效果器设备/IMG-1762330803559.webp",
             "suggestion": "Add descriptive alt text for accessibility",
             "severity": "error",
             "position": {
               "line": 50,
-              "searchText": "![](./assests/数摇emo乐手效果器设备/IMG-1762330803559.webp)",
-              "context": "    国足 王博 2019 Telecaster\n    \n    ![](./assests/数摇emo乐手效果器设备/IMG-1762330803559.webp)\n    \n    国足 徐波 2019 Telecaster"
+              "searchText": "![](./assets/数摇emo乐手效果器设备/IMG-1762330803559.webp)",
+              "context": "    国足 王博 2019 Telecaster\n    \n    ![](./assets/数摇emo乐手效果器设备/IMG-1762330803559.webp)\n    \n    国足 徐波 2019 Telecaster"
             }
           },
           {
             "passed": false,
-            "message": "Media missing alt text: ./assests/数摇emo乐手效果器设备/IMG-1762330811246.webp",
+            "message": "Media missing alt text: ./assets/数摇emo乐手效果器设备/IMG-1762330811246.webp",
             "suggestion": "Add descriptive alt text for accessibility",
             "severity": "error",
             "position": {
               "line": 54,
-              "searchText": "![](./assests/数摇emo乐手效果器设备/IMG-1762330811246.webp)",
-              "context": "    国足 徐波 2019 Telecaster\n    \n    ![](./assests/数摇emo乐手效果器设备/IMG-1762330811246.webp)\n    \n    鼓手郑紫莉 用7A~5A鼓棒 知音K系列镲片"
+              "searchText": "![](./assets/数摇emo乐手效果器设备/IMG-1762330811246.webp)",
+              "context": "    国足 徐波 2019 Telecaster\n    \n    ![](./assets/数摇emo乐手效果器设备/IMG-1762330811246.webp)\n    \n    鼓手郑紫莉 用7A~5A鼓棒 知音K系列镲片"
             }
           }
         ],
@@ -1933,8 +1933,8 @@
             "severity": "warning",
             "position": {
               "line": 20,
-              "searchText": "![](./assests/数摇emo乐手效果器设备/big_257501047_251559856960196_8785557836121382867_n.webp)",
-              "context": "        ![](./assests/数摇emo乐手效果器设备/big_11357261_983451558352278_451636667_n.webp)\n        \n        ![](./assests/数摇emo乐手效果器设备/big_257501047_251559856960196_8785557836121382867_n.webp)\n        \n        ![](./assests/数摇emo乐手效果器设备/IMG-1762330701371.webp)"
+              "searchText": "![](./assets/数摇emo乐手效果器设备/big_257501047_251559856960196_8785557836121382867_n.webp)",
+              "context": "        ![](./assets/数摇emo乐手效果器设备/big_11357261_983451558352278_451636667_n.webp)\n        \n        ![](./assets/数摇emo乐手效果器设备/big_257501047_251559856960196_8785557836121382867_n.webp)\n        \n        ![](./assets/数摇emo乐手效果器设备/IMG-1762330701371.webp)"
             }
           }
         ],
@@ -2013,24 +2013,24 @@
         "altText": [
           {
             "passed": false,
-            "message": "Media missing alt text: ./assests/如何DIY一根音频线/IMG-1762330958918.webp",
+            "message": "Media missing alt text: ./assets/如何DIY一根音频线/IMG-1762330958918.webp",
             "suggestion": "Add descriptive alt text for accessibility",
             "severity": "error",
             "position": {
               "line": 41,
-              "searchText": "![](./assests/如何DIY一根音频线/IMG-1762330958918.webp)",
-              "context": "    2. 推荐C型头 C3/C2焊头（图圈为C3）\n        \n        ![](./assests/如何DIY一根音频线/IMG-1762330958918.webp)\n        \n3. 焊锡丝"
+              "searchText": "![](./assets/如何DIY一根音频线/IMG-1762330958918.webp)",
+              "context": "    2. 推荐C型头 C3/C2焊头（图圈为C3）\n        \n        ![](./assets/如何DIY一根音频线/IMG-1762330958918.webp)\n        \n3. 焊锡丝"
             }
           },
           {
             "passed": false,
-            "message": "Media missing alt text: ./assests/如何DIY一根音频线/IMG-1762330965123.webp",
+            "message": "Media missing alt text: ./assets/如何DIY一根音频线/IMG-1762330965123.webp",
             "suggestion": "Add descriptive alt text for accessibility",
             "severity": "error",
             "position": {
               "line": 51,
-              "searchText": "![](./assests/如何DIY一根音频线/IMG-1762330965123.webp)",
-              "context": "    3. 推荐：`QLG强力` 焊锡丝，在家里做手工推荐选择无铅款，对身体和环境好。但含铅款确实会更好焊一些，无铅的对于新手焊点容易开焊，焊点不光亮\n        \n        ![](./assests/如何DIY一根音频线/IMG-1762330965123.webp)\n        \n4. 镊子剪子焊台等：随便买，用坏了就换"
+              "searchText": "![](./assets/如何DIY一根音频线/IMG-1762330965123.webp)",
+              "context": "    3. 推荐：`QLG强力` 焊锡丝，在家里做手工推荐选择无铅款，对身体和环境好。但含铅款确实会更好焊一些，无铅的对于新手焊点容易开焊，焊点不光亮\n        \n        ![](./assets/如何DIY一根音频线/IMG-1762330965123.webp)\n        \n4. 镊子剪子焊台等：随便买，用坏了就换"
             }
           }
         ],
@@ -5022,46 +5022,46 @@
         "altText": [
           {
             "passed": false,
-            "message": "Media missing alt text: ./assests/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理/IMG-20251105143232744.webp",
+            "message": "Media missing alt text: ./assets/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理/IMG-20251105143232744.webp",
             "suggestion": "Add descriptive alt text for accessibility",
             "severity": "error",
             "position": {
               "line": 77,
-              "searchText": "![](./assests/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理/IMG-20251105143232744.webp)",
-              "context": "但偶然间，我发现了一个更合适的插件：`Attachment Management`。安装并启用后，其默认配置恰好符合上述 Hexo 框架的要求。\n\n![](./assests/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理/IMG-20251105143232744.webp)\n\n启用插件后，你可以在任意位置复制图片，并通过 Ctrl+V 粘贴到文章相应位置。插件会自动将图片重命名为`你可设置的格式`，并存储在同名文件夹中，同时弹出提示。引用格式也会自动调整为正确形式："
+              "searchText": "![](./assets/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理/IMG-20251105143232744.webp)",
+              "context": "但偶然间，我发现了一个更合适的插件：`Attachment Management`。安装并启用后，其默认配置恰好符合上述 Hexo 框架的要求。\n\n![](./assets/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理/IMG-20251105143232744.webp)\n\n启用插件后，你可以在任意位置复制图片，并通过 Ctrl+V 粘贴到文章相应位置。插件会自动将图片重命名为`你可设置的格式`，并存储在同名文件夹中，同时弹出提示。引用格式也会自动调整为正确形式："
             }
           },
           {
             "passed": false,
-            "message": "Media missing alt text: ./assests/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理/IMG-20251105143725251.webp",
+            "message": "Media missing alt text: ./assets/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理/IMG-20251105143725251.webp",
             "suggestion": "Add descriptive alt text for accessibility",
             "severity": "error",
             "position": {
               "line": 81,
-              "searchText": "![](./assests/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理/IMG-20251105143725251.webp)",
-              "context": "启用插件后，你可以在任意位置复制图片，并通过 Ctrl+V 粘贴到文章相应位置。插件会自动将图片重命名为`你可设置的格式`，并存储在同名文件夹中，同时弹出提示。引用格式也会自动调整为正确形式：\n\n![](./assests/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理/IMG-20251105143725251.webp)\n\n## 属性管理"
+              "searchText": "![](./assets/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理/IMG-20251105143725251.webp)",
+              "context": "启用插件后，你可以在任意位置复制图片，并通过 Ctrl+V 粘贴到文章相应位置。插件会自动将图片重命名为`你可设置的格式`，并存储在同名文件夹中，同时弹出提示。引用格式也会自动调整为正确形式：\n\n![](./assets/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理/IMG-20251105143725251.webp)\n\n## 属性管理"
             }
           },
           {
             "passed": false,
-            "message": "Media missing alt text: ./assests/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理/IMG-20251105141325235.webp",
+            "message": "Media missing alt text: ./assets/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理/IMG-20251105141325235.webp",
             "suggestion": "Add descriptive alt text for accessibility",
             "severity": "error",
             "position": {
               "line": 108,
-              "searchText": "![](./assests/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理/IMG-20251105141325235.webp)",
-              "context": "效果如下：\n\n![](./assests/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理/IMG-20251105141325235.webp)\n\n之后每次撰写新文章时，只需新建文件、填写标题、应用模板，`title` 和 `date` 信息将自动填充，其余属性也可通过 Obsidian 提供的友好界面进行编辑。"
+              "searchText": "![](./assets/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理/IMG-20251105141325235.webp)",
+              "context": "效果如下：\n\n![](./assets/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理/IMG-20251105141325235.webp)\n\n之后每次撰写新文章时，只需新建文件、填写标题、应用模板，`title` 和 `date` 信息将自动填充，其余属性也可通过 Obsidian 提供的友好界面进行编辑。"
             }
           },
           {
             "passed": false,
-            "message": "Media missing alt text: ./assests/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理/IMG-20251105143620715.webp",
+            "message": "Media missing alt text: ./assets/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理/IMG-20251105143620715.webp",
             "suggestion": "Add descriptive alt text for accessibility",
             "severity": "error",
             "position": {
               "line": 114,
-              "searchText": "![](./assests/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理/IMG-20251105143620715.webp)",
-              "context": "以本文为例，在 Obsidian 中应用模板后的界面如下：\n\n![](./assests/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理/IMG-20251105143620715.webp)\n\n至此，今后的博客写作体验，就与使用 Obsidian 记笔记一样自然。"
+              "searchText": "![](./assets/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理/IMG-20251105143620715.webp)",
+              "context": "以本文为例，在 Obsidian 中应用模板后的界面如下：\n\n![](./assets/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理/IMG-20251105143620715.webp)\n\n至此，今后的博客写作体验，就与使用 Obsidian 记笔记一样自然。"
             }
           }
         ],
@@ -5206,7 +5206,7 @@
             "position": {
               "line": 14,
               "searchText": "https://thetoneking.com/behringer-stomp-box-cross-comparison-chart/",
-              "context": "![|700x1325](./assests/Behringer产品与其对应原型/IMG-1762330906073.webp)\n\n原贴见：[Behringer Stomp Box Cross Comparison Chart - The Tone King](https://thetoneking.com/behringer-stomp-box-cross-comparison-chart/)"
+              "context": "![|700x1325](./assets/Behringer产品与其对应原型/IMG-1762330906073.webp)\n\n原贴见：[Behringer Stomp Box Cross Comparison Chart - The Tone King](https://thetoneking.com/behringer-stomp-box-cross-comparison-chart/)"
             }
           }
         ],

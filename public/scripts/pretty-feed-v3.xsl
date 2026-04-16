@@ -80,9 +80,23 @@ This file is in BETA. Please test and contribute to the discussion:
       <body class="bg-white">
         <nav class="container-md px-3 py-2 mt-2 mt-md-5 mb-5 markdown-body">
           <p class="bg-yellow-light ml-n1 px-1 py-1 mb-1">
-            <strong>This is a web feed,</strong> also known as an RSS feed. <strong>Subscribe</strong> by copying the URL from the address bar into your newsreader.
+            <strong>你好！我是北。这是一个网络摘要 (Web Feed)，</strong>也称为 RSS 订阅。
+            <br />
+            <strong>Hi, this is Bei. This is a web feed,</strong> also known as an RSS feed.
           </p>
+
+          <p class="text-gray mb-1">
+            RSS 是一种无需算法干预、主动获取信息的方式。它能将你关注的所有内容汇聚在一起，让你重获阅读的自主权。<br />
+            RSS is a way to pull information actively without algorithmic interference. It gathers all your favorite content in one place, giving you back control over what you read.
+          </p>
+
+          <p class="bg-yellow-light ml-n1 px-1 py-1 mb-1">
+            请复制地址栏的 URL 并将其粘贴到您的 RSS 阅读器中以进行<strong>订阅</strong>。<br />
+            <strong>Subscribe</strong> by copying the URL from the address bar into your newsreader.
+          </p>
+
           <p class="text-gray">
+            访问 <a href="https://aboutfeeds.com">About Feeds</a> 开始使用阅读器并了解如何订阅，这是完全免费的。<br />
             Visit <a href="https://aboutfeeds.com">About Feeds</a> to get started with newsreaders and subscribing. It’s free.
           </p>
         </nav>

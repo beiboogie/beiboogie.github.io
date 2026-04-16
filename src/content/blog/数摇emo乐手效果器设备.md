@@ -15,17 +15,17 @@ language: 中文
     
     - Takaaki Mino
         
-        ![](./assests/数摇emo乐手效果器设备/big_11357261_983451558352278_451636667_n.webp)
+        ![](./assets/数摇emo乐手效果器设备/big_11357261_983451558352278_451636667_n.webp)
         
-        ![](./assests/数摇emo乐手效果器设备/big_257501047_251559856960196_8785557836121382867_n.webp)
+        ![](./assets/数摇emo乐手效果器设备/big_257501047_251559856960196_8785557836121382867_n.webp)
         
-        ![](./assests/数摇emo乐手效果器设备/IMG-1762330701371.webp)
+        ![](./assets/数摇emo乐手效果器设备/IMG-1762330701371.webp)
         
-        ![](./assests/数摇emo乐手效果器设备/IMG-1762330757074.webp)
+        ![](./assets/数摇emo乐手效果器设备/IMG-1762330757074.webp)
         
     - Yamazaki Hirokazu
         
-        ![](./assests/数摇emo乐手效果器设备/IMG-1762330778163.webp)
+        ![](./assets/数摇emo乐手效果器设备/IMG-1762330778163.webp)
         
     - Yamane Satoshi
         
@@ -33,24 +33,24 @@ language: 中文
         
 - 上海秋天
     
-    ![](./assests/数摇emo乐手效果器设备/IMG-1762330783815.webp)
+    ![](./assets/数摇emo乐手效果器设备/IMG-1762330783815.webp)
     
     上海秋天 Enaut 2019
     
 - 国足
     
-    ![](./assests/数摇emo乐手效果器设备/IMG-1762330796572.webp)
+    ![](./assets/数摇emo乐手效果器设备/IMG-1762330796572.webp)
     
     国足 李立鑫 2019 P bass
     
-    ![](./assests/数摇emo乐手效果器设备/IMG-1762330799668.webp)
+    ![](./assets/数摇emo乐手效果器设备/IMG-1762330799668.webp)
     
     国足 王博 2019 Telecaster
     
-    ![](./assests/数摇emo乐手效果器设备/IMG-1762330803559.webp)
+    ![](./assets/数摇emo乐手效果器设备/IMG-1762330803559.webp)
     
     国足 徐波 2019 Telecaster
     
-    ![](./assests/数摇emo乐手效果器设备/IMG-1762330811246.webp)
+    ![](./assets/数摇emo乐手效果器设备/IMG-1762330811246.webp)
     
     鼓手郑紫莉 用7A~5A鼓棒 知音K系列镲片

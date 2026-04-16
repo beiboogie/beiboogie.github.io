@@ -6,7 +6,6 @@
   "astro-composer",
   "settings-search",
   "editing-toolbar",
-  "image-manager",
   "bases-cms",
   "home-base",
   "obsidian-git",
@@ -18,5 +17,6 @@
   "omnisearch",
   "data-files-editor",
   "file-name-history",
-  "nested-properties"
+  "nested-properties",
+  "image-converter"
 ]

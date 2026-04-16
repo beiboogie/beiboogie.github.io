@@ -8,15 +8,18 @@ hide_comment: false
 description: 详细介绍基于Hexo和Obsidian的博客写作工作流，实现图片压缩、格式转换、路径管理和自动引用的完整解决方案，提升写作效率。
 language: 中文
 heroImage:
-  src: https://images.unsplash.com/photo-1556244573-c3686c0f0e78?auto=format&q=80&w=1200
+  src: https://images.unsplash.com/vector-1762989121782-f2cdae7fa406?w=1600&h=400&fit=fill&bg=e2dbc8&fill=solid
   inferSize: true
-  color: "#6dfeac"
+  color: "#fec66d"
 ---
 
+:::danger
+本博客已迁移到Astro，本文内容已过时
+:::
 
 > 2025-11-07：在这篇文章里介绍了更完美的图片插入方法，也是基于Obsidian插件。
 
-{% post_link  博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter 博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter %}
+[博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter](/blog/hexo-picture-auto)
 
 ## 开始之前
 
@@ -78,11 +81,11 @@ Hexo 要求将文章所需图片放在该同名文件夹中，并在文章中通
 网络上很多人推荐的 `Custom Attachment Location` 插件在我的环境中会出现内存泄漏，原因未知。  
 但偶然间，我发现了一个更合适的插件：`Attachment Management`。安装并启用后，其默认配置恰好符合上述 Hexo 框架的要求。
 
-![](./assests/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理/IMG-20251105143232744.webp)
+![](./assets/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理/IMG-20251105143232744.webp)
 
 启用插件后，你可以在任意位置复制图片，并通过 Ctrl+V 粘贴到文章相应位置。插件会自动将图片重命名为`你可设置的格式`，并存储在同名文件夹中，同时弹出提示。引用格式也会自动调整为正确形式：
 
-![](./assests/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理/IMG-20251105143725251.webp)
+![](./assets/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理/IMG-20251105143725251.webp)
 
 ## 属性管理
 
@@ -109,13 +112,13 @@ featured_image:
 ```
 效果如下：
 
-![](./assests/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理/IMG-20251105141325235.webp)
+![](./assets/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理/IMG-20251105141325235.webp)
 
 之后每次撰写新文章时，只需新建文件、填写标题、应用模板，`title` 和 `date` 信息将自动填充，其余属性也可通过 Obsidian 提供的友好界面进行编辑。
 
 以本文为例，在 Obsidian 中应用模板后的界面如下：
 
-![](./assests/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理/IMG-20251105143620715.webp)
+![](./assets/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理/IMG-20251105143620715.webp)
 
 至此，今后的博客写作体验，就与使用 Obsidian 记笔记一样自然。
 

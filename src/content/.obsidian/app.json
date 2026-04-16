@@ -2,7 +2,7 @@
   "showInlineTitle": false,
   "promptDelete": true,
   "showIndentGuide": false,
-  "attachmentFolderPath": "./assests",
+  "attachmentFolderPath": "./assets",
   "userIgnoreFilters": [
     "dist",
     "node_modules/"

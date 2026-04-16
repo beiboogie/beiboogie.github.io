@@ -1,0 +1,136 @@
+﻿bun.cmd : $ astro check
+所在位置 行:1 字符: 64
++ ... tableFiles/blog-astro"; $env:NO_COLOR='1'; bun.cmd check *>&1 | Out-F ...
++                                                ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ($ astro check:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+21:44:13 [content] Syncing content
+21:44:14 [content] Synced content
+21:44:14 [types] Generated 778ms
+21:44:14 [check] Getting diagnostics for Astro files in D:\PortableFiles\blog-astro...
+[96mpackages/pure/plugins/remark-plugins.ts[0m:[93m134[0m:[93m67[0m - [91merror[0m[90m ts(2345): [0mArgument of type '(BlockContent | DefinitionContent)[]' is not assignable to parameter of type 'PhrasingContent[]'.
+  Type 'BlockContent | DefinitionContent' is not assignable to type 'PhrasingContent'.
+    Type 'Code' is not assignable to type 'PhrasingContent'.
+      Type 'Code' is not assignable to type 'InlineMath'.
+        Types of property 'type' are incompatible.
+          Type '"code"' is not assignable to type '"inlineMath"'.
+
+[7m134[0m             createElement('div', { class: 'aside-content mt-2' }, node.children)
+[7m   [0m [91m                                                                  ~~~~~~~~~~~~~[0m
+[96mpackages/pure/plugins/remark-plugins.ts[0m:[93m134[0m:[93m13[0m - [91merror[0m[90m ts(2322): [0mType 'Paragraph' is not assignable to type 'PhrasingContent'.
+  Property 'name' is missing in type 'Paragraph' but required in type 'TextDirective'.
+
+[7m134[0m             createElement('div', { class: 'aside-content mt-2' }, node.children)
+[7m   [0m [91m            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96mpackages/pure/plugins/remark-plugins.ts[0m:[93m126[0m:[93m13[0m - [91merror[0m[90m ts(2322): [0mType 'Paragraph' is not assignable to type 'PhrasingContent'.
+  Property 'name' is missing in type 'Paragraph' but required in type 'TextDirective'.
+
+[7m126[0m             createElement(
+[7m   [0m [91m            ~~~~~~~~~~~~~~[0m
+[7m127[0m               'p',
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m132[0m               [{ type: 'text', value: title }]
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m133[0m             ),
+[7m   [0m [91m~~~~~~~~~~~~~[0m
+[96mpackages/pure/plugins/remark-plugins.ts[0m:[93m123[0m:[93m11[0m - [91merror[0m[90m ts(2322): [0mType 'Paragraph' is not assignable to type 'PhrasingContent'.
+  Property 'name' is missing in type 'Paragraph' but required in type 'TextDirective'.
+
+[7m123[0m           createElement('div', {
+[7m   [0m [91m          ~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m124[0m             class: `aside-container border-l-8 border-primary px-4 py-3 bg-primary aside-${variant}`
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m134[0m             createElement('div', { class: 'aside-content mt-2' }, node.children)
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m135[0m           ])
+[7m   [0m [91m~~~~~~~~~~~~[0m
+[96mpackages/pure/plugins/remark-plugins.ts[0m:[93m116[0m:[93m7[0m - [91merror[0m[90m ts(2322): [0mType 'Node' is not assignable to type 'Link | Text | Code | Html | Yaml | Blockquote | Table | Image | Strong | Math | List | Definition | ... 17 more ... | InlineMath'.
+  Property 'value' is missing in type 'Node' but required in type 'InlineMath'.
+
+[7m116[0m       parent.children[index] = createElement(
+[7m   [0m [91m      ~~~~~~~~~~~~~~~~~~~~~~[0m
+[96mpackages/pure/plugins/remark-plugins.ts[0m:[93m66[0m:[93m12[0m - [91merror[0m[90m ts(2339): [0mProperty 'children' does not exist on type 'never'.
+
+[7m66[0m     parent.children[index] = {
+[7m  [0m [91m           ~~~~~~~~[0m
+[96mpackages/pure/plugins/remark-plugins.ts[0m:[93m64[0m:[93m12[0m - [91merror[0m[90m ts(2339): [0mProperty 'children' does not exist on type 'never'.
+
+[7m64[0m     parent.children[index] = textNode as unknown as Node
+[7m  [0m [91m           ~~~~~~~~[0m
+
+[96msrc/pages/index.astro[0m:[93m16[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'backend' is declared but its value is never read.
+
+[7m16[0m const backend = ['Vercel', 'Waline']
+[7m  [0m [93m      ~~~~~~~[0m
+[96msrc/pages/index.astro[0m:[93m15[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'frontend' is declared but its value is never read.
+
+[7m15[0m const frontend = ['TypeScript', 'Vite', 'Webpack', 'Astro']
+[7m  [0m [93m      ~~~~~~~~[0m
+[96msrc/pages/index.astro[0m:[93m14[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'languages' is declared but its value is never read.
+
+[7m14[0m const languages = ['Html', 'JavaScript', 'CSS', 'Shell']
+[7m  [0m [93m      ~~~~~~~~~[0m
+[96msrc/pages/index.astro[0m:[93m10[0m:[93m1[0m - [93mwarning[0m[90m ts(6133): [0m'SkillLayout' is declared but its value is never read.
+
+[7m10[0m import SkillLayout from '@/components/home/SkillLayout.astro'
+[7m  [0m [93m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/pages/index.astro[0m:[93m8[0m:[93m1[0m - [93mwarning[0m[90m ts(6133): [0m'ProjectCard' is declared but its value is never read.
+
+[7m8[0m import ProjectCard from '@/components/home/ProjectCard.astro'
+[7m [0m [93m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/pages/index.astro[0m:[93m6[0m:[93m18[0m - [93mwarning[0m[90m ts(6133): [0m'Card' is declared but its value is never read.
+
+[7m6[0m import { Button, Card, Icon, Label } from 'astro-pure/user'
+[7m [0m [93m                 ~~~~[0m
+[96msrc/pages/index.astro[0m:[93m4[0m:[93m1[0m - [93mwarning[0m[90m ts(6133): [0m'Quote' is declared but its value is never read.
+
+[7m4[0m import { Quote } from 'astro-pure/advanced'
+[7m [0m [93m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/pages/about/index.astro[0m:[93m6[0m:[93m1[0m - [93mwarning[0m[90m ts(6133): [0m'ToolSection' is declared but its value is never read.
+
+[7m6[0m import ToolSection from '@/components/about/ToolSection.astro'
+[7m [0m [93m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/pages/about/index.astro[0m:[93m5[0m:[93m1[0m - [93mwarning[0m[90m ts(6133): [0m'ProjectCard' is declared but its value is never read.
+
+[7m5[0m import ProjectCard from '@/components/home/ProjectCard.astro'
+[7m [0m [93m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/pages/about/index.astro[0m:[93m2[0m:[93m37[0m - [93mwarning[0m[90m ts(6133): [0m'Timeline' is declared but its value is never read.
+
+[7m2[0m import { Button, Collapse, Spoiler, Timeline } from 'astro-pure/user'
+[7m [0m [93m                                    ~~~~~~~~[0m
+[96msrc/pages/about/index.astro[0m:[93m2[0m:[93m18[0m - [93mwarning[0m[90m ts(6133): [0m'Collapse' is declared but its value is never read.
+
+[7m2[0m import { Button, Collapse, Spoiler, Timeline } from 'astro-pure/user'
+[7m [0m [93m                 ~~~~~~~~[0m
+[96msrc/pages/about/index.astro[0m:[93m2[0m:[93m10[0m - [93mwarning[0m[90m ts(6133): [0m'Button' is declared but its value is never read.
+
+[7m2[0m import { Button, Collapse, Spoiler, Timeline } from 'astro-pure/user'
+[7m [0m [93m         ~~~~~~[0m
+
+[96msrc/pages/projects/index.astro[0m:[93m10[0m:[93m1[0m - [93mwarning[0m[90m ts(6133): [0m'KeyIcon' is declared but its value is never read.
+
+[7m10[0m import KeyIcon from '@/assets/icons/key.svg'
+[7m  [0m [93m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/pages/projects/index.astro[0m:[93m9[0m:[93m1[0m - [93mwarning[0m[90m ts(6133): [0m'alipay' is declared but its value is never read.
+
+[7m9[0m import alipay from '@/assets/alipay-qrcode.jpg'
+[7m [0m [93m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/pages/projects/index.astro[0m:[93m7[0m:[93m1[0m - [93mwarning[0m[90m ts(6133): [0m'Sponsors' is declared but its value is never read.
+
+[7m7[0m import Sponsors from '@/components/projects/Sponsors.astro'
+[7m [0m [93m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/pages/projects/index.astro[0m:[93m4[0m:[93m1[0m - [93mwarning[0m[90m ts(6192): [0mAll imports in import declaration are unused.
+
+[7m4[0m import { Button, Collapse, Icon } from 'astro-pure/user'
+[7m [0m [93m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+Result (130 files): 
+- 7 errors
+- 0 warnings
+- 16 hints
+
+error: script "check" exited with code 1

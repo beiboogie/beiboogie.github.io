@@ -8,7 +8,7 @@ hide_comment: false
 description: 提供《ENDER LILIES》游戏音乐Rosary & Bible Intro的无损FLAC分轨文件下载，包含西丽德与西丽亚姐妹之歌的完整音频资源。
 language: 中文
 heroImage:
-  src: ./assests/ender-lilies.avif
+  src: ./assets/ender-lilies.avif
   color: "#6dfeac"
 ---
 `分轨素材来自ENDER LILIES音乐集，侵删`

@@ -8,11 +8,14 @@ hide_comment: false
 description: 使用ImageConverter插件实现博客图片自动压缩、格式转换、路径管理和引用优化，提升Hexo博客写作效率的完整解决方案。
 language: 中文
 heroImage:
-  src: https://images.unsplash.com/photo-1556244573-c3686c0f0e78?auto=format&q=80&w=1200
+  src: https://images.unsplash.com/photo-1556244573-c3686c0f0e78?auto=format&fit=crop&w=1350&h=400&q=80
   inferSize: true
   color: "#6dfeac"
 ---
 
+:::tip
+本博客已从Hexo迁移到Astro，但本文方法仍然适用。推荐！
+:::
 
 ## 效果
 
@@ -33,30 +36,30 @@ heroImage:
 ### 在Obsidian第三方插件库安装插件
 
 插件上架了插件库，直接搜索即可，安装后启用。  
-![插件搜索页面](./assests/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter/IMG-1765185345013.avif)
+![插件搜索页面](./assets/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter/IMG-1765185345013.avif)
 ### 插件设置
 
 打开插件后，能看到这样的设置页面：
 
-![设置页面](./assests/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter/IMG-1765185461033.avif)
+![设置页面](./assets/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter/IMG-1765185461033.avif)
 
 界面很直观，基本上只用修改`Folder`，`Filename`，`Conversion`，`Link Format`这几个tab下的设置就可以了。我直接把我的设置贴在这里：
 
 #### Folder
 
-![|Folder](./assests/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter/IMG-1762445593771.avif)
+![|Folder](./assets/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter/IMG-1762445593771.avif)
 
 #### Filename
 
-![Filename](./assests/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter/IMG-1762445654537.avif)
+![Filename](./assets/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter/IMG-1762445654537.avif)
 
 #### Conversion
 
-![Conversion](./assests/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter/IMG-1762445678915.avif)
+![Conversion](./assets/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter/IMG-1762445678915.avif)
 
 #### Link Format
 
-![Link Format](./assests/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter/IMG-1762445699603.avif)
+![Link Format](./assets/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter/IMG-1762445699603.avif)
 
 ---
 

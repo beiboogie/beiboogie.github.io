@@ -6,10 +6,12 @@ import sitemap from '@astrojs/sitemap'
 import AstroPureIntegration from 'astro-pure'
 import { defineConfig, fontProviders } from 'astro/config'
 import rehypeKatex from 'rehype-katex'
+import remarkDirective from 'remark-directive'
 import remarkMath from 'remark-math'
 
 // Local integrations
 import rehypeAutolinkHeadings from './src/plugins/rehype-auto-link-headings.ts'
+import { remarkAsides, remarkDirectivesRestoration } from './src/plugins/remark-asides.ts'
 // Shiki
 import {
   addCollapse,
@@ -119,7 +121,7 @@ export default defineConfig({
 
   // [Markdown]
   markdown: {
-    remarkPlugins: [remarkMath],
+    remarkPlugins: [remarkMath, remarkDirective, remarkAsides, remarkDirectivesRestoration],
     rehypePlugins: [
       [rehypeKatex, {}],
       rehypeHeadingIds,

@@ -69,7 +69,7 @@ _斜体文本_
 ### 代码块
 
 ````markdown
-```js
+```js title="src/site.config.ts"
 // calculate fibonacci
 function fibonacci(n) {
   if (n <= 1) return 1
@@ -80,7 +80,7 @@ function fibonacci(n) {
 
 预览：
 
-```js
+```js title="src/site.config.ts"
 // calculate fibonacci
 function fibonacci(n) {
   if (n <= 1) return 1
