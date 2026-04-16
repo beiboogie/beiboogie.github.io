@@ -33,7 +33,7 @@ import { Aside } from 'astro-pure/user'
 
 ## 网易云音乐——在线收听
 
-<div class='grid aspect-[7/9] grid-cols-1 gap-3 sm:grid-cols-2 sm:aspect-[21/9] '>
+<div class='grid aspect-[9/16] grid-cols-1 gap-2 sm:grid-cols-2 sm:aspect-[21/9] '>
   <ProjectCard
     href='https://music.163.com/#/song?id=3352886493'
     heading='进化论'
@@ -49,13 +49,13 @@ import { Aside } from 'astro-pure/user'
   <ProjectCard
     href='https://music.163.com/#/song?id=3352884583'
     heading='世界向前走了'
-    subheading='将我抛在身后，成为其设计中的一个齿轮'
+    subheading='我是其设计中的一个齿轮'
     imagePath='/src/assets/tips/guitar1.avif'
   />
   <ProjectCard
     href='https://music.163.com/#/song?id=3352884568'
     heading='树'
-    subheading='年轮绕起 所有告别，新芽学会 如何想念'
+    subheading='在树下 我寻找 你的影子'
     imagePath='/src/assets/tips/bass.avif'
   />
 </div>
@@ -63,14 +63,14 @@ import { Aside } from 'astro-pure/user'
 ## 下载（含特典与BonusTrack）
 
 ### 内容包含
-<div class='grid aspect-[14/9] grid-cols-2 gap-3 sm:max-w-90% sm:grid-cols-4 sm:aspect-[21/9] '>
+<div class='scale-95 grid aspect-[3/4] grid-cols-2 gap-3  sm:grid-cols-4 sm:aspect-[21/9] '>
   <ProjectCard
     heading='4首Tips! 演奏的歌曲'
     imagePath='/src/assets/tips/tips-show.avif'
   />
   <ProjectCard
     heading='1首GBA法庭游戏风格的Bonus Track'
-    imagePath='/src/assets/tips/PWAA.avif'
+    imagePath='/src/assets/tips/PWAA-1.avif'
   />
   <ProjectCard
     heading='封面'
@@ -85,19 +85,19 @@ import { Aside } from 'astro-pure/user'
 
 ### 下载链接
 
-<Collapse title='点击展开 ↓'>
-  <div slot='before' class='mt-2'>提供三种下载方式</div>
+<Collapse title='点击展开 下载链接'>
+  <div slot='before' class='mt-2'>提供两种下载方式</div>
 
-  <Aside>
-    <div>感谢阿电提供的下载服务器</div>
+  <Aside title="阿电的网盘 Zeyuu's Drive">
+    <div>感谢阿电提供的服务器</div><br/>
     <Button as='a' href='https://drive.zeyuu.wang/s/9YHq' title='阿电Zeyuu的网盘' variant='ahead' class='not-prose' />
   </Aside>
   {/* <Aside>
     <div>为了稳定性，中科院网盘链接</div>
     <Button as='a' href='https://data.cstcloud.cn/s/CyTFTgkTgTPt' title='中国科技云' variant='ahead' class='not-prose' />
   </Aside> */}
-  <Aside>
-    <div>对于有条件的听众，Bandcamp可以在线收听以及下载</div>
+    <Aside title='Bandcamp在线下载'>
+    <div>适合有网络条件的听众。如果下方显示为空白，请使用网盘下载</div>
     <div><iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2564244953/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://tipsband.bandcamp.com/album/world-moved-on">世界向前走了 (World Moved On) by Tips!</a></iframe></div>
   </Aside>
 </Collapse>
