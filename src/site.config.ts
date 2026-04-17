@@ -161,7 +161,7 @@ export const integ: IntegrationUserConfig = {
   waline: {
     enable: true,
     // Server service link
-    server: 'https://waline-astro-blog.vercel.app/',
+    server: 'https://bei-blog-comment-waline.netlify.app/.netlify/functions/comment',
     // Show meta info for comments
     showMeta: true,
     // Refer https://waline.js.org/en/guide/features/emoji.html
