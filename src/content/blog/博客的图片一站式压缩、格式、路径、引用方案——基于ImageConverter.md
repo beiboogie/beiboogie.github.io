@@ -1,7 +1,7 @@
 ---
 title: 博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter
 slug: hexo-picture-auto
-publishDate: 2025-11-06 23:45
+publishDate: 2025-11-06
 tags:
 - 博客搭建
 hide_comment: false
