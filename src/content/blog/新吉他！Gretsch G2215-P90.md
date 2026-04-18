@@ -10,7 +10,7 @@ description: 详细评测Gretsch G2215-P90吉他，分享经济实惠的IndieRoc
 language: 中文
 heroImage:
   src: ./assets/g2215.avif
-  color: "#bed8cf"
+  color: "#4ed5a6"
 ---
 
 在咸鱼上好价1500元淘了一把Gretsch G2215-P90。这么便宜要什么自行车？

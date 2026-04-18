@@ -8,9 +8,9 @@ hide_comment: false
 description: 详细介绍基于Hexo和Obsidian的博客写作工作流，实现图片压缩、格式转换、路径管理和自动引用的完整解决方案，提升写作效率。
 language: 中文
 heroImage:
-  src: https://images.unsplash.com/vector-1762989121782-f2cdae7fa406?w=1600&h=400&fit=fill&bg=e2dbc8&fill=solid
+  src: https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1600&h=400&fit=crop
   inferSize: true
-  color: "#fec66d"
+  color: "#3b8cb4"
 ---
 
 :::danger
@@ -19,7 +19,7 @@ heroImage:
 
 > 2025-11-07：在这篇文章里介绍了更完美的图片插入方法，也是基于Obsidian插件。
 
-[博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter](/blog/hexo-picture-auto)
+[*博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter↗*](/blog/hexo-picture-auto)
 
 ## 开始之前
 

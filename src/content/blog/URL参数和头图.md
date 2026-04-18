@@ -5,9 +5,8 @@ slug: image-url-parameter
 description: 通过几个简单的 URL 参数，让 Unsplash 或是任何支持动态处理的图片变成想要的样子
 tags:
   - 博客搭建
-  - Draft
 hide_comment: false
-hidden: true
+hidden: false
 language: 中文
 heroImage:
   src: https://images.unsplash.com/vector-1762989121782-f2cdae7fa406?w=1600&h=400&fit=fill&bg=e2dbc8&fill=solid
@@ -16,7 +15,8 @@ heroImage:
 ---
 
 我的博客从Hexo迁移到Astro，主要是考虑到Astro的群岛结构的高效，以及看中这个pure主题的美观。不过pure主题的头图在默认情况下是长度撑满容器的，因此需要3:1甚至更长的头图才适合。  
-可是在Unsplash上是很难找到如此宽比例的图片的。就算能找到，在Unsplash，Pexels这些平台上大都只能筛选是Horizontal还是Vertical的图片。  
+可是在Unsplash上是很难找到如此宽比例的图片的。就算能找到，在Unsplash，Pexels这些平台上大都只能筛选是Horizontal还是Vertical的图片，不能选具体比例。
+
 好图片很多，完美图片少，所以解决方案是：**在 URL 里写参数，让图片变成想要的样子。**
 
 ## 什么是 URL 参数？
@@ -36,34 +36,56 @@ https://images.unsplash.com/...f2cdae7fa406?w=1600&h=400&fit=fill&bg=e2dbc8&fill
 参数如下：
 
 * **`w=1600&h=400`**：指定输出的分辨率。确保浏览器下载的就是 4:1 比例的素材。
-* **`fit=fill`**：让图片居中放置”
+* **`fit=fill`**：让图片居中放置
 * **`bg=e2dbc8`**：既然 `fit=fill` 会在图片两侧或上下留下空白，那么这个参数就指定了空白处填充的颜色（Hex 格式）。
 * **`fill=solid`**：配合上面的背景色，实现纯色填充。
 
----
+### 关于fit参数
 
-## 常用参数速查表
-
-如果你也想在 Markdown 里手写这些链接，可以参考我整理的这个硬核清单：
+fit参数有两个值：crop和fill
 
 | 参数 | 功能描述 | 建议场景 |
 | :--- | :--- | :--- |
-| `fit=crop` | **暴力裁剪**。自动切掉多余部分填满框。 | 主体位于正中央，且背景不重要的图片。 |
-| `fit=fill` | **填充模式**。完整显示原图，用背景色补齐空位。 | **强烈推荐**。用于 Logo、图标或风格明显的插画。 |
-| `q=80` | **质量调整**。80 是视觉质量与体积的平衡点。 | 优化移动端加载速度，减少流量消耗。 |
-| `auto=format` | **自动格式优化**。 | 让浏览器根据支持情况自动选择 WebP 或 Avif。 |
+| `fit=crop` | **裁剪**。切掉多余部分，填满框。 | 主体位于正中央，且背景不重要的图片。 |
+| `fit=fill` | **填充**。完整显示原图，用背景色补齐空位。 |用于 Logo、图标或风格明显的插画。 |
+
+
+## 实战演示
+
+```html title="添加宽度信息"
+<img src="https://images.unsplash.com/vector-1762989121782-f2cdae7fa406?w=800" >
+```
+
+<img src="https://images.unsplash.com/vector-1762989121782-f2cdae7fa406?w=800" 
+     alt="cat" 
+     style="border-radius: 20px; display: block; margin: 0 auto;width: 90%">
+
+```html title="fit=crop"
+<img src="https://images.unsplash.com/vector-1762989121782-f2cdae7fa406?w=800&h=200&fit=crop"  >
+```
+
+<img src="https://images.unsplash.com/vector-1762989121782-f2cdae7fa406?w=800&h=200&fit=crop" 
+     alt="cat" 
+     style="border-radius: 20px; display: block; margin: 0 auto;width: 90%">
+
+```html title="fit=fill 并添加蓝色背景"
+<img src="https://images.unsplash.com/vector-1762989121782-f2cdae7fa406?w=800&h=200&fit=fill&bg=4a768c&fill=solid" >
+```
+
+<img src="https://images.unsplash.com/vector-1762989121782-f2cdae7fa406?w=800&h=200&fit=fill&bg=4a768c&fill=solid" 
+     alt="cat" 
+     style="border-radius: 20px; display: block; margin: 0 auto;width: 90%">
+
+
+```html title="换成合适的背景颜色"
+<img src="https://images.unsplash.com/vector-1762989121782-f2cdae7fa406?w=800&h=200&fit=fill&bg=e2dbc8&fill=solid" >
+```
+
+<img src="https://images.unsplash.com/vector-1762989121782-f2cdae7fa406?w=800&h=200&fit=fill&bg=e2dbc8&fill=solid" 
+     alt="cat" 
+     style="border-radius: 20px; display: block; margin: 0 auto;width: 90%">
 
 ---
-
-## 为什么要这么折腾？
-
-有人可能会说：“北，你直接把图下下来，在电脑上裁好了再传上去不就行了？”
-
-当然行。但这种做法有两个致命弱点：
-1.  **不可逆**：哪天你想把博客主题从 4:1 改成 2:1，你得把几百篇文章的图重新裁一遍。
-2.  **不自由**：URL 调参意味着你可以根据不同设备（手机/电脑）动态返回不同的缩放版本。
-
-这种“一次设置，终身优雅”的思路，其实和我玩录音是一样的。**与其在混音的时候拼命补救，不如在录音的时候就把参数调准。** 
 
 ## 总结
 
