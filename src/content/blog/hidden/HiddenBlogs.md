@@ -13,8 +13,8 @@ language: 中文
 ░▒▓█我觉得写的不够好的内容
 ░▒▓█我觉得不适合发布的内容
 
-- {% post_link AssetCheatsheet %}
-- {% post_link MarkdownCheatsheet %}
-- {% post_link 北的音乐设备主观评分 %}
+- [AssetCheatsheet](/blog/asset-cheatsheet)
+- [MarkdownCheatsheet](/blog/markdown-cheatsheet)
+- [北的音乐设备主观评分](/blog/music-gear-rating)
 
 <a href="/blog/game1" style="color: transparent; text-decoration:none;">游戏游戏游戏游戏游戏游戏游戏游戏</a>

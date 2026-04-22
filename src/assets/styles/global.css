@@ -305,3 +305,16 @@ span.katex-display {
     }
   }
 }
+
+/* [Mermaid] */
+/* #content :where(pre.mermaid, .mermaid) {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+#content :where(pre.mermaid, .mermaid) svg {
+  display: block;
+  width: 100%;
+  min-width: fit-content;
+  height: auto;
+} */

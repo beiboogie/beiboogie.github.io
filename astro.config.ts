@@ -5,6 +5,7 @@ import { rehypeHeadingIds } from '@astrojs/markdown-remark'
 import sitemap from '@astrojs/sitemap'
 import AstroPureIntegration from 'astro-pure'
 import { defineConfig, fontProviders } from 'astro/config'
+import mermaid from "astro-mermaid";
 import rehypeKatex from 'rehype-katex'
 import remarkDirective from 'remark-directive'
 import remarkMath from 'remark-math'
@@ -171,6 +172,10 @@ export default defineConfig({
       filter(page) {
         return !hiddenBlogPathnames.has(normalizePathname(new URL(page).pathname))
       }
+    }),
+    mermaid({
+      theme: "default",
+      autoTheme: true
     }),
     // mdx(),
     AstroPureIntegration(config)

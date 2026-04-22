@@ -32,10 +32,12 @@ export function setTheme(theme?: string, save = false) {
   }
 
   // Set theme
-  document.documentElement.classList.toggle('dark', targetTheme === 'dark')
+  const resolvedTheme = targetTheme === 'dark' ? 'dark' : 'light'
+  document.documentElement.classList.toggle('dark', resolvedTheme === 'dark')
+  document.documentElement.setAttribute('data-theme', resolvedTheme)
   document
     .querySelector('meta[name="theme-color"]')
-    ?.setAttribute('content', targetTheme === 'dark' ? '#0B0B10' : '#FCFCFD')
+    ?.setAttribute('content', resolvedTheme === 'dark' ? '#0B0B10' : '#FCFCFD')
 
   return theme
 }
