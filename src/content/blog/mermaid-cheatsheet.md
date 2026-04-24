@@ -1,6 +1,6 @@
 ---
 title: Mermaid Cheatsheet
-publishDate: 2026-04-22
+publishDate: 2023-04-22
 slug: mermaid-cheetsheet
 description: Cheetsheet for testing different types of mermaid graphs.
 tags:

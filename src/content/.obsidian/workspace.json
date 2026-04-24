@@ -21,54 +21,8 @@
               "icon": "lucide-home",
               "title": "Home"
             }
-          },
-          {
-            "id": "552038b3e821898d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "blog/hidden/北的音乐设备主观评分.md",
-                "mode": "source",
-                "source": true,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "北的音乐设备主观评分"
-            }
-          },
-          {
-            "id": "c97163ad5ef84041",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "blog/经典效果器和他们经济实惠的克隆.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "经典效果器和他们经济实惠的克隆"
-            }
-          },
-          {
-            "id": "28f91d2173b9c8c8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "blog/mermaid-cheatsheet.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "mermaid-cheatsheet"
-            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -156,13 +110,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog/mermaid-cheatsheet.md",
+                "file": "_bases/Home.base",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "mermaid-cheatsheet 的大纲"
+              "title": "Home 的大纲"
             }
           },
           {
@@ -207,18 +161,24 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "28f91d2173b9c8c8",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "blog/经典效果器和他们经济实惠的克隆.md",
+    "_bases/Home.base",
     "blog/mermaid-cheatsheet.md",
+    "blog/关于吉他，音乐设备的“风味”.md",
+    "blog/Producer向Podcast整理.md",
+    "blog/URL参数和头图.md",
+    "blog/《世界向前走了》制作记录.md",
+    "blog/《轻音少女》相关乐谱.md",
+    "blog/关于Tips!乐队.mdx",
+    "blog/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理.md",
+    "blog/未命名.md",
+    "blog/.md",
+    "blog/经典效果器和他们经济实惠的克隆.md",
     "blog/markdown/index.md",
     "blog/hidden/MarkdownCheatsheet.md",
     "blog/hidden/北的音乐设备主观评分.md",
-    "_bases/Home.base",
-    "blog/URL参数和头图.md",
-    "blog/Hexo博客写作工作流——用Obsidian实现一站式图片和属性管理.md",
     "blog/新吉他！Gretsch G2215-P90.md",
-    "blog/关于Tips!乐队.mdx",
     "blog/assets/耳机罩对频段的影响/IMG-20251105151233358.webp",
     "blog/assets/耳机罩对频段的影响/IMG-20251104234708581.webp",
     "blog/assets/数摇emo乐手效果器设备/IMG-1762330811246.webp",
@@ -242,15 +202,11 @@
     "blog/博客的图片一站式压缩、格式、路径、引用方案——基于ImageConverter.md",
     "blog/【FLAC】原创EP 《世界向前走了》.md",
     "blog/自己给吉他做Setup.md",
-    "blog/《世界向前走了》制作记录.md",
-    "blog/《轻音少女》相关乐谱.md",
     "blog/北的监听耳机入门指南101.md",
     "blog/Behringer产品与其对应原型.md",
     "blog/美少女们都爱用：RAT系失真效果器横评&详解.md",
     "blog/后巷琴声.md",
     "blog/数摇emo乐手效果器设备.md",
-    "blog/耳机罩对频段的影响.md",
-    "_GUIDE.md",
-    "blog/偶次谐波.md"
+    "blog/耳机罩对频段的影响.md"
   ]
 }

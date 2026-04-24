@@ -5,6 +5,6 @@
   "enabledCssSnippets": [
     "astro-modular-styling"
   ],
-  "theme": "system",
+  "theme": "obsidian",
   "accentColor": ""
 }
